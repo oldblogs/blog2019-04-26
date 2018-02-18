@@ -7,14 +7,15 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>@yield('title')</title>
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="/css/album.css" rel="stylesheet">
+    @yield('custom_style_links')
+    
   </head>
 
   <body>
@@ -22,8 +23,14 @@
     @include ('layouts.nav')
 
     <div class="container">
-      @yield('content')
-    </div>
+      <div class="row">
+        @yield('header')
+      
+        @yield('content')
+    
+        @include('layouts.sidebar')
+      </div><!-- /.row -->
+    </div><!-- /.container -->
   
     @include ('layouts.footer')
   </body>
