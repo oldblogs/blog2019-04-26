@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// use App\Task;
+
+// Route::get('/tasks', 'TasksController@index');
+
+// Route::get('/tasks/{task}', 'TasksController@show');
+
+
+// controller => PostsController
+
+// Eloquent model => Post
+
+// migration => create_posts_table
+
+Route::get('/', 'PostsController@index');
+
+Route::get('/posts/{post}', 'PostsController@show');
+

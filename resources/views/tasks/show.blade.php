@@ -7,6 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-Merhaba
+  <h1>{{ $task->body }}</h1>
 </body>
 </html>
