@@ -26,13 +26,18 @@ class PostsController extends Controller
     
     public function store()
     {
-        // TODO: USER INPUT NOT SANITIZED. SANITIZE USER INPUT
-        Post::create([
-            'title' => request('title'),
-            'body' => request('body')
+        // TODO: Sanitize user input
+        // TODO: Strengthen the validation
+
+        $this->validate(request(),[
+            'title' => 'required|max:200',
+            
+            'body' => 'required|max:1000'
+            
         ]);
         
-        // And then redirect to home page
+        Post::create( request(['title', 'body']) );
+        
         return redirect('/');
         
     }
