@@ -1,11 +1,7 @@
 @extends ('layouts.master')
 
 @section ('title')
-Devsblog - {{ $post->title }}
-@endsection
-
-@section ('custom_style_links')
-  <link href="/css/blog.css" rel="stylesheet">
+  {{ $post->title }}
 @endsection
 
 @section ('content')
