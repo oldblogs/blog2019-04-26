@@ -17,6 +17,8 @@ class PostsController extends Controller
     
     public function show(Post $post)
     {
+        // TODO: Sanitize user input
+        // TODO: Strengthen the validation
         return view('posts.show', compact('post') );
     }
     
