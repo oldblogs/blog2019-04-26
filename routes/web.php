@@ -15,7 +15,8 @@
 // Eloquent model => Post
 // migration => create_posts_table
 
-dd(resolve('App\Billing\Stripe'));
+// Reminent of Episode 25
+// dd(resolve('App\Billing\Stripe'));
 
 // Main page
 Route::get('/', 'PostsController@index')->name('home');
