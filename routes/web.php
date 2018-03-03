@@ -11,13 +11,11 @@
 |
 */
 
-// use App\Task;
-// Route::get('/tasks', 'TasksController@index');
-// Route::get('/tasks/{task}', 'TasksController@show');
-
 // controller => PostsController
 // Eloquent model => Post
 // migration => create_posts_table
+
+dd(resolve('App\Billing\Stripe'));
 
 // Main page
 Route::get('/', 'PostsController@index')->name('home');
