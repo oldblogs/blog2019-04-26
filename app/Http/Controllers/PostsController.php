@@ -18,8 +18,6 @@ class PostsController extends Controller
     
     public function index(Posts $posts)
     {
-        dd($posts);
-        
         $posts = $posts->all();
         
         // $posts = (new \App\Repositories\Posts)->all();
