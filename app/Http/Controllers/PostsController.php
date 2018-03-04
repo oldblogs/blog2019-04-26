@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Repositories\Posts;
 use Carbon\Carbon;
-
+use Illuminate\Session\SessionManager;
 
 class PostsController extends Controller
 {
@@ -42,8 +42,7 @@ class PostsController extends Controller
     
     public function store()
     {
-        // TODO: Sanitize user input
-        // TODO: Strengthen the validation
+        // TODO: User input validation
 
         $this->validate(request(),[
             'title' => 'required|max:200',
@@ -51,11 +50,15 @@ class PostsController extends Controller
             'body' => 'required|max:1000'
         ]);
         
-        //TODO: Sanitation, Validation
+        // TODO: User input validation
         auth()->user()->publish(
             new Post( request(['title', 'body']) )
         );
         
+        session()->flash(
+            'message', 'Your post has now been published'
+        );
+
         return redirect('/');
         
     }

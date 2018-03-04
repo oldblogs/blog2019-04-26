@@ -39,18 +39,18 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 
 // Get Registration Form
-Route::get('/register', 'RegistrationsController@create');
+Route::get('/register', 'RegistrationsController@create')->name('register');
 
 // Create a new User with given form data
 Route::post('/register', 'RegistrationsController@store');
 
 
 // Get Login Form
-Route::get('/login', 'SessionsController@create');
+Route::get('/login', 'SessionsController@create')->name('login');
 
 // Login to blog with given form data
 Route::post('/login', 'SessionsController@store');
 
 // Logout from blog
 // "post request would be better" 
-Route::get('/logout', 'SessionsController@destroy');
+Route::get('/logout', 'SessionsController@destroy')->name('logout');
