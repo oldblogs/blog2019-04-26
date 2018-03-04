@@ -8,7 +8,7 @@ class SessionsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'destroy']);
+        $this->middleware('guest', ['except' => ['login', 'destroy']]);
     }
     
     
@@ -23,7 +23,7 @@ class SessionsController extends Controller
         $this->validate(request(),[
             'email' => 'required|max:200',
             
-            'password' => 'required|min:8|max:1000'
+            'password' => 'required|min:1|max:1000'
             
         ]);
                 
