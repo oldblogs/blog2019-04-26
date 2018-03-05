@@ -33,6 +33,9 @@ Route::get('/posts', 'PostsController@index');
 // Get a single Post
 Route::get('/posts/{post}', 'PostsController@show');
 
+// List of tags.
+Route::get('/posts/tags/{tag}', 'TagsController@index');
+
 
 // Create a new comment with given form data
 Route::post('/posts/{post}/comments', 'CommentsController@store');
