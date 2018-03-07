@@ -28,7 +28,20 @@ class Post extends Model
     
     public function addComment($body)
     {
-        $this->comments()->create( compact('body') );
+        
+        // $this->comments()->create( compact('body') );
+        
+        $this->comments()->create([
+            'post_id' => request('post_id'),
+            'user_id' => request('user_id'),
+            'body'    => $body,
+        ]);
+        
+        // Comment::create([
+        //     'body'    => request('body'),
+        //     'post_id' => $post->id
+        // ]);
+        
     }
     
     public function scopeFilter($query, $filters){

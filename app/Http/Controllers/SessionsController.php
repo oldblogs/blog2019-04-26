@@ -8,7 +8,7 @@ class SessionsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('guest', ['except' => ['login', 'destroy']]);
+        $this->middleware('guest', ['except' => 'destroy']);
     }
     
     
@@ -19,7 +19,7 @@ class SessionsController extends Controller
     
     public function store()
     {
-        // TODO: Sanitation, Validation
+        // TODO: User input validation.
         $this->validate(request(),[
             'email' => 'required|max:200',
             
