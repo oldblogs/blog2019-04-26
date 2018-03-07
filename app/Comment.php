@@ -6,7 +6,7 @@ namespace App;
 
 class Comment extends Model
 {
-    protected $fillable= ['body', 'user_id', 'post_id'];
+    protected $fillable= ['body', 'post_id'];
     
     public function post()
     {
@@ -18,3 +18,5 @@ class Comment extends Model
         return $this->belongsTo(User::class);
     }
 }
+
+
