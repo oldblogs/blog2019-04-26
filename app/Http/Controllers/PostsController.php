@@ -8,6 +8,7 @@ use App\Post;
 use App\Repositories\Posts;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
+use App\Http\Requests\PostForm;
 
 class PostsController extends Controller
 {
@@ -36,26 +37,10 @@ class PostsController extends Controller
         return view('posts.create');
     }
     
-    public function store()
+    public function store(PostForm $form)
     {
-        // TODO: User input validation
-
-        $this->validate(request(),[
-            'title' => 'required|max:200',
-            
-            'body' => 'required|max:1000'
-        ]);
+        $form->persist();
         
-        // TODO: User input validation
-        auth()->user()->publish(
-            new Post( request(['title', 'body']) )
-        );
-        
-        session()->flash(
-            'message', 'Your post has now been published'
-        );
-
         return redirect('/');
-        
     }
 }
