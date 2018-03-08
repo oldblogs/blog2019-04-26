@@ -26,7 +26,7 @@ class RegistrationForm extends FormRequest
      */
     public function rules()
     {
-        // TODO: Proper User Input Validation (if you plan to use it in production).
+        // TODO: Proper User Input Validation
         
         return [
             'name' => 'required',
