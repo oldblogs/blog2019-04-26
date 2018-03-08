@@ -16,32 +16,9 @@ class Post extends Model
     //     ( ignores validation )
     // protected $guarded = ['user_id'];
     
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
-    }
-    
     public function user()
     {
         return $this->belongsTo(User::class);
-    }
-    
-    public function addComment($body)
-    {
-        
-        // $this->comments()->create( compact('body') );
-        
-        $this->comments()->create([
-            'post_id' => request('post_id'),
-            'user_id' => request('user_id'),
-            'body'    => $body,
-        ]);
-        
-        // Comment::create([
-        //     'body'    => request('body'),
-        //     'post_id' => $post->id
-        // ]);
-        
     }
     
     public function scopeFilter($query, $filters){
