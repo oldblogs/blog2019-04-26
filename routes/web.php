@@ -31,13 +31,6 @@ Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{post}', 'PostsController@show');
 
 
-// Get Registration Form
-Route::get('/register', 'RegistrationsController@create')->name('register');
-
-// Create a new User with given form data
-Route::post('/register', 'RegistrationsController@store');
-
-
 // Get Login Form
 Route::get('/login', 'SessionsController@create')->name('login');
 
