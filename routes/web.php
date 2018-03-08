@@ -34,10 +34,6 @@ Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{post}', 'PostsController@show');
 
 
-// Create a new comment with given form data
-Route::post('/posts/{post}/comments', 'CommentsController@store');
-
-
 // Get Registration Form
 Route::get('/register', 'RegistrationsController@create')->name('register');
 
