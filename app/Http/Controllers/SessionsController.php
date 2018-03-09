@@ -14,7 +14,7 @@ class SessionsController extends Controller
     
     public function create()
     {
-        return view('sessions.create');
+        return view('frontview.page.sessions.create');
     }
     
     public function store()
@@ -34,7 +34,7 @@ class SessionsController extends Controller
             ]);
         }
         
-        return redirect()->home();
+        return redirect()->route('manage');
     }
     
     public function destroy()

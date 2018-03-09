@@ -1,4 +1,4 @@
-@extends ('layouts.master')
+@extends ('frontview.base.master')
 
 @section ('title')
 DevsBlog
@@ -16,7 +16,7 @@ DevsBlog
 @section ('content')
   <div class="col-sm-8 blog-main">
     @foreach ($posts as $post)
-      @include ('posts.post')
+      @include ('frontview.partial.post')
     @endforeach
 
     <nav class="blog-pagination">

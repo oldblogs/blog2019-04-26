@@ -1,4 +1,4 @@
-@extends ('layouts.master')
+@extends ('frontview.base.master')
 
 @section ('content')
   <div class="col-sm-8 blog-main">
@@ -23,7 +23,7 @@
         <button type="submit" class="btn btn-primary">Publish</button>
       </div>
 
-      @include('layouts.errors')
+      @include('frontview.partial.errors')
 
     </form>
 
