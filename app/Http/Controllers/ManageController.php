@@ -15,4 +15,6 @@ class ManageController extends Controller
     {
         return view('manage.page.index');
     }
+    
+    
 }

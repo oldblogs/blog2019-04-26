@@ -34,7 +34,7 @@ class PostsController extends Controller
     
     public function create()
     {
-        return view('frontview.page.posts.create');
+        return view('manage.page.posts.create');
     }
     
     public function store(PostForm $form)

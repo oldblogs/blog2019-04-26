@@ -1,11 +1,11 @@
-@extends ('frontview.base.master')
+@extends ('manage.base.master')
 
 @section ('content')
   <div class="col-sm-8 blog-main">
 
     <h1>Publish a post</h1>
 
-    <form method="POST" action="/posts">
+    <form method="POST" action="/manage/posts">
 
       {{ csrf_field() }}
 
@@ -23,7 +23,7 @@
         <button type="submit" class="btn btn-primary">Publish</button>
       </div>
 
-      @include('frontview.partial.errors')
+      @include('manage.partial.errors')
 
     </form>
 

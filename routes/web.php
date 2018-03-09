@@ -15,15 +15,13 @@
 // Eloquent model => Post
 // migration => create_posts_table
 
+
+// ------------------------------------------------------------
+// Front view
+// ------------------------------------------------------------
+
 // Main page
 Route::get('/', 'PostsController@index')->name('home');
-
-// Get New Post Form
-Route::get('/posts/create', 'PostsController@create');
-
-
-// Create a new post with given form data
-Route::post('/posts', 'PostsController@store');
 
 // List Posts
 Route::get('/posts', 'PostsController@index');
@@ -32,15 +30,26 @@ Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{post}', 'PostsController@show');
 
 
-// Get Login Form
-Route::get('/login', 'SessionsController@create')->name('login');
 
-// Login to blog with given form data
-Route::post('/login', 'SessionsController@store');
-
-// Logout from blog
-// "post request would be better" 
-Route::get('/logout', 'SessionsController@destroy')->name('logout');
+// ------------------------------------------------------------
+// Manage
+// ------------------------------------------------------------
 
 // Blog Manage Page
 Route::get('/manage', 'ManageController@index')->name('manage');
+
+// Get New Post Form
+Route::get('/manage/posts/create', 'PostsController@create');
+
+// Create a new post with given form data
+Route::post('/manage/posts', 'PostsController@store');
+
+// Get Login Form
+Route::get('/manage/login', 'SessionsController@create')->name('login');
+
+// Login to blog with given form data
+Route::post('/manage/login', 'SessionsController@store');
+
+// Logout from blog
+// "post request would be better" 
+Route::get('/manage/logout', 'SessionsController@destroy')->name('logout');
