@@ -1,9 +1,9 @@
-@extends ('frontview.base.master')
+@extends ('manage.base.master')
 
 @section ('content')
   <div class="col-md-8">
     <h1>Sign In</h1>
-    <form method="POST" action="/login">
+    <form method="POST" action="/manage/login">
       {{ csrf_field() }}
       
       <div class="form-group">
@@ -20,7 +20,7 @@
         <button type="submit" class="btn btn-primary">Sign In</button>
       </div>
       
-      @include ('frontview.partial.errors')
+      @include ('manage.partial.errors')
       
     </form>
   </div>
