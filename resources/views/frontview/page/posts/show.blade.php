@@ -1,4 +1,4 @@
-@extends ('layouts.master')
+@extends ('frontview.base.master')
 
 @section ('title')
   {{ $post->title }}

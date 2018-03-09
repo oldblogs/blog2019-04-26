@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('layouts.sidebar', function ($view) {
+        view()->composer('frontview.partial.sidebar', function ($view) {
             $archives = \App\Post::archives();
             $view->with( compact('archives') );
         });

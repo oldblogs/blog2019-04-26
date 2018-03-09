@@ -21,6 +21,7 @@ Route::get('/', 'PostsController@index')->name('home');
 // Get New Post Form
 Route::get('/posts/create', 'PostsController@create');
 
+
 // Create a new post with given form data
 Route::post('/posts', 'PostsController@store');
 
@@ -40,3 +41,6 @@ Route::post('/login', 'SessionsController@store');
 // Logout from blog
 // "post request would be better" 
 Route::get('/logout', 'SessionsController@destroy')->name('logout');
+
+// Blog Manage Page
+Route::get('/manage', 'ManageController@index')->name('manage');
