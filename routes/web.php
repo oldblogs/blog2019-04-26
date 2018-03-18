@@ -36,20 +36,23 @@ Route::get('/posts/{post}', 'PostsController@show');
 // ------------------------------------------------------------
 
 // Blog Manage Page
-Route::get('/manage', 'ManageController@index')->name('manage');
+Route::get('/'.config('app.management', 'manage'), 'ManageController@index')->name('manage');
 
 // Get New Post Form
-Route::get('/manage/posts/create', 'PostsController@create');
+Route::get('/'.config('app.management', 'manage').'/posts/create', 'PostsController@create');
 
 // Create a new post with given form data
-Route::post('/manage/posts', 'PostsController@store');
+Route::post('/'.config('app.management', 'manage').'/posts', 'PostsController@store');
+
+// Get Posts list in manage view
+Route::get('/'.config('app.management', 'manage').'/posts', 'ManageController@postslist');
 
 // Get Login Form
-Route::get('/manage/login', 'SessionsController@create')->name('login');
+Route::get('/'.config('app.management', 'manage').'/login', 'SessionsController@create')->name('login');
 
 // Login to blog with given form data
-Route::post('/manage/login', 'SessionsController@store');
+Route::post('/'.config('app.management', 'manage').'/login', 'SessionsController@store');
 
 // Logout from blog
 // "post request would be better" 
-Route::get('/manage/logout', 'SessionsController@destroy')->name('logout');
+Route::get('/'.config('app.management', 'manage').'/logout', 'SessionsController@destroy')->name('logout');

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10009,8 +10009,8 @@ body {
 }
 
 .feather {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   vertical-align: text-bottom;
 }
 
@@ -10107,5 +10107,14 @@ body {
 
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.page-item.active .page-link {
+  background-color: #999;
+  border-color: #999;
+}
+
+.page-item .page-link {
+  color: #212529;
 }
 

@@ -107,6 +107,17 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Route name for App Management
+    |--------------------------------------------------------------------------
+    |
+    | You can change default route /manage with this setting
+    |
+    */
+    
+    'management' => env('APP_MANAGEMENT', 'manage'),
 
     /*
     |--------------------------------------------------------------------------

@@ -41,6 +41,6 @@ class PostsController extends Controller
     {
         $form->persist();
         
-        return redirect('/');
+        return redirect()->route('manage');
     }
 }
