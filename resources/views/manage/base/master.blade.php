@@ -28,15 +28,21 @@
     
     <div class="container-fluid">
       <div class="row">
-        @include ('manage.partial.sidebar')
-
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
           @yield('content')
         </main>
+
+        @include ('manage.partial.sidebar')
       </div>
     </div>
     
     <script src="/js/app.js"></script>
+    
+    <!-- Icons -->
+    <!-- <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script> -->
+    <script>
+      feather.replace()
+    </script>
     
     @yield('otherjs')
     

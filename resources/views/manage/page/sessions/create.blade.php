@@ -3,7 +3,7 @@
 @section ('content')
   <div class="col-md-8">
     <h1>Sign In</h1>
-    <form method="POST" action="/manage/login">
+    <form method="POST" action="/{{ config('app.management', 'asd') }}/login">
       {{ csrf_field() }}
       
       <div class="form-group">

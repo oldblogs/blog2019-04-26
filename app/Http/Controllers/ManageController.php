@@ -16,5 +16,8 @@ class ManageController extends Controller
         return view('manage.page.index');
     }
     
-    
+    public function postslist()
+    {
+        return view('manage.page.posts.index');
+    }
 }

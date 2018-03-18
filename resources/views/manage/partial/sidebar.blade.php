@@ -2,26 +2,26 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link {{ Request::is('manage')?'active':'' }}" href="{{ action('ManageController@index') }}">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
+                <a class="nav-link {{ Request::is('manage/posts')?'active':'' }}" href="{{ action('ManageController@postslist') }}">
+                  <span data-feather="file-text"></span>
                   Posts
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  BlogInfo
+                  <span data-feather="user"></span>
+                  About
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
+                  <span data-feather="inbox"></span>
                   Contact
                 </a>
               </li>
