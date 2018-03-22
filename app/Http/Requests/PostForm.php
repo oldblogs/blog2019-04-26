@@ -19,6 +19,7 @@ class PostForm extends FormRequest
     {
         if (Auth::check()) {
             // The user is logged in...
+            // TODO: User Authorization 
             return true;
         }
         else{
@@ -49,4 +50,17 @@ class PostForm extends FormRequest
             'message', 'Your post has now been published'
         );
     }
+    
+    public function update(Post $post){
+        // TODO: User input validation
+        $post->title = request('title');
+        $post->body = request('body');
+        
+        auth()->user()->publish( $post );
+        
+        session()->flash(
+            'message', 'Your post has now been updated'
+        );
+    }
+    
 }

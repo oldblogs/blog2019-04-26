@@ -36,4 +36,9 @@ class User extends Authenticatable
         $this->posts()->save($post);
     }
     
+    public function deletePost(Post $post)
+    {
+        $post->delete();
+    }
+    
 }

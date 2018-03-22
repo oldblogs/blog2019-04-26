@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
+use App\Repositories\PostsRepository;
+use Carbon\Carbon;
+use Illuminate\Session\SessionManager;
+use App\Http\Requests\PostForm;
 
 class ManageController extends Controller
 {
@@ -16,8 +21,11 @@ class ManageController extends Controller
         return view('manage.page.index');
     }
     
-    public function postslist()
+    public function postslist(PostsRepository $postsrepo)
     {
-        return view('manage.page.posts.index');
+        $posts = $postsrepo->latest()->get();
+        
+        return view('manage.page.posts.index', compact('posts') );
     }
+    
 }

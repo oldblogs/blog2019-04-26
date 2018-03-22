@@ -4,7 +4,7 @@
   <div class="col-md-8">
     <h1>Sign In</h1>
     <form method="POST" action="/{{ config('app.management', 'asd') }}/login">
-      {{ csrf_field() }}
+      @csrf
       
       <div class="form-group">
         <label for="email">Email Address:</label>
