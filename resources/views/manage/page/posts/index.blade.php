@@ -9,7 +9,7 @@ DevsBlog
             <h1 class="h2">Posts</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">Add</button>
+                <a class="btn btn-sm btn-outline-secondary" role="button" href="{{ route('getpostform') }}">Add</a>
               </div>
             </div>
           </div>
@@ -19,7 +19,6 @@ DevsBlog
               <thead>
                 <tr>
                   <th>#ID</th>
-                  <th>User</th>
                   <th>Title</th>
                   <th>Created</th>
                   <th>Modified</th>
@@ -29,24 +28,9 @@ DevsBlog
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Mehmet Akif Ersoy</td>
-                  <td>ipsum as das d as d as d as  d asd asdasdasd as d as das das d</td>
-                  <td>2018-01-03T02:04</td>
-                  <td>dolor</td>
-                  <td><button class="btn btn-sm btn-outline-secondary"><span data-feather="book-open"></span></button></td>
-                  <td><button class="btn btn-sm btn-outline-secondary"><span data-feather="edit-3"></button></td>
-                  <td><button class="btn btn-sm btn-outline-secondary"><span data-feather="trash-2"></button></td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                  <td>sit</td>
-                </tr>
+                @foreach ($posts as $post)
+                  @include ('manage.partial.postrow')
+                @endforeach
               </tbody>
             </table>
             <ul class="pagination">

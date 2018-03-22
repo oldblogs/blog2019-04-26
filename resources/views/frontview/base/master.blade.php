@@ -19,7 +19,7 @@
     @include ('frontview.partial.nav')
     
     @if ($flash = session('message'))
-    <div id="flash-message" class="alert alert-success" role="alert">
+    <div id="flash-message" class="alert alert-default" role="alert">
       {{ $flash }}
     </div>
     @endif

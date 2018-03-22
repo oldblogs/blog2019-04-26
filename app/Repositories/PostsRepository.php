@@ -5,7 +5,7 @@ namespace App\Repositories;
 use App\Post;
 use App\Redis;
 
-class Posts
+class PostsRepository
 {
   protected $redis;
   
@@ -17,6 +17,12 @@ class Posts
   public function all()
   {
     return Post::all();
+  }
+  
+  public function latest()
+  {
+    // TODO: User input validation
+    return $posts = Post::latest()->filter(request(['month', 'year']));
   }
 }
 

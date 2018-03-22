@@ -26,6 +26,12 @@
   
     @include ('manage.partial.nav')
     
+    @if ($flash = session('message'))
+    <div id="flash-message" class="alert alert-success" role="alert">
+      {{ $flash }}
+    </div>
+    @endif
+
     <div class="container-fluid">
       <div class="row">
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
@@ -38,8 +44,6 @@
     
     <script src="/js/app.js"></script>
     
-    <!-- Icons -->
-    <!-- <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script> -->
     <script>
       feather.replace()
     </script>

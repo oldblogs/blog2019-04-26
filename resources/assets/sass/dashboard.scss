@@ -120,3 +120,20 @@ body {
 .page-item .page-link{
   color: #212529;
 }
+
+/*
+ * Flash Messages
+ */
+
+ #flash-message {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  animation: flash-message 4s forwards;
+}
+
+@keyframes flash-message {
+  0%   {opacity: 1;}
+  100% {opacity: 0; display:none;}
+}
