@@ -23,7 +23,8 @@ class ManageController extends Controller
     
     public function postslist(PostsRepository $postsrepo)
     {
-        $posts = $postsrepo->latest()->get();
+        
+        $posts = $postsrepo->paginated();
         
         return view('manage.page.posts.index', compact('posts') );
     }
