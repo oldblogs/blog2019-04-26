@@ -32,7 +32,7 @@ class PostsController extends Controller
 
     public function index(PostsRepository $postsrepo)
     {
-        $posts = $postsrepo->latest()->get();
+        $posts = $postsrepo->paginated();
         
         return view('frontview.page.posts.index', compact('posts') );
     }

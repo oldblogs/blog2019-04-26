@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $posts = factory(App\Post::class, 100)->create();
     }
 }
