@@ -1,4 +1,5 @@
 @if ($paginator->hasPages())
+  <nav class="blog-pagination">
     <ul class="pagination">
         {{-- First Page Page Link --}}
         @if ($paginator->onFirstPage())
@@ -51,4 +52,5 @@
             <li class="page-item disabled"><span class="page-link">Last</span></li>
         @endif
     </ul>
+  </nav>
 @endif
