@@ -63,6 +63,9 @@ Route::get('/posts', 'PostsController@index');
 // Get a single Post
 Route::get('/posts/{post}', 'PostsController@show');
 
+// About page
+Route::get('/about', 'AboutController@show')->name('about');
+
 
 // ------------------------------------------------------------
 // Manage
