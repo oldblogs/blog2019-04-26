@@ -28,10 +28,48 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
   
   return [
     'user_id' => function () {
-      return factory(App\User::class)->create()->id;
+      return App\User::first()->id;
     },
     'title' => $faker->sentence,
     'body' => $faker->paragraph
+  ];
+});
+
+$factory->define(App\About::class, function (Faker\Generator $faker) {
+  
+  return [
+    'name' => $faker->name,
+    'jobtitle' => $faker->name,
+    'body' => $faker->paragraph,
+    'photo' => asset('img/profile.png')
+  ];
+});
+
+$factory->define(App\Contact::class, function (Faker\Generator $faker) {
+  
+  $cttype = $faker->randomElement($array = array ('email', 'telephone', 'address', 'social'));
+  
+  $ctvalue = null;
+  
+  switch ($cttype) {
+    case 'email':
+      $ctvalue = $faker->safeEmail;
+      break;
+    case 'telephone':
+      $ctvalue = $faker->phoneNumber;
+      break;
+    case 'address':
+      $ctvalue = $faker->address;
+      break;
+    case 'social':
+      $ctvalue = $faker->domainName.'/'.$faker->domainWord;
+      break;
+  }
+  
+  return [
+    'cttype' => $cttype,
+    'cttype2' => $faker->word,
+    'value' => $ctvalue
   ];
 });
 
