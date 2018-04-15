@@ -113,7 +113,7 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'laracasts',
+        'theme' => 'default',
 
         'paths' => [
             resource_path('views/vendor/mail'),

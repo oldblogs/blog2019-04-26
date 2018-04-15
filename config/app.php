@@ -56,39 +56,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Route name for App Management
-    |--------------------------------------------------------------------------
-    |
-    | You can change default route /manage with this setting
-    |
-    */
-    
-    'management' => env('APP_MANAGEMENT', 'manage'),
-    
-    /*
-    |--------------------------------------------------------------------------
-    | Limit of posts listed in a page
-    |--------------------------------------------------------------------------
-    |
-    | You can change maximum post listing limit for a page with this setting.
-    |
-    */
-    
-    'posts_per_page' => env('APP_POSTS_PER_PAGE', 10),
-    
-    /*
-    |--------------------------------------------------------------------------
-    | Maximum Page Link Buttons
-    |--------------------------------------------------------------------------
-    |
-    | Maximum amount of page links buttons a pagination will use.
-    |
-    */
-    
-    'posts_pagination_max_page_link_buttons' => env('APP_POSTS_PAG_MPLB', 5),
-    
-    /*
-    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
@@ -140,7 +107,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-    
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
