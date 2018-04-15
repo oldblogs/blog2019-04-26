@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -14,10 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('frontview.partial.sidebar', function ($view) {
-            $archives = \App\Post::archives();
-            $view->with( compact('archives') );
-        });
+        //
     }
 
     /**
