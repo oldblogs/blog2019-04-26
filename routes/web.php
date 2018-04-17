@@ -11,6 +11,8 @@
 |
 */
 
+use App\Post;
+
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
@@ -22,3 +24,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::put('/post/{post}', function (Post $post) {
+    $this->authorize('update', $post);
+    // The current user may update the post...
+    
+});
