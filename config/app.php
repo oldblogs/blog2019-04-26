@@ -110,6 +110,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Limit of posts listed in a page
+    |--------------------------------------------------------------------------
+    |
+    | You can change maximum post listing limit for a page with this setting.
+    |
+    */
+    
+    'default_user_role' => env('APP_DEFAULT_USER_ROLE', 'member'),
+    
+    /*
+    |--------------------------------------------------------------------------
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
@@ -150,7 +161,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Spatie\Permission\PermissionServiceProvider::class,
+         
         /*
          * Application Service Providers...
          */
