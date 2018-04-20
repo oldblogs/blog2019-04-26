@@ -5,18 +5,17 @@ namespace App\Console\Commands;
 use App\User;
 use Illuminate\Console\Command;
 use Spatie\Permission\Models\Role;
-// use Spatie\Permission\Contracts\Role as RoleContract;
 
 class AssignRole extends Command
 {
     /**
      * The name and signature of the console command.
      *
-     * TODO: Implement default guard, remove magic 'web'
+     * TODO: Remove magic value : web
      * @var string
      */
     protected $signature = 'permission:assign-role 
-        {role : The name of the role }
+        {role : The name of the role } 
         {email : The email of the user } 
         {guard=web : The name of the guard}';
 
