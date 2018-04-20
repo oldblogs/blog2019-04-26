@@ -12,10 +12,11 @@
                     <button type="button" class="btn btn-link"><a href="https://laravel-news.com">News</a></button>
                     <button type="button" class="btn btn-link"><a href="https://forge.laravel.com">Forge</a></button>
                     <button type="button" class="btn btn-link"><a href="https://github.com/laravel/laravel">GitHub</a></button>
+                    Hey: {{ config('app.default_user_role') }}
                 </div>
             </div>
         </div>
-
+        
         <example-component></example-component>
         <vue-test></vue-test>
 
