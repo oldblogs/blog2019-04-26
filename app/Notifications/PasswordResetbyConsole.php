@@ -40,9 +40,13 @@ class PasswordResetbyConsole extends Notification
      */
     public function toMail($notifiable)
     {
+        $from_mail = config('mail.from.address', 'info@example.com');
+        $from_name = config('mail.from.name', 'blog');
+        
         return (new MailMessage)
+                    ->from($from_mail, $from_name)
                     ->subject('Password Changed')
-                    ->greeting('Hello!')
+                    ->greeting('Hi , '.$notifiable->name.' ! ')
                     ->line('Your password is reset by system administrator via console.')
                     ->line('For your info !');
     }
