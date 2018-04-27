@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{-- TODO: Delete this file --}}
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -71,5 +72,7 @@
             @yield('content')
         </main>
     </div>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
