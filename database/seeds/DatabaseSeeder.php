@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -14,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        factory(App\User::class, 1)->create();
+        factory(App\Post::class, 100)->create();
+        factory(App\About::class, 1)->create();
+        factory(App\Contact::class, 10)->create();
+        
         $this->call([
             RolesAndPermissionsSeeder::class,
         ]);
@@ -23,7 +29,8 @@ class DatabaseSeeder extends Seeder
 class RolesAndPermissionsSeeder extends Seeder
 {
     /**
-     * Seed the application's database. Clear spatie permission cache. Create permissions, roles.
+     * Seed the application's database. Clear spatie permission cache. 
+     * Create permissions, roles.
      *
      * @return void
      */
@@ -43,6 +50,7 @@ class RolesAndPermissionsSeeder extends Seeder
         Role::findOrCreate('member');
         
         $admin_role = Role::findOrCreate('admin');
+        $admin_role->revokePermissionTo(Permission::all());
         $admin_role->givePermissionTo(Permission::all());
     }
 }
