@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\User;
 use App\Repositories\PostsRepository;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
@@ -15,14 +16,8 @@ class ManageController extends Controller
         $this->middleware('auth');
     }
     
-    public function index() {
-        return view('manage.page.index');
-    }
-    
     public function postslist(PostsRepository $postsrepo){
-        
         $posts = $postsrepo->paginated();
-        
         return view('manage.page.posts.index', compact('posts') );
     }
 

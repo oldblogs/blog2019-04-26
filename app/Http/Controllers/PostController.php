@@ -8,16 +8,11 @@ use App\Repositories\PostsRepository;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
 use App\Http\Requests\PostForm;
-use App\Http\Requests\PostDeleteForm;
+use App\Http\Requests\DeleteForm;
 
 
 class PostController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth')->except(['index', 'show',]);
-    }
-    
     public function create()
     {
         return view('manage.page.posts.create');
@@ -27,7 +22,7 @@ class PostController extends Controller
     {
         $form->persist();
         
-        return redirect()->route('managepostslist');
+        return redirect()->route('manage_posts_list');
     }
 
     public function index(PostsRepository $postsrepo)
@@ -47,18 +42,26 @@ class PostController extends Controller
         return view('manage.page.posts.edit', compact('post'));
     }
     
+
     public function update(PostForm $form,Post $post)
     {
         $form->update($post);
-        
-        return redirect()->route('managepostslist');
-    }
-    
-    public function delete(Post $post)
-    {
-        auth()->user()->deletePost($post);
 
-        return redirect()->route('managepostslist');
+        return redirect()->route('manage_posts_list');
+    }
+
+    public function delete(DeleteForm $form, Post $post)
+    {
+        // Form request object implemetation problem
+        // TODO: Validation ( Proper implementation of a 
+        // Form Request object for delete method with validation )
+        // Cause of the problem may be multiple forms in one page
+        
+        $form->delete($post);
+        
+        // auth()->user()->deletePost( $post );
+
+        return redirect()->route('manage_posts_list');
     }
 }
 

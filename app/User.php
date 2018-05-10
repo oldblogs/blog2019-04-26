@@ -3,9 +3,10 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use Spatie\Permission\Traits\HasRoles;
+
 
 class User extends Authenticatable
 {
@@ -29,7 +30,6 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
-    
     public function posts(){
         return $this->hasMany(Post::class);
     }
@@ -37,6 +37,11 @@ class User extends Authenticatable
     public function publish(Post $post)
     {
         $this->posts()->save($post);
+    }
+    
+    public function update_post(Post $post)
+    {
+        $post->save();
     }
     
     public function deletePost(Post $post)

@@ -6,19 +6,19 @@ use App\User;
 use Illuminate\Console\Command;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Foundation\Auth\ResetsPasswords;
-use App\Notifications\PasswordResetbyConsole;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
-class ResetPassword extends Command
+class ResetPasswordByMail extends Command
 {
-    use ResetsPasswords;
+    use SendsPasswordResetEmails;
     
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'user:reset-password
+    protected $signature = 'user:reset-password-by-mail
         {email : The email of the user } ';
 
     /**
@@ -26,7 +26,7 @@ class ResetPassword extends Command
      *
      * @var string
      */
-    protected $description = 'Resets a user\'s password.';
+    protected $description = 'Sends a reset password e-mail to the user.';
 
     /**
      * Create a new command instance.
@@ -41,7 +41,7 @@ class ResetPassword extends Command
     /**
      * Execute the console command.
      *
-     * @return void
+     * @return mixed
      */
     public function handle()
     {
@@ -56,23 +56,11 @@ class ResetPassword extends Command
             }
             else{
                 
-                do{
-                    $password = $this->secret('Enter a password ');
-                    $password_confirmation = $this->secret('Enter the password again ');
-                    $check = ($password!==$password_confirmation);
-                    if($check){
-                        $this->info('Entries does not match. Please enter again.');
-                    }
-                }
-                while($check);
-
-                $this->resetPassword($user, $password);
-                
-                $user->notify(new PasswordResetbyConsole());
-                                
-                // Notify User by console
-                $this->info('Email : '.$email);
-                $this->info("User password resetted.");
+                $response = $this->broker()->sendResetLink( [ 'email' => $user->email] );
+        
+                ($response == Password::RESET_LINK_SENT) 
+                    ? $this->info("An e-mail with a password reset link is sent to the user.")
+                    : $this->error("Error : Email can not be sent.");
                 exit();
             }
         }
@@ -80,5 +68,15 @@ class ResetPassword extends Command
             $this->error('Error : '.$e->message() );
             exit();
         }
+    }
+    
+    /**
+     * Get the broker to be used during password reset.
+     *
+     * @return \Illuminate\Contracts\Auth\PasswordBroker
+     */
+    public function broker()
+    {
+        return Password::broker();
     }
 }

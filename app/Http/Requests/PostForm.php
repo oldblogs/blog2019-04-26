@@ -19,14 +19,8 @@ class PostForm extends FormRequest
      */
     public function authorize()
     {
-        if (Auth::check()) {
-            // The user is logged in...
-            // TODO: User Authorization 
-            return true;
-        }
-        else{
-            return false;
-        }
+        // Authorization is done at routing stage
+        return true;
     }
 
     /**
@@ -37,7 +31,6 @@ class PostForm extends FormRequest
     public function rules()
     {
         // TODO: User input validation
-
         return [
             'title' => 'required|min:2|max:250',
             'body' => 'required|min:2|max:10000',
@@ -75,7 +68,6 @@ class PostForm extends FormRequest
                 'message', 'Your post has now been saved.'
             );
         }
-        
     }
     
     /**
@@ -85,20 +77,22 @@ class PostForm extends FormRequest
     */
     public function update(Post $post){
 
-        $published = request(['published']);
-        
+        $post->title = request('title');
+        $post->body = request('body');
+        $published = request('published');
+
         if ( isset($published) && $published ){
             $post->published = 1;
         }
         else{
             $post->published = 0;
         }
-        
-        auth()->user()->publish( $post );
-        
+
+        auth()->user()->update_post( $post );
+
         session()->flash(
             'message', 'Your post has now been updated'
         );
     }
-
+    
 }

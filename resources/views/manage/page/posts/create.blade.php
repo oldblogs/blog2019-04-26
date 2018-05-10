@@ -7,7 +7,7 @@
 @section ('content')
     <h1>Publish a post</h1>
 
-    <form method="POST" action="{{ route('savenewpost') }}">
+    <form method="POST" action="{{ route('save_new_post') }}">
       @csrf
 
       <div class="form-check">

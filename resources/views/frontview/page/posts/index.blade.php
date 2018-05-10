@@ -1,7 +1,7 @@
 @extends ('frontview.base.master')
 
 @section ('title')
-  DevsBlog
+  {{ config('app.name', 'Blog') }}
 @endsection
 
 @section ('header')
@@ -22,4 +22,6 @@
 
   {{ $posts->links() }}
   
+  <example-component></example-component>
+  <vue-test></vue-test>
 @endsection
