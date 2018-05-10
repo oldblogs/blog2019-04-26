@@ -7,7 +7,7 @@
 @section ('content')
     <h1>Edit a post</h1>
 
-    <form method="POST" action="{{ route('updatepost', $post) }}">
+    <form method="POST" action="{{ route('update_post', $post) }}">
       @method('PATCH')
       @csrf
 

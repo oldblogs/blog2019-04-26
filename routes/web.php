@@ -57,7 +57,7 @@ Auth::routes();
 // ------------------------------------------------------------
 
 // Main page
-Route::get('/', 'PostController@index')->name('home');
+Route::get('/', 'PostController@index')->name('mainpage');
 
 // List Posts
 Route::get('/posts', 'PostController@index');
@@ -68,6 +68,12 @@ Route::get('/posts/{post}', 'PostController@show');
 // About page
 Route::get('/about', 'AboutController@show')->name('about');
 
+// ------------------------------------------------------------
+// User Home Page Web
+// ------------------------------------------------------------
+
+Route::middleware('auth:web')->get('/home', 'HomeController@index')->name('home');
+
 
 // ------------------------------------------------------------
 // Manage
@@ -76,29 +82,27 @@ Route::get('/about', 'AboutController@show')->name('about');
 $manage_route = '/'.config('app.management', 'manage');
 
 // Blog Management Page
-Route::get($manage_route, 'ManageController@index')->name('manage');
+// Route::get($manage_route, 'DashboardController@index')->name('dashboard')->middleware('can:view,App\Dashboard');
+Route::middleware('auth:web')->get($manage_route, 'DashboardController@index')->name('dashboard')->middleware('can:view,App\Dashboard');
 
 // Get New Post Form
-Route::get($manage_route.'/posts/create', 'PostController@create')->name('getpostform');
+Route::middleware('auth:web')->get($manage_route.'/posts/create', 'PostController@create')->name('get_post_create_form')->middleware('can:create,App\Post');
 
 // Create a new post with given form data
-Route::post($manage_route.'/posts', 'PostController@store')->name('savenewpost');
+Route::middleware('auth:web')->post($manage_route.'/posts', 'PostController@store')->name('save_new_post')->middleware('can:create,App\Post');
 
 // Get Posts list in manage view
-Route::get($manage_route.'/posts', 'ManageController@postslist')->name('managepostslist');
+Route::middleware('auth:web')->get($manage_route.'/posts', 'ManageController@postslist')->name('manage_posts_list')->middleware('can:browse,App\Post'); 
 
 // View post in manage view
-Route::get($manage_route.'/posts/{post}', 'ManageController@viewpost')->name('manageviewpost');
+Route::middleware('auth:web')->get($manage_route.'/posts/{post}', 'ManageController@viewpost')->name('manage_view_post')->middleware('can:view,post');
 
 // Get Post Edit Form for selected post
-Route::get($manage_route.'/posts/{post}/edit', 'PostController@edit')->name('getposteditform');
+Route::middleware('auth:web')->get($manage_route.'/posts/{post}/edit', 'PostController@edit')->name('get_post_edit_form')->middleware('can:update,post');
 
 // Update post
-Route::patch($manage_route.'/posts/{post}', 'PostController@update')->name('updatepost');
+Route::middleware('auth:web')->patch($manage_route.'/posts/{post}', 'PostController@update')->name('update_post')->middleware('can:update,post');
 
 // Delete post
-Route::delete($manage_route.'/posts/{post}', 'PostController@delete')->name('deletepost');
-
-
-
+Route::middleware('auth:web')->delete($manage_route.'/posts/{post}', 'PostController@delete')->name('delete_post')->middleware('can:delete,post');
 

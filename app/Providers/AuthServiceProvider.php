@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 use App\Post;
+use App\Dashboard;
 use App\Policies\PostPolicy;
+use App\Policies\DashboardPolicy;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -17,24 +19,22 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
         // 'App\Model' => 'App\Policies\ModelPolicy',
         Post::class => PostPolicy::class,
+        Dashboard::class => DashboardPolicy::class,
     ];
 
     /**
-     * Register any authentication / authorization services.
+     * Register authentication / authorization services.
      *
      * @return void
      */
     public function boot()
     {
         $this->registerPolicies();
-
+        
         Passport::routes();
         
         // Passport::tokensExpireIn(now()->addDays(15));
 
         // Passport::refreshTokensExpireIn(now()->addDays(30));
-        
-        Gate::define('update-post', 'PostPolicy@update');
-        
     }
 }

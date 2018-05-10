@@ -40,15 +40,26 @@ class RolesAndPermissionsSeeder extends Seeder
         app()['cache']->forget('spatie.permission.cache');
 
         // create permissions
+        Permission::findOrCreate('view dashboard');
+        Permission::findOrCreate('browse post');
+        Permission::findOrCreate('view post');
         Permission::findOrCreate('create post');
-        Permission::findOrCreate('edit post');
+        Permission::findOrCreate('update post');
         Permission::findOrCreate('delete post');
         Permission::findOrCreate('publish post');
         Permission::findOrCreate('unpublish post');
+        Permission::findOrCreate('view dashboard');
+        Permission::findOrCreate('view component');
+        Permission::findOrCreate('create component');
+        Permission::findOrCreate('update component');
+        Permission::findOrCreate('delete component');
         
         // create roles and assign created permissions
+
+        // member role does not have any permission
         Role::findOrCreate('member');
         
+        // admin role has all the permissions
         $admin_role = Role::findOrCreate('admin');
         $admin_role->revokePermissionTo(Permission::all());
         $admin_role->givePermissionTo(Permission::all());
