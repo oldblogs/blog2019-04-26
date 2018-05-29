@@ -10,7 +10,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>@yield('title')</title>
 
@@ -27,7 +27,7 @@
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           @include ('manage.partial.navman')
         </nav>
-        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+        <main role="main" id="app" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
           @if ($flash = session('message'))
             <div id="flash-message" class="alert alert-success" role="alert">
               {{ $flash }}

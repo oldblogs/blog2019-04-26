@@ -5,7 +5,7 @@ use App\Post;
 use App\Dashboard;
 use App\Policies\PostPolicy;
 use App\Policies\DashboardPolicy;
-use Laravel\Passport\Passport;
+// use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -31,7 +31,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
         
-        Passport::routes();
+        // Passport::routes();
         
         // Passport::tokensExpireIn(now()->addDays(15));
 

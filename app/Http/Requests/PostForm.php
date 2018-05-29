@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use App\Rules\Checkbox;
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Support\Facades\Auth;
 
 class PostForm extends FormRequest
 {
@@ -56,7 +56,7 @@ class PostForm extends FormRequest
             $post->published = 0;
         }
         
-        auth()->user()->publish($post);
+        Auth::user()->publish($post);
         
         if ( $post->published ){
             session()->flash(
@@ -88,7 +88,7 @@ class PostForm extends FormRequest
             $post->published = 0;
         }
 
-        auth()->user()->update_post( $post );
+        Auth::user()->update_post( $post );
 
         session()->flash(
             'message', 'Your post has now been updated'

@@ -23,5 +23,5 @@
   {{ $posts->links() }}
   
   <example-component></example-component>
-  <vue-test></vue-test>
+
 @endsection

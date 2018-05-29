@@ -13,17 +13,17 @@
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
-    
+
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
-        'remember_token' => str_random(10),
+        'enabled' => false,
     ];
 });
 
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
-  
+
     return [
         'user_id' => function () {
         return App\User::first()->id;
@@ -33,7 +33,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'published' => 1
     ];
 });
-  
+
 $factory->define(App\About::class, function (Faker\Generator $faker) {
 
     return [
@@ -43,7 +43,7 @@ $factory->define(App\About::class, function (Faker\Generator $faker) {
         'photo' => asset('img/profile.png')
     ];
 });
-  
+
 $factory->define(App\Contact::class, function (Faker\Generator $faker) {
 
     $cttype = $faker->randomElement($array = array (
@@ -55,15 +55,15 @@ $factory->define(App\Contact::class, function (Faker\Generator $faker) {
         case 'email':
             $ctvalue = $faker->safeEmail;
             break;
-        
+
         case 'telephone':
             $ctvalue = $faker->phoneNumber;
             break;
-            
+
         case 'address':
             $ctvalue = $faker->address;
             break;
-            
+
         case 'social':
             $ctvalue = $faker->domainName.'/'.$faker->domainWord;
             break;
@@ -75,5 +75,3 @@ $factory->define(App\Contact::class, function (Faker\Generator $faker) {
         'value' => $ctvalue
     ];
 });
-  
-  
