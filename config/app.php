@@ -105,6 +105,26 @@ return [
     
     /*
     |--------------------------------------------------------------------------
+    | Form based Login Form
+    |--------------------------------------------------------------------------
+    */
+    
+    'form_login' => env('APP_FORM_LOGIN', 'true'),
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Default Authentication Method
+    |
+    | form_login : Default form based login installed by Laravel Auth
+    | google     : Google Sign in
+    | github     : Github Sign in
+    |--------------------------------------------------------------------------
+    */
+    
+    'default_auth' => env('APP_DEFAULT_AUTH', 'form_login'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
@@ -217,10 +237,10 @@ return [
     |--------------------------------------------------------------------------
     | Class Aliases
     |--------------------------------------------------------------------------
-    |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
+    |register
+    | This array of class aregisterliases will be registered when this application
+    | is started. However, registerfeel free to register as many as you wish as
+    | the aliases are "lazyregister" loaded so they don't hinder performance.
     |
     */
 

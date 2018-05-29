@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\DB;
 
 class Socialid extends Model
 {
-  // TODO: User can revoke permissions
-  // TODO: remove revoked accounts
+  // TODO: User can revoke permissions.
+  // TODO: remove revoked accounts . 
   
     /**
      * The attributes that should be hidden for arrays.

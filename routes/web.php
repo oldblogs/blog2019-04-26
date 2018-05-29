@@ -1,8 +1,21 @@
 <?php
 
 // Authentication Routes...
-Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('login', 'Auth\LoginController@login');
+if ( config('app.form_login') ) {
+  Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+  Route::post('login', 'Auth\LoginController@login');
+} else {
+  if( 'form_login' === config('app.default_auth') ){
+    // When we disable form_login , we must also change the default_auth in .env
+    abort(500, 'Error: Misconfiguration.');
+  } else {
+    // default_auth is made uppercase andsoute is formed
+    $routetg = 'Auth\\'                . ucfirst( config('app.default_auth') ) . 
+               'Controller@redirectTo' . ucfirst( config('app.default_auth') );
+    Route::get('login', $routetg)->name('login');
+  }
+}
+
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 // Password Reset Routes...
