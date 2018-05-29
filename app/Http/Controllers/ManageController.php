@@ -24,4 +24,8 @@ class ManageController extends Controller
     public function viewpost(Post $post){
         return view('manage.page.posts.show', compact('post') );
     }
+    
+    public function test(User $user){
+        return view('manage.page.test', compact('user') );
+    }
 }

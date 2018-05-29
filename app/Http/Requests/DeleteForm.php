@@ -42,7 +42,7 @@ class DeleteForm extends FormRequest
     */
     public function delete(Post $post)
     {
-        auth()->user()->deletePost( $post );
+        Auth::user()->deletePost( $post );
         session()->flash( 'message', 'Post has been deleted.' );
     }
     

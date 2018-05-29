@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
 use App\Http\Requests\PostForm;
 use App\Http\Requests\DeleteForm;
+use Illuminate\Support\Facades\Auth;
 
 
 class PostController extends Controller
@@ -57,9 +58,10 @@ class PostController extends Controller
         // Form Request object for delete method with validation )
         // Cause of the problem may be multiple forms in one page
         
+        // TODO: Check for proper execution path
         $form->delete($post);
         
-        // auth()->user()->deletePost( $post );
+        // Auth::user()->deletePost( $post );
 
         return redirect()->route('manage_posts_list');
     }

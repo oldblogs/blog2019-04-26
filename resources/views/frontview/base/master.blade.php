@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>@yield('title')</title>
 
@@ -18,16 +18,18 @@
   <body>
     <div class="container">
       @include ('frontview.partial.nav')
+
+      @if ($flash = session('message'))
+      <div id="flash-message" class="alert alert-default" role="alert">
+        {{ $flash }}
+      </div>
+      @endif
+
       @yield ('header')
     </div>
 
-    <main role="main" class="container">
+    <main role="main" id="app" class="container">
       <div class="row">
-        @if ($flash = session('message'))
-        <div id="flash-message" class="alert alert-default" role="alert">
-          {{ $flash }}
-        </div>
-        @endif
         
         <div id="app" class="col-md blog-main">
           @yield('content')
