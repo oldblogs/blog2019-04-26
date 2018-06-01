@@ -27,6 +27,15 @@
                 </li>
               @endcan
 
+              @can('browse','App\About')
+                <li class="nav-item">
+                  <a class="nav-link {{ Request::is('manage/abouts')?'active':'' }}" href="{{ action('AboutController@index_m') }}">
+                    <span data-feather="user"></span>
+                    Abouts
+                  </a>
+                </li>
+              @endcan
+
               {{--
                 <li class="nav-item">
                   <a class="nav-link" href="#">

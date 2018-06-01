@@ -78,7 +78,6 @@ if( null !== config('services.github.client_id')  ) {
     'Auth\GithubController@handleGithubCallback');
 }
 
-
 // User Home Page Web
 Route::middleware('auth:web')->get('/home',
   'HomeController@index')->name('home');
@@ -87,6 +86,10 @@ Route::middleware('auth:web')->get('/home',
 Route::middleware('auth:web')->get($manage_route, 'DashboardController@index')
   ->name('dashboard')->middleware('can:view,App\Dashboard');
 
+// ------------------------------------------------------------
+// Posts
+// ------------------------------------------------------------
+  
 // TODO: Modify implementation as in 
 // https://laravel.com/docs/5.6/controllers
 // Actions Handled By Resource Controller
@@ -105,7 +108,9 @@ Route::middleware('auth:web')->post($manage_route.'/posts',
 Route::middleware('auth:web')->get($manage_route.'/posts',
   'ManageController@postslist')->name('manage_posts_list')
   ->middleware('can:browse,App\Post');
-
+// TODO: Check the route above
+  
+  
 // View post in manage view
 Route::middleware('auth:web')->get($manage_route.'/posts/{post}',
   'ManageController@viewpost')->name('manage_view_post')
@@ -124,6 +129,42 @@ Route::middleware('auth:web')->patch($manage_route.'/posts/{post}',
 Route::middleware('auth:web')->delete($manage_route.'/posts/{post}',
   'PostController@delete')->name('delete_post')->middleware('can:delete,post');
 
+// ------------------------------------------------------------
+// Abouts
+// ------------------------------------------------------------
+  
+// Get Abouts list in manage view
+Route::middleware('auth:web')->get($manage_route.'/abouts',
+  'AboutController@index_m')->name('abouts.index.m')->middleware('can:browse,App\About');
+
+// Get New About Form
+Route::middleware('auth:web')->get($manage_route.'/abouts/create',
+  'AboutController@create')->name('abouts.create')->middleware('can:create,App\About');
+  
+// Create a new about record with given form data
+Route::middleware('auth:web')->post($manage_route.'/abouts',
+  'AboutController@store')->name('abouts.store')->middleware('can:store,App\About');
+  
+// Show an about record in the manage view
+Route::middleware('auth:web')->get($manage_route.'/abouts/{about}',
+  'AboutController@show')->name('abouts.show')->middleware('can:show,about'); 
+  
+// Edit an about record
+Route::middleware('auth:web')->get($manage_route.'/abouts/{about}/edit',
+  'AboutController@edit')->name('abouts.edit')->middleware('can:edit,about'); 
+
+// Update an about record
+Route::middleware('auth:web')->patch($manage_route.'/abouts/{about}',
+  'AboutController@update')->name('abouts.update')->middleware('can:update,about');
+
+// Delete an about record
+Route::middleware('auth:web')->delete($manage_route.'/abouts/{about}',
+  'AboutController@delete')->name('abouts.delete')->middleware('can:delete,about');
+  
+
+// ------------------------------------------------------------
+// Tests - Playground
+// ------------------------------------------------------------
 // Test page
-Route::middleware('auth:web')->get($manage_route.'/test',
-  'ManageController@test');
+// Route::middleware('auth:web')->get($manage_route.'/test',
+//   'ManageController@test');

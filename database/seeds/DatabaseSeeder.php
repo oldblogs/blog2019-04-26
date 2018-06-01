@@ -15,9 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 1)->create();
         factory(App\Post::class, 100)->create();
-        factory(App\About::class, 1)->create();
+        factory(App\About::class, 5)->create();
         factory(App\Contact::class, 10)->create();
 
         $this->call([
@@ -39,11 +38,23 @@ class SocialprovidersSeeder extends Seeder
      */
     public function run()
     {
-      $pGoogle = new Socialprovider();
-      $pGoogle->provider = "google";
-      $pGoogle->iss_str1 = "accounts.google.com";
-      $pGoogle->iss_str2 = "https://accounts.google.com";
-      $pGoogle->save();
+      // Supported providers by Laravel Socialite
+      // but these might not be configured in config files
+      // TODO: fill in absent review links
+      
+      $sProviders = [ 
+        [ 'provider' => 'github', 'review' => 'https://github.com/settings/connections/applications' ],
+        [ 'provider' => 'bitbucket', 'review' => '' ],
+        [ 'provider' => 'google', 'review' => 'https://myaccount.google.com/permissions' ],
+        [ 'provider' => 'twitter', 'review' => '' ],
+        [ 'provider' => 'linkedin', 'review' => '' ],
+        [ 'provider' => 'facebook', 'review' => '' ],
+      ];
+
+      foreach ( $sProviders as $sProvider ){
+        $xProvider = Socialprovider::firstOrCreate($sProvider );
+      }
+      
     }
 }
 
@@ -62,29 +73,43 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // create permissions
         Permission::findOrCreate('view dashboard');
+        Permission::findOrCreate('view component');
+        Permission::findOrCreate('create component');
+        Permission::findOrCreate('store component');
+        Permission::findOrCreate('edit component');
+        Permission::findOrCreate('update component');
+        Permission::findOrCreate('delete component');
+        
+        // Posts
+        // TODO: Update Post permissions for routes, controllers 
         Permission::findOrCreate('browse post');
-        Permission::findOrCreate('view post');
         Permission::findOrCreate('create post');
+        Permission::findOrCreate('store post');
+        Permission::findOrCreate('view post');
+        Permission::findOrCreate('edit post');
         Permission::findOrCreate('update post');
         Permission::findOrCreate('delete post');
         Permission::findOrCreate('publish post');
         Permission::findOrCreate('unpublish post');
-        Permission::findOrCreate('view dashboard');
-        Permission::findOrCreate('view component');
-        Permission::findOrCreate('create component');
-        Permission::findOrCreate('update component');
-        Permission::findOrCreate('delete component');
+        
+        // Abouts
+        Permission::findOrCreate('browse about');
+        Permission::findOrCreate('create about');
+        Permission::findOrCreate('store about');
+        Permission::findOrCreate('show about');
+        Permission::findOrCreate('edit about');
+        Permission::findOrCreate('update about');
+        Permission::findOrCreate('delete about');
+        
+        // Create roles and assign created permissions
 
-        // create roles and assign created permissions
-
-        // member role does not have any permission
+        // Member role does not have any permission
         Role::findOrCreate('member');
 
         // admin role has all the permissions
         $admin_role = Role::findOrCreate('admin');
         $admin_role->revokePermissionTo(Permission::all());
         $admin_role->givePermissionTo(Permission::all());
-
 
     }
 }

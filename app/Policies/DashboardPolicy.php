@@ -19,12 +19,7 @@ class DashboardPolicy
      */
     public function view(User $user)
     {
-        if($user->hasPermissionTo('view dashboard')){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return ( $user->can('view dashboard') ) ? true : false;
     }
 
     // /**

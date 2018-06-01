@@ -29,7 +29,7 @@ class PostPolicy
         }
         else{
             // Must be an admin in this case
-            return ( $user->hasPermissionTo('view post') ) ? true : false;
+            return ( $user->can('view post') ) ? true : false;
         }
     }
 
@@ -56,7 +56,7 @@ class PostPolicy
         if($user->id === $post->user_id){
             return true;
         }
-        elseif($user->hasPermissionTo('update post')){
+        elseif($user->can('update post')){
             return true;
         }
         else{
@@ -76,7 +76,7 @@ class PostPolicy
         if($user->id === $post->user_id){
             return true;
         }
-        elseif($user->hasPermissionTo('delete post')){
+        elseif($user->can('delete post')){
             return true;
         }
         else{
@@ -92,7 +92,7 @@ class PostPolicy
      */
     public function browse(User $user)
     {
-        if( $user->hasPermissionTo('browse post') ){
+        if( $user->can('browse post') ){
             return true;
         }
         else{

@@ -8,7 +8,6 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use App\Rules\Checkbox;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Auth;
 
 class PostForm extends FormRequest
 {
@@ -74,7 +73,7 @@ class PostForm extends FormRequest
      * Update the post.
      * 
      * @return void
-    */
+     */
     public function update(Post $post){
 
         $post->title = request('title');

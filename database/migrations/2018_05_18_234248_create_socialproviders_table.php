@@ -17,6 +17,7 @@ class CreateSocialprovidersTable extends Migration
             $table->increments('id');
             $table->string('provider')->unique();   // ex: google
             $table->string('review')->nullable()->default(null); // ex: https://github.com/settings/connections/applications/...
+            $table->boolean('enabled')->nullable()->default(false);
             $table->timestamps();
         });
     }
