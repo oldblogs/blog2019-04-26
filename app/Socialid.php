@@ -82,9 +82,8 @@ class Socialid extends Model
       // 9 . Provider must be defined in socialproviders table
       // If all above is done then we can use the social logins
       
-      // Check if Clientid exists for this social login provider
       $availableSP = 
-        Socialprovider::all()->whereNotIn('id', $usedSocialLoginsArr)->values()->toArray();
+        Socialprovider::where('enabled',true)->whereNotIn('id', $usedSocialLoginsArr)->get()->values()->toArray();
 
       // TODO: Document string conventions related to social logins
 
@@ -100,7 +99,7 @@ class Socialid extends Model
               $availableSP[$i]['auth_endpoint'] = route($provider . '_auth_endpoint');
           }
           else {
-            // Provider set in socialproviders table but configuration files are no ready
+            // Provider set in socialproviders table but configuration files are not ready
             // TODO: Raise error - Misconfiguration
             // TODO: Log the error
             abort(500, 'Server error.');
