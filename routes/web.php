@@ -110,7 +110,6 @@ Route::middleware('auth:web')->get($manage_route.'/posts',
   ->middleware('can:browse,App\Post');
 // TODO: Check the route above
   
-  
 // View post in manage view
 Route::middleware('auth:web')->get($manage_route.'/posts/{post}',
   'ManageController@viewpost')->name('manage_view_post')
