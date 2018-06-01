@@ -52,7 +52,7 @@ class AboutPolicy
      */
     public function show(User $user, About $about)
     {
-        return ( $user->hasPermissionTo('show about') ) ? true : false;
+        return ( $user->can('show about') ) ? true : false;
     }
 
     /**
@@ -64,7 +64,7 @@ class AboutPolicy
      */
     public function edit(User $user, About $about)
     {
-        return ( $user->hasPermissionTo('edit about') ) ? true : false;
+        return ( $user->can('edit about') ) ? true : false;
     }
     
     /**
@@ -76,7 +76,7 @@ class AboutPolicy
      */
     public function update(User $user, About $about)
     {
-        return ( $user->hasPermissionTo('update about') ) ? true : false;
+        return ( $user->can('update about') ) ? true : false;
     }
 
     /**
