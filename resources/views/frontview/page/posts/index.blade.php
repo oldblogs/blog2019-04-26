@@ -22,6 +22,5 @@
 
   {{ $posts->links() }}
   
-  <example-component></example-component>
 
 @endsection

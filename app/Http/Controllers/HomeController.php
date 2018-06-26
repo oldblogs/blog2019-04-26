@@ -15,6 +15,8 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
+        // TODO: 
+        // BUG: Social links do not show after migrate refresh
         $bloguser = $request->user()
                         ->where( 'id',Auth::id() )
                         ->with( 'socialids.socialprovider' )->first() ;

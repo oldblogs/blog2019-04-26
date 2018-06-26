@@ -59,13 +59,5 @@
     </div>
     @endif
     
-    <div class="card card-default">
-      <div class="card-body">
-        <h5 class="card-title">Vue Test</h5>
-        <p id="app">
-          <vue-test></vue-test>
-        </p>
-      </div>
-    </div>
   @endif    
 @endsection

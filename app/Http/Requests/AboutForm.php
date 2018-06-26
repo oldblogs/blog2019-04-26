@@ -78,7 +78,7 @@ class AboutForm extends FormRequest
             $about->body = request('body');
 
             if ( $about->save() ){
-                session()->flash( 'message', 'About receord updated.' );
+                session()->flash( 'message', 'About record updated.' );
             }
             else{
                 session()->flash( 'message', 'About record can not be updated.' );

@@ -2,11 +2,16 @@
 
 namespace App\Providers;
 use App\Post;
-use App\Dashboard;
-use App\About;
 use App\Policies\PostPolicy;
+use App\Dashboard;
 use App\Policies\DashboardPolicy;
+use App\About;
 use App\Policies\AboutPolicy;
+use App\Contact;
+use App\Policies\ContactPolicy;
+use App\Csocial;
+use App\Policies\CsocialPolicy;
+
 // use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -23,6 +28,7 @@ class AuthServiceProvider extends ServiceProvider
         Post::class => PostPolicy::class,
         Dashboard::class => DashboardPolicy::class,
         About::class => AboutPolicy::class,
+        Csocial::class => CsocialPolicy::class,
     ];
 
     /**

@@ -7,9 +7,10 @@ if ( config('app.form_login') ) {
 } else {
   if( 'form_login' === config('app.default_auth') ){
     // When we disable form_login , we must also change the default_auth in .env
+    // LOG
     abort(500, 'Error: Misconfiguration.');
   } else {
-    // default_auth is made uppercase andsoute is formed
+    // default_auth ' s first letter is made uppercase and route is formed
     $routetg = 'Auth\\'                . ucfirst( config('app.default_auth') ) . 
                'Controller@redirectTo' . ucfirst( config('app.default_auth') );
     Route::get('login', $routetg)->name('login');
@@ -43,7 +44,7 @@ Route::get('/about', 'AboutController@show')->name('about');
 
 
 // ------------------------------------------------------------
-// Manage
+// Manage View
 // ------------------------------------------------------------
 
 $manage_route = '/'.config('app.management', 'manage');
@@ -83,8 +84,9 @@ Route::middleware('auth:web')->get('/home',
   'HomeController@index')->name('home');
 
 // Blog Management Page
-Route::middleware('auth:web')->get($manage_route, 'DashboardController@index')
-  ->name('dashboard')->middleware('can:view,App\Dashboard');
+Route::middleware('auth:web', 'can:view,App\Dashboard')
+  ->get($manage_route, 'DashboardController@index')
+  ->name('dashboard');
 
 // ------------------------------------------------------------
 // Posts
@@ -95,75 +97,134 @@ Route::middleware('auth:web')->get($manage_route, 'DashboardController@index')
 // Actions Handled By Resource Controller
   
 // Get New Post Form
-Route::middleware('auth:web')->get($manage_route.'/posts/create',
-  'PostController@create')->name('get_post_create_form')
-  ->middleware('can:create,App\Post');
+Route::middleware('auth:web', 'can:create,App\Post')
+  ->get($manage_route.'/posts/create', 'PostController@create')
+  ->name('get_post_create_form');
 
 // Create a new post with given form data
-Route::middleware('auth:web')->post($manage_route.'/posts',
-  'PostController@store')->name('save_new_post')
-  ->middleware('can:create,App\Post');
+Route::middleware('auth:web', 'can:create,App\Post')
+  ->post($manage_route.'/posts', 'PostController@store')
+  ->name('save_new_post');
 
 // Get Posts list in manage view
-Route::middleware('auth:web')->get($manage_route.'/posts',
-  'ManageController@postslist')->name('manage_posts_list')
-  ->middleware('can:browse,App\Post');
+Route::middleware('auth:web', 'can:browse,App\Post')
+  ->get($manage_route.'/posts', 'ManageController@postslist')
+  ->name('manage_posts_list');
 // TODO: Check the route above
   
 // View post in manage view
-Route::middleware('auth:web')->get($manage_route.'/posts/{post}',
-  'ManageController@viewpost')->name('manage_view_post')
-  ->middleware('can:view,post');
+Route::middleware('auth:web', 'can:view,post')
+  ->get($manage_route.'/posts/{post}', 'ManageController@viewpost')
+  ->name('manage_view_post');
 
 // Get Post Edit Form for selected post
-Route::middleware('auth:web')->get($manage_route.'/posts/{post}/edit',
-  'PostController@edit')->name('get_post_edit_form')
-  ->middleware('can:update,post');
+Route::middleware('auth:web', 'can:update,post')
+  ->get($manage_route.'/posts/{post}/edit', 'PostController@edit')
+  ->name('get_post_edit_form');
 
 // Update post
-Route::middleware('auth:web')->patch($manage_route.'/posts/{post}',
-  'PostController@update')->name('update_post')->middleware('can:update,post');
+Route::middleware('auth:web', 'can:update,post')
+  ->patch($manage_route.'/posts/{post}', 'PostController@update')
+  ->name('update_post');
 
 // Delete post
-Route::middleware('auth:web')->delete($manage_route.'/posts/{post}',
-  'PostController@delete')->name('delete_post')->middleware('can:delete,post');
+Route::middleware('auth:web', 'can:delete,post')
+  ->delete($manage_route.'/posts/{post}', 'PostController@delete')
+  ->name('delete_post');
 
 // ------------------------------------------------------------
 // Abouts
 // ------------------------------------------------------------
   
 // Get Abouts list in manage view
-Route::middleware('auth:web')->get($manage_route.'/abouts',
-  'AboutController@index_m')->name('abouts.index.m')->middleware('can:browse,App\About');
+Route::middleware('auth:web', 'can:browse,App\About')
+  ->get($manage_route.'/abouts', 'AboutController@index_m')
+  ->name('abouts.index.m');
 
 // Get New About Form
-Route::middleware('auth:web')->get($manage_route.'/abouts/create',
-  'AboutController@create')->name('abouts.create')->middleware('can:create,App\About');
+Route::middleware('auth:web', 'can:create,App\About')
+  ->get($manage_route.'/abouts/create', 'AboutController@create')
+  ->name('abouts.create');
   
 // Create a new about record with given form data
-Route::middleware('auth:web')->post($manage_route.'/abouts',
-  'AboutController@store')->name('abouts.store')->middleware('can:store,App\About');
+Route::middleware('auth:web', 'can:store,App\About')
+  ->post($manage_route.'/abouts', 'AboutController@store')
+  ->name('abouts.store');
   
 // Show an about record in the manage view
-Route::middleware('auth:web')->get($manage_route.'/abouts/{about}',
-  'AboutController@show')->name('abouts.show')->middleware('can:show,about'); 
+Route::middleware('auth:web', 'can:show,about')
+  ->get($manage_route.'/abouts/{about}', 'AboutController@show')
+  ->name('abouts.show'); 
   
 // Edit an about record
-Route::middleware('auth:web')->get($manage_route.'/abouts/{about}/edit',
-  'AboutController@edit')->name('abouts.edit')->middleware('can:edit,about'); 
+Route::middleware('auth:web', 'can:edit,about')
+  ->get($manage_route.'/abouts/{about}/edit', 'AboutController@edit')
+  ->name('abouts.edit'); 
 
 // Update an about record
-Route::middleware('auth:web')->patch($manage_route.'/abouts/{about}',
-  'AboutController@update')->name('abouts.update')->middleware('can:update,about');
+Route::middleware('auth:web', 'can:update,about')
+  ->patch($manage_route.'/abouts/{about}',  'AboutController@update')
+  ->name('abouts.update');
 
 // Delete an about record
-Route::middleware('auth:web')->delete($manage_route.'/abouts/{about}',
-  'AboutController@delete')->name('abouts.delete')->middleware('can:delete,about');
+Route::middleware('auth:web', 'can:delete,about')
+  ->delete($manage_route.'/abouts/{about}', 'AboutController@delete')
+  ->name('abouts.delete');
   
 
+// ------------------------------------------------------------
+// Contacts
+// ------------------------------------------------------------
+  
+// Get Contacts list in manage view
+Route::middleware('auth:web', 'role:admin')
+  ->get($manage_route.'/contacts', 'ContactController@index')
+  ->name('contacts.index');
+
+  
+// ------------------------------------------------------------
+// Csocials
+// ------------------------------------------------------------
+  
+// Get Csocials list in manage view
+Route::middleware('auth:web', 'can:browse,App\Csocial')
+  ->get($manage_route.'/csocials',  'CsocialController@index')
+  ->name('csocials.index');
+
+// Get New Csocial Form
+Route::middleware('auth:web', 'can:create,App\Csocial')
+  ->get($manage_route.'/csocials/create', 'CsocialController@create')
+  ->name('csocials.create');
+
+// Create a new contact record with given form data
+Route::middleware('auth:web', 'can:store,App\Csocial')
+  ->post($manage_route.'/csocials', 'CsocialController@store')
+  ->name('csocials.store');
+
+// Show an contact record in the manage view
+Route::middleware('auth:web', 'can:show,csocial')
+  ->get($manage_route.'/csocials/{csocial}',  'CsocialController@show')
+  ->name('csocials.show'); 
+
+// Edit an contact record
+Route::middleware('auth:web', 'can:edit,csocial')
+  ->get($manage_route.'/csocials/{csocial}/edit', 'CsocialController@edit')
+  ->name('csocials.edit'); 
+
+// Update an contact record
+Route::middleware('auth:web', 'can:update,csocial')
+  ->patch($manage_route.'/csocials/{csocial}',  'CsocialController@update')
+  ->name('csocials.update');
+
+// Delete an contact record
+Route::middleware('auth:web', 'can:delete,csocial')
+  ->delete($manage_route.'/csocials/{csocial}', 'CsocialController@delete')
+  ->name('csocials.delete');
+
+  
 // ------------------------------------------------------------
 // Tests - Playground
 // ------------------------------------------------------------
 // Test page
-// Route::middleware('auth:web')->get($manage_route.'/test',
-//   'ManageController@test');
+Route::middleware('auth:web')->get($manage_route.'/test',
+   'ManageController@test');
