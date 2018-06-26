@@ -44,34 +44,4 @@ $factory->define(App\About::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Contact::class, function (Faker\Generator $faker) {
 
-    $cttype = $faker->randomElement($array = array (
-              'email', 'telephone', 'address', 'social'));
-
-    $ctvalue = null;
-
-    switch ($cttype) {
-        case 'email':
-            $ctvalue = $faker->safeEmail;
-            break;
-
-        case 'telephone':
-            $ctvalue = $faker->phoneNumber;
-            break;
-
-        case 'address':
-            $ctvalue = $faker->address;
-            break;
-
-        case 'social':
-            $ctvalue = $faker->domainName.'/'.$faker->domainWord;
-            break;
-    }
-
-    return [
-        'cttype' => $cttype,
-        'cttype2' => $faker->word,
-        'value' => $ctvalue
-    ];
-});

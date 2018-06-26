@@ -13864,111 +13864,8845 @@ module.exports = Cancel;
 
 /***/ }),
 /* 11 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* globals __VUE_SSR_CONTEXT__ */
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivityIcon", function() { return ActivityIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AirplayIcon", function() { return AirplayIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertCircleIcon", function() { return AlertCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertOctagonIcon", function() { return AlertOctagonIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertTriangleIcon", function() { return AlertTriangleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlignCenterIcon", function() { return AlignCenterIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlignJustifyIcon", function() { return AlignJustifyIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlignLeftIcon", function() { return AlignLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlignRightIcon", function() { return AlignRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnchorIcon", function() { return AnchorIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApertureIcon", function() { return ApertureIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArchiveIcon", function() { return ArchiveIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowDownCircleIcon", function() { return ArrowDownCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowDownLeftIcon", function() { return ArrowDownLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowDownRightIcon", function() { return ArrowDownRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowDownIcon", function() { return ArrowDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowLeftCircleIcon", function() { return ArrowLeftCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowLeftIcon", function() { return ArrowLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowRightCircleIcon", function() { return ArrowRightCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowRightIcon", function() { return ArrowRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowUpCircleIcon", function() { return ArrowUpCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowUpLeftIcon", function() { return ArrowUpLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowUpRightIcon", function() { return ArrowUpRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowUpIcon", function() { return ArrowUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AtSignIcon", function() { return AtSignIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AwardIcon", function() { return AwardIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarChart2Icon", function() { return BarChart2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarChartIcon", function() { return BarChartIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BatteryChargingIcon", function() { return BatteryChargingIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BatteryIcon", function() { return BatteryIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BellOffIcon", function() { return BellOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BellIcon", function() { return BellIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BluetoothIcon", function() { return BluetoothIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoldIcon", function() { return BoldIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookOpenIcon", function() { return BookOpenIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookIcon", function() { return BookIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookmarkIcon", function() { return BookmarkIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoxIcon", function() { return BoxIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BriefcaseIcon", function() { return BriefcaseIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarIcon", function() { return CalendarIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CameraOffIcon", function() { return CameraOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CameraIcon", function() { return CameraIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CastIcon", function() { return CastIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckCircleIcon", function() { return CheckCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckSquareIcon", function() { return CheckSquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckIcon", function() { return CheckIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronDownIcon", function() { return ChevronDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronLeftIcon", function() { return ChevronLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronRightIcon", function() { return ChevronRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronUpIcon", function() { return ChevronUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronsDownIcon", function() { return ChevronsDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronsLeftIcon", function() { return ChevronsLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronsRightIcon", function() { return ChevronsRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChevronsUpIcon", function() { return ChevronsUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChromeIcon", function() { return ChromeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CircleIcon", function() { return CircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClipboardIcon", function() { return ClipboardIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClockIcon", function() { return ClockIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudDrizzleIcon", function() { return CloudDrizzleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudLightningIcon", function() { return CloudLightningIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudOffIcon", function() { return CloudOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudRainIcon", function() { return CloudRainIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudSnowIcon", function() { return CloudSnowIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloudIcon", function() { return CloudIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CodeIcon", function() { return CodeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CodepenIcon", function() { return CodepenIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommandIcon", function() { return CommandIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompassIcon", function() { return CompassIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CopyIcon", function() { return CopyIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerDownLeftIcon", function() { return CornerDownLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerDownRightIcon", function() { return CornerDownRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerLeftDownIcon", function() { return CornerLeftDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerLeftUpIcon", function() { return CornerLeftUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerRightDownIcon", function() { return CornerRightDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerRightUpIcon", function() { return CornerRightUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerUpLeftIcon", function() { return CornerUpLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CornerUpRightIcon", function() { return CornerUpRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CpuIcon", function() { return CpuIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreditCardIcon", function() { return CreditCardIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CropIcon", function() { return CropIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CrosshairIcon", function() { return CrosshairIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatabaseIcon", function() { return DatabaseIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeleteIcon", function() { return DeleteIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiscIcon", function() { return DiscIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DollarSignIcon", function() { return DollarSignIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DownloadCloudIcon", function() { return DownloadCloudIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DownloadIcon", function() { return DownloadIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropletIcon", function() { return DropletIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Edit2Icon", function() { return Edit2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Edit3Icon", function() { return Edit3Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditIcon", function() { return EditIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExternalLinkIcon", function() { return ExternalLinkIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EyeOffIcon", function() { return EyeOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EyeIcon", function() { return EyeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookIcon", function() { return FacebookIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FastForwardIcon", function() { return FastForwardIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeatherIcon", function() { return FeatherIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileMinusIcon", function() { return FileMinusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilePlusIcon", function() { return FilePlusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileTextIcon", function() { return FileTextIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileIcon", function() { return FileIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilmIcon", function() { return FilmIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterIcon", function() { return FilterIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlagIcon", function() { return FlagIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FolderMinusIcon", function() { return FolderMinusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FolderPlusIcon", function() { return FolderPlusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FolderIcon", function() { return FolderIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GiftIcon", function() { return GiftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitBranchIcon", function() { return GitBranchIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitCommitIcon", function() { return GitCommitIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitMergeIcon", function() { return GitMergeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitPullRequestIcon", function() { return GitPullRequestIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GithubIcon", function() { return GithubIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GitlabIcon", function() { return GitlabIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobeIcon", function() { return GlobeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GridIcon", function() { return GridIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HardDriveIcon", function() { return HardDriveIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HashIcon", function() { return HashIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeadphonesIcon", function() { return HeadphonesIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeartIcon", function() { return HeartIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpCircleIcon", function() { return HelpCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeIcon", function() { return HomeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageIcon", function() { return ImageIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InboxIcon", function() { return InboxIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InfoIcon", function() { return InfoIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramIcon", function() { return InstagramIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItalicIcon", function() { return ItalicIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayersIcon", function() { return LayersIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayoutIcon", function() { return LayoutIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LifeBuoyIcon", function() { return LifeBuoyIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Link2Icon", function() { return Link2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkIcon", function() { return LinkIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkedinIcon", function() { return LinkedinIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListIcon", function() { return ListIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoaderIcon", function() { return LoaderIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LockIcon", function() { return LockIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogInIcon", function() { return LogInIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogOutIcon", function() { return LogOutIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MailIcon", function() { return MailIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapPinIcon", function() { return MapPinIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapIcon", function() { return MapIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Maximize2Icon", function() { return Maximize2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaximizeIcon", function() { return MaximizeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuIcon", function() { return MenuIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageCircleIcon", function() { return MessageCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageSquareIcon", function() { return MessageSquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MicOffIcon", function() { return MicOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MicIcon", function() { return MicIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Minimize2Icon", function() { return Minimize2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinimizeIcon", function() { return MinimizeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinusCircleIcon", function() { return MinusCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinusSquareIcon", function() { return MinusSquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinusIcon", function() { return MinusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MonitorIcon", function() { return MonitorIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoonIcon", function() { return MoonIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoreHorizontalIcon", function() { return MoreHorizontalIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoreVerticalIcon", function() { return MoreVerticalIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoveIcon", function() { return MoveIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MusicIcon", function() { return MusicIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Navigation2Icon", function() { return Navigation2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationIcon", function() { return NavigationIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OctagonIcon", function() { return OctagonIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PackageIcon", function() { return PackageIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaperclipIcon", function() { return PaperclipIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PauseCircleIcon", function() { return PauseCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PauseIcon", function() { return PauseIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PercentIcon", function() { return PercentIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneCallIcon", function() { return PhoneCallIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneForwardedIcon", function() { return PhoneForwardedIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneIncomingIcon", function() { return PhoneIncomingIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneMissedIcon", function() { return PhoneMissedIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneOffIcon", function() { return PhoneOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneOutgoingIcon", function() { return PhoneOutgoingIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneIcon", function() { return PhoneIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PieChartIcon", function() { return PieChartIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayCircleIcon", function() { return PlayCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayIcon", function() { return PlayIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlusCircleIcon", function() { return PlusCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlusSquareIcon", function() { return PlusSquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlusIcon", function() { return PlusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PocketIcon", function() { return PocketIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PowerIcon", function() { return PowerIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrinterIcon", function() { return PrinterIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioIcon", function() { return RadioIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RefreshCcwIcon", function() { return RefreshCcwIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RefreshCwIcon", function() { return RefreshCwIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RepeatIcon", function() { return RepeatIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RewindIcon", function() { return RewindIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RotateCcwIcon", function() { return RotateCcwIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RotateCwIcon", function() { return RotateCwIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RssIcon", function() { return RssIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SaveIcon", function() { return SaveIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScissorsIcon", function() { return ScissorsIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchIcon", function() { return SearchIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendIcon", function() { return SendIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServerIcon", function() { return ServerIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsIcon", function() { return SettingsIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Share2Icon", function() { return Share2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShareIcon", function() { return ShareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShieldOffIcon", function() { return ShieldOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShieldIcon", function() { return ShieldIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShoppingBagIcon", function() { return ShoppingBagIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShoppingCartIcon", function() { return ShoppingCartIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShuffleIcon", function() { return ShuffleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarIcon", function() { return SidebarIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkipBackIcon", function() { return SkipBackIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkipForwardIcon", function() { return SkipForwardIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlackIcon", function() { return SlackIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlashIcon", function() { return SlashIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlidersIcon", function() { return SlidersIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmartphoneIcon", function() { return SmartphoneIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpeakerIcon", function() { return SpeakerIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SquareIcon", function() { return SquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StarIcon", function() { return StarIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StopCircleIcon", function() { return StopCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SunIcon", function() { return SunIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SunriseIcon", function() { return SunriseIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SunsetIcon", function() { return SunsetIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabletIcon", function() { return TabletIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TagIcon", function() { return TagIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TargetIcon", function() { return TargetIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TerminalIcon", function() { return TerminalIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThermometerIcon", function() { return ThermometerIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThumbsDownIcon", function() { return ThumbsDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThumbsUpIcon", function() { return ThumbsUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToggleLeftIcon", function() { return ToggleLeftIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToggleRightIcon", function() { return ToggleRightIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Trash2Icon", function() { return Trash2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrashIcon", function() { return TrashIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrendingDownIcon", function() { return TrendingDownIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrendingUpIcon", function() { return TrendingUpIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TriangleIcon", function() { return TriangleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TruckIcon", function() { return TruckIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TvIcon", function() { return TvIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TwitterIcon", function() { return TwitterIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TypeIcon", function() { return TypeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UmbrellaIcon", function() { return UmbrellaIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnderlineIcon", function() { return UnderlineIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnlockIcon", function() { return UnlockIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadCloudIcon", function() { return UploadCloudIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadIcon", function() { return UploadIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserCheckIcon", function() { return UserCheckIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserMinusIcon", function() { return UserMinusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserPlusIcon", function() { return UserPlusIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserXIcon", function() { return UserXIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserIcon", function() { return UserIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersIcon", function() { return UsersIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VideoOffIcon", function() { return VideoOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VideoIcon", function() { return VideoIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoicemailIcon", function() { return VoicemailIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Volume1Icon", function() { return Volume1Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Volume2Icon", function() { return Volume2Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VolumeXIcon", function() { return VolumeXIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VolumeIcon", function() { return VolumeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WatchIcon", function() { return WatchIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WifiOffIcon", function() { return WifiOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WifiIcon", function() { return WifiIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WindIcon", function() { return WindIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XCircleIcon", function() { return XCircleIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XSquareIcon", function() { return XSquareIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XIcon", function() { return XIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubeIcon", function() { return YoutubeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZapOffIcon", function() { return ZapOffIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZapIcon", function() { return ZapIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomInIcon", function() { return ZoomInIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomOutIcon", function() { return ZoomOutIcon; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props__);
 
-// IMPORTANT: Do NOT use ES2015 features in this file.
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
 
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier /* server only */
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
+var ActivityIcon = {
+  name: 'activity-icon',
 
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-activity" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "22 12 18 12 15 21 9 3 6 12 2 12" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
+var AirplayIcon = {
+  name: 'airplay-icon',
 
-  // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
-    options._compiled = true
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-airplay" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "12 15 17 21 7 21 12 15" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
+var AlertCircleIcon = {
+  name: 'alert-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-alert-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "16", x2: "12", y2: "16" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  // scopedId
-  if (scopeId) {
-    options._scopeId = scopeId
+var AlertOctagonIcon = {
+  name: 'alert-octagon-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-alert-octagon" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "16", x2: "12", y2: "16" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = injectStyles
+var AlertTriangleIcon = {
+  name: 'alert-triangle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-alert-triangle" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "9", x2: "12", y2: "13" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "17", x2: "12", y2: "17" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  if (hook) {
-    var functional = options.functional
-    var existing = functional
-      ? options.render
-      : options.beforeCreate
+var AlignCenterIcon = {
+  name: 'align-center-icon',
 
-    if (!functional) {
-      // inject component registration as beforeCreate hook
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    } else {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functioal component in vue file
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return existing(h, context)
-      }
-    }
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-align-center" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "10", x2: "6", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "6", x2: "3", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "14", x2: "3", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "18", x2: "6", y2: "18" }
+        },
+        []
+      )]
+    );
   }
+};
 
-  return {
-    esModule: esModule,
-    exports: scriptExports,
-    options: options
+var AlignJustifyIcon = {
+  name: 'align-justify-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-align-justify" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "10", x2: "3", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "6", x2: "3", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "14", x2: "3", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "18", x2: "3", y2: "18" }
+        },
+        []
+      )]
+    );
   }
-}
+};
+
+var AlignLeftIcon = {
+  name: 'align-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-align-left" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "10", x2: "3", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "6", x2: "3", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "14", x2: "3", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "18", x2: "3", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var AlignRightIcon = {
+  name: 'align-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-align-right" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "10", x2: "7", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "6", x2: "3", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "14", x2: "3", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "18", x2: "7", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var AnchorIcon = {
+  name: 'anchor-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-anchor" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "5", r: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22", x2: "12", y2: "8" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M5 12H2a10 10 0 0 0 20 0h-3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ApertureIcon = {
+  name: 'aperture-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-aperture" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.31", y1: "8", x2: "20.05", y2: "17.94" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9.69", y1: "8", x2: "21.17", y2: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "7.38", y1: "12", x2: "13.12", y2: "2.06" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9.69", y1: "16", x2: "3.95", y2: "6.06" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.31", y1: "16", x2: "2.83", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16.62", y1: "12", x2: "10.88", y2: "21.94" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArchiveIcon = {
+  name: 'archive-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-archive" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "21 8 21 21 3 21 3 8" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "1", y: "3", width: "22", height: "5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "12", x2: "14", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowDownCircleIcon = {
+  name: 'arrow-down-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-down-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8 12 12 16 16 12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowDownLeftIcon = {
+  name: 'arrow-down-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-down-left" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "7", x2: "7", y2: "17" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 17 7 17 7 7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowDownRightIcon = {
+  name: 'arrow-down-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-down-right" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "7", y1: "7", x2: "17", y2: "17" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 7 17 17 7 17" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowDownIcon = {
+  name: 'arrow-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-down" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "5", x2: "12", y2: "19" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "19 12 12 19 5 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowLeftCircleIcon = {
+  name: 'arrow-left-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-left-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 8 8 12 12 16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "12", x2: "8", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowLeftIcon = {
+  name: 'arrow-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-left" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "19", y1: "12", x2: "5", y2: "12" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 19 5 12 12 5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowRightCircleIcon = {
+  name: 'arrow-right-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-right-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 16 16 12 12 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowRightIcon = {
+  name: 'arrow-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-right" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "5", y1: "12", x2: "19", y2: "12" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 5 19 12 12 19" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowUpCircleIcon = {
+  name: 'arrow-up-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-up-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "16 12 12 8 8 12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "16", x2: "12", y2: "8" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowUpLeftIcon = {
+  name: 'arrow-up-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-up-left" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "17", x2: "7", y2: "7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 17 7 7 17 7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowUpRightIcon = {
+  name: 'arrow-up-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-up-right" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "7", y1: "17", x2: "17", y2: "7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 7 17 7 17 17" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ArrowUpIcon = {
+  name: 'arrow-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-arrow-up" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "19", x2: "12", y2: "5" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "5 12 12 5 19 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var AtSignIcon = {
+  name: 'at-sign-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-at-sign" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "4" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var AwardIcon = {
+  name: 'award-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-award" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "8", r: "7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8.21 13.89 7 23 12 20 17 23 15.79 13.88" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BarChart2Icon = {
+  name: 'bar-chart2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bar-chart-2" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "20", x2: "18", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "20", x2: "12", y2: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "20", x2: "6", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BarChartIcon = {
+  name: 'bar-chart-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bar-chart" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "20", x2: "12", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "20", x2: "18", y2: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "20", x2: "6", y2: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BatteryChargingIcon = {
+  name: 'battery-charging-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-battery-charging" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "13", x2: "23", y2: "11" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "11 6 7 12 13 12 9 18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BatteryIcon = {
+  name: 'battery-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-battery" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "1", y: "6", width: "18", height: "12", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "13", x2: "23", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BellOffIcon = {
+  name: 'bell-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bell-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BellIcon = {
+  name: 'bell-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bell" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BluetoothIcon = {
+  name: 'bluetooth-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bluetooth" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BoldIcon = {
+  name: 'bold-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bold" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BookOpenIcon = {
+  name: 'book-open-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-book-open" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BookIcon = {
+  name: 'book-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-book" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 19.5A2.5 2.5 0 0 1 6.5 17H20" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BookmarkIcon = {
+  name: 'bookmark-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-bookmark" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BoxIcon = {
+  name: 'box-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-box" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "2.32 6.16 12 11 21.68 6.16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22.76", x2: "12", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var BriefcaseIcon = {
+  name: 'briefcase-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-briefcase" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "7", width: "20", height: "14", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CalendarIcon = {
+  name: 'calendar-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-calendar" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "4", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "2", x2: "16", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "2", x2: "8", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "10", x2: "21", y2: "10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CameraOffIcon = {
+  name: 'camera-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-camera-off" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CameraIcon = {
+  name: 'camera-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-camera" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "13", r: "4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CastIcon = {
+  name: 'cast-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cast" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "20", x2: "2", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CheckCircleIcon = {
+  name: 'check-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-check-circle" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 11.08V12a10 10 0 1 1-5.93-9.14" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "22 4 12 14.01 9 11.01" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CheckSquareIcon = {
+  name: 'check-square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-check-square" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "9 11 12 14 22 4" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CheckIcon = {
+  name: 'check-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-check" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "20 6 9 17 4 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronDownIcon = {
+  name: 'chevron-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevron-down" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "6 9 12 15 18 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronLeftIcon = {
+  name: 'chevron-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevron-left" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "15 18 9 12 15 6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronRightIcon = {
+  name: 'chevron-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevron-right" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "9 18 15 12 9 6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronUpIcon = {
+  name: 'chevron-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevron-up" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "18 15 12 9 6 15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronsDownIcon = {
+  name: 'chevrons-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevrons-down" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "7 13 12 18 17 13" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 6 12 11 17 6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronsLeftIcon = {
+  name: 'chevrons-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevrons-left" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "11 17 6 12 11 7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "18 17 13 12 18 7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronsRightIcon = {
+  name: 'chevrons-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevrons-right" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "13 17 18 12 13 7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "6 17 11 12 6 7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChevronsUpIcon = {
+  name: 'chevrons-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chevrons-up" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "17 11 12 6 7 11" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 18 12 13 7 18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ChromeIcon = {
+  name: 'chrome-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-chrome" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21.17", y1: "8", x2: "12", y2: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3.95", y1: "6.06", x2: "8.54", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10.88", y1: "21.94", x2: "15.46", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CircleIcon = {
+  name: 'circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ClipboardIcon = {
+  name: 'clipboard-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-clipboard" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "8", y: "2", width: "8", height: "4", rx: "1", ry: "1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ClockIcon = {
+  name: 'clock-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-clock" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 6 12 12 16 14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudDrizzleIcon = {
+  name: 'cloud-drizzle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud-drizzle" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "19", x2: "8", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "13", x2: "8", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "19", x2: "16", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "13", x2: "16", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "21", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "15", x2: "12", y2: "17" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudLightningIcon = {
+  name: 'cloud-lightning-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud-lightning" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "13 11 9 17 15 17 11 23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudOffIcon = {
+  name: 'cloud-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudRainIcon = {
+  name: 'cloud-rain-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud-rain" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "13", x2: "16", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "13", x2: "8", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "15", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudSnowIcon = {
+  name: 'cloud-snow-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud-snow" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "16", x2: "8", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "20", x2: "8", y2: "20" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "18", x2: "12", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22", x2: "12", y2: "22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "16", x2: "16", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "20", x2: "16", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CloudIcon = {
+  name: 'cloud-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cloud" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CodeIcon = {
+  name: 'code-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-code" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "16 18 22 12 16 6" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8 6 2 12 8 18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CodepenIcon = {
+  name: 'codepen-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-codepen" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22", x2: "12", y2: "15.5" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "22 8.5 12 15.5 2 8.5" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "2 15.5 12 8.5 22 15.5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "8.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CommandIcon = {
+  name: 'command-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-command" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CompassIcon = {
+  name: 'compass-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-compass" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CopyIcon = {
+  name: 'copy-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-copy" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "9", y: "9", width: "13", height: "13", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerDownLeftIcon = {
+  name: 'corner-down-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-down-left" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "9 10 4 15 9 20" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 4v7a4 4 0 0 1-4 4H4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerDownRightIcon = {
+  name: 'corner-down-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-down-right" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "15 10 20 15 15 20" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4 4v7a4 4 0 0 0 4 4h12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerLeftDownIcon = {
+  name: 'corner-left-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-left-down" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "14 15 9 20 4 15" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 4h-7a4 4 0 0 0-4 4v12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerLeftUpIcon = {
+  name: 'corner-left-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-left-up" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "14 9 9 4 4 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 20h-7a4 4 0 0 1-4-4V4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerRightDownIcon = {
+  name: 'corner-right-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-right-down" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "10 15 15 20 20 15" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4 4h7a4 4 0 0 1 4 4v12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerRightUpIcon = {
+  name: 'corner-right-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-right-up" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "10 9 15 4 20 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4 20h7a4 4 0 0 0 4-4V4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerUpLeftIcon = {
+  name: 'corner-up-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-up-left" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "9 14 4 9 9 4" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20 20v-7a4 4 0 0 0-4-4H4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CornerUpRightIcon = {
+  name: 'corner-up-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-corner-up-right" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "15 14 20 9 15 4" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4 20v-7a4 4 0 0 1 4-4h12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CpuIcon = {
+  name: 'cpu-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-cpu" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "4", y: "4", width: "16", height: "16", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "9", y: "9", width: "6", height: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "1", x2: "9", y2: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "1", x2: "15", y2: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "20", x2: "9", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "20", x2: "15", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "9", x2: "23", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "14", x2: "23", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "9", x2: "4", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "14", x2: "4", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CreditCardIcon = {
+  name: 'credit-card-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-credit-card" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "1", y: "4", width: "22", height: "16", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "10", x2: "23", y2: "10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CropIcon = {
+  name: 'crop-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-crop" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M6.13 1L6 16a2 2 0 0 0 2 2h15" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M1 6.13L16 6a2 2 0 0 1 2 2v15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var CrosshairIcon = {
+  name: 'crosshair-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-crosshair" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "22", y1: "12", x2: "18", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "12", x2: "2", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "6", x2: "12", y2: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22", x2: "12", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DatabaseIcon = {
+  name: 'database-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-database" }, ctx.data]),
+      [h(
+        "ellipse",
+        {
+          attrs: { cx: "12", cy: "5", rx: "9", ry: "3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DeleteIcon = {
+  name: 'delete-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-delete" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "9", x2: "12", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "9", x2: "18", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DiscIcon = {
+  name: 'disc-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-disc" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DollarSignIcon = {
+  name: 'dollar-sign-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-dollar-sign" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "1", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DownloadCloudIcon = {
+  name: 'download-cloud-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-download-cloud" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "8 17 12 21 16 17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "12", x2: "12", y2: "21" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DownloadIcon = {
+  name: 'download-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-download" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 10 12 15 17 10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "15", x2: "12", y2: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var DropletIcon = {
+  name: 'droplet-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-droplet" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Edit2Icon = {
+  name: 'edit2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-edit-2" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "16 3 21 8 8 21 3 21 3 16 16 3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Edit3Icon = {
+  name: 'edit3-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-edit-3" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "14 2 18 6 7 17 3 17 3 13 14 2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "22", x2: "21", y2: "22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var EditIcon = {
+  name: 'edit-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-edit" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "18 2 22 6 12 16 8 16 8 12 18 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ExternalLinkIcon = {
+  name: 'external-link-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-external-link" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "15 3 21 3 21 9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "14", x2: "21", y2: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var EyeOffIcon = {
+  name: 'eye-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-eye-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var EyeIcon = {
+  name: 'eye-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-eye" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FacebookIcon = {
+  name: 'facebook-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-facebook" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FastForwardIcon = {
+  name: 'fast-forward-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-fast-forward" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "13 19 22 12 13 5 13 19" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "2 19 11 12 2 5 2 19" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FeatherIcon = {
+  name: 'feather-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-feather" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "8", x2: "2", y2: "22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "15", x2: "9", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FileMinusIcon = {
+  name: 'file-minus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-file-minus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "14 2 14 8 20 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "15", x2: "15", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FilePlusIcon = {
+  name: 'file-plus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-file-plus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "14 2 14 8 20 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "18", x2: "12", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "15", x2: "15", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FileTextIcon = {
+  name: 'file-text-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-file-text" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "14 2 14 8 20 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "13", x2: "8", y2: "13" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "17", x2: "8", y2: "17" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "10 9 9 9 8 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FileIcon = {
+  name: 'file-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-file" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "13 2 13 9 20 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FilmIcon = {
+  name: 'film-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-film" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "2", width: "20", height: "20", rx: "2.18", ry: "2.18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "7", y1: "2", x2: "7", y2: "22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "2", x2: "17", y2: "22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "12", x2: "22", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "7", x2: "7", y2: "7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "17", x2: "7", y2: "17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "17", x2: "22", y2: "17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "7", x2: "22", y2: "7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FilterIcon = {
+  name: 'filter-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-filter" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FlagIcon = {
+  name: 'flag-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-flag" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "22", x2: "4", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FolderMinusIcon = {
+  name: 'folder-minus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-folder-minus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "14", x2: "15", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FolderPlusIcon = {
+  name: 'folder-plus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-folder-plus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "11", x2: "12", y2: "17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "14", x2: "15", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var FolderIcon = {
+  name: 'folder-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-folder" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GiftIcon = {
+  name: 'gift-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-gift" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "20 12 20 22 4 22 4 12" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "2", y: "7", width: "20", height: "5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22", x2: "12", y2: "7" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GitBranchIcon = {
+  name: 'git-branch-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-git-branch" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "3", x2: "6", y2: "15" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "18", cy: "6", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "18", r: "3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M18 9a9 9 0 0 1-9 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GitCommitIcon = {
+  name: 'git-commit-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-git-commit" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1.05", y1: "12", x2: "7", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17.01", y1: "12", x2: "22.96", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GitMergeIcon = {
+  name: 'git-merge-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-git-merge" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "18", cy: "18", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "6", r: "3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M6 21V9a9 9 0 0 0 9 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GitPullRequestIcon = {
+  name: 'git-pull-request-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-git-pull-request" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "18", cy: "18", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "6", r: "3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M13 6h3a2 2 0 0 1 2 2v7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "9", x2: "6", y2: "21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GithubIcon = {
+  name: 'github-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-github" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GitlabIcon = {
+  name: 'gitlab-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-gitlab" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GlobeIcon = {
+  name: 'globe-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-globe" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "12", x2: "22", y2: "12" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var GridIcon = {
+  name: 'grid-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-grid" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "7", height: "7" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "14", y: "3", width: "7", height: "7" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "14", y: "14", width: "7", height: "7" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "3", y: "14", width: "7", height: "7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HardDriveIcon = {
+  name: 'hard-drive-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-hard-drive" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "22", y1: "12", x2: "2", y2: "12" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "16", x2: "6", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "16", x2: "10", y2: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HashIcon = {
+  name: 'hash-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-hash" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "9", x2: "20", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "15", x2: "20", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "3", x2: "8", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "3", x2: "14", y2: "21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HeadphonesIcon = {
+  name: 'headphones-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-headphones" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M3 18v-6a9 9 0 0 1 18 0v6" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HeartIcon = {
+  name: 'heart-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-heart" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HelpCircleIcon = {
+  name: 'help-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-help-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "17", x2: "12", y2: "17" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var HomeIcon = {
+  name: 'home-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-home" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "9 22 9 12 15 12 15 22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ImageIcon = {
+  name: 'image-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-image" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8.5", cy: "8.5", r: "1.5" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "21 15 16 10 5 21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var InboxIcon = {
+  name: 'inbox-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-inbox" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "22 12 16 12 14 15 10 15 8 12 2 12" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var InfoIcon = {
+  name: 'info-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-info" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "16", x2: "12", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "8" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var InstagramIcon = {
+  name: 'instagram-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-instagram" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "2", width: "20", height: "20", rx: "5", ry: "5" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17.5", y1: "6.5", x2: "17.5", y2: "6.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ItalicIcon = {
+  name: 'italic-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-italic" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "19", y1: "4", x2: "10", y2: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14", y1: "20", x2: "5", y2: "20" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "4", x2: "9", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LayersIcon = {
+  name: 'layers-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-layers" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "12 2 2 7 12 12 22 7 12 2" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "2 17 12 22 22 17" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "2 12 12 17 22 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LayoutIcon = {
+  name: 'layout-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-layout" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "9", x2: "21", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "21", x2: "9", y2: "9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LifeBuoyIcon = {
+  name: 'life-buoy-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-life-buoy" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.93", y1: "4.93", x2: "9.17", y2: "9.17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.83", y1: "14.83", x2: "19.07", y2: "19.07" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.83", y1: "9.17", x2: "19.07", y2: "4.93" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.83", y1: "9.17", x2: "18.36", y2: "5.64" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.93", y1: "19.07", x2: "9.17", y2: "14.83" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Link2Icon = {
+  name: 'link2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-link-2" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LinkIcon = {
+  name: 'link-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-link" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LinkedinIcon = {
+  name: 'linkedin-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-linkedin" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "2", y: "9", width: "4", height: "12" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "4", cy: "4", r: "2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ListIcon = {
+  name: 'list-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-list" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "6", x2: "21", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "21", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "18", x2: "21", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "6", x2: "3", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "12", x2: "3", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "18", x2: "3", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LoaderIcon = {
+  name: 'loader-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-loader" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "18", x2: "12", y2: "22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.93", y1: "4.93", x2: "7.76", y2: "7.76" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16.24", y1: "16.24", x2: "19.07", y2: "19.07" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "12", x2: "6", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "12", x2: "22", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.93", y1: "19.07", x2: "7.76", y2: "16.24" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16.24", y1: "7.76", x2: "19.07", y2: "4.93" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LockIcon = {
+  name: 'lock-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-lock" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "11", width: "18", height: "11", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M7 11V7a5 5 0 0 1 10 0v4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LogInIcon = {
+  name: 'log-in-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-log-in" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "10 17 15 12 10 7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "12", x2: "3", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var LogOutIcon = {
+  name: 'log-out-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-log-out" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "16 17 21 12 16 7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "12", x2: "9", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MailIcon = {
+  name: 'mail-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-mail" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "22,6 12,13 2,6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MapPinIcon = {
+  name: 'map-pin-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-map-pin" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "10", r: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MapIcon = {
+  name: 'map-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-map" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "2", x2: "8", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "6", x2: "16", y2: "22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Maximize2Icon = {
+  name: 'maximize2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-maximize-2" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "15 3 21 3 21 9" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "9 21 3 21 3 15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "3", x2: "14", y2: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "21", x2: "10", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MaximizeIcon = {
+  name: 'maximize-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-maximize" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MenuIcon = {
+  name: 'menu-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-menu" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "12", x2: "21", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "6", x2: "21", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "18", x2: "21", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MessageCircleIcon = {
+  name: 'message-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-message-circle" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MessageSquareIcon = {
+  name: 'message-square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-message-square" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MicOffIcon = {
+  name: 'mic-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-mic-off" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "19", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "23", x2: "16", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MicIcon = {
+  name: 'mic-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-mic" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M19 10v2a7 7 0 0 1-14 0v-2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "19", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "23", x2: "16", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Minimize2Icon = {
+  name: 'minimize2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-minimize-2" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "4 14 10 14 10 20" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "20 10 14 10 14 4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14", y1: "10", x2: "21", y2: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "21", x2: "10", y2: "14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MinimizeIcon = {
+  name: 'minimize-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-minimize" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MinusCircleIcon = {
+  name: 'minus-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-minus-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MinusSquareIcon = {
+  name: 'minus-square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-minus-square" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MinusIcon = {
+  name: 'minus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-minus" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "5", y1: "12", x2: "19", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MonitorIcon = {
+  name: 'monitor-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-monitor" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "3", width: "20", height: "14", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "21", x2: "16", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "17", x2: "12", y2: "21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MoonIcon = {
+  name: 'moon-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-moon" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MoreHorizontalIcon = {
+  name: 'more-horizontal-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-more-horizontal" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "1" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "19", cy: "12", r: "1" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "5", cy: "12", r: "1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MoreVerticalIcon = {
+  name: 'more-vertical-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-more-vertical" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "1" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "5", r: "1" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "19", r: "1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MoveIcon = {
+  name: 'move-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-move" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "5 9 2 12 5 15" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "9 5 12 2 15 5" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "15 19 12 22 9 19" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "19 9 22 12 19 15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "2", y1: "12", x2: "22", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var MusicIcon = {
+  name: 'music-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-music" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "9 17 9 5 21 3 21 15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Navigation2Icon = {
+  name: 'navigation2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-navigation-2" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "12 2 19 21 12 17 5 21 12 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var NavigationIcon = {
+  name: 'navigation-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-navigation" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "3 11 22 2 13 21 11 13 3 11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var OctagonIcon = {
+  name: 'octagon-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-octagon" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PackageIcon = {
+  name: 'package-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-package" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "2.32 6.16 12 11 21.68 6.16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "22.76", x2: "12", y2: "11" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "7", y1: "3.5", x2: "17", y2: "8.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PaperclipIcon = {
+  name: 'paperclip-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-paperclip" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PauseCircleIcon = {
+  name: 'pause-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-pause-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "15", x2: "10", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14", y1: "15", x2: "14", y2: "9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PauseIcon = {
+  name: 'pause-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-pause" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "6", y: "4", width: "4", height: "16" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "14", y: "4", width: "4", height: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PercentIcon = {
+  name: 'percent-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-percent" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "19", y1: "5", x2: "5", y2: "19" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6.5", cy: "6.5", r: "2.5" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "17.5", cy: "17.5", r: "2.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneCallIcon = {
+  name: 'phone-call-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-call" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneForwardedIcon = {
+  name: 'phone-forwarded-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-forwarded" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "19 1 23 5 19 9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "5", x2: "23", y2: "5" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneIncomingIcon = {
+  name: 'phone-incoming-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-incoming" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "16 2 16 8 22 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "1", x2: "16", y2: "8" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneMissedIcon = {
+  name: 'phone-missed-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-missed" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "1", x2: "17", y2: "7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "1", x2: "23", y2: "7" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneOffIcon = {
+  name: 'phone-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "1", x2: "1", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneOutgoingIcon = {
+  name: 'phone-outgoing-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone-outgoing" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "23 7 23 1 17 1" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16", y1: "8", x2: "23", y2: "1" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PhoneIcon = {
+  name: 'phone-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-phone" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PieChartIcon = {
+  name: 'pie-chart-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-pie-chart" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21.21 15.89A10 10 0 1 1 8 2.83" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M22 12A10 10 0 0 0 12 2v10z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PlayCircleIcon = {
+  name: 'play-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-play-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "10 8 16 12 10 16 10 8" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PlayIcon = {
+  name: 'play-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-play" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "5 3 19 12 5 21 5 3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PlusCircleIcon = {
+  name: 'plus-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-plus-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PlusSquareIcon = {
+  name: 'plus-square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-plus-square" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "12", x2: "16", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PlusIcon = {
+  name: 'plus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-plus" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "5", x2: "12", y2: "19" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "5", y1: "12", x2: "19", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PocketIcon = {
+  name: 'pocket-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-pocket" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8 10 12 14 16 10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PowerIcon = {
+  name: 'power-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-power" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M18.36 6.64a9 9 0 1 1-12.73 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var PrinterIcon = {
+  name: 'printer-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-printer" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "6 9 6 2 18 2 18 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "6", y: "14", width: "12", height: "8" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RadioIcon = {
+  name: 'radio-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-radio" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "2" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RefreshCcwIcon = {
+  name: 'refresh-ccw-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-refresh-ccw" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "1 4 1 10 7 10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "23 20 23 14 17 14" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RefreshCwIcon = {
+  name: 'refresh-cw-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-refresh-cw" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "23 4 23 10 17 10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "1 20 1 14 7 14" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RepeatIcon = {
+  name: 'repeat-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-repeat" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "17 1 21 5 17 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M3 11V9a4 4 0 0 1 4-4h14" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 23 3 19 7 15" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M21 13v2a4 4 0 0 1-4 4H3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RewindIcon = {
+  name: 'rewind-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-rewind" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "11 19 2 12 11 5 11 19" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "22 19 13 12 22 5 22 19" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RotateCcwIcon = {
+  name: 'rotate-ccw-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-rotate-ccw" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "1 4 1 10 7 10" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M3.51 15a9 9 0 1 0 2.13-9.36L1 10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RotateCwIcon = {
+  name: 'rotate-cw-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-rotate-cw" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "23 4 23 10 17 10" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var RssIcon = {
+  name: 'rss-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-rss" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 11a9 9 0 0 1 9 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4 4a16 16 0 0 1 16 16" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "5", cy: "19", r: "1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SaveIcon = {
+  name: 'save-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-save" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 21 17 13 7 13 7 21" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "7 3 7 8 15 8" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ScissorsIcon = {
+  name: 'scissors-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-scissors" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "6", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "18", r: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "4", x2: "8.12", y2: "15.88" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14.47", y1: "14.48", x2: "20", y2: "20" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8.12", y1: "8.12", x2: "12", y2: "12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SearchIcon = {
+  name: 'search-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-search" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "11", cy: "11", r: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "21", x2: "16.65", y2: "16.65" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SendIcon = {
+  name: 'send-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-send" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "22", y1: "2", x2: "11", y2: "13" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "22 2 15 22 11 13 2 9 22 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ServerIcon = {
+  name: 'server-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-server" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "2", width: "20", height: "8", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "2", y: "14", width: "20", height: "8", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "6", x2: "6", y2: "6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "18", x2: "6", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SettingsIcon = {
+  name: 'settings-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-settings" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "3" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Share2Icon = {
+  name: 'share2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-share-2" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "18", cy: "5", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "6", cy: "12", r: "3" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "18", cy: "19", r: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8.59", y1: "13.51", x2: "15.42", y2: "17.49" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15.41", y1: "6.51", x2: "8.59", y2: "10.49" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShareIcon = {
+  name: 'share-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-share" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "16 6 12 2 8 6" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShieldOffIcon = {
+  name: 'shield-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-shield-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShieldIcon = {
+  name: 'shield-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-shield" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShoppingBagIcon = {
+  name: 'shopping-bag-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-shopping-bag" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "3", y1: "6", x2: "21", y2: "6" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16 10a4 4 0 0 1-8 0" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShoppingCartIcon = {
+  name: 'shopping-cart-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-shopping-cart" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "9", cy: "21", r: "1" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "20", cy: "21", r: "1" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ShuffleIcon = {
+  name: 'shuffle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-shuffle" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "16 3 21 3 21 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "20", x2: "21", y2: "3" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "21 16 21 21 16 21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "15", x2: "21", y2: "21" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "4", x2: "9", y2: "9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SidebarIcon = {
+  name: 'sidebar-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-sidebar" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "3", x2: "9", y2: "21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SkipBackIcon = {
+  name: 'skip-back-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-skip-back" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "19 20 9 12 19 4 19 20" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "5", y1: "19", x2: "5", y2: "5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SkipForwardIcon = {
+  name: 'skip-forward-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-skip-forward" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "5 4 15 12 5 20 5 4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "19", y1: "5", x2: "19", y2: "19" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SlackIcon = {
+  name: 'slack-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-slack" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12.57", y1: "5.99", x2: "16.15", y2: "16.39" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "7.85", y1: "7.61", x2: "11.43", y2: "18.01" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "16.39", y1: "7.85", x2: "5.99", y2: "11.43" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18.01", y1: "12.57", x2: "7.61", y2: "16.15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SlashIcon = {
+  name: 'slash-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-slash" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.93", y1: "4.93", x2: "19.07", y2: "19.07" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SlidersIcon = {
+  name: 'sliders-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-sliders" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "21", x2: "4", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "10", x2: "4", y2: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "21", x2: "12", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "8", x2: "12", y2: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "21", x2: "20", y2: "16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "12", x2: "20", y2: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "14", x2: "7", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "8", x2: "15", y2: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "16", x2: "23", y2: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SmartphoneIcon = {
+  name: 'smartphone-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-smartphone" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "5", y: "2", width: "14", height: "20", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "18", x2: "12", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SpeakerIcon = {
+  name: 'speaker-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-speaker" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "4", y: "2", width: "16", height: "20", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "14", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "6", x2: "12", y2: "6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SquareIcon = {
+  name: 'square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-square" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var StarIcon = {
+  name: 'star-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-star" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var StopCircleIcon = {
+  name: 'stop-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-stop-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "9", y: "9", width: "6", height: "6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SunIcon = {
+  name: 'sun-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-sun" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "1", x2: "12", y2: "3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "21", x2: "12", y2: "23" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.22", y1: "4.22", x2: "5.64", y2: "5.64" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18.36", y1: "18.36", x2: "19.78", y2: "19.78" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "12", x2: "3", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "12", x2: "23", y2: "12" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.22", y1: "19.78", x2: "5.64", y2: "18.36" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18.36", y1: "5.64", x2: "19.78", y2: "4.22" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SunriseIcon = {
+  name: 'sunrise-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-sunrise" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M17 18a5 5 0 0 0-10 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "2", x2: "12", y2: "9" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.22", y1: "10.22", x2: "5.64", y2: "11.64" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "18", x2: "3", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "18", x2: "23", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18.36", y1: "11.64", x2: "19.78", y2: "10.22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "22", x2: "1", y2: "22" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8 6 12 2 16 6" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var SunsetIcon = {
+  name: 'sunset-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-sunset" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M17 18a5 5 0 0 0-10 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "9", x2: "12", y2: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4.22", y1: "10.22", x2: "5.64", y2: "11.64" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "18", x2: "3", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "18", x2: "23", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18.36", y1: "11.64", x2: "19.78", y2: "10.22" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "22", x2: "1", y2: "22" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "16 5 12 9 8 5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TabletIcon = {
+  name: 'tablet-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-tablet" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "4", y: "2", width: "16", height: "20", rx: "2", ry: "2", transform: "rotate(180 12 12)" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "18", x2: "12", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TagIcon = {
+  name: 'tag-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-tag" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "7", y1: "7", x2: "7", y2: "7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TargetIcon = {
+  name: 'target-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-target" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "6" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TerminalIcon = {
+  name: 'terminal-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-terminal" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "4 17 10 11 4 5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "19", x2: "20", y2: "19" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ThermometerIcon = {
+  name: 'thermometer-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-thermometer" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ThumbsDownIcon = {
+  name: 'thumbs-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-thumbs-down" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ThumbsUpIcon = {
+  name: 'thumbs-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-thumbs-up" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ToggleLeftIcon = {
+  name: 'toggle-left-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-toggle-left" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8", cy: "12", r: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ToggleRightIcon = {
+  name: 'toggle-right-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-toggle-right" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "1", y: "5", width: "22", height: "14", rx: "7", ry: "7" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "16", cy: "12", r: "3" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Trash2Icon = {
+  name: 'trash2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-trash-2" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "3 6 5 6 21 6" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "10", y1: "11", x2: "10", y2: "17" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "14", y1: "11", x2: "14", y2: "17" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TrashIcon = {
+  name: 'trash-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-trash" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "3 6 5 6 21 6" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TrendingDownIcon = {
+  name: 'trending-down-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-trending-down" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "23 18 13.5 8.5 8.5 13.5 1 6" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 18 23 18 23 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TrendingUpIcon = {
+  name: 'trending-up-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-trending-up" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "23 6 13.5 15.5 8.5 10.5 1 18" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 6 23 6 23 12" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TriangleIcon = {
+  name: 'triangle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-triangle" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TruckIcon = {
+  name: 'truck-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-truck" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "1", y: "3", width: "15", height: "13" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "16 8 20 8 23 11 23 16 16 16 16 8" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "5.5", cy: "18.5", r: "2.5" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "18.5", cy: "18.5", r: "2.5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TvIcon = {
+  name: 'tv-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-tv" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "2", y: "7", width: "20", height: "15", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 2 12 7 7 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TwitterIcon = {
+  name: 'twitter-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-twitter" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var TypeIcon = {
+  name: 'type-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-type" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "4 7 4 4 20 4 20 7" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "20", x2: "15", y2: "20" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "4", x2: "12", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UmbrellaIcon = {
+  name: 'umbrella-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-umbrella" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UnderlineIcon = {
+  name: 'underline-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-underline" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "4", y1: "21", x2: "20", y2: "21" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UnlockIcon = {
+  name: 'unlock-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-unlock" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "11", width: "18", height: "11", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M7 11V7a5 5 0 0 1 9.9-1" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UploadCloudIcon = {
+  name: 'upload-cloud-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-upload-cloud" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "16 16 12 12 8 16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "12", x2: "12", y2: "21" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "16 16 12 12 8 16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UploadIcon = {
+  name: 'upload-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-upload" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 8 12 3 7 8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "3", x2: "12", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UserCheckIcon = {
+  name: 'user-check-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-user-check" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8.5", cy: "7", r: "4" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "17 11 19 13 23 9" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UserMinusIcon = {
+  name: 'user-minus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-user-minus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8.5", cy: "7", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "11", x2: "17", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UserPlusIcon = {
+  name: 'user-plus-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-user-plus" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8.5", cy: "7", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "20", y1: "8", x2: "20", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "11", x2: "17", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UserXIcon = {
+  name: 'user-x-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-user-x" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "8.5", cy: "7", r: "4" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "8", x2: "23", y2: "13" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "8", x2: "18", y2: "13" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UserIcon = {
+  name: 'user-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-user" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "7", r: "4" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var UsersIcon = {
+  name: 'users-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-users" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "9", cy: "7", r: "4" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M23 21v-2a4 4 0 0 0-3-3.87" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16 3.13a4 4 0 0 1 0 7.75" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var VideoOffIcon = {
+  name: 'video-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-video-off" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var VideoIcon = {
+  name: 'video-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-video" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "23 7 16 12 23 17 23 7" }
+        },
+        []
+      ), h(
+        "rect",
+        {
+          attrs: { x: "1", y: "5", width: "15", height: "14", rx: "2", ry: "2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var VoicemailIcon = {
+  name: 'voicemail-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-voicemail" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "5.5", cy: "11.5", r: "4.5" }
+        },
+        []
+      ), h(
+        "circle",
+        {
+          attrs: { cx: "18.5", cy: "11.5", r: "4.5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "5.5", y1: "16", x2: "18.5", y2: "16" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Volume1Icon = {
+  name: 'volume1-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-volume-1" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M15.54 8.46a5 5 0 0 1 0 7.07" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var Volume2Icon = {
+  name: 'volume2-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-volume-2" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var VolumeXIcon = {
+  name: 'volume-x-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-volume-x" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "23", y1: "9", x2: "17", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "17", y1: "9", x2: "23", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var VolumeIcon = {
+  name: 'volume-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-volume" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var WatchIcon = {
+  name: 'watch-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-watch" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "7" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "12 9 12 12 13.5 13.5" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var WifiOffIcon = {
+  name: 'wifi-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-wifi-off" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M16.72 11.06A10.94 10.94 0 0 1 19 12.55" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M5 12.55a10.94 10.94 0 0 1 5.17-2.39" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M10.71 5.05A16 16 0 0 1 22.58 9" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M1.42 9a15.91 15.91 0 0 1 4.7-2.88" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M8.53 16.11a6 6 0 0 1 6.95 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "20", x2: "12", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var WifiIcon = {
+  name: 'wifi-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-wifi" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M5 12.55a11 11 0 0 1 14.08 0" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M1.42 9a16 16 0 0 1 21.16 0" }
+        },
+        []
+      ), h(
+        "path",
+        {
+          attrs: { d: "M8.53 16.11a6 6 0 0 1 6.95 0" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "12", y1: "20", x2: "12", y2: "20" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var WindIcon = {
+  name: 'wind-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-wind" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var XCircleIcon = {
+  name: 'x-circle-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-x-circle" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "12", cy: "12", r: "10" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "9", x2: "9", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "9", x2: "15", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var XSquareIcon = {
+  name: 'x-square-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-x-square" }, ctx.data]),
+      [h(
+        "rect",
+        {
+          attrs: { x: "3", y: "3", width: "18", height: "18", rx: "2", ry: "2" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "9", y1: "9", x2: "15", y2: "15" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "15", y1: "9", x2: "9", y2: "15" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var XIcon = {
+  name: 'x-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-x" }, ctx.data]),
+      [h(
+        "line",
+        {
+          attrs: { x1: "18", y1: "6", x2: "6", y2: "18" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "6", y1: "6", x2: "18", y2: "18" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var YoutubeIcon = {
+  name: 'youtube-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-youtube" }, ctx.data]),
+      [h(
+        "path",
+        {
+          attrs: { d: "M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" }
+        },
+        []
+      ), h(
+        "polygon",
+        {
+          attrs: { points: "9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ZapOffIcon = {
+  name: 'zap-off-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-zap-off" }, ctx.data]),
+      [h(
+        "polyline",
+        {
+          attrs: { points: "12.41 6.75 13 2 10.57 4.92" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "18.57 12.91 21 10 15.66 10" }
+        },
+        []
+      ), h(
+        "polyline",
+        {
+          attrs: { points: "8 8 3 14 12 14 11 22 16 16" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "1", y1: "1", x2: "23", y2: "23" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ZapIcon = {
+  name: 'zap-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-zap" }, ctx.data]),
+      [h(
+        "polygon",
+        {
+          attrs: { points: "13 2 3 14 12 14 11 22 21 10 12 10 13 2" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ZoomInIcon = {
+  name: 'zoom-in-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-zoom-in" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "11", cy: "11", r: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "21", x2: "16.65", y2: "16.65" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "11", y1: "8", x2: "11", y2: "14" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "11", x2: "14", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+var ZoomOutIcon = {
+  name: 'zoom-out-icon',
+
+  functional: true,
+
+  render: function render(h, ctx) {
+    return h(
+      "svg",
+      __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default()([{
+        attrs: { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", "stroke-linejoin": "round" },
+        "class": "feather feather-zoom-out" }, ctx.data]),
+      [h(
+        "circle",
+        {
+          attrs: { cx: "11", cy: "11", r: "8" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "21", y1: "21", x2: "16.65", y2: "16.65" }
+        },
+        []
+      ), h(
+        "line",
+        {
+          attrs: { x1: "8", y1: "11", x2: "14", y2: "11" }
+        },
+        []
+      )]
+    );
+  }
+};
+
+
 
 
 /***/ }),
@@ -13976,8 +22710,8 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-__webpack_require__(47);
-module.exports = __webpack_require__(48);
+__webpack_require__(51);
+module.exports = __webpack_require__(52);
 
 
 /***/ }),
@@ -13997,18 +22731,29 @@ window.Vue = __webpack_require__(37);
 
 window.feather = __webpack_require__(40);
 
+window.VueFeatherIcon = __webpack_require__(11);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(41));
+/*
+Vue.component( 'test', 
+  require('./components/Test.vue') 
+);
 
-Vue.component('vue-test', __webpack_require__(44));
+Vue.component( 'test2', 
+  require('./components/Test2.vue') 
+);
+*/
+
+Vue.component('emails', __webpack_require__(42));
 
 var app = new Vue({
-    el: '#app'
+  el: '#app'
+
 });
 
 /***/ }),
@@ -14040,6 +22785,8 @@ try {
 window.axios = __webpack_require__(18);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.baseURL = 'https://example.com/api';
+// window.axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
@@ -14090,7 +22837,7 @@ if (token) {
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.5';
+  var VERSION = '4.17.10';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -14514,6 +23261,14 @@ if (token) {
   /** Used to access faster Node.js helpers. */
   var nodeUtil = (function() {
     try {
+      // Use `util.types` for Node.js 10+.
+      var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+      if (types) {
+        return types;
+      }
+
+      // Legacy `process.binding('util')` for Node.js < 10.
       return freeProcess && freeProcess.binding && freeProcess.binding('util');
     } catch (e) {}
   }());
@@ -31210,7 +39965,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
-  * Bootstrap v4.1.0 (https://getbootstrap.com/)
+  * Bootstrap v4.1.1 (https://getbootstrap.com/)
   * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
@@ -31281,7 +40036,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): util.js
+   * Bootstrap (v4.1.1): util.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -31414,7 +40169,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): alert.js
+   * Bootstrap (v4.1.1): alert.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -31426,7 +40181,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'alert';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.alert';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -31463,9 +40218,11 @@ module.exports = function(module) {
 
       // Public
       _proto.close = function close(element) {
-        element = element || this._element;
+        var rootElement = this._element;
 
-        var rootElement = this._getRootElement(element);
+        if (element) {
+          rootElement = this._getRootElement(element);
+        }
 
         var customEvent = this._triggerCloseEvent(rootElement);
 
@@ -31587,7 +40344,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): button.js
+   * Bootstrap (v4.1.1): button.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -31599,7 +40356,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'button';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.button';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -31751,7 +40508,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): carousel.js
+   * Bootstrap (v4.1.1): carousel.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -31763,7 +40520,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'carousel';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.carousel';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -32252,7 +41009,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): collapse.js
+   * Bootstrap (v4.1.1): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -32264,7 +41021,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'collapse';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.collapse';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -32535,7 +41292,7 @@ module.exports = function(module) {
           var $this = $$$1(this);
           var data = $this.data(DATA_KEY);
 
-          var _config = _objectSpread({}, Default, $this.data(), typeof config === 'object' && config);
+          var _config = _objectSpread({}, Default, $this.data(), typeof config === 'object' && config ? config : {});
 
           if (!data && _config.toggle && /show|hide/.test(config)) {
             _config.toggle = false;
@@ -32612,7 +41369,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): dropdown.js
+   * Bootstrap (v4.1.1): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -32624,7 +41381,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'dropdown';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.dropdown';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -33094,7 +41851,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): modal.js
+   * Bootstrap (v4.1.1): modal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -33106,7 +41863,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'modal';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.modal';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -33582,7 +42339,7 @@ module.exports = function(module) {
         return this.each(function () {
           var data = $$$1(this).data(DATA_KEY);
 
-          var _config = _objectSpread({}, Modal.Default, $$$1(this).data(), typeof config === 'object' && config);
+          var _config = _objectSpread({}, Default, $$$1(this).data(), typeof config === 'object' && config ? config : {});
 
           if (!data) {
             data = new Modal(this, _config);
@@ -33672,7 +42429,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): tooltip.js
+   * Bootstrap (v4.1.1): tooltip.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -33684,7 +42441,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'tooltip';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.tooltip';
     var EVENT_KEY = "." + DATA_KEY;
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -34189,7 +42946,7 @@ module.exports = function(module) {
       };
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, this.constructor.Default, $$$1(this.element).data(), config);
+        config = _objectSpread({}, this.constructor.Default, $$$1(this.element).data(), typeof config === 'object' && config ? config : {});
 
         if (typeof config.delay === 'number') {
           config.delay = {
@@ -34339,7 +43096,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): popover.js
+   * Bootstrap (v4.1.1): popover.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -34351,7 +43108,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'popover';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.popover';
     var EVENT_KEY = "." + DATA_KEY;
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -34536,7 +43293,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): scrollspy.js
+   * Bootstrap (v4.1.1): scrollspy.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -34548,7 +43305,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'scrollspy';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.scrollspy';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -34675,7 +43432,7 @@ module.exports = function(module) {
 
 
       _proto._getConfig = function _getConfig(config) {
-        config = _objectSpread({}, Default, config);
+        config = _objectSpread({}, Default, typeof config === 'object' && config ? config : {});
 
         if (typeof config.target !== 'string') {
           var id = $$$1(config.target).attr('id');
@@ -34848,7 +43605,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.1.0): tab.js
+   * Bootstrap (v4.1.1): tab.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -34860,7 +43617,7 @@ module.exports = function(module) {
      * ------------------------------------------------------------------------
      */
     var NAME = 'tab';
-    var VERSION = '4.1.0';
+    var VERSION = '4.1.1';
     var DATA_KEY = 'bs.tab';
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -35096,7 +43853,7 @@ module.exports = function(module) {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.0.0): index.js
+   * Bootstrap (v4.1.1): index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -47310,6 +56067,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		}
 /******/ 	};
 /******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
@@ -47325,894 +56087,29 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 49);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-var store = __webpack_require__(36)('wks');
-var uid = __webpack_require__(15);
-var Symbol = __webpack_require__(1).Symbol;
-var USE_SYMBOL = typeof Symbol == 'function';
+/***/ "./dist/icons.json":
+/*!*************************!*\
+  !*** ./dist/icons.json ***!
+  \*************************/
+/*! exports provided: activity, airplay, alert-circle, alert-octagon, alert-triangle, align-center, align-justify, align-left, align-right, anchor, aperture, archive, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, award, bar-chart-2, bar-chart, battery-charging, battery, bell-off, bell, bluetooth, bold, book-open, book, bookmark, box, briefcase, calendar, camera-off, camera, cast, check-circle, check-square, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, chrome, circle, clipboard, clock, cloud-drizzle, cloud-lightning, cloud-off, cloud-rain, cloud-snow, cloud, code, codepen, command, compass, copy, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, cpu, credit-card, crop, crosshair, database, delete, disc, dollar-sign, download-cloud, download, droplet, edit-2, edit-3, edit, external-link, eye-off, eye, facebook, fast-forward, feather, file-minus, file-plus, file-text, file, film, filter, flag, folder-minus, folder-plus, folder, gift, git-branch, git-commit, git-merge, git-pull-request, github, gitlab, globe, grid, hard-drive, hash, headphones, heart, help-circle, home, image, inbox, info, instagram, italic, layers, layout, life-buoy, link-2, link, linkedin, list, loader, lock, log-in, log-out, mail, map-pin, map, maximize-2, maximize, menu, message-circle, message-square, mic-off, mic, minimize-2, minimize, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, package, paperclip, pause-circle, pause, percent, phone-call, phone-forwarded, phone-incoming, phone-missed, phone-off, phone-outgoing, phone, pie-chart, play-circle, play, plus-circle, plus-square, plus, pocket, power, printer, radio, refresh-ccw, refresh-cw, repeat, rewind, rotate-ccw, rotate-cw, rss, save, scissors, search, send, server, settings, share-2, share, shield-off, shield, shopping-bag, shopping-cart, shuffle, sidebar, skip-back, skip-forward, slack, slash, sliders, smartphone, speaker, square, star, stop-circle, sun, sunrise, sunset, tablet, tag, target, terminal, thermometer, thumbs-down, thumbs-up, toggle-left, toggle-right, trash-2, trash, trending-down, trending-up, triangle, truck, tv, twitter, type, umbrella, underline, unlock, upload-cloud, upload, user-check, user-minus, user-plus, user-x, user, users, video-off, video, voicemail, volume-1, volume-2, volume-x, volume, watch, wifi-off, wifi, wind, x-circle, x-square, x, youtube, zap-off, zap, zoom-in, zoom-out, default */
+/***/ (function(module) {
 
-var $exports = module.exports = function (name) {
-  return store[name] || (store[name] =
-    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
-};
-
-$exports.store = store;
-
+module.exports = {"activity":"<polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"></polyline>","airplay":"<path d=\"M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1\"></path><polygon points=\"12 15 17 21 7 21 12 15\"></polygon>","alert-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"16\"></line>","alert-octagon":"<polygon points=\"7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2\"></polygon><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"16\"></line>","alert-triangle":"<path d=\"M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\"></path><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"13\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"17\"></line>","align-center":"<line x1=\"18\" y1=\"10\" x2=\"6\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"18\" y1=\"18\" x2=\"6\" y2=\"18\"></line>","align-justify":"<line x1=\"21\" y1=\"10\" x2=\"3\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"21\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","align-left":"<line x1=\"17\" y1=\"10\" x2=\"3\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"17\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","align-right":"<line x1=\"21\" y1=\"10\" x2=\"7\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"21\" y1=\"18\" x2=\"7\" y2=\"18\"></line>","anchor":"<circle cx=\"12\" cy=\"5\" r=\"3\"></circle><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"8\"></line><path d=\"M5 12H2a10 10 0 0 0 20 0h-3\"></path>","aperture":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"14.31\" y1=\"8\" x2=\"20.05\" y2=\"17.94\"></line><line x1=\"9.69\" y1=\"8\" x2=\"21.17\" y2=\"8\"></line><line x1=\"7.38\" y1=\"12\" x2=\"13.12\" y2=\"2.06\"></line><line x1=\"9.69\" y1=\"16\" x2=\"3.95\" y2=\"6.06\"></line><line x1=\"14.31\" y1=\"16\" x2=\"2.83\" y2=\"16\"></line><line x1=\"16.62\" y1=\"12\" x2=\"10.88\" y2=\"21.94\"></line>","archive":"<polyline points=\"21 8 21 21 3 21 3 8\"></polyline><rect x=\"1\" y=\"3\" width=\"22\" height=\"5\"></rect><line x1=\"10\" y1=\"12\" x2=\"14\" y2=\"12\"></line>","arrow-down-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"8 12 12 16 16 12\"></polyline><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>","arrow-down-left":"<line x1=\"17\" y1=\"7\" x2=\"7\" y2=\"17\"></line><polyline points=\"17 17 7 17 7 7\"></polyline>","arrow-down-right":"<line x1=\"7\" y1=\"7\" x2=\"17\" y2=\"17\"></line><polyline points=\"17 7 17 17 7 17\"></polyline>","arrow-down":"<line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line><polyline points=\"19 12 12 19 5 12\"></polyline>","arrow-left-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 8 8 12 12 16\"></polyline><line x1=\"16\" y1=\"12\" x2=\"8\" y2=\"12\"></line>","arrow-left":"<line x1=\"19\" y1=\"12\" x2=\"5\" y2=\"12\"></line><polyline points=\"12 19 5 12 12 5\"></polyline>","arrow-right-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 16 16 12 12 8\"></polyline><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","arrow-right":"<line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line><polyline points=\"12 5 19 12 12 19\"></polyline>","arrow-up-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"16 12 12 8 8 12\"></polyline><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"8\"></line>","arrow-up-left":"<line x1=\"17\" y1=\"17\" x2=\"7\" y2=\"7\"></line><polyline points=\"7 17 7 7 17 7\"></polyline>","arrow-up-right":"<line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"></line><polyline points=\"7 7 17 7 17 17\"></polyline>","arrow-up":"<line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"5\"></line><polyline points=\"5 12 12 5 19 12\"></polyline>","at-sign":"<circle cx=\"12\" cy=\"12\" r=\"4\"></circle><path d=\"M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94\"></path>","award":"<circle cx=\"12\" cy=\"8\" r=\"7\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"></polyline>","bar-chart-2":"<line x1=\"18\" y1=\"20\" x2=\"18\" y2=\"10\"></line><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"4\"></line><line x1=\"6\" y1=\"20\" x2=\"6\" y2=\"14\"></line>","bar-chart":"<line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"10\"></line><line x1=\"18\" y1=\"20\" x2=\"18\" y2=\"4\"></line><line x1=\"6\" y1=\"20\" x2=\"6\" y2=\"16\"></line>","battery-charging":"<path d=\"M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19\"></path><line x1=\"23\" y1=\"13\" x2=\"23\" y2=\"11\"></line><polyline points=\"11 6 7 12 13 12 9 18\"></polyline>","battery":"<rect x=\"1\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\" ry=\"2\"></rect><line x1=\"23\" y1=\"13\" x2=\"23\" y2=\"11\"></line>","bell-off":"<path d=\"M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","bell":"<path d=\"M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0\"></path>","bluetooth":"<polyline points=\"6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5\"></polyline>","bold":"<path d=\"M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"></path><path d=\"M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"></path>","book-open":"<path d=\"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z\"></path><path d=\"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z\"></path>","book":"<path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\"></path><path d=\"M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\"></path>","bookmark":"<path d=\"M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z\"></path>","box":"<path d=\"M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z\"></path><polyline points=\"2.32 6.16 12 11 21.68 6.16\"></polyline><line x1=\"12\" y1=\"22.76\" x2=\"12\" y2=\"11\"></line>","briefcase":"<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"></path>","calendar":"<rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"></line><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"></line><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"></line>","camera-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56\"></path>","camera":"<path d=\"M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z\"></path><circle cx=\"12\" cy=\"13\" r=\"4\"></circle>","cast":"<path d=\"M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6\"></path><line x1=\"2\" y1=\"20\" x2=\"2\" y2=\"20\"></line>","check-circle":"<path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"></path><polyline points=\"22 4 12 14.01 9 11.01\"></polyline>","check-square":"<polyline points=\"9 11 12 14 22 4\"></polyline><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"></path>","check":"<polyline points=\"20 6 9 17 4 12\"></polyline>","chevron-down":"<polyline points=\"6 9 12 15 18 9\"></polyline>","chevron-left":"<polyline points=\"15 18 9 12 15 6\"></polyline>","chevron-right":"<polyline points=\"9 18 15 12 9 6\"></polyline>","chevron-up":"<polyline points=\"18 15 12 9 6 15\"></polyline>","chevrons-down":"<polyline points=\"7 13 12 18 17 13\"></polyline><polyline points=\"7 6 12 11 17 6\"></polyline>","chevrons-left":"<polyline points=\"11 17 6 12 11 7\"></polyline><polyline points=\"18 17 13 12 18 7\"></polyline>","chevrons-right":"<polyline points=\"13 17 18 12 13 7\"></polyline><polyline points=\"6 17 11 12 6 7\"></polyline>","chevrons-up":"<polyline points=\"17 11 12 6 7 11\"></polyline><polyline points=\"17 18 12 13 7 18\"></polyline>","chrome":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"21.17\" y1=\"8\" x2=\"12\" y2=\"8\"></line><line x1=\"3.95\" y1=\"6.06\" x2=\"8.54\" y2=\"14\"></line><line x1=\"10.88\" y1=\"21.94\" x2=\"15.46\" y2=\"14\"></line>","circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle>","clipboard":"<path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path><rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>","clock":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline>","cloud-drizzle":"<line x1=\"8\" y1=\"19\" x2=\"8\" y2=\"21\"></line><line x1=\"8\" y1=\"13\" x2=\"8\" y2=\"15\"></line><line x1=\"16\" y1=\"19\" x2=\"16\" y2=\"21\"></line><line x1=\"16\" y1=\"13\" x2=\"16\" y2=\"15\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"></line><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"17\"></line><path d=\"M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25\"></path>","cloud-lightning":"<path d=\"M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9\"></path><polyline points=\"13 11 9 17 15 17 11 23\"></polyline>","cloud-off":"<path d=\"M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","cloud-rain":"<line x1=\"16\" y1=\"13\" x2=\"16\" y2=\"21\"></line><line x1=\"8\" y1=\"13\" x2=\"8\" y2=\"21\"></line><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"23\"></line><path d=\"M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25\"></path>","cloud-snow":"<path d=\"M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"8\" y1=\"20\" x2=\"8\" y2=\"20\"></line><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"22\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line><line x1=\"16\" y1=\"20\" x2=\"16\" y2=\"20\"></line>","cloud":"<path d=\"M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z\"></path>","code":"<polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline>","codepen":"<polygon points=\"12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2\"></polygon><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"15.5\"></line><polyline points=\"22 8.5 12 15.5 2 8.5\"></polyline><polyline points=\"2 15.5 12 8.5 22 15.5\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"8.5\"></line>","command":"<path d=\"M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z\"></path>","compass":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polygon points=\"16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76\"></polygon>","copy":"<rect x=\"9\" y=\"9\" width=\"13\" height=\"13\" rx=\"2\" ry=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path>","corner-down-left":"<polyline points=\"9 10 4 15 9 20\"></polyline><path d=\"M20 4v7a4 4 0 0 1-4 4H4\"></path>","corner-down-right":"<polyline points=\"15 10 20 15 15 20\"></polyline><path d=\"M4 4v7a4 4 0 0 0 4 4h12\"></path>","corner-left-down":"<polyline points=\"14 15 9 20 4 15\"></polyline><path d=\"M20 4h-7a4 4 0 0 0-4 4v12\"></path>","corner-left-up":"<polyline points=\"14 9 9 4 4 9\"></polyline><path d=\"M20 20h-7a4 4 0 0 1-4-4V4\"></path>","corner-right-down":"<polyline points=\"10 15 15 20 20 15\"></polyline><path d=\"M4 4h7a4 4 0 0 1 4 4v12\"></path>","corner-right-up":"<polyline points=\"10 9 15 4 20 9\"></polyline><path d=\"M4 20h7a4 4 0 0 0 4-4V4\"></path>","corner-up-left":"<polyline points=\"9 14 4 9 9 4\"></polyline><path d=\"M20 20v-7a4 4 0 0 0-4-4H4\"></path>","corner-up-right":"<polyline points=\"15 14 20 9 15 4\"></polyline><path d=\"M4 20v-7a4 4 0 0 1 4-4h12\"></path>","cpu":"<rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect><line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line><line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line><line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line><line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line><line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line><line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line><line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line><line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>","credit-card":"<rect x=\"1\" y=\"4\" width=\"22\" height=\"16\" rx=\"2\" ry=\"2\"></rect><line x1=\"1\" y1=\"10\" x2=\"23\" y2=\"10\"></line>","crop":"<path d=\"M6.13 1L6 16a2 2 0 0 0 2 2h15\"></path><path d=\"M1 6.13L16 6a2 2 0 0 1 2 2v15\"></path>","crosshair":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"22\" y1=\"12\" x2=\"18\" y2=\"12\"></line><line x1=\"6\" y1=\"12\" x2=\"2\" y2=\"12\"></line><line x1=\"12\" y1=\"6\" x2=\"12\" y2=\"2\"></line><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"18\"></line>","database":"<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path>","delete":"<path d=\"M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z\"></path><line x1=\"18\" y1=\"9\" x2=\"12\" y2=\"15\"></line><line x1=\"12\" y1=\"9\" x2=\"18\" y2=\"15\"></line>","disc":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"3\"></circle>","dollar-sign":"<line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"23\"></line><path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\"></path>","download-cloud":"<polyline points=\"8 17 12 21 16 17\"></polyline><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"></line><path d=\"M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29\"></path>","download":"<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"></path><polyline points=\"7 10 12 15 17 10\"></polyline><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"></line>","droplet":"<path d=\"M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z\"></path>","edit-2":"<polygon points=\"16 3 21 8 8 21 3 21 3 16 16 3\"></polygon>","edit-3":"<polygon points=\"14 2 18 6 7 17 3 17 3 13 14 2\"></polygon><line x1=\"3\" y1=\"22\" x2=\"21\" y2=\"22\"></line>","edit":"<path d=\"M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34\"></path><polygon points=\"18 2 22 6 12 16 8 16 8 12 18 2\"></polygon>","external-link":"<path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"></path><polyline points=\"15 3 21 3 21 9\"></polyline><line x1=\"10\" y1=\"14\" x2=\"21\" y2=\"3\"></line>","eye-off":"<path d=\"M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","eye":"<path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle>","facebook":"<path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"></path>","fast-forward":"<polygon points=\"13 19 22 12 13 5 13 19\"></polygon><polygon points=\"2 19 11 12 2 5 2 19\"></polygon>","feather":"<path d=\"M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z\"></path><line x1=\"16\" y1=\"8\" x2=\"2\" y2=\"22\"></line><line x1=\"17\" y1=\"15\" x2=\"9\" y2=\"15\"></line>","file-minus":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line>","file-plus":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"12\"></line><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line>","file-text":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line><polyline points=\"10 9 9 9 8 9\"></polyline>","file":"<path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path><polyline points=\"13 2 13 9 20 9\"></polyline>","film":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"2.18\" ry=\"2.18\"></rect><line x1=\"7\" y1=\"2\" x2=\"7\" y2=\"22\"></line><line x1=\"17\" y1=\"2\" x2=\"17\" y2=\"22\"></line><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"2\" y1=\"7\" x2=\"7\" y2=\"7\"></line><line x1=\"2\" y1=\"17\" x2=\"7\" y2=\"17\"></line><line x1=\"17\" y1=\"17\" x2=\"22\" y2=\"17\"></line><line x1=\"17\" y1=\"7\" x2=\"22\" y2=\"7\"></line>","filter":"<polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"></polygon>","flag":"<path d=\"M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z\"></path><line x1=\"4\" y1=\"22\" x2=\"4\" y2=\"15\"></line>","folder-minus":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path><line x1=\"9\" y1=\"14\" x2=\"15\" y2=\"14\"></line>","folder-plus":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"17\"></line><line x1=\"9\" y1=\"14\" x2=\"15\" y2=\"14\"></line>","folder":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path>","gift":"<polyline points=\"20 12 20 22 4 22 4 12\"></polyline><rect x=\"2\" y=\"7\" width=\"20\" height=\"5\"></rect><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"7\"></line><path d=\"M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z\"></path><path d=\"M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z\"></path>","git-branch":"<line x1=\"6\" y1=\"3\" x2=\"6\" y2=\"15\"></line><circle cx=\"18\" cy=\"6\" r=\"3\"></circle><circle cx=\"6\" cy=\"18\" r=\"3\"></circle><path d=\"M18 9a9 9 0 0 1-9 9\"></path>","git-commit":"<circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"1.05\" y1=\"12\" x2=\"7\" y2=\"12\"></line><line x1=\"17.01\" y1=\"12\" x2=\"22.96\" y2=\"12\"></line>","git-merge":"<circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M6 21V9a9 9 0 0 0 9 9\"></path>","git-pull-request":"<circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M13 6h3a2 2 0 0 1 2 2v7\"></path><line x1=\"6\" y1=\"9\" x2=\"6\" y2=\"21\"></line>","github":"<path d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\"></path>","gitlab":"<path d=\"M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z\"></path>","globe":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path>","grid":"<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect>","hard-drive":"<line x1=\"22\" y1=\"12\" x2=\"2\" y2=\"12\"></line><path d=\"M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\"></path><line x1=\"6\" y1=\"16\" x2=\"6\" y2=\"16\"></line><line x1=\"10\" y1=\"16\" x2=\"10\" y2=\"16\"></line>","hash":"<line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"></line><line x1=\"4\" y1=\"15\" x2=\"20\" y2=\"15\"></line><line x1=\"10\" y1=\"3\" x2=\"8\" y2=\"21\"></line><line x1=\"16\" y1=\"3\" x2=\"14\" y2=\"21\"></line>","headphones":"<path d=\"M3 18v-6a9 9 0 0 1 18 0v6\"></path><path d=\"M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z\"></path>","heart":"<path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"></path>","help-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"></path><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"17\"></line>","home":"<path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path><polyline points=\"9 22 9 12 15 12 15 22\"></polyline>","image":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"></circle><polyline points=\"21 15 16 10 5 21\"></polyline>","inbox":"<polyline points=\"22 12 16 12 14 15 10 15 8 12 2 12\"></polyline><path d=\"M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\"></path>","info":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"8\"></line>","instagram":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"></path><line x1=\"17.5\" y1=\"6.5\" x2=\"17.5\" y2=\"6.5\"></line>","italic":"<line x1=\"19\" y1=\"4\" x2=\"10\" y2=\"4\"></line><line x1=\"14\" y1=\"20\" x2=\"5\" y2=\"20\"></line><line x1=\"15\" y1=\"4\" x2=\"9\" y2=\"20\"></line>","layers":"<polygon points=\"12 2 2 7 12 12 22 7 12 2\"></polygon><polyline points=\"2 17 12 22 22 17\"></polyline><polyline points=\"2 12 12 17 22 12\"></polyline>","layout":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line><line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>","life-buoy":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"4.93\" y1=\"4.93\" x2=\"9.17\" y2=\"9.17\"></line><line x1=\"14.83\" y1=\"14.83\" x2=\"19.07\" y2=\"19.07\"></line><line x1=\"14.83\" y1=\"9.17\" x2=\"19.07\" y2=\"4.93\"></line><line x1=\"14.83\" y1=\"9.17\" x2=\"18.36\" y2=\"5.64\"></line><line x1=\"4.93\" y1=\"19.07\" x2=\"9.17\" y2=\"14.83\"></line>","link-2":"<path d=\"M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3\"></path><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","link":"<path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"></path><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"></path>","linkedin":"<path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"></path><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"></rect><circle cx=\"4\" cy=\"4\" r=\"2\"></circle>","list":"<line x1=\"8\" y1=\"6\" x2=\"21\" y2=\"6\"></line><line x1=\"8\" y1=\"12\" x2=\"21\" y2=\"12\"></line><line x1=\"8\" y1=\"18\" x2=\"21\" y2=\"18\"></line><line x1=\"3\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"3\" y1=\"12\" x2=\"3\" y2=\"12\"></line><line x1=\"3\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","loader":"<line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"6\"></line><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"22\"></line><line x1=\"4.93\" y1=\"4.93\" x2=\"7.76\" y2=\"7.76\"></line><line x1=\"16.24\" y1=\"16.24\" x2=\"19.07\" y2=\"19.07\"></line><line x1=\"2\" y1=\"12\" x2=\"6\" y2=\"12\"></line><line x1=\"18\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"4.93\" y1=\"19.07\" x2=\"7.76\" y2=\"16.24\"></line><line x1=\"16.24\" y1=\"7.76\" x2=\"19.07\" y2=\"4.93\"></line>","lock":"<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path>","log-in":"<path d=\"M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4\"></path><polyline points=\"10 17 15 12 10 7\"></polyline><line x1=\"15\" y1=\"12\" x2=\"3\" y2=\"12\"></line>","log-out":"<path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"></path><polyline points=\"16 17 21 12 16 7\"></polyline><line x1=\"21\" y1=\"12\" x2=\"9\" y2=\"12\"></line>","mail":"<path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline>","map-pin":"<path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"></path><circle cx=\"12\" cy=\"10\" r=\"3\"></circle>","map":"<polygon points=\"1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6\"></polygon><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"18\"></line><line x1=\"16\" y1=\"6\" x2=\"16\" y2=\"22\"></line>","maximize-2":"<polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" y1=\"3\" x2=\"14\" y2=\"10\"></line><line x1=\"3\" y1=\"21\" x2=\"10\" y2=\"14\"></line>","maximize":"<path d=\"M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3\"></path>","menu":"<line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"></line><line x1=\"3\" y1=\"18\" x2=\"21\" y2=\"18\"></line>","message-circle":"<path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"></path>","message-square":"<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path>","mic-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6\"></path><path d=\"M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23\"></path><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"></line><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"></line>","mic":"<path d=\"M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z\"></path><path d=\"M19 10v2a7 7 0 0 1-14 0v-2\"></path><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"></line><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"></line>","minimize-2":"<polyline points=\"4 14 10 14 10 20\"></polyline><polyline points=\"20 10 14 10 14 4\"></polyline><line x1=\"14\" y1=\"10\" x2=\"21\" y2=\"3\"></line><line x1=\"3\" y1=\"21\" x2=\"10\" y2=\"14\"></line>","minimize":"<path d=\"M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3\"></path>","minus-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","minus-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","minus":"<line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>","monitor":"<rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line>","moon":"<path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"></path>","more-horizontal":"<circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"19\" cy=\"12\" r=\"1\"></circle><circle cx=\"5\" cy=\"12\" r=\"1\"></circle>","more-vertical":"<circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"12\" cy=\"5\" r=\"1\"></circle><circle cx=\"12\" cy=\"19\" r=\"1\"></circle>","move":"<polyline points=\"5 9 2 12 5 15\"></polyline><polyline points=\"9 5 12 2 15 5\"></polyline><polyline points=\"15 19 12 22 9 19\"></polyline><polyline points=\"19 9 22 12 19 15\"></polyline><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"22\"></line>","music":"<path d=\"M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z\"></path><polyline points=\"9 17 9 5 21 3 21 15\"></polyline>","navigation-2":"<polygon points=\"12 2 19 21 12 17 5 21 12 2\"></polygon>","navigation":"<polygon points=\"3 11 22 2 13 21 11 13 3 11\"></polygon>","octagon":"<polygon points=\"7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2\"></polygon>","package":"<path d=\"M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z\"></path><polyline points=\"2.32 6.16 12 11 21.68 6.16\"></polyline><line x1=\"12\" y1=\"22.76\" x2=\"12\" y2=\"11\"></line><line x1=\"7\" y1=\"3.5\" x2=\"17\" y2=\"8.5\"></line>","paperclip":"<path d=\"M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48\"></path>","pause-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"9\"></line><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"9\"></line>","pause":"<rect x=\"6\" y=\"4\" width=\"4\" height=\"16\"></rect><rect x=\"14\" y=\"4\" width=\"4\" height=\"16\"></rect>","percent":"<line x1=\"19\" y1=\"5\" x2=\"5\" y2=\"19\"></line><circle cx=\"6.5\" cy=\"6.5\" r=\"2.5\"></circle><circle cx=\"17.5\" cy=\"17.5\" r=\"2.5\"></circle>","phone-call":"<path d=\"M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-forwarded":"<polyline points=\"19 1 23 5 19 9\"></polyline><line x1=\"15\" y1=\"5\" x2=\"23\" y2=\"5\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-incoming":"<polyline points=\"16 2 16 8 22 8\"></polyline><line x1=\"23\" y1=\"1\" x2=\"16\" y2=\"8\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-missed":"<line x1=\"23\" y1=\"1\" x2=\"17\" y2=\"7\"></line><line x1=\"17\" y1=\"1\" x2=\"23\" y2=\"7\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-off":"<path d=\"M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91\"></path><line x1=\"23\" y1=\"1\" x2=\"1\" y2=\"23\"></line>","phone-outgoing":"<polyline points=\"23 7 23 1 17 1\"></polyline><line x1=\"16\" y1=\"8\" x2=\"23\" y2=\"1\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone":"<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","pie-chart":"<path d=\"M21.21 15.89A10 10 0 1 1 8 2.83\"></path><path d=\"M22 12A10 10 0 0 0 12 2v10z\"></path>","play-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polygon points=\"10 8 16 12 10 16 10 8\"></polygon>","play":"<polygon points=\"5 3 19 12 5 21 5 3\"></polygon>","plus-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","plus-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","plus":"<line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>","pocket":"<path d=\"M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z\"></path><polyline points=\"8 10 12 14 16 10\"></polyline>","power":"<path d=\"M18.36 6.64a9 9 0 1 1-12.73 0\"></path><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"12\"></line>","printer":"<polyline points=\"6 9 6 2 18 2 18 9\"></polyline><path d=\"M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2\"></path><rect x=\"6\" y=\"14\" width=\"12\" height=\"8\"></rect>","radio":"<circle cx=\"12\" cy=\"12\" r=\"2\"></circle><path d=\"M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14\"></path>","refresh-ccw":"<polyline points=\"1 4 1 10 7 10\"></polyline><polyline points=\"23 20 23 14 17 14\"></polyline><path d=\"M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15\"></path>","refresh-cw":"<polyline points=\"23 4 23 10 17 10\"></polyline><polyline points=\"1 20 1 14 7 14\"></polyline><path d=\"M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15\"></path>","repeat":"<polyline points=\"17 1 21 5 17 9\"></polyline><path d=\"M3 11V9a4 4 0 0 1 4-4h14\"></path><polyline points=\"7 23 3 19 7 15\"></polyline><path d=\"M21 13v2a4 4 0 0 1-4 4H3\"></path>","rewind":"<polygon points=\"11 19 2 12 11 5 11 19\"></polygon><polygon points=\"22 19 13 12 22 5 22 19\"></polygon>","rotate-ccw":"<polyline points=\"1 4 1 10 7 10\"></polyline><path d=\"M3.51 15a9 9 0 1 0 2.13-9.36L1 10\"></path>","rotate-cw":"<polyline points=\"23 4 23 10 17 10\"></polyline><path d=\"M20.49 15a9 9 0 1 1-2.12-9.36L23 10\"></path>","rss":"<path d=\"M4 11a9 9 0 0 1 9 9\"></path><path d=\"M4 4a16 16 0 0 1 16 16\"></path><circle cx=\"5\" cy=\"19\" r=\"1\"></circle>","save":"<path d=\"M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z\"></path><polyline points=\"17 21 17 13 7 13 7 21\"></polyline><polyline points=\"7 3 7 8 15 8\"></polyline>","scissors":"<circle cx=\"6\" cy=\"6\" r=\"3\"></circle><circle cx=\"6\" cy=\"18\" r=\"3\"></circle><line x1=\"20\" y1=\"4\" x2=\"8.12\" y2=\"15.88\"></line><line x1=\"14.47\" y1=\"14.48\" x2=\"20\" y2=\"20\"></line><line x1=\"8.12\" y1=\"8.12\" x2=\"12\" y2=\"12\"></line>","search":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line>","send":"<line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"></line><polygon points=\"22 2 15 22 11 13 2 9 22 2\"></polygon>","server":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line><line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>","settings":"<circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z\"></path>","share-2":"<circle cx=\"18\" cy=\"5\" r=\"3\"></circle><circle cx=\"6\" cy=\"12\" r=\"3\"></circle><circle cx=\"18\" cy=\"19\" r=\"3\"></circle><line x1=\"8.59\" y1=\"13.51\" x2=\"15.42\" y2=\"17.49\"></line><line x1=\"15.41\" y1=\"6.51\" x2=\"8.59\" y2=\"10.49\"></line>","share":"<path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"></path><polyline points=\"16 6 12 2 8 6\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"15\"></line>","shield-off":"<path d=\"M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18\"></path><path d=\"M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","shield":"<path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path>","shopping-bag":"<path d=\"M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"></path><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"></line><path d=\"M16 10a4 4 0 0 1-8 0\"></path>","shopping-cart":"<circle cx=\"9\" cy=\"21\" r=\"1\"></circle><circle cx=\"20\" cy=\"21\" r=\"1\"></circle><path d=\"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\"></path>","shuffle":"<polyline points=\"16 3 21 3 21 8\"></polyline><line x1=\"4\" y1=\"20\" x2=\"21\" y2=\"3\"></line><polyline points=\"21 16 21 21 16 21\"></polyline><line x1=\"15\" y1=\"15\" x2=\"21\" y2=\"21\"></line><line x1=\"4\" y1=\"4\" x2=\"9\" y2=\"9\"></line>","sidebar":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"9\" y1=\"3\" x2=\"9\" y2=\"21\"></line>","skip-back":"<polygon points=\"19 20 9 12 19 4 19 20\"></polygon><line x1=\"5\" y1=\"19\" x2=\"5\" y2=\"5\"></line>","skip-forward":"<polygon points=\"5 4 15 12 5 20 5 4\"></polygon><line x1=\"19\" y1=\"5\" x2=\"19\" y2=\"19\"></line>","slack":"<path d=\"M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z\"></path><line x1=\"12.57\" y1=\"5.99\" x2=\"16.15\" y2=\"16.39\"></line><line x1=\"7.85\" y1=\"7.61\" x2=\"11.43\" y2=\"18.01\"></line><line x1=\"16.39\" y1=\"7.85\" x2=\"5.99\" y2=\"11.43\"></line><line x1=\"18.01\" y1=\"12.57\" x2=\"7.61\" y2=\"16.15\"></line>","slash":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"4.93\" y1=\"4.93\" x2=\"19.07\" y2=\"19.07\"></line>","sliders":"<line x1=\"4\" y1=\"21\" x2=\"4\" y2=\"14\"></line><line x1=\"4\" y1=\"10\" x2=\"4\" y2=\"3\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"3\"></line><line x1=\"20\" y1=\"21\" x2=\"20\" y2=\"16\"></line><line x1=\"20\" y1=\"12\" x2=\"20\" y2=\"3\"></line><line x1=\"1\" y1=\"14\" x2=\"7\" y2=\"14\"></line><line x1=\"9\" y1=\"8\" x2=\"15\" y2=\"8\"></line><line x1=\"17\" y1=\"16\" x2=\"23\" y2=\"16\"></line>","smartphone":"<rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>","speaker":"<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\" ry=\"2\"></rect><circle cx=\"12\" cy=\"14\" r=\"4\"></circle><line x1=\"12\" y1=\"6\" x2=\"12\" y2=\"6\"></line>","square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>","star":"<polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"></polygon>","stop-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>","sun":"<circle cx=\"12\" cy=\"12\" r=\"5\"></circle><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"></line><line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\"></line><line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\"></line><line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\"></line><line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\"></line><line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\"></line><line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\"></line>","sunrise":"<path d=\"M17 18a5 5 0 0 0-10 0\"></path><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"9\"></line><line x1=\"4.22\" y1=\"10.22\" x2=\"5.64\" y2=\"11.64\"></line><line x1=\"1\" y1=\"18\" x2=\"3\" y2=\"18\"></line><line x1=\"21\" y1=\"18\" x2=\"23\" y2=\"18\"></line><line x1=\"18.36\" y1=\"11.64\" x2=\"19.78\" y2=\"10.22\"></line><line x1=\"23\" y1=\"22\" x2=\"1\" y2=\"22\"></line><polyline points=\"8 6 12 2 16 6\"></polyline>","sunset":"<path d=\"M17 18a5 5 0 0 0-10 0\"></path><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"2\"></line><line x1=\"4.22\" y1=\"10.22\" x2=\"5.64\" y2=\"11.64\"></line><line x1=\"1\" y1=\"18\" x2=\"3\" y2=\"18\"></line><line x1=\"21\" y1=\"18\" x2=\"23\" y2=\"18\"></line><line x1=\"18.36\" y1=\"11.64\" x2=\"19.78\" y2=\"10.22\"></line><line x1=\"23\" y1=\"22\" x2=\"1\" y2=\"22\"></line><polyline points=\"16 5 12 9 8 5\"></polyline>","tablet":"<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\" ry=\"2\" transform=\"rotate(180 12 12)\"></rect><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>","tag":"<path d=\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\"></path><line x1=\"7\" y1=\"7\" x2=\"7\" y2=\"7\"></line>","target":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle>","terminal":"<polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" y1=\"19\" x2=\"20\" y2=\"19\"></line>","thermometer":"<path d=\"M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z\"></path>","thumbs-down":"<path d=\"M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17\"></path>","thumbs-up":"<path d=\"M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3\"></path>","toggle-left":"<rect x=\"1\" y=\"5\" width=\"22\" height=\"14\" rx=\"7\" ry=\"7\"></rect><circle cx=\"8\" cy=\"12\" r=\"3\"></circle>","toggle-right":"<rect x=\"1\" y=\"5\" width=\"22\" height=\"14\" rx=\"7\" ry=\"7\"></rect><circle cx=\"16\" cy=\"12\" r=\"3\"></circle>","trash-2":"<polyline points=\"3 6 5 6 21 6\"></polyline><path d=\"M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path><line x1=\"10\" y1=\"11\" x2=\"10\" y2=\"17\"></line><line x1=\"14\" y1=\"11\" x2=\"14\" y2=\"17\"></line>","trash":"<polyline points=\"3 6 5 6 21 6\"></polyline><path d=\"M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path>","trending-down":"<polyline points=\"23 18 13.5 8.5 8.5 13.5 1 6\"></polyline><polyline points=\"17 18 23 18 23 12\"></polyline>","trending-up":"<polyline points=\"23 6 13.5 15.5 8.5 10.5 1 18\"></polyline><polyline points=\"17 6 23 6 23 12\"></polyline>","triangle":"<path d=\"M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\"></path>","truck":"<rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"></rect><polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\"></polygon><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"></circle><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"></circle>","tv":"<rect x=\"2\" y=\"7\" width=\"20\" height=\"15\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline>","twitter":"<path d=\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\"></path>","type":"<polyline points=\"4 7 4 4 20 4 20 7\"></polyline><line x1=\"9\" y1=\"20\" x2=\"15\" y2=\"20\"></line><line x1=\"12\" y1=\"4\" x2=\"12\" y2=\"20\"></line>","umbrella":"<path d=\"M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7\"></path>","underline":"<path d=\"M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3\"></path><line x1=\"4\" y1=\"21\" x2=\"20\" y2=\"21\"></line>","unlock":"<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 9.9-1\"></path>","upload-cloud":"<polyline points=\"16 16 12 12 8 16\"></polyline><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"></line><path d=\"M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3\"></path><polyline points=\"16 16 12 12 8 16\"></polyline>","upload":"<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"></path><polyline points=\"17 8 12 3 7 8\"></polyline><line x1=\"12\" y1=\"3\" x2=\"12\" y2=\"15\"></line>","user-check":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><polyline points=\"17 11 19 13 23 9\"></polyline>","user-minus":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"></line>","user-plus":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"20\" y1=\"8\" x2=\"20\" y2=\"14\"></line><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"></line>","user-x":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"18\" y1=\"8\" x2=\"23\" y2=\"13\"></line><line x1=\"23\" y1=\"8\" x2=\"18\" y2=\"13\"></line>","user":"<path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle>","users":"<path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path>","video-off":"<path d=\"M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","video":"<polygon points=\"23 7 16 12 23 17 23 7\"></polygon><rect x=\"1\" y=\"5\" width=\"15\" height=\"14\" rx=\"2\" ry=\"2\"></rect>","voicemail":"<circle cx=\"5.5\" cy=\"11.5\" r=\"4.5\"></circle><circle cx=\"18.5\" cy=\"11.5\" r=\"4.5\"></circle><line x1=\"5.5\" y1=\"16\" x2=\"18.5\" y2=\"16\"></line>","volume-1":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><path d=\"M15.54 8.46a5 5 0 0 1 0 7.07\"></path>","volume-2":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><path d=\"M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07\"></path>","volume-x":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><line x1=\"23\" y1=\"9\" x2=\"17\" y2=\"15\"></line><line x1=\"17\" y1=\"9\" x2=\"23\" y2=\"15\"></line>","volume":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon>","watch":"<circle cx=\"12\" cy=\"12\" r=\"7\"></circle><polyline points=\"12 9 12 12 13.5 13.5\"></polyline><path d=\"M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83\"></path>","wifi-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M16.72 11.06A10.94 10.94 0 0 1 19 12.55\"></path><path d=\"M5 12.55a10.94 10.94 0 0 1 5.17-2.39\"></path><path d=\"M10.71 5.05A16 16 0 0 1 22.58 9\"></path><path d=\"M1.42 9a15.91 15.91 0 0 1 4.7-2.88\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"20\"></line>","wifi":"<path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"20\"></line>","wind":"<path d=\"M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2\"></path>","x-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line>","x-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line>","x":"<line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>","youtube":"<path d=\"M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z\"></path><polygon points=\"9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02\"></polygon>","zap-off":"<polyline points=\"12.41 6.75 13 2 10.57 4.92\"></polyline><polyline points=\"18.57 12.91 21 10 15.66 10\"></polyline><polyline points=\"8 8 3 14 12 14 11 22 16 16\"></polyline><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","zap":"<polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>","zoom-in":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line><line x1=\"11\" y1=\"8\" x2=\"11\" y2=\"14\"></line><line x1=\"8\" y1=\"11\" x2=\"14\" y2=\"11\"></line>","zoom-out":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line><line x1=\"8\" y1=\"11\" x2=\"14\" y2=\"11\"></line>"};
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports) {
 
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
-};
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(1);
-var core = __webpack_require__(7);
-var hide = __webpack_require__(8);
-var redefine = __webpack_require__(10);
-var ctx = __webpack_require__(11);
-var PROTOTYPE = 'prototype';
-
-var $export = function (type, name, source) {
-  var IS_FORCED = type & $export.F;
-  var IS_GLOBAL = type & $export.G;
-  var IS_STATIC = type & $export.S;
-  var IS_PROTO = type & $export.P;
-  var IS_BIND = type & $export.B;
-  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] || (global[name] = {}) : (global[name] || {})[PROTOTYPE];
-  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
-  var expProto = exports[PROTOTYPE] || (exports[PROTOTYPE] = {});
-  var key, own, out, exp;
-  if (IS_GLOBAL) source = name;
-  for (key in source) {
-    // contains in native
-    own = !IS_FORCED && target && target[key] !== undefined;
-    // export native or passed
-    out = (own ? target : source)[key];
-    // bind timers to global for call from export context
-    exp = IS_BIND && own ? ctx(out, global) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-    // extend global
-    if (target) redefine(target, key, out, type & $export.U);
-    // export
-    if (exports[key] != out) hide(exports, key, exp);
-    if (IS_PROTO && expProto[key] != out) expProto[key] = out;
-  }
-};
-global.core = core;
-// type bitmap
-$export.F = 1;   // forced
-$export.G = 2;   // global
-$export.S = 4;   // static
-$export.P = 8;   // proto
-$export.B = 16;  // bind
-$export.W = 32;  // wrap
-$export.U = 64;  // safe
-$export.R = 128; // real proto method for `library`
-module.exports = $export;
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(9);
-var IE8_DOM_DEFINE = __webpack_require__(29);
-var toPrimitive = __webpack_require__(31);
-var dP = Object.defineProperty;
-
-exports.f = __webpack_require__(5) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  anObject(O);
-  P = toPrimitive(P, true);
-  anObject(Attributes);
-  if (IE8_DOM_DEFINE) try {
-    return dP(O, P, Attributes);
-  } catch (e) { /* empty */ }
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
-};
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(12)(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-var core = module.exports = { version: '2.5.3' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(4);
-var createDesc = __webpack_require__(14);
-module.exports = __webpack_require__(5) ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(2);
-module.exports = function (it) {
-  if (!isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
-};
-
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(1);
-var hide = __webpack_require__(8);
-var has = __webpack_require__(6);
-var SRC = __webpack_require__(15)('src');
-var TO_STRING = 'toString';
-var $toString = Function[TO_STRING];
-var TPL = ('' + $toString).split(TO_STRING);
-
-__webpack_require__(7).inspectSource = function (it) {
-  return $toString.call(it);
-};
-
-(module.exports = function (O, key, val, safe) {
-  var isFunction = typeof val == 'function';
-  if (isFunction) has(val, 'name') || hide(val, 'name', key);
-  if (O[key] === val) return;
-  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));
-  if (O === global) {
-    O[key] = val;
-  } else if (!safe) {
-    delete O[key];
-    hide(O, key, val);
-  } else if (O[key]) {
-    O[key] = val;
-  } else {
-    hide(O, key, val);
-  }
-// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
-})(Function.prototype, TO_STRING, function toString() {
-  return typeof this == 'function' && this[SRC] || $toString.call(this);
-});
-
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// optional / simple context binding
-var aFunction = __webpack_require__(32);
-module.exports = function (fn, that, length) {
-  aFunction(fn);
-  if (that === undefined) return fn;
-  switch (length) {
-    case 1: return function (a) {
-      return fn.call(that, a);
-    };
-    case 2: return function (a, b) {
-      return fn.call(that, a, b);
-    };
-    case 3: return function (a, b, c) {
-      return fn.call(that, a, b, c);
-    };
-  }
-  return function (/* ...args */) {
-    return fn.apply(that, arguments);
-  };
-};
-
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = {};
-
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = function (bitmap, value) {
-  return {
-    enumerable: !(bitmap & 1),
-    configurable: !(bitmap & 2),
-    writable: !(bitmap & 4),
-    value: value
-  };
-};
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-var id = 0;
-var px = Math.random();
-module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-};
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(34);
-var defined = __webpack_require__(19);
-module.exports = function (it) {
-  return IObject(defined(it));
-};
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ctx = __webpack_require__(11);
-var call = __webpack_require__(38);
-var isArrayIter = __webpack_require__(39);
-var anObject = __webpack_require__(9);
-var toLength = __webpack_require__(22);
-var getIterFn = __webpack_require__(40);
-var BREAK = {};
-var RETURN = {};
-var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
-  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);
-  var f = ctx(fn, that, entries ? 2 : 1);
-  var index = 0;
-  var length, step, iterator, result;
-  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');
-  // fast case for arrays with default iterator
-  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {
-    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-    if (result === BREAK || result === RETURN) return result;
-  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {
-    result = call(iterator, f, step.value, entries);
-    if (result === BREAK || result === RETURN) return result;
-  }
-};
-exports.BREAK = BREAK;
-exports.RETURN = RETURN;
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-// 7.1.4 ToInteger
-var ceil = Math.ceil;
-var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-};
-
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-// 7.2.1 RequireObjectCoercible(argument)
-module.exports = function (it) {
-  if (it == undefined) throw TypeError("Can't call method on  " + it);
-  return it;
-};
-
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var LIBRARY = __webpack_require__(52);
-var $export = __webpack_require__(3);
-var redefine = __webpack_require__(10);
-var hide = __webpack_require__(8);
-var has = __webpack_require__(6);
-var Iterators = __webpack_require__(13);
-var $iterCreate = __webpack_require__(53);
-var setToStringTag = __webpack_require__(24);
-var getPrototypeOf = __webpack_require__(59);
-var ITERATOR = __webpack_require__(0)('iterator');
-var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
-var FF_ITERATOR = '@@iterator';
-var KEYS = 'keys';
-var VALUES = 'values';
-
-var returnThis = function () { return this; };
-
-module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
-  $iterCreate(Constructor, NAME, next);
-  var getMethod = function (kind) {
-    if (!BUGGY && kind in proto) return proto[kind];
-    switch (kind) {
-      case KEYS: return function keys() { return new Constructor(this, kind); };
-      case VALUES: return function values() { return new Constructor(this, kind); };
-    } return function entries() { return new Constructor(this, kind); };
-  };
-  var TAG = NAME + ' Iterator';
-  var DEF_VALUES = DEFAULT == VALUES;
-  var VALUES_BUG = false;
-  var proto = Base.prototype;
-  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
-  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
-  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
-  var methods, key, IteratorPrototype;
-  // Fix native
-  if ($anyNative) {
-    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));
-    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {
-      // Set @@toStringTag to native iterators
-      setToStringTag(IteratorPrototype, TAG, true);
-      // fix for some old engines
-      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
-    }
-  }
-  // fix Array#{values, @@iterator}.name in V8 / FF
-  if (DEF_VALUES && $native && $native.name !== VALUES) {
-    VALUES_BUG = true;
-    $default = function values() { return $native.call(this); };
-  }
-  // Define iterator
-  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
-    hide(proto, ITERATOR, $default);
-  }
-  // Plug for library
-  Iterators[NAME] = $default;
-  Iterators[TAG] = returnThis;
-  if (DEFAULT) {
-    methods = {
-      values: DEF_VALUES ? $default : getMethod(VALUES),
-      keys: IS_SET ? $default : getMethod(KEYS),
-      entries: $entries
-    };
-    if (FORCED) for (key in methods) {
-      if (!(key in proto)) redefine(proto, key, methods[key]);
-    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
-  }
-  return methods;
-};
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(55);
-var enumBugKeys = __webpack_require__(37);
-
-module.exports = Object.keys || function keys(O) {
-  return $keys(O, enumBugKeys);
-};
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.15 ToLength
-var toInteger = __webpack_require__(18);
-var min = Math.min;
-module.exports = function (it) {
-  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
-};
-
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var shared = __webpack_require__(36)('keys');
-var uid = __webpack_require__(15);
-module.exports = function (key) {
-  return shared[key] || (shared[key] = uid(key));
-};
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var def = __webpack_require__(4).f;
-var has = __webpack_require__(6);
-var TAG = __webpack_require__(0)('toStringTag');
-
-module.exports = function (it, tag, stat) {
-  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
-};
-
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(19);
-module.exports = function (it) {
-  return Object(defined(it));
-};
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(35);
-var TAG = __webpack_require__(0)('toStringTag');
-// ES3 wrong here
-var ARG = cof(function () { return arguments; }()) == 'Arguments';
-
-// fallback for IE11 Script Access Denied error
-var tryGet = function (it, key) {
-  try {
-    return it[key];
-  } catch (e) { /* empty */ }
-};
-
-module.exports = function (it) {
-  var O, T, B;
-  return it === undefined ? 'Undefined' : it === null ? 'Null'
-    // @@toStringTag case
-    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
-    // builtinTag case
-    : ARG ? cof(O)
-    // ES3 arguments fallback
-    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-};
-
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _icon = __webpack_require__(86);
-
-var _icon2 = _interopRequireDefault(_icon);
-
-var _icons = __webpack_require__(88);
-
-var _icons2 = _interopRequireDefault(_icons);
-
-var _tags = __webpack_require__(89);
-
-var _tags2 = _interopRequireDefault(_tags);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = Object.keys(_icons2.default).map(function (key) {
-  return new _icon2.default(key, _icons2.default[key], _tags2.default[key]);
-}).reduce(function (object, icon) {
-  object[icon.name] = icon;
-  return object;
-}, {});
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $at = __webpack_require__(51)(true);
-
-// 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(20)(String, 'String', function (iterated) {
-  this._t = String(iterated); // target
-  this._i = 0;                // next index
-// 21.1.5.2.1 %StringIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var index = this._i;
-  var point;
-  if (index >= O.length) return { value: undefined, done: true };
-  point = $at(O, index);
-  this._i += point.length;
-  return { value: point, done: false };
-});
-
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(5) && !__webpack_require__(12)(function () {
-  return Object.defineProperty(__webpack_require__(30)('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(2);
-var document = __webpack_require__(1).document;
-// typeof document.createElement is 'object' in old IE
-var is = isObject(document) && isObject(document.createElement);
-module.exports = function (it) {
-  return is ? document.createElement(it) : {};
-};
-
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(2);
-// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-// and the second argument - flag - preferred type is a string
-module.exports = function (it, S) {
-  if (!isObject(it)) return it;
-  var fn, val;
-  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  throw TypeError("Can't convert object to primitive value");
-};
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(9);
-var dPs = __webpack_require__(54);
-var enumBugKeys = __webpack_require__(37);
-var IE_PROTO = __webpack_require__(23)('IE_PROTO');
-var Empty = function () { /* empty */ };
-var PROTOTYPE = 'prototype';
-
-// Create object with fake `null` prototype: use iframe Object with cleared prototype
-var createDict = function () {
-  // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(30)('iframe');
-  var i = enumBugKeys.length;
-  var lt = '<';
-  var gt = '>';
-  var iframeDocument;
-  iframe.style.display = 'none';
-  __webpack_require__(58).appendChild(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
-  // createDict = iframe.contentWindow.Object;
-  // html.removeChild(iframe);
-  iframeDocument = iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
-  iframeDocument.close();
-  createDict = iframeDocument.F;
-  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
-  return createDict();
-};
-
-module.exports = Object.create || function create(O, Properties) {
-  var result;
-  if (O !== null) {
-    Empty[PROTOTYPE] = anObject(O);
-    result = new Empty();
-    Empty[PROTOTYPE] = null;
-    // add "__proto__" for Object.getPrototypeOf polyfill
-    result[IE_PROTO] = O;
-  } else result = createDict();
-  return Properties === undefined ? result : dPs(result, Properties);
-};
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(35);
-// eslint-disable-next-line no-prototype-builtins
-module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
-  return cof(it) == 'String' ? it.split('') : Object(it);
-};
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = function (it) {
-  return toString.call(it).slice(8, -1);
-};
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(1);
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || (global[SHARED] = {});
-module.exports = function (key) {
-  return store[key] || (store[key] = {});
-};
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-// IE 8- don't enum bug keys
-module.exports = (
-  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-).split(',');
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// call something on iterator step with safe closing on error
-var anObject = __webpack_require__(9);
-module.exports = function (iterator, fn, value, entries) {
-  try {
-    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-  // 7.4.6 IteratorClose(iterator, completion)
-  } catch (e) {
-    var ret = iterator['return'];
-    if (ret !== undefined) anObject(ret.call(iterator));
-    throw e;
-  }
-};
-
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// check on default Array iterator
-var Iterators = __webpack_require__(13);
-var ITERATOR = __webpack_require__(0)('iterator');
-var ArrayProto = Array.prototype;
-
-module.exports = function (it) {
-  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-};
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var classof = __webpack_require__(26);
-var ITERATOR = __webpack_require__(0)('iterator');
-var Iterators = __webpack_require__(13);
-module.exports = __webpack_require__(7).getIteratorMethod = function (it) {
-  if (it != undefined) return it[ITERATOR]
-    || it['@@iterator']
-    || Iterators[classof(it)];
-};
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ITERATOR = __webpack_require__(0)('iterator');
-var SAFE_CLOSING = false;
-
-try {
-  var riter = [7][ITERATOR]();
-  riter['return'] = function () { SAFE_CLOSING = true; };
-  // eslint-disable-next-line no-throw-literal
-  Array.from(riter, function () { throw 2; });
-} catch (e) { /* empty */ }
-
-module.exports = function (exec, skipClosing) {
-  if (!skipClosing && !SAFE_CLOSING) return false;
-  var safe = false;
-  try {
-    var arr = [7];
-    var iter = arr[ITERATOR]();
-    iter.next = function () { return { done: safe = true }; };
-    arr[ITERATOR] = function () { return iter; };
-    exec(arr);
-  } catch (e) { /* empty */ }
-  return safe;
-};
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports) {
-
-exports.f = {}.propertyIsEnumerable;
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports) {
-
-module.exports = function (done, value) {
-  return { value: value, done: !!done };
-};
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var redefine = __webpack_require__(10);
-module.exports = function (target, src, safe) {
-  for (var key in src) redefine(target, key, src[key], safe);
-  return target;
-};
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-module.exports = function (it, Constructor, name, forbiddenField) {
-  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {
-    throw TypeError(name + ': incorrect invocation!');
-  } return it;
-};
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var META = __webpack_require__(15)('meta');
-var isObject = __webpack_require__(2);
-var has = __webpack_require__(6);
-var setDesc = __webpack_require__(4).f;
-var id = 0;
-var isExtensible = Object.isExtensible || function () {
-  return true;
-};
-var FREEZE = !__webpack_require__(12)(function () {
-  return isExtensible(Object.preventExtensions({}));
-});
-var setMeta = function (it) {
-  setDesc(it, META, { value: {
-    i: 'O' + ++id, // object ID
-    w: {}          // weak collections IDs
-  } });
-};
-var fastKey = function (it, create) {
-  // return primitive with prefix
-  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return 'F';
-    // not necessary to add metadata
-    if (!create) return 'E';
-    // add missing metadata
-    setMeta(it);
-  // return object ID
-  } return it[META].i;
-};
-var getWeak = function (it, create) {
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return true;
-    // not necessary to add metadata
-    if (!create) return false;
-    // add missing metadata
-    setMeta(it);
-  // return hash weak collections IDs
-  } return it[META].w;
-};
-// add metadata on freeze-family methods calling
-var onFreeze = function (it) {
-  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
-  return it;
-};
-var meta = module.exports = {
-  KEY: META,
-  NEED: false,
-  fastKey: fastKey,
-  getWeak: getWeak,
-  onFreeze: onFreeze
-};
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(2);
-module.exports = function (it, TYPE) {
-  if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');
-  return it;
-};
-
-
-/***/ }),
-/* 48 */
+/***/ "./node_modules/classnames/dedupe.js":
+/*!*******************************************!*\
+  !*** ./node_modules/classnames/dedupe.js ***!
+  \*******************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -48321,132 +56218,69 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 			return classNames;
 		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
+	} else {}
 }());
 
 
 /***/ }),
-/* 49 */
+
+/***/ "./node_modules/core-js/fn/array/from.js":
+/*!***********************************************!*\
+  !*** ./node_modules/core-js/fn/array/from.js ***!
+  \***********************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(50);
-__webpack_require__(62);
-__webpack_require__(66);
-module.exports = __webpack_require__(85);
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/es6.array.from */ "./node_modules/core-js/modules/es6.array.from.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/modules/_core.js").Array.from;
 
 
 /***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28);
-__webpack_require__(60);
-module.exports = __webpack_require__(7).Array.from;
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(18);
-var defined = __webpack_require__(19);
-// true  -> String#at
-// false -> String#codePointAt
-module.exports = function (TO_STRING) {
-  return function (that, pos) {
-    var s = String(defined(that));
-    var i = toInteger(pos);
-    var l = s.length;
-    var a, b;
-    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
-    a = s.charCodeAt(i);
-    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-      ? TO_STRING ? s.charAt(i) : a
-      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-  };
-};
-
-
-/***/ }),
-/* 52 */
+/***/ "./node_modules/core-js/modules/_a-function.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_a-function.js ***!
+  \*****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = false;
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var create = __webpack_require__(33);
-var descriptor = __webpack_require__(14);
-var setToStringTag = __webpack_require__(24);
-var IteratorPrototype = {};
-
-// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(8)(IteratorPrototype, __webpack_require__(0)('iterator'), function () { return this; });
-
-module.exports = function (Constructor, NAME, next) {
-  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
-  setToStringTag(Constructor, NAME + ' Iterator');
+module.exports = function (it) {
+  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
+  return it;
 };
 
 
 /***/ }),
-/* 54 */
+
+/***/ "./node_modules/core-js/modules/_an-object.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_an-object.js ***!
+  \****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(4);
-var anObject = __webpack_require__(9);
-var getKeys = __webpack_require__(21);
-
-module.exports = __webpack_require__(5) ? Object.defineProperties : function defineProperties(O, Properties) {
-  anObject(O);
-  var keys = getKeys(Properties);
-  var length = keys.length;
-  var i = 0;
-  var P;
-  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
-  return O;
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
+module.exports = function (it) {
+  if (!isObject(it)) throw TypeError(it + ' is not an object!');
+  return it;
 };
 
 
 /***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(6);
-var toIObject = __webpack_require__(16);
-var arrayIndexOf = __webpack_require__(56)(false);
-var IE_PROTO = __webpack_require__(23)('IE_PROTO');
-
-module.exports = function (object, names) {
-  var O = toIObject(object);
-  var i = 0;
-  var result = [];
-  var key;
-  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
-  // Don't enum bug & hidden keys
-  while (names.length > i) if (has(O, key = names[i++])) {
-    ~arrayIndexOf(result, key) || result.push(key);
-  }
-  return result;
-};
-
-
-/***/ }),
-/* 56 */
+/***/ "./node_modules/core-js/modules/_array-includes.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/_array-includes.js ***!
+  \*********************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
-var toIObject = __webpack_require__(16);
-var toLength = __webpack_require__(22);
-var toAbsoluteIndex = __webpack_require__(57);
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/modules/_to-iobject.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/modules/_to-length.js");
+var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ "./node_modules/core-js/modules/_to-absolute-index.js");
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -48468,34 +56302,686 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 57 */
+
+/***/ "./node_modules/core-js/modules/_classof.js":
+/*!**************************************************!*\
+  !*** ./node_modules/core-js/modules/_classof.js ***!
+  \**************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(18);
-var max = Math.max;
-var min = Math.min;
-module.exports = function (index, length) {
-  index = toInteger(index);
-  return index < 0 ? max(index + length, 0) : min(index, length);
+// getting tag from 19.1.3.6 Object.prototype.toString()
+var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js");
+var TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('toStringTag');
+// ES3 wrong here
+var ARG = cof(function () { return arguments; }()) == 'Arguments';
+
+// fallback for IE11 Script Access Denied error
+var tryGet = function (it, key) {
+  try {
+    return it[key];
+  } catch (e) { /* empty */ }
+};
+
+module.exports = function (it) {
+  var O, T, B;
+  return it === undefined ? 'Undefined' : it === null ? 'Null'
+    // @@toStringTag case
+    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
+    // builtinTag case
+    : ARG ? cof(O)
+    // ES3 arguments fallback
+    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
 };
 
 
 /***/ }),
-/* 58 */
+
+/***/ "./node_modules/core-js/modules/_cof.js":
+/*!**********************************************!*\
+  !*** ./node_modules/core-js/modules/_cof.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = function (it) {
+  return toString.call(it).slice(8, -1);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_core.js":
+/*!***********************************************!*\
+  !*** ./node_modules/core-js/modules/_core.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.5.3' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_create-property.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/_create-property.js ***!
+  \**********************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var document = __webpack_require__(1).document;
+"use strict";
+
+var $defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/modules/_property-desc.js");
+
+module.exports = function (object, index, value) {
+  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
+  else object[index] = value;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_ctx.js":
+/*!**********************************************!*\
+  !*** ./node_modules/core-js/modules/_ctx.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// optional / simple context binding
+var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/modules/_a-function.js");
+module.exports = function (fn, that, length) {
+  aFunction(fn);
+  if (that === undefined) return fn;
+  switch (length) {
+    case 1: return function (a) {
+      return fn.call(that, a);
+    };
+    case 2: return function (a, b) {
+      return fn.call(that, a, b);
+    };
+    case 3: return function (a, b, c) {
+      return fn.call(that, a, b, c);
+    };
+  }
+  return function (/* ...args */) {
+    return fn.apply(that, arguments);
+  };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_defined.js":
+/*!**************************************************!*\
+  !*** ./node_modules/core-js/modules/_defined.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// 7.2.1 RequireObjectCoercible(argument)
+module.exports = function (it) {
+  if (it == undefined) throw TypeError("Can't call method on  " + it);
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_descriptors.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/modules/_descriptors.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js")(function () {
+  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_dom-create.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_dom-create.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
+var document = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").document;
+// typeof document.createElement is 'object' in old IE
+var is = isObject(document) && isObject(document.createElement);
+module.exports = function (it) {
+  return is ? document.createElement(it) : {};
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_enum-bug-keys.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/modules/_enum-bug-keys.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// IE 8- don't enum bug keys
+module.exports = (
+  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
+).split(',');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_export.js":
+/*!*************************************************!*\
+  !*** ./node_modules/core-js/modules/_export.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
+var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/modules/_core.js");
+var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/modules/_hide.js");
+var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/modules/_redefine.js");
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/modules/_ctx.js");
+var PROTOTYPE = 'prototype';
+
+var $export = function (type, name, source) {
+  var IS_FORCED = type & $export.F;
+  var IS_GLOBAL = type & $export.G;
+  var IS_STATIC = type & $export.S;
+  var IS_PROTO = type & $export.P;
+  var IS_BIND = type & $export.B;
+  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] || (global[name] = {}) : (global[name] || {})[PROTOTYPE];
+  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
+  var expProto = exports[PROTOTYPE] || (exports[PROTOTYPE] = {});
+  var key, own, out, exp;
+  if (IS_GLOBAL) source = name;
+  for (key in source) {
+    // contains in native
+    own = !IS_FORCED && target && target[key] !== undefined;
+    // export native or passed
+    out = (own ? target : source)[key];
+    // bind timers to global for call from export context
+    exp = IS_BIND && own ? ctx(out, global) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
+    // extend global
+    if (target) redefine(target, key, out, type & $export.U);
+    // export
+    if (exports[key] != out) hide(exports, key, exp);
+    if (IS_PROTO && expProto[key] != out) expProto[key] = out;
+  }
+};
+global.core = core;
+// type bitmap
+$export.F = 1;   // forced
+$export.G = 2;   // global
+$export.S = 4;   // static
+$export.P = 8;   // proto
+$export.B = 16;  // bind
+$export.W = 32;  // wrap
+$export.U = 64;  // safe
+$export.R = 128; // real proto method for `library`
+module.exports = $export;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_fails.js":
+/*!************************************************!*\
+  !*** ./node_modules/core-js/modules/_fails.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_global.js":
+/*!*************************************************!*\
+  !*** ./node_modules/core-js/modules/_global.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+var global = module.exports = typeof window != 'undefined' && window.Math == Math
+  ? window : typeof self != 'undefined' && self.Math == Math ? self
+  // eslint-disable-next-line no-new-func
+  : Function('return this')();
+if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_has.js":
+/*!**********************************************!*\
+  !*** ./node_modules/core-js/modules/_has.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_hide.js":
+/*!***********************************************!*\
+  !*** ./node_modules/core-js/modules/_hide.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/modules/_property-desc.js");
+module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") ? function (object, key, value) {
+  return dP.f(object, key, createDesc(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_html.js":
+/*!***********************************************!*\
+  !*** ./node_modules/core-js/modules/_html.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var document = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").document;
 module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 59 */
+
+/***/ "./node_modules/core-js/modules/_ie8-dom-define.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/_ie8-dom-define.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.js")(function () {
+  return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/modules/_dom-create.js")('div'), 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iobject.js":
+/*!**************************************************!*\
+  !*** ./node_modules/core-js/modules/_iobject.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for non-array-like ES3 and non-enumerable old V8 strings
+var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/modules/_cof.js");
+// eslint-disable-next-line no-prototype-builtins
+module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
+  return cof(it) == 'String' ? it.split('') : Object(it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_is-array-iter.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/modules/_is-array-iter.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// check on default Array iterator
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/modules/_iterators.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
+var ArrayProto = Array.prototype;
+
+module.exports = function (it) {
+  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_is-object.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_is-object.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iter-call.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_iter-call.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// call something on iterator step with safe closing on error
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
+module.exports = function (iterator, fn, value, entries) {
+  try {
+    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+  // 7.4.6 IteratorClose(iterator, completion)
+  } catch (e) {
+    var ret = iterator['return'];
+    if (ret !== undefined) anObject(ret.call(iterator));
+    throw e;
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iter-create.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/modules/_iter-create.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/modules/_object-create.js");
+var descriptor = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/modules/_property-desc.js");
+var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/modules/_set-to-string-tag.js");
+var IteratorPrototype = {};
+
+// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+__webpack_require__(/*! ./_hide */ "./node_modules/core-js/modules/_hide.js")(IteratorPrototype, __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator'), function () { return this; });
+
+module.exports = function (Constructor, NAME, next) {
+  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
+  setToStringTag(Constructor, NAME + ' Iterator');
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iter-define.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/modules/_iter-define.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/modules/_library.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
+var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/modules/_redefine.js");
+var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/modules/_hide.js");
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/modules/_iterators.js");
+var $iterCreate = __webpack_require__(/*! ./_iter-create */ "./node_modules/core-js/modules/_iter-create.js");
+var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/modules/_set-to-string-tag.js");
+var getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/core-js/modules/_object-gpo.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
+var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
+var FF_ITERATOR = '@@iterator';
+var KEYS = 'keys';
+var VALUES = 'values';
+
+var returnThis = function () { return this; };
+
+module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
+  $iterCreate(Constructor, NAME, next);
+  var getMethod = function (kind) {
+    if (!BUGGY && kind in proto) return proto[kind];
+    switch (kind) {
+      case KEYS: return function keys() { return new Constructor(this, kind); };
+      case VALUES: return function values() { return new Constructor(this, kind); };
+    } return function entries() { return new Constructor(this, kind); };
+  };
+  var TAG = NAME + ' Iterator';
+  var DEF_VALUES = DEFAULT == VALUES;
+  var VALUES_BUG = false;
+  var proto = Base.prototype;
+  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
+  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
+  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
+  var methods, key, IteratorPrototype;
+  // Fix native
+  if ($anyNative) {
+    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));
+    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {
+      // Set @@toStringTag to native iterators
+      setToStringTag(IteratorPrototype, TAG, true);
+      // fix for some old engines
+      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+    }
+  }
+  // fix Array#{values, @@iterator}.name in V8 / FF
+  if (DEF_VALUES && $native && $native.name !== VALUES) {
+    VALUES_BUG = true;
+    $default = function values() { return $native.call(this); };
+  }
+  // Define iterator
+  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
+    hide(proto, ITERATOR, $default);
+  }
+  // Plug for library
+  Iterators[NAME] = $default;
+  Iterators[TAG] = returnThis;
+  if (DEFAULT) {
+    methods = {
+      values: DEF_VALUES ? $default : getMethod(VALUES),
+      keys: IS_SET ? $default : getMethod(KEYS),
+      entries: $entries
+    };
+    if (FORCED) for (key in methods) {
+      if (!(key in proto)) redefine(proto, key, methods[key]);
+    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
+  }
+  return methods;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iter-detect.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/modules/_iter-detect.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
+var SAFE_CLOSING = false;
+
+try {
+  var riter = [7][ITERATOR]();
+  riter['return'] = function () { SAFE_CLOSING = true; };
+  // eslint-disable-next-line no-throw-literal
+  Array.from(riter, function () { throw 2; });
+} catch (e) { /* empty */ }
+
+module.exports = function (exec, skipClosing) {
+  if (!skipClosing && !SAFE_CLOSING) return false;
+  var safe = false;
+  try {
+    var arr = [7];
+    var iter = arr[ITERATOR]();
+    iter.next = function () { return { done: safe = true }; };
+    arr[ITERATOR] = function () { return iter; };
+    exec(arr);
+  } catch (e) { /* empty */ }
+  return safe;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_iterators.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_iterators.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_library.js":
+/*!**************************************************!*\
+  !*** ./node_modules/core-js/modules/_library.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = false;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_object-create.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-create.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
+var dPs = __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/modules/_object-dps.js");
+var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/modules/_enum-bug-keys.js");
+var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/modules/_shared-key.js")('IE_PROTO');
+var Empty = function () { /* empty */ };
+var PROTOTYPE = 'prototype';
+
+// Create object with fake `null` prototype: use iframe Object with cleared prototype
+var createDict = function () {
+  // Thrash, waste and sodomy: IE GC bug
+  var iframe = __webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/modules/_dom-create.js")('iframe');
+  var i = enumBugKeys.length;
+  var lt = '<';
+  var gt = '>';
+  var iframeDocument;
+  iframe.style.display = 'none';
+  __webpack_require__(/*! ./_html */ "./node_modules/core-js/modules/_html.js").appendChild(iframe);
+  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
+  // createDict = iframe.contentWindow.Object;
+  // html.removeChild(iframe);
+  iframeDocument = iframe.contentWindow.document;
+  iframeDocument.open();
+  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
+  iframeDocument.close();
+  createDict = iframeDocument.F;
+  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
+  return createDict();
+};
+
+module.exports = Object.create || function create(O, Properties) {
+  var result;
+  if (O !== null) {
+    Empty[PROTOTYPE] = anObject(O);
+    result = new Empty();
+    Empty[PROTOTYPE] = null;
+    // add "__proto__" for Object.getPrototypeOf polyfill
+    result[IE_PROTO] = O;
+  } else result = createDict();
+  return Properties === undefined ? result : dPs(result, Properties);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_object-dp.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-dp.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
+var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/modules/_ie8-dom-define.js");
+var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/modules/_to-primitive.js");
+var dP = Object.defineProperty;
+
+exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+  anObject(O);
+  P = toPrimitive(P, true);
+  anObject(Attributes);
+  if (IE8_DOM_DEFINE) try {
+    return dP(O, P, Attributes);
+  } catch (e) { /* empty */ }
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_object-dps.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-dps.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/modules/_an-object.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/modules/_object-keys.js");
+
+module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/modules/_descriptors.js") ? Object.defineProperties : function defineProperties(O, Properties) {
+  anObject(O);
+  var keys = getKeys(Properties);
+  var length = keys.length;
+  var i = 0;
+  var P;
+  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
+  return O;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_object-gpo.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-gpo.js ***!
+  \*****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(6);
-var toObject = __webpack_require__(25);
-var IE_PROTO = __webpack_require__(23)('IE_PROTO');
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
+var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/modules/_shared-key.js")('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -48508,21 +56994,377 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 60 */
+
+/***/ "./node_modules/core-js/modules/_object-keys-internal.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-keys-internal.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/modules/_to-iobject.js");
+var arrayIndexOf = __webpack_require__(/*! ./_array-includes */ "./node_modules/core-js/modules/_array-includes.js")(false);
+var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/modules/_shared-key.js")('IE_PROTO');
+
+module.exports = function (object, names) {
+  var O = toIObject(object);
+  var i = 0;
+  var result = [];
+  var key;
+  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
+  // Don't enum bug & hidden keys
+  while (names.length > i) if (has(O, key = names[i++])) {
+    ~arrayIndexOf(result, key) || result.push(key);
+  }
+  return result;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_object-keys.js":
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/modules/_object-keys.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/modules/_object-keys-internal.js");
+var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/modules/_enum-bug-keys.js");
+
+module.exports = Object.keys || function keys(O) {
+  return $keys(O, enumBugKeys);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_property-desc.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/modules/_property-desc.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (bitmap, value) {
+  return {
+    enumerable: !(bitmap & 1),
+    configurable: !(bitmap & 2),
+    writable: !(bitmap & 4),
+    value: value
+  };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_redefine.js":
+/*!***************************************************!*\
+  !*** ./node_modules/core-js/modules/_redefine.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
+var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/modules/_hide.js");
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
+var SRC = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/modules/_uid.js")('src');
+var TO_STRING = 'toString';
+var $toString = Function[TO_STRING];
+var TPL = ('' + $toString).split(TO_STRING);
+
+__webpack_require__(/*! ./_core */ "./node_modules/core-js/modules/_core.js").inspectSource = function (it) {
+  return $toString.call(it);
+};
+
+(module.exports = function (O, key, val, safe) {
+  var isFunction = typeof val == 'function';
+  if (isFunction) has(val, 'name') || hide(val, 'name', key);
+  if (O[key] === val) return;
+  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));
+  if (O === global) {
+    O[key] = val;
+  } else if (!safe) {
+    delete O[key];
+    hide(O, key, val);
+  } else if (O[key]) {
+    O[key] = val;
+  } else {
+    hide(O, key, val);
+  }
+// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative
+})(Function.prototype, TO_STRING, function toString() {
+  return typeof this == 'function' && this[SRC] || $toString.call(this);
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_set-to-string-tag.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/modules/_set-to-string-tag.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var def = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/modules/_object-dp.js").f;
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/modules/_has.js");
+var TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('toStringTag');
+
+module.exports = function (it, tag, stat) {
+  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_shared-key.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_shared-key.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var shared = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/modules/_shared.js")('keys');
+var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/modules/_uid.js");
+module.exports = function (key) {
+  return shared[key] || (shared[key] = uid(key));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_shared.js":
+/*!*************************************************!*\
+  !*** ./node_modules/core-js/modules/_shared.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js");
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || (global[SHARED] = {});
+module.exports = function (key) {
+  return store[key] || (store[key] = {});
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_string-at.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_string-at.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/modules/_defined.js");
+// true  -> String#at
+// false -> String#codePointAt
+module.exports = function (TO_STRING) {
+  return function (that, pos) {
+    var s = String(defined(that));
+    var i = toInteger(pos);
+    var l = s.length;
+    var a, b;
+    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
+    a = s.charCodeAt(i);
+    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
+      ? TO_STRING ? s.charAt(i) : a
+      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+  };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-absolute-index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-absolute-index.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
+var max = Math.max;
+var min = Math.min;
+module.exports = function (index, length) {
+  index = toInteger(index);
+  return index < 0 ? max(index + length, 0) : min(index, length);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-integer.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-integer.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// 7.1.4 ToInteger
+var ceil = Math.ceil;
+var floor = Math.floor;
+module.exports = function (it) {
+  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-iobject.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-iobject.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// to indexed object, toObject with fallback for non-array-like ES3 strings
+var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/modules/_iobject.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/modules/_defined.js");
+module.exports = function (it) {
+  return IObject(defined(it));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-length.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-length.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.15 ToLength
+var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/modules/_to-integer.js");
+var min = Math.min;
+module.exports = function (it) {
+  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-object.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-object.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.13 ToObject(argument)
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/modules/_defined.js");
+module.exports = function (it) {
+  return Object(defined(it));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_to-primitive.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/modules/_to-primitive.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.1 ToPrimitive(input [, PreferredType])
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/modules/_is-object.js");
+// instead of the ES6 spec version, we didn't implement @@toPrimitive case
+// and the second argument - flag - preferred type is a string
+module.exports = function (it, S) {
+  if (!isObject(it)) return it;
+  var fn, val;
+  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
+  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
+  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
+  throw TypeError("Can't convert object to primitive value");
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_uid.js":
+/*!**********************************************!*\
+  !*** ./node_modules/core-js/modules/_uid.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var id = 0;
+var px = Math.random();
+module.exports = function (key) {
+  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/_wks.js":
+/*!**********************************************!*\
+  !*** ./node_modules/core-js/modules/_wks.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var store = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/modules/_shared.js")('wks');
+var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/modules/_uid.js");
+var Symbol = __webpack_require__(/*! ./_global */ "./node_modules/core-js/modules/_global.js").Symbol;
+var USE_SYMBOL = typeof Symbol == 'function';
+
+var $exports = module.exports = function (name) {
+  return store[name] || (store[name] =
+    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
+};
+
+$exports.store = store;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/core.get-iterator-method.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/modules/core.get-iterator-method.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/modules/_classof.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/modules/_wks.js")('iterator');
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/modules/_iterators.js");
+module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/modules/_core.js").getIteratorMethod = function (it) {
+  if (it != undefined) return it[ITERATOR]
+    || it['@@iterator']
+    || Iterators[classof(it)];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es6.array.from.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/modules/es6.array.from.js ***!
+  \********************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ctx = __webpack_require__(11);
-var $export = __webpack_require__(3);
-var toObject = __webpack_require__(25);
-var call = __webpack_require__(38);
-var isArrayIter = __webpack_require__(39);
-var toLength = __webpack_require__(22);
-var createProperty = __webpack_require__(61);
-var getIterFn = __webpack_require__(40);
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/modules/_ctx.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/modules/_export.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
+var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/modules/_is-array-iter.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/modules/_to-length.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/core-js/modules/_create-property.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/modules/core.get-iterator-method.js");
 
-$export($export.S + $export.F * !__webpack_require__(41)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/modules/_iter-detect.js")(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -48552,720 +57394,52 @@ $export($export.S + $export.F * !__webpack_require__(41)(function (iter) { Array
 
 
 /***/ }),
-/* 61 */
+
+/***/ "./node_modules/core-js/modules/es6.string.iterator.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/core-js/modules/es6.string.iterator.js ***!
+  \*************************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $defineProperty = __webpack_require__(4);
-var createDesc = __webpack_require__(14);
+var $at = __webpack_require__(/*! ./_string-at */ "./node_modules/core-js/modules/_string-at.js")(true);
 
-module.exports = function (object, index, value) {
-  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
-  else object[index] = value;
-};
-
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(63);
-module.exports = __webpack_require__(7).Object.assign;
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.3.1 Object.assign(target, source)
-var $export = __webpack_require__(3);
-
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(64) });
-
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.2.1 Object.assign(target, source, ...)
-var getKeys = __webpack_require__(21);
-var gOPS = __webpack_require__(65);
-var pIE = __webpack_require__(42);
-var toObject = __webpack_require__(25);
-var IObject = __webpack_require__(34);
-var $assign = Object.assign;
-
-// should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(12)(function () {
-  var A = {};
-  var B = {};
-  // eslint-disable-next-line no-undef
-  var S = Symbol();
-  var K = 'abcdefghijklmnopqrst';
-  A[S] = 7;
-  K.split('').forEach(function (k) { B[k] = k; });
-  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-  var T = toObject(target);
-  var aLen = arguments.length;
-  var index = 1;
-  var getSymbols = gOPS.f;
-  var isEnum = pIE.f;
-  while (aLen > index) {
-    var S = IObject(arguments[index++]);
-    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-    var length = keys.length;
-    var j = 0;
-    var key;
-    while (length > j) if (isEnum.call(S, key = keys[j++])) T[key] = S[key];
-  } return T;
-} : $assign;
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports) {
-
-exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(67);
-__webpack_require__(28);
-__webpack_require__(68);
-__webpack_require__(71);
-__webpack_require__(78);
-__webpack_require__(81);
-__webpack_require__(83);
-module.exports = __webpack_require__(7).Set;
-
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.3.6 Object.prototype.toString()
-var classof = __webpack_require__(26);
-var test = {};
-test[__webpack_require__(0)('toStringTag')] = 'z';
-if (test + '' != '[object z]') {
-  __webpack_require__(10)(Object.prototype, 'toString', function toString() {
-    return '[object ' + classof(this) + ']';
-  }, true);
-}
-
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $iterators = __webpack_require__(69);
-var getKeys = __webpack_require__(21);
-var redefine = __webpack_require__(10);
-var global = __webpack_require__(1);
-var hide = __webpack_require__(8);
-var Iterators = __webpack_require__(13);
-var wks = __webpack_require__(0);
-var ITERATOR = wks('iterator');
-var TO_STRING_TAG = wks('toStringTag');
-var ArrayValues = Iterators.Array;
-
-var DOMIterables = {
-  CSSRuleList: true, // TODO: Not spec compliant, should be false.
-  CSSStyleDeclaration: false,
-  CSSValueList: false,
-  ClientRectList: false,
-  DOMRectList: false,
-  DOMStringList: false,
-  DOMTokenList: true,
-  DataTransferItemList: false,
-  FileList: false,
-  HTMLAllCollection: false,
-  HTMLCollection: false,
-  HTMLFormElement: false,
-  HTMLSelectElement: false,
-  MediaList: true, // TODO: Not spec compliant, should be false.
-  MimeTypeArray: false,
-  NamedNodeMap: false,
-  NodeList: true,
-  PaintRequestList: false,
-  Plugin: false,
-  PluginArray: false,
-  SVGLengthList: false,
-  SVGNumberList: false,
-  SVGPathSegList: false,
-  SVGPointList: false,
-  SVGStringList: false,
-  SVGTransformList: false,
-  SourceBufferList: false,
-  StyleSheetList: true, // TODO: Not spec compliant, should be false.
-  TextTrackCueList: false,
-  TextTrackList: false,
-  TouchList: false
-};
-
-for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++) {
-  var NAME = collections[i];
-  var explicit = DOMIterables[NAME];
-  var Collection = global[NAME];
-  var proto = Collection && Collection.prototype;
-  var key;
-  if (proto) {
-    if (!proto[ITERATOR]) hide(proto, ITERATOR, ArrayValues);
-    if (!proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
-    Iterators[NAME] = ArrayValues;
-    if (explicit) for (key in $iterators) if (!proto[key]) redefine(proto, key, $iterators[key], true);
-  }
-}
-
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var addToUnscopables = __webpack_require__(70);
-var step = __webpack_require__(43);
-var Iterators = __webpack_require__(13);
-var toIObject = __webpack_require__(16);
-
-// 22.1.3.4 Array.prototype.entries()
-// 22.1.3.13 Array.prototype.keys()
-// 22.1.3.29 Array.prototype.values()
-// 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(20)(Array, 'Array', function (iterated, kind) {
-  this._t = toIObject(iterated); // target
-  this._i = 0;                   // next index
-  this._k = kind;                // kind
-// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
+// 21.1.3.27 String.prototype[@@iterator]()
+__webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/modules/_iter-define.js")(String, 'String', function (iterated) {
+  this._t = String(iterated); // target
+  this._i = 0;                // next index
+// 21.1.5.2.1 %StringIteratorPrototype%.next()
 }, function () {
   var O = this._t;
-  var kind = this._k;
-  var index = this._i++;
-  if (!O || index >= O.length) {
-    this._t = undefined;
-    return step(1);
-  }
-  if (kind == 'keys') return step(0, index);
-  if (kind == 'values') return step(0, O[index]);
-  return step(0, [index, O[index]]);
-}, 'values');
-
-// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
-Iterators.Arguments = Iterators.Array;
-
-addToUnscopables('keys');
-addToUnscopables('values');
-addToUnscopables('entries');
+  var index = this._i;
+  var point;
+  if (index >= O.length) return { value: undefined, done: true };
+  point = $at(O, index);
+  this._i += point.length;
+  return { value: point, done: false };
+});
 
 
 /***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
 
-// 22.1.3.31 Array.prototype[@@unscopables]
-var UNSCOPABLES = __webpack_require__(0)('unscopables');
-var ArrayProto = Array.prototype;
-if (ArrayProto[UNSCOPABLES] == undefined) __webpack_require__(8)(ArrayProto, UNSCOPABLES, {});
-module.exports = function (key) {
-  ArrayProto[UNSCOPABLES][key] = true;
-};
+/***/ "./src/default-attrs.json":
+/*!********************************!*\
+  !*** ./src/default-attrs.json ***!
+  \********************************/
+/*! exports provided: xmlns, width, height, viewBox, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, default */
+/***/ (function(module) {
 
+module.exports = {"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":2,"stroke-linecap":"round","stroke-linejoin":"round"};
 
 /***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-var strong = __webpack_require__(72);
-var validate = __webpack_require__(47);
-var SET = 'Set';
-
-// 23.2 Set Objects
-module.exports = __webpack_require__(74)(SET, function (get) {
-  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.2.3.1 Set.prototype.add(value)
-  add: function add(value) {
-    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
-  }
-}, strong);
-
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var dP = __webpack_require__(4).f;
-var create = __webpack_require__(33);
-var redefineAll = __webpack_require__(44);
-var ctx = __webpack_require__(11);
-var anInstance = __webpack_require__(45);
-var forOf = __webpack_require__(17);
-var $iterDefine = __webpack_require__(20);
-var step = __webpack_require__(43);
-var setSpecies = __webpack_require__(73);
-var DESCRIPTORS = __webpack_require__(5);
-var fastKey = __webpack_require__(46).fastKey;
-var validate = __webpack_require__(47);
-var SIZE = DESCRIPTORS ? '_s' : 'size';
-
-var getEntry = function (that, key) {
-  // fast case
-  var index = fastKey(key);
-  var entry;
-  if (index !== 'F') return that._i[index];
-  // frozen object case
-  for (entry = that._f; entry; entry = entry.n) {
-    if (entry.k == key) return entry;
-  }
-};
-
-module.exports = {
-  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
-    var C = wrapper(function (that, iterable) {
-      anInstance(that, C, NAME, '_i');
-      that._t = NAME;         // collection type
-      that._i = create(null); // index
-      that._f = undefined;    // first entry
-      that._l = undefined;    // last entry
-      that[SIZE] = 0;         // size
-      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-    });
-    redefineAll(C.prototype, {
-      // 23.1.3.1 Map.prototype.clear()
-      // 23.2.3.2 Set.prototype.clear()
-      clear: function clear() {
-        for (var that = validate(this, NAME), data = that._i, entry = that._f; entry; entry = entry.n) {
-          entry.r = true;
-          if (entry.p) entry.p = entry.p.n = undefined;
-          delete data[entry.i];
-        }
-        that._f = that._l = undefined;
-        that[SIZE] = 0;
-      },
-      // 23.1.3.3 Map.prototype.delete(key)
-      // 23.2.3.4 Set.prototype.delete(value)
-      'delete': function (key) {
-        var that = validate(this, NAME);
-        var entry = getEntry(that, key);
-        if (entry) {
-          var next = entry.n;
-          var prev = entry.p;
-          delete that._i[entry.i];
-          entry.r = true;
-          if (prev) prev.n = next;
-          if (next) next.p = prev;
-          if (that._f == entry) that._f = next;
-          if (that._l == entry) that._l = prev;
-          that[SIZE]--;
-        } return !!entry;
-      },
-      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
-      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
-      forEach: function forEach(callbackfn /* , that = undefined */) {
-        validate(this, NAME);
-        var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
-        var entry;
-        while (entry = entry ? entry.n : this._f) {
-          f(entry.v, entry.k, this);
-          // revert to the last existing entry
-          while (entry && entry.r) entry = entry.p;
-        }
-      },
-      // 23.1.3.7 Map.prototype.has(key)
-      // 23.2.3.7 Set.prototype.has(value)
-      has: function has(key) {
-        return !!getEntry(validate(this, NAME), key);
-      }
-    });
-    if (DESCRIPTORS) dP(C.prototype, 'size', {
-      get: function () {
-        return validate(this, NAME)[SIZE];
-      }
-    });
-    return C;
-  },
-  def: function (that, key, value) {
-    var entry = getEntry(that, key);
-    var prev, index;
-    // change existing entry
-    if (entry) {
-      entry.v = value;
-    // create new entry
-    } else {
-      that._l = entry = {
-        i: index = fastKey(key, true), // <- index
-        k: key,                        // <- key
-        v: value,                      // <- value
-        p: prev = that._l,             // <- previous entry
-        n: undefined,                  // <- next entry
-        r: false                       // <- removed
-      };
-      if (!that._f) that._f = entry;
-      if (prev) prev.n = entry;
-      that[SIZE]++;
-      // add to index
-      if (index !== 'F') that._i[index] = entry;
-    } return that;
-  },
-  getEntry: getEntry,
-  setStrong: function (C, NAME, IS_MAP) {
-    // add .keys, .values, .entries, [@@iterator]
-    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
-    $iterDefine(C, NAME, function (iterated, kind) {
-      this._t = validate(iterated, NAME); // target
-      this._k = kind;                     // kind
-      this._l = undefined;                // previous
-    }, function () {
-      var that = this;
-      var kind = that._k;
-      var entry = that._l;
-      // revert to the last existing entry
-      while (entry && entry.r) entry = entry.p;
-      // get next entry
-      if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
-        // or finish the iteration
-        that._t = undefined;
-        return step(1);
-      }
-      // return step by kind
-      if (kind == 'keys') return step(0, entry.k);
-      if (kind == 'values') return step(0, entry.v);
-      return step(0, [entry.k, entry.v]);
-    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-
-    // add [@@species], 23.1.2.2, 23.2.2.2
-    setSpecies(NAME);
-  }
-};
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var global = __webpack_require__(1);
-var dP = __webpack_require__(4);
-var DESCRIPTORS = __webpack_require__(5);
-var SPECIES = __webpack_require__(0)('species');
-
-module.exports = function (KEY) {
-  var C = global[KEY];
-  if (DESCRIPTORS && C && !C[SPECIES]) dP.f(C, SPECIES, {
-    configurable: true,
-    get: function () { return this; }
-  });
-};
-
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var global = __webpack_require__(1);
-var $export = __webpack_require__(3);
-var redefine = __webpack_require__(10);
-var redefineAll = __webpack_require__(44);
-var meta = __webpack_require__(46);
-var forOf = __webpack_require__(17);
-var anInstance = __webpack_require__(45);
-var isObject = __webpack_require__(2);
-var fails = __webpack_require__(12);
-var $iterDetect = __webpack_require__(41);
-var setToStringTag = __webpack_require__(24);
-var inheritIfRequired = __webpack_require__(75);
-
-module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
-  var Base = global[NAME];
-  var C = Base;
-  var ADDER = IS_MAP ? 'set' : 'add';
-  var proto = C && C.prototype;
-  var O = {};
-  var fixMethod = function (KEY) {
-    var fn = proto[KEY];
-    redefine(proto, KEY,
-      KEY == 'delete' ? function (a) {
-        return IS_WEAK && !isObject(a) ? false : fn.call(this, a === 0 ? 0 : a);
-      } : KEY == 'has' ? function has(a) {
-        return IS_WEAK && !isObject(a) ? false : fn.call(this, a === 0 ? 0 : a);
-      } : KEY == 'get' ? function get(a) {
-        return IS_WEAK && !isObject(a) ? undefined : fn.call(this, a === 0 ? 0 : a);
-      } : KEY == 'add' ? function add(a) { fn.call(this, a === 0 ? 0 : a); return this; }
-        : function set(a, b) { fn.call(this, a === 0 ? 0 : a, b); return this; }
-    );
-  };
-  if (typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function () {
-    new C().entries().next();
-  }))) {
-    // create collection constructor
-    C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
-    redefineAll(C.prototype, methods);
-    meta.NEED = true;
-  } else {
-    var instance = new C();
-    // early implementations not supports chaining
-    var HASNT_CHAINING = instance[ADDER](IS_WEAK ? {} : -0, 1) != instance;
-    // V8 ~  Chromium 40- weak-collections throws on primitives, but should return false
-    var THROWS_ON_PRIMITIVES = fails(function () { instance.has(1); });
-    // most early implementations doesn't supports iterables, most modern - not close it correctly
-    var ACCEPT_ITERABLES = $iterDetect(function (iter) { new C(iter); }); // eslint-disable-line no-new
-    // for early implementations -0 and +0 not the same
-    var BUGGY_ZERO = !IS_WEAK && fails(function () {
-      // V8 ~ Chromium 42- fails only with 5+ elements
-      var $instance = new C();
-      var index = 5;
-      while (index--) $instance[ADDER](index, index);
-      return !$instance.has(-0);
-    });
-    if (!ACCEPT_ITERABLES) {
-      C = wrapper(function (target, iterable) {
-        anInstance(target, C, NAME);
-        var that = inheritIfRequired(new Base(), target, C);
-        if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-        return that;
-      });
-      C.prototype = proto;
-      proto.constructor = C;
-    }
-    if (THROWS_ON_PRIMITIVES || BUGGY_ZERO) {
-      fixMethod('delete');
-      fixMethod('has');
-      IS_MAP && fixMethod('get');
-    }
-    if (BUGGY_ZERO || HASNT_CHAINING) fixMethod(ADDER);
-    // weak collections should not contains .clear method
-    if (IS_WEAK && proto.clear) delete proto.clear;
-  }
-
-  setToStringTag(C, NAME);
-
-  O[NAME] = C;
-  $export($export.G + $export.W + $export.F * (C != Base), O);
-
-  if (!IS_WEAK) common.setStrong(C, NAME, IS_MAP);
-
-  return C;
-};
-
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(2);
-var setPrototypeOf = __webpack_require__(76).set;
-module.exports = function (that, target, C) {
-  var S = target.constructor;
-  var P;
-  if (S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf) {
-    setPrototypeOf(that, P);
-  } return that;
-};
-
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Works with __proto__ only. Old v8 can't work with null proto objects.
-/* eslint-disable no-proto */
-var isObject = __webpack_require__(2);
-var anObject = __webpack_require__(9);
-var check = function (O, proto) {
-  anObject(O);
-  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
-};
-module.exports = {
-  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-    function (test, buggy, set) {
-      try {
-        set = __webpack_require__(11)(Function.call, __webpack_require__(77).f(Object.prototype, '__proto__').set, 2);
-        set(test, []);
-        buggy = !(test instanceof Array);
-      } catch (e) { buggy = true; }
-      return function setPrototypeOf(O, proto) {
-        check(O, proto);
-        if (buggy) O.__proto__ = proto;
-        else set(O, proto);
-        return O;
-      };
-    }({}, false) : undefined),
-  check: check
-};
-
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var pIE = __webpack_require__(42);
-var createDesc = __webpack_require__(14);
-var toIObject = __webpack_require__(16);
-var toPrimitive = __webpack_require__(31);
-var has = __webpack_require__(6);
-var IE8_DOM_DEFINE = __webpack_require__(29);
-var gOPD = Object.getOwnPropertyDescriptor;
-
-exports.f = __webpack_require__(5) ? gOPD : function getOwnPropertyDescriptor(O, P) {
-  O = toIObject(O);
-  P = toPrimitive(P, true);
-  if (IE8_DOM_DEFINE) try {
-    return gOPD(O, P);
-  } catch (e) { /* empty */ }
-  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
-};
-
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(3);
-
-$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(79)('Set') });
-
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var classof = __webpack_require__(26);
-var from = __webpack_require__(80);
-module.exports = function (NAME) {
-  return function toJSON() {
-    if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
-    return from(this);
-  };
-};
-
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var forOf = __webpack_require__(17);
-
-module.exports = function (iter, ITERATOR) {
-  var result = [];
-  forOf(iter, false, result.push, result, ITERATOR);
-  return result;
-};
-
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
-__webpack_require__(82)('Set');
-
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(3);
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { of: function of() {
-    var length = arguments.length;
-    var A = new Array(length);
-    while (length--) A[length] = arguments[length];
-    return new this(A);
-  } });
-};
-
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
-__webpack_require__(84)('Set');
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(3);
-var aFunction = __webpack_require__(32);
-var ctx = __webpack_require__(11);
-var forOf = __webpack_require__(17);
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { from: function from(source /* , mapFn, thisArg */) {
-    var mapFn = arguments[1];
-    var mapping, A, n, cb;
-    aFunction(this);
-    mapping = mapFn !== undefined;
-    if (mapping) aFunction(mapFn);
-    if (source == undefined) return new this();
-    A = [];
-    if (mapping) {
-      n = 0;
-      cb = ctx(mapFn, arguments[2], 2);
-      forOf(source, false, function (nextItem) {
-        A.push(cb(nextItem, n++));
-      });
-    } else {
-      forOf(source, false, A.push, A);
-    }
-    return new this(A);
-  } });
-};
-
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _icons = __webpack_require__(27);
-
-var _icons2 = _interopRequireDefault(_icons);
-
-var _toSvg = __webpack_require__(90);
-
-var _toSvg2 = _interopRequireDefault(_toSvg);
-
-var _replace = __webpack_require__(91);
-
-var _replace2 = _interopRequireDefault(_replace);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = { icons: _icons2.default, toSvg: _toSvg2.default, replace: _replace2.default };
-
-/***/ }),
-/* 86 */
+/***/ "./src/icon.js":
+/*!*********************!*\
+  !*** ./src/icon.js ***!
+  \*********************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49279,11 +57453,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dedupe = __webpack_require__(48);
+var _dedupe = __webpack_require__(/*! classnames/dedupe */ "./node_modules/classnames/dedupe.js");
 
 var _dedupe2 = _interopRequireDefault(_dedupe);
 
-var _defaultAttrs = __webpack_require__(87);
+var _defaultAttrs = __webpack_require__(/*! ./default-attrs.json */ "./src/default-attrs.json");
 
 var _defaultAttrs2 = _interopRequireDefault(_defaultAttrs);
 
@@ -49355,25 +57529,12 @@ function attrsToString(attrs) {
 exports.default = Icon;
 
 /***/ }),
-/* 87 */
-/***/ (function(module, exports) {
 
-module.exports = {"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","stroke-width":2,"stroke-linecap":"round","stroke-linejoin":"round"}
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports) {
-
-module.exports = {"activity":"<polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"></polyline>","airplay":"<path d=\"M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1\"></path><polygon points=\"12 15 17 21 7 21 12 15\"></polygon>","alert-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"16\"></line>","alert-octagon":"<polygon points=\"7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2\"></polygon><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"16\"></line>","alert-triangle":"<path d=\"M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\"></path><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"13\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"17\"></line>","align-center":"<line x1=\"18\" y1=\"10\" x2=\"6\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"18\" y1=\"18\" x2=\"6\" y2=\"18\"></line>","align-justify":"<line x1=\"21\" y1=\"10\" x2=\"3\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"21\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","align-left":"<line x1=\"17\" y1=\"10\" x2=\"3\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"17\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","align-right":"<line x1=\"21\" y1=\"10\" x2=\"7\" y2=\"10\"></line><line x1=\"21\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"21\" y1=\"14\" x2=\"3\" y2=\"14\"></line><line x1=\"21\" y1=\"18\" x2=\"7\" y2=\"18\"></line>","anchor":"<circle cx=\"12\" cy=\"5\" r=\"3\"></circle><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"8\"></line><path d=\"M5 12H2a10 10 0 0 0 20 0h-3\"></path>","aperture":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"14.31\" y1=\"8\" x2=\"20.05\" y2=\"17.94\"></line><line x1=\"9.69\" y1=\"8\" x2=\"21.17\" y2=\"8\"></line><line x1=\"7.38\" y1=\"12\" x2=\"13.12\" y2=\"2.06\"></line><line x1=\"9.69\" y1=\"16\" x2=\"3.95\" y2=\"6.06\"></line><line x1=\"14.31\" y1=\"16\" x2=\"2.83\" y2=\"16\"></line><line x1=\"16.62\" y1=\"12\" x2=\"10.88\" y2=\"21.94\"></line>","archive":"<polyline points=\"21 8 21 21 3 21 3 8\"></polyline><rect x=\"1\" y=\"3\" width=\"22\" height=\"5\"></rect><line x1=\"10\" y1=\"12\" x2=\"14\" y2=\"12\"></line>","arrow-down-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"8 12 12 16 16 12\"></polyline><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>","arrow-down-left":"<line x1=\"17\" y1=\"7\" x2=\"7\" y2=\"17\"></line><polyline points=\"17 17 7 17 7 7\"></polyline>","arrow-down-right":"<line x1=\"7\" y1=\"7\" x2=\"17\" y2=\"17\"></line><polyline points=\"17 7 17 17 7 17\"></polyline>","arrow-down":"<line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line><polyline points=\"19 12 12 19 5 12\"></polyline>","arrow-left-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 8 8 12 12 16\"></polyline><line x1=\"16\" y1=\"12\" x2=\"8\" y2=\"12\"></line>","arrow-left":"<line x1=\"19\" y1=\"12\" x2=\"5\" y2=\"12\"></line><polyline points=\"12 19 5 12 12 5\"></polyline>","arrow-right-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 16 16 12 12 8\"></polyline><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","arrow-right":"<line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line><polyline points=\"12 5 19 12 12 19\"></polyline>","arrow-up-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"16 12 12 8 8 12\"></polyline><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"8\"></line>","arrow-up-left":"<line x1=\"17\" y1=\"17\" x2=\"7\" y2=\"7\"></line><polyline points=\"7 17 7 7 17 7\"></polyline>","arrow-up-right":"<line x1=\"7\" y1=\"17\" x2=\"17\" y2=\"7\"></line><polyline points=\"7 7 17 7 17 17\"></polyline>","arrow-up":"<line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"5\"></line><polyline points=\"5 12 12 5 19 12\"></polyline>","at-sign":"<circle cx=\"12\" cy=\"12\" r=\"4\"></circle><path d=\"M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94\"></path>","award":"<circle cx=\"12\" cy=\"8\" r=\"7\"></circle><polyline points=\"8.21 13.89 7 23 12 20 17 23 15.79 13.88\"></polyline>","bar-chart-2":"<line x1=\"18\" y1=\"20\" x2=\"18\" y2=\"10\"></line><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"4\"></line><line x1=\"6\" y1=\"20\" x2=\"6\" y2=\"14\"></line>","bar-chart":"<line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"10\"></line><line x1=\"18\" y1=\"20\" x2=\"18\" y2=\"4\"></line><line x1=\"6\" y1=\"20\" x2=\"6\" y2=\"16\"></line>","battery-charging":"<path d=\"M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19\"></path><line x1=\"23\" y1=\"13\" x2=\"23\" y2=\"11\"></line><polyline points=\"11 6 7 12 13 12 9 18\"></polyline>","battery":"<rect x=\"1\" y=\"6\" width=\"18\" height=\"12\" rx=\"2\" ry=\"2\"></rect><line x1=\"23\" y1=\"13\" x2=\"23\" y2=\"11\"></line>","bell-off":"<path d=\"M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","bell":"<path d=\"M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0\"></path>","bluetooth":"<polyline points=\"6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5\"></polyline>","bold":"<path d=\"M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"></path><path d=\"M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z\"></path>","book-open":"<path d=\"M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z\"></path><path d=\"M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z\"></path>","book":"<path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\"></path><path d=\"M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\"></path>","bookmark":"<path d=\"M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z\"></path>","box":"<path d=\"M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z\"></path><polyline points=\"2.32 6.16 12 11 21.68 6.16\"></polyline><line x1=\"12\" y1=\"22.76\" x2=\"12\" y2=\"11\"></line>","briefcase":"<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"></path>","calendar":"<rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"></line><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"></line><line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"></line>","camera-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56\"></path>","camera":"<path d=\"M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z\"></path><circle cx=\"12\" cy=\"13\" r=\"4\"></circle>","cast":"<path d=\"M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6\"></path><line x1=\"2\" y1=\"20\" x2=\"2\" y2=\"20\"></line>","check-circle":"<path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"></path><polyline points=\"22 4 12 14.01 9 11.01\"></polyline>","check-square":"<polyline points=\"9 11 12 14 22 4\"></polyline><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"></path>","check":"<polyline points=\"20 6 9 17 4 12\"></polyline>","chevron-down":"<polyline points=\"6 9 12 15 18 9\"></polyline>","chevron-left":"<polyline points=\"15 18 9 12 15 6\"></polyline>","chevron-right":"<polyline points=\"9 18 15 12 9 6\"></polyline>","chevron-up":"<polyline points=\"18 15 12 9 6 15\"></polyline>","chevrons-down":"<polyline points=\"7 13 12 18 17 13\"></polyline><polyline points=\"7 6 12 11 17 6\"></polyline>","chevrons-left":"<polyline points=\"11 17 6 12 11 7\"></polyline><polyline points=\"18 17 13 12 18 7\"></polyline>","chevrons-right":"<polyline points=\"13 17 18 12 13 7\"></polyline><polyline points=\"6 17 11 12 6 7\"></polyline>","chevrons-up":"<polyline points=\"17 11 12 6 7 11\"></polyline><polyline points=\"17 18 12 13 7 18\"></polyline>","chrome":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"21.17\" y1=\"8\" x2=\"12\" y2=\"8\"></line><line x1=\"3.95\" y1=\"6.06\" x2=\"8.54\" y2=\"14\"></line><line x1=\"10.88\" y1=\"21.94\" x2=\"15.46\" y2=\"14\"></line>","circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle>","clipboard":"<path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path><rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>","clock":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline>","cloud-drizzle":"<line x1=\"8\" y1=\"19\" x2=\"8\" y2=\"21\"></line><line x1=\"8\" y1=\"13\" x2=\"8\" y2=\"15\"></line><line x1=\"16\" y1=\"19\" x2=\"16\" y2=\"21\"></line><line x1=\"16\" y1=\"13\" x2=\"16\" y2=\"15\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"></line><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"17\"></line><path d=\"M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25\"></path>","cloud-lightning":"<path d=\"M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9\"></path><polyline points=\"13 11 9 17 15 17 11 23\"></polyline>","cloud-off":"<path d=\"M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","cloud-rain":"<line x1=\"16\" y1=\"13\" x2=\"16\" y2=\"21\"></line><line x1=\"8\" y1=\"13\" x2=\"8\" y2=\"21\"></line><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"23\"></line><path d=\"M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25\"></path>","cloud-snow":"<path d=\"M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25\"></path><line x1=\"8\" y1=\"16\" x2=\"8\" y2=\"16\"></line><line x1=\"8\" y1=\"20\" x2=\"8\" y2=\"20\"></line><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"22\"></line><line x1=\"16\" y1=\"16\" x2=\"16\" y2=\"16\"></line><line x1=\"16\" y1=\"20\" x2=\"16\" y2=\"20\"></line>","cloud":"<path d=\"M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z\"></path>","code":"<polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline>","codepen":"<polygon points=\"12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2\"></polygon><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"15.5\"></line><polyline points=\"22 8.5 12 15.5 2 8.5\"></polyline><polyline points=\"2 15.5 12 8.5 22 15.5\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"8.5\"></line>","command":"<path d=\"M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z\"></path>","compass":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polygon points=\"16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76\"></polygon>","copy":"<rect x=\"9\" y=\"9\" width=\"13\" height=\"13\" rx=\"2\" ry=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path>","corner-down-left":"<polyline points=\"9 10 4 15 9 20\"></polyline><path d=\"M20 4v7a4 4 0 0 1-4 4H4\"></path>","corner-down-right":"<polyline points=\"15 10 20 15 15 20\"></polyline><path d=\"M4 4v7a4 4 0 0 0 4 4h12\"></path>","corner-left-down":"<polyline points=\"14 15 9 20 4 15\"></polyline><path d=\"M20 4h-7a4 4 0 0 0-4 4v12\"></path>","corner-left-up":"<polyline points=\"14 9 9 4 4 9\"></polyline><path d=\"M20 20h-7a4 4 0 0 1-4-4V4\"></path>","corner-right-down":"<polyline points=\"10 15 15 20 20 15\"></polyline><path d=\"M4 4h7a4 4 0 0 1 4 4v12\"></path>","corner-right-up":"<polyline points=\"10 9 15 4 20 9\"></polyline><path d=\"M4 20h7a4 4 0 0 0 4-4V4\"></path>","corner-up-left":"<polyline points=\"9 14 4 9 9 4\"></polyline><path d=\"M20 20v-7a4 4 0 0 0-4-4H4\"></path>","corner-up-right":"<polyline points=\"15 14 20 9 15 4\"></polyline><path d=\"M4 20v-7a4 4 0 0 1 4-4h12\"></path>","cpu":"<rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect><line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line><line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line><line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line><line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line><line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line><line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line><line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line><line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>","credit-card":"<rect x=\"1\" y=\"4\" width=\"22\" height=\"16\" rx=\"2\" ry=\"2\"></rect><line x1=\"1\" y1=\"10\" x2=\"23\" y2=\"10\"></line>","crop":"<path d=\"M6.13 1L6 16a2 2 0 0 0 2 2h15\"></path><path d=\"M1 6.13L16 6a2 2 0 0 1 2 2v15\"></path>","crosshair":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"22\" y1=\"12\" x2=\"18\" y2=\"12\"></line><line x1=\"6\" y1=\"12\" x2=\"2\" y2=\"12\"></line><line x1=\"12\" y1=\"6\" x2=\"12\" y2=\"2\"></line><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"18\"></line>","database":"<ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M21 12c0 1.66-4 3-9 3s-9-1.34-9-3\"></path><path d=\"M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5\"></path>","delete":"<path d=\"M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z\"></path><line x1=\"18\" y1=\"9\" x2=\"12\" y2=\"15\"></line><line x1=\"12\" y1=\"9\" x2=\"18\" y2=\"15\"></line>","disc":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"3\"></circle>","dollar-sign":"<line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"23\"></line><path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\"></path>","download-cloud":"<polyline points=\"8 17 12 21 16 17\"></polyline><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"></line><path d=\"M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29\"></path>","download":"<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"></path><polyline points=\"7 10 12 15 17 10\"></polyline><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"></line>","droplet":"<path d=\"M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z\"></path>","edit-2":"<polygon points=\"16 3 21 8 8 21 3 21 3 16 16 3\"></polygon>","edit-3":"<polygon points=\"14 2 18 6 7 17 3 17 3 13 14 2\"></polygon><line x1=\"3\" y1=\"22\" x2=\"21\" y2=\"22\"></line>","edit":"<path d=\"M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34\"></path><polygon points=\"18 2 22 6 12 16 8 16 8 12 18 2\"></polygon>","external-link":"<path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"></path><polyline points=\"15 3 21 3 21 9\"></polyline><line x1=\"10\" y1=\"14\" x2=\"21\" y2=\"3\"></line>","eye-off":"<path d=\"M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","eye":"<path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle>","facebook":"<path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"></path>","fast-forward":"<polygon points=\"13 19 22 12 13 5 13 19\"></polygon><polygon points=\"2 19 11 12 2 5 2 19\"></polygon>","feather":"<path d=\"M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z\"></path><line x1=\"16\" y1=\"8\" x2=\"2\" y2=\"22\"></line><line x1=\"17\" y1=\"15\" x2=\"9\" y2=\"15\"></line>","file-minus":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line>","file-plus":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"12\"></line><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"></line>","file-text":"<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line><polyline points=\"10 9 9 9 8 9\"></polyline>","file":"<path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path><polyline points=\"13 2 13 9 20 9\"></polyline>","film":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"2.18\" ry=\"2.18\"></rect><line x1=\"7\" y1=\"2\" x2=\"7\" y2=\"22\"></line><line x1=\"17\" y1=\"2\" x2=\"17\" y2=\"22\"></line><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"2\" y1=\"7\" x2=\"7\" y2=\"7\"></line><line x1=\"2\" y1=\"17\" x2=\"7\" y2=\"17\"></line><line x1=\"17\" y1=\"17\" x2=\"22\" y2=\"17\"></line><line x1=\"17\" y1=\"7\" x2=\"22\" y2=\"7\"></line>","filter":"<polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"></polygon>","flag":"<path d=\"M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z\"></path><line x1=\"4\" y1=\"22\" x2=\"4\" y2=\"15\"></line>","folder-minus":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path><line x1=\"9\" y1=\"14\" x2=\"15\" y2=\"14\"></line>","folder-plus":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path><line x1=\"12\" y1=\"11\" x2=\"12\" y2=\"17\"></line><line x1=\"9\" y1=\"14\" x2=\"15\" y2=\"14\"></line>","folder":"<path d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\"></path>","gift":"<polyline points=\"20 12 20 22 4 22 4 12\"></polyline><rect x=\"2\" y=\"7\" width=\"20\" height=\"5\"></rect><line x1=\"12\" y1=\"22\" x2=\"12\" y2=\"7\"></line><path d=\"M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z\"></path><path d=\"M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z\"></path>","git-branch":"<line x1=\"6\" y1=\"3\" x2=\"6\" y2=\"15\"></line><circle cx=\"18\" cy=\"6\" r=\"3\"></circle><circle cx=\"6\" cy=\"18\" r=\"3\"></circle><path d=\"M18 9a9 9 0 0 1-9 9\"></path>","git-commit":"<circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"1.05\" y1=\"12\" x2=\"7\" y2=\"12\"></line><line x1=\"17.01\" y1=\"12\" x2=\"22.96\" y2=\"12\"></line>","git-merge":"<circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M6 21V9a9 9 0 0 0 9 9\"></path>","git-pull-request":"<circle cx=\"18\" cy=\"18\" r=\"3\"></circle><circle cx=\"6\" cy=\"6\" r=\"3\"></circle><path d=\"M13 6h3a2 2 0 0 1 2 2v7\"></path><line x1=\"6\" y1=\"9\" x2=\"6\" y2=\"21\"></line>","github":"<path d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\"></path>","gitlab":"<path d=\"M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z\"></path>","globe":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"></path>","grid":"<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect>","hard-drive":"<line x1=\"22\" y1=\"12\" x2=\"2\" y2=\"12\"></line><path d=\"M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\"></path><line x1=\"6\" y1=\"16\" x2=\"6\" y2=\"16\"></line><line x1=\"10\" y1=\"16\" x2=\"10\" y2=\"16\"></line>","hash":"<line x1=\"4\" y1=\"9\" x2=\"20\" y2=\"9\"></line><line x1=\"4\" y1=\"15\" x2=\"20\" y2=\"15\"></line><line x1=\"10\" y1=\"3\" x2=\"8\" y2=\"21\"></line><line x1=\"16\" y1=\"3\" x2=\"14\" y2=\"21\"></line>","headphones":"<path d=\"M3 18v-6a9 9 0 0 1 18 0v6\"></path><path d=\"M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z\"></path>","heart":"<path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"></path>","help-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"></path><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"17\"></line>","home":"<path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path><polyline points=\"9 22 9 12 15 12 15 22\"></polyline>","image":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"></circle><polyline points=\"21 15 16 10 5 21\"></polyline>","inbox":"<polyline points=\"22 12 16 12 14 15 10 15 8 12 2 12\"></polyline><path d=\"M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\"></path>","info":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"8\"></line>","instagram":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"></path><line x1=\"17.5\" y1=\"6.5\" x2=\"17.5\" y2=\"6.5\"></line>","italic":"<line x1=\"19\" y1=\"4\" x2=\"10\" y2=\"4\"></line><line x1=\"14\" y1=\"20\" x2=\"5\" y2=\"20\"></line><line x1=\"15\" y1=\"4\" x2=\"9\" y2=\"20\"></line>","layers":"<polygon points=\"12 2 2 7 12 12 22 7 12 2\"></polygon><polyline points=\"2 17 12 22 22 17\"></polyline><polyline points=\"2 12 12 17 22 12\"></polyline>","layout":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line><line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>","life-buoy":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><line x1=\"4.93\" y1=\"4.93\" x2=\"9.17\" y2=\"9.17\"></line><line x1=\"14.83\" y1=\"14.83\" x2=\"19.07\" y2=\"19.07\"></line><line x1=\"14.83\" y1=\"9.17\" x2=\"19.07\" y2=\"4.93\"></line><line x1=\"14.83\" y1=\"9.17\" x2=\"18.36\" y2=\"5.64\"></line><line x1=\"4.93\" y1=\"19.07\" x2=\"9.17\" y2=\"14.83\"></line>","link-2":"<path d=\"M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3\"></path><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","link":"<path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"></path><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"></path>","linkedin":"<path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"></path><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"></rect><circle cx=\"4\" cy=\"4\" r=\"2\"></circle>","list":"<line x1=\"8\" y1=\"6\" x2=\"21\" y2=\"6\"></line><line x1=\"8\" y1=\"12\" x2=\"21\" y2=\"12\"></line><line x1=\"8\" y1=\"18\" x2=\"21\" y2=\"18\"></line><line x1=\"3\" y1=\"6\" x2=\"3\" y2=\"6\"></line><line x1=\"3\" y1=\"12\" x2=\"3\" y2=\"12\"></line><line x1=\"3\" y1=\"18\" x2=\"3\" y2=\"18\"></line>","loader":"<line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"6\"></line><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"22\"></line><line x1=\"4.93\" y1=\"4.93\" x2=\"7.76\" y2=\"7.76\"></line><line x1=\"16.24\" y1=\"16.24\" x2=\"19.07\" y2=\"19.07\"></line><line x1=\"2\" y1=\"12\" x2=\"6\" y2=\"12\"></line><line x1=\"18\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"4.93\" y1=\"19.07\" x2=\"7.76\" y2=\"16.24\"></line><line x1=\"16.24\" y1=\"7.76\" x2=\"19.07\" y2=\"4.93\"></line>","lock":"<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path>","log-in":"<path d=\"M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4\"></path><polyline points=\"10 17 15 12 10 7\"></polyline><line x1=\"15\" y1=\"12\" x2=\"3\" y2=\"12\"></line>","log-out":"<path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"></path><polyline points=\"16 17 21 12 16 7\"></polyline><line x1=\"21\" y1=\"12\" x2=\"9\" y2=\"12\"></line>","mail":"<path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline>","map-pin":"<path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"></path><circle cx=\"12\" cy=\"10\" r=\"3\"></circle>","map":"<polygon points=\"1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6\"></polygon><line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"18\"></line><line x1=\"16\" y1=\"6\" x2=\"16\" y2=\"22\"></line>","maximize-2":"<polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" y1=\"3\" x2=\"14\" y2=\"10\"></line><line x1=\"3\" y1=\"21\" x2=\"10\" y2=\"14\"></line>","maximize":"<path d=\"M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3\"></path>","menu":"<line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"></line><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"></line><line x1=\"3\" y1=\"18\" x2=\"21\" y2=\"18\"></line>","message-circle":"<path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"></path>","message-square":"<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path>","mic-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6\"></path><path d=\"M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23\"></path><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"></line><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"></line>","mic":"<path d=\"M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z\"></path><path d=\"M19 10v2a7 7 0 0 1-14 0v-2\"></path><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"23\"></line><line x1=\"8\" y1=\"23\" x2=\"16\" y2=\"23\"></line>","minimize-2":"<polyline points=\"4 14 10 14 10 20\"></polyline><polyline points=\"20 10 14 10 14 4\"></polyline><line x1=\"14\" y1=\"10\" x2=\"21\" y2=\"3\"></line><line x1=\"3\" y1=\"21\" x2=\"10\" y2=\"14\"></line>","minimize":"<path d=\"M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3\"></path>","minus-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","minus-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","minus":"<line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>","monitor":"<rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect><line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line><line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line>","moon":"<path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"></path>","more-horizontal":"<circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"19\" cy=\"12\" r=\"1\"></circle><circle cx=\"5\" cy=\"12\" r=\"1\"></circle>","more-vertical":"<circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"12\" cy=\"5\" r=\"1\"></circle><circle cx=\"12\" cy=\"19\" r=\"1\"></circle>","move":"<polyline points=\"5 9 2 12 5 15\"></polyline><polyline points=\"9 5 12 2 15 5\"></polyline><polyline points=\"15 19 12 22 9 19\"></polyline><polyline points=\"19 9 22 12 19 15\"></polyline><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"22\"></line>","music":"<path d=\"M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z\"></path><polyline points=\"9 17 9 5 21 3 21 15\"></polyline>","navigation-2":"<polygon points=\"12 2 19 21 12 17 5 21 12 2\"></polygon>","navigation":"<polygon points=\"3 11 22 2 13 21 11 13 3 11\"></polygon>","octagon":"<polygon points=\"7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2\"></polygon>","package":"<path d=\"M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z\"></path><polyline points=\"2.32 6.16 12 11 21.68 6.16\"></polyline><line x1=\"12\" y1=\"22.76\" x2=\"12\" y2=\"11\"></line><line x1=\"7\" y1=\"3.5\" x2=\"17\" y2=\"8.5\"></line>","paperclip":"<path d=\"M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48\"></path>","pause-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"9\"></line><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"9\"></line>","pause":"<rect x=\"6\" y=\"4\" width=\"4\" height=\"16\"></rect><rect x=\"14\" y=\"4\" width=\"4\" height=\"16\"></rect>","percent":"<line x1=\"19\" y1=\"5\" x2=\"5\" y2=\"19\"></line><circle cx=\"6.5\" cy=\"6.5\" r=\"2.5\"></circle><circle cx=\"17.5\" cy=\"17.5\" r=\"2.5\"></circle>","phone-call":"<path d=\"M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-forwarded":"<polyline points=\"19 1 23 5 19 9\"></polyline><line x1=\"15\" y1=\"5\" x2=\"23\" y2=\"5\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-incoming":"<polyline points=\"16 2 16 8 22 8\"></polyline><line x1=\"23\" y1=\"1\" x2=\"16\" y2=\"8\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-missed":"<line x1=\"23\" y1=\"1\" x2=\"17\" y2=\"7\"></line><line x1=\"17\" y1=\"1\" x2=\"23\" y2=\"7\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone-off":"<path d=\"M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91\"></path><line x1=\"23\" y1=\"1\" x2=\"1\" y2=\"23\"></line>","phone-outgoing":"<polyline points=\"23 7 23 1 17 1\"></polyline><line x1=\"16\" y1=\"8\" x2=\"23\" y2=\"1\"></line><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","phone":"<path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>","pie-chart":"<path d=\"M21.21 15.89A10 10 0 1 1 8 2.83\"></path><path d=\"M22 12A10 10 0 0 0 12 2v10z\"></path>","play-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polygon points=\"10 8 16 12 10 16 10 8\"></polygon>","play":"<polygon points=\"5 3 19 12 5 21 5 3\"></polygon>","plus-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","plus-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line><line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>","plus":"<line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>","pocket":"<path d=\"M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z\"></path><polyline points=\"8 10 12 14 16 10\"></polyline>","power":"<path d=\"M18.36 6.64a9 9 0 1 1-12.73 0\"></path><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"12\"></line>","printer":"<polyline points=\"6 9 6 2 18 2 18 9\"></polyline><path d=\"M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2\"></path><rect x=\"6\" y=\"14\" width=\"12\" height=\"8\"></rect>","radio":"<circle cx=\"12\" cy=\"12\" r=\"2\"></circle><path d=\"M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14\"></path>","refresh-ccw":"<polyline points=\"1 4 1 10 7 10\"></polyline><polyline points=\"23 20 23 14 17 14\"></polyline><path d=\"M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15\"></path>","refresh-cw":"<polyline points=\"23 4 23 10 17 10\"></polyline><polyline points=\"1 20 1 14 7 14\"></polyline><path d=\"M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15\"></path>","repeat":"<polyline points=\"17 1 21 5 17 9\"></polyline><path d=\"M3 11V9a4 4 0 0 1 4-4h14\"></path><polyline points=\"7 23 3 19 7 15\"></polyline><path d=\"M21 13v2a4 4 0 0 1-4 4H3\"></path>","rewind":"<polygon points=\"11 19 2 12 11 5 11 19\"></polygon><polygon points=\"22 19 13 12 22 5 22 19\"></polygon>","rotate-ccw":"<polyline points=\"1 4 1 10 7 10\"></polyline><path d=\"M3.51 15a9 9 0 1 0 2.13-9.36L1 10\"></path>","rotate-cw":"<polyline points=\"23 4 23 10 17 10\"></polyline><path d=\"M20.49 15a9 9 0 1 1-2.12-9.36L23 10\"></path>","rss":"<path d=\"M4 11a9 9 0 0 1 9 9\"></path><path d=\"M4 4a16 16 0 0 1 16 16\"></path><circle cx=\"5\" cy=\"19\" r=\"1\"></circle>","save":"<path d=\"M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z\"></path><polyline points=\"17 21 17 13 7 13 7 21\"></polyline><polyline points=\"7 3 7 8 15 8\"></polyline>","scissors":"<circle cx=\"6\" cy=\"6\" r=\"3\"></circle><circle cx=\"6\" cy=\"18\" r=\"3\"></circle><line x1=\"20\" y1=\"4\" x2=\"8.12\" y2=\"15.88\"></line><line x1=\"14.47\" y1=\"14.48\" x2=\"20\" y2=\"20\"></line><line x1=\"8.12\" y1=\"8.12\" x2=\"12\" y2=\"12\"></line>","search":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line>","send":"<line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"></line><polygon points=\"22 2 15 22 11 13 2 9 22 2\"></polygon>","server":"<rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect><line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line><line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>","settings":"<circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z\"></path>","share-2":"<circle cx=\"18\" cy=\"5\" r=\"3\"></circle><circle cx=\"6\" cy=\"12\" r=\"3\"></circle><circle cx=\"18\" cy=\"19\" r=\"3\"></circle><line x1=\"8.59\" y1=\"13.51\" x2=\"15.42\" y2=\"17.49\"></line><line x1=\"15.41\" y1=\"6.51\" x2=\"8.59\" y2=\"10.49\"></line>","share":"<path d=\"M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8\"></path><polyline points=\"16 6 12 2 8 6\"></polyline><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"15\"></line>","shield-off":"<path d=\"M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18\"></path><path d=\"M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","shield":"<path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path>","shopping-bag":"<path d=\"M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"></path><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"></line><path d=\"M16 10a4 4 0 0 1-8 0\"></path>","shopping-cart":"<circle cx=\"9\" cy=\"21\" r=\"1\"></circle><circle cx=\"20\" cy=\"21\" r=\"1\"></circle><path d=\"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\"></path>","shuffle":"<polyline points=\"16 3 21 3 21 8\"></polyline><line x1=\"4\" y1=\"20\" x2=\"21\" y2=\"3\"></line><polyline points=\"21 16 21 21 16 21\"></polyline><line x1=\"15\" y1=\"15\" x2=\"21\" y2=\"21\"></line><line x1=\"4\" y1=\"4\" x2=\"9\" y2=\"9\"></line>","sidebar":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"9\" y1=\"3\" x2=\"9\" y2=\"21\"></line>","skip-back":"<polygon points=\"19 20 9 12 19 4 19 20\"></polygon><line x1=\"5\" y1=\"19\" x2=\"5\" y2=\"5\"></line>","skip-forward":"<polygon points=\"5 4 15 12 5 20 5 4\"></polygon><line x1=\"19\" y1=\"5\" x2=\"19\" y2=\"19\"></line>","slack":"<path d=\"M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z\"></path><line x1=\"12.57\" y1=\"5.99\" x2=\"16.15\" y2=\"16.39\"></line><line x1=\"7.85\" y1=\"7.61\" x2=\"11.43\" y2=\"18.01\"></line><line x1=\"16.39\" y1=\"7.85\" x2=\"5.99\" y2=\"11.43\"></line><line x1=\"18.01\" y1=\"12.57\" x2=\"7.61\" y2=\"16.15\"></line>","slash":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"4.93\" y1=\"4.93\" x2=\"19.07\" y2=\"19.07\"></line>","sliders":"<line x1=\"4\" y1=\"21\" x2=\"4\" y2=\"14\"></line><line x1=\"4\" y1=\"10\" x2=\"4\" y2=\"3\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"3\"></line><line x1=\"20\" y1=\"21\" x2=\"20\" y2=\"16\"></line><line x1=\"20\" y1=\"12\" x2=\"20\" y2=\"3\"></line><line x1=\"1\" y1=\"14\" x2=\"7\" y2=\"14\"></line><line x1=\"9\" y1=\"8\" x2=\"15\" y2=\"8\"></line><line x1=\"17\" y1=\"16\" x2=\"23\" y2=\"16\"></line>","smartphone":"<rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>","speaker":"<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\" ry=\"2\"></rect><circle cx=\"12\" cy=\"14\" r=\"4\"></circle><line x1=\"12\" y1=\"6\" x2=\"12\" y2=\"6\"></line>","square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>","star":"<polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"></polygon>","stop-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>","sun":"<circle cx=\"12\" cy=\"12\" r=\"5\"></circle><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\"></line><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"></line><line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\"></line><line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\"></line><line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\"></line><line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\"></line><line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\"></line><line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\"></line>","sunrise":"<path d=\"M17 18a5 5 0 0 0-10 0\"></path><line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"9\"></line><line x1=\"4.22\" y1=\"10.22\" x2=\"5.64\" y2=\"11.64\"></line><line x1=\"1\" y1=\"18\" x2=\"3\" y2=\"18\"></line><line x1=\"21\" y1=\"18\" x2=\"23\" y2=\"18\"></line><line x1=\"18.36\" y1=\"11.64\" x2=\"19.78\" y2=\"10.22\"></line><line x1=\"23\" y1=\"22\" x2=\"1\" y2=\"22\"></line><polyline points=\"8 6 12 2 16 6\"></polyline>","sunset":"<path d=\"M17 18a5 5 0 0 0-10 0\"></path><line x1=\"12\" y1=\"9\" x2=\"12\" y2=\"2\"></line><line x1=\"4.22\" y1=\"10.22\" x2=\"5.64\" y2=\"11.64\"></line><line x1=\"1\" y1=\"18\" x2=\"3\" y2=\"18\"></line><line x1=\"21\" y1=\"18\" x2=\"23\" y2=\"18\"></line><line x1=\"18.36\" y1=\"11.64\" x2=\"19.78\" y2=\"10.22\"></line><line x1=\"23\" y1=\"22\" x2=\"1\" y2=\"22\"></line><polyline points=\"16 5 12 9 8 5\"></polyline>","tablet":"<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\" ry=\"2\" transform=\"rotate(180 12 12)\"></rect><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>","tag":"<path d=\"M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\"></path><line x1=\"7\" y1=\"7\" x2=\"7\" y2=\"7\"></line>","target":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"6\"></circle><circle cx=\"12\" cy=\"12\" r=\"2\"></circle>","terminal":"<polyline points=\"4 17 10 11 4 5\"></polyline><line x1=\"12\" y1=\"19\" x2=\"20\" y2=\"19\"></line>","thermometer":"<path d=\"M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z\"></path>","thumbs-down":"<path d=\"M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17\"></path>","thumbs-up":"<path d=\"M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3\"></path>","toggle-left":"<rect x=\"1\" y=\"5\" width=\"22\" height=\"14\" rx=\"7\" ry=\"7\"></rect><circle cx=\"8\" cy=\"12\" r=\"3\"></circle>","toggle-right":"<rect x=\"1\" y=\"5\" width=\"22\" height=\"14\" rx=\"7\" ry=\"7\"></rect><circle cx=\"16\" cy=\"12\" r=\"3\"></circle>","trash-2":"<polyline points=\"3 6 5 6 21 6\"></polyline><path d=\"M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path><line x1=\"10\" y1=\"11\" x2=\"10\" y2=\"17\"></line><line x1=\"14\" y1=\"11\" x2=\"14\" y2=\"17\"></line>","trash":"<polyline points=\"3 6 5 6 21 6\"></polyline><path d=\"M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path>","trending-down":"<polyline points=\"23 18 13.5 8.5 8.5 13.5 1 6\"></polyline><polyline points=\"17 18 23 18 23 12\"></polyline>","trending-up":"<polyline points=\"23 6 13.5 15.5 8.5 10.5 1 18\"></polyline><polyline points=\"17 6 23 6 23 12\"></polyline>","triangle":"<path d=\"M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\"></path>","truck":"<rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"></rect><polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\"></polygon><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"></circle><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"></circle>","tv":"<rect x=\"2\" y=\"7\" width=\"20\" height=\"15\" rx=\"2\" ry=\"2\"></rect><polyline points=\"17 2 12 7 7 2\"></polyline>","twitter":"<path d=\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\"></path>","type":"<polyline points=\"4 7 4 4 20 4 20 7\"></polyline><line x1=\"9\" y1=\"20\" x2=\"15\" y2=\"20\"></line><line x1=\"12\" y1=\"4\" x2=\"12\" y2=\"20\"></line>","umbrella":"<path d=\"M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7\"></path>","underline":"<path d=\"M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3\"></path><line x1=\"4\" y1=\"21\" x2=\"20\" y2=\"21\"></line>","unlock":"<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 9.9-1\"></path>","upload-cloud":"<polyline points=\"16 16 12 12 8 16\"></polyline><line x1=\"12\" y1=\"12\" x2=\"12\" y2=\"21\"></line><path d=\"M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3\"></path><polyline points=\"16 16 12 12 8 16\"></polyline>","upload":"<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"></path><polyline points=\"17 8 12 3 7 8\"></polyline><line x1=\"12\" y1=\"3\" x2=\"12\" y2=\"15\"></line>","user-check":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><polyline points=\"17 11 19 13 23 9\"></polyline>","user-minus":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"></line>","user-plus":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"20\" y1=\"8\" x2=\"20\" y2=\"14\"></line><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"></line>","user-x":"<path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"8.5\" cy=\"7\" r=\"4\"></circle><line x1=\"18\" y1=\"8\" x2=\"23\" y2=\"13\"></line><line x1=\"23\" y1=\"8\" x2=\"18\" y2=\"13\"></line>","user":"<path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle>","users":"<path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path><circle cx=\"9\" cy=\"7\" r=\"4\"></circle><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path>","video-off":"<path d=\"M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10\"></path><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","video":"<polygon points=\"23 7 16 12 23 17 23 7\"></polygon><rect x=\"1\" y=\"5\" width=\"15\" height=\"14\" rx=\"2\" ry=\"2\"></rect>","voicemail":"<circle cx=\"5.5\" cy=\"11.5\" r=\"4.5\"></circle><circle cx=\"18.5\" cy=\"11.5\" r=\"4.5\"></circle><line x1=\"5.5\" y1=\"16\" x2=\"18.5\" y2=\"16\"></line>","volume-1":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><path d=\"M15.54 8.46a5 5 0 0 1 0 7.07\"></path>","volume-2":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><path d=\"M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07\"></path>","volume-x":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon><line x1=\"23\" y1=\"9\" x2=\"17\" y2=\"15\"></line><line x1=\"17\" y1=\"9\" x2=\"23\" y2=\"15\"></line>","volume":"<polygon points=\"11 5 6 9 2 9 2 15 6 15 11 19 11 5\"></polygon>","watch":"<circle cx=\"12\" cy=\"12\" r=\"7\"></circle><polyline points=\"12 9 12 12 13.5 13.5\"></polyline><path d=\"M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83\"></path>","wifi-off":"<line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line><path d=\"M16.72 11.06A10.94 10.94 0 0 1 19 12.55\"></path><path d=\"M5 12.55a10.94 10.94 0 0 1 5.17-2.39\"></path><path d=\"M10.71 5.05A16 16 0 0 1 22.58 9\"></path><path d=\"M1.42 9a15.91 15.91 0 0 1 4.7-2.88\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"20\"></line>","wifi":"<path d=\"M5 12.55a11 11 0 0 1 14.08 0\"></path><path d=\"M1.42 9a16 16 0 0 1 21.16 0\"></path><path d=\"M8.53 16.11a6 6 0 0 1 6.95 0\"></path><line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"20\"></line>","wind":"<path d=\"M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2\"></path>","x-circle":"<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line>","x-square":"<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect><line x1=\"9\" y1=\"9\" x2=\"15\" y2=\"15\"></line><line x1=\"15\" y1=\"9\" x2=\"9\" y2=\"15\"></line>","x":"<line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>","youtube":"<path d=\"M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z\"></path><polygon points=\"9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02\"></polygon>","zap-off":"<polyline points=\"12.41 6.75 13 2 10.57 4.92\"></polyline><polyline points=\"18.57 12.91 21 10 15.66 10\"></polyline><polyline points=\"8 8 3 14 12 14 11 22 16 16\"></polyline><line x1=\"1\" y1=\"1\" x2=\"23\" y2=\"23\"></line>","zap":"<polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>","zoom-in":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line><line x1=\"11\" y1=\"8\" x2=\"11\" y2=\"14\"></line><line x1=\"8\" y1=\"11\" x2=\"14\" y2=\"11\"></line>","zoom-out":"<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"></line><line x1=\"8\" y1=\"11\" x2=\"14\" y2=\"11\"></line>"}
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports = {"activity":["pulse","health","action","motion"],"airplay":["stream","cast","mirroring"],"alert-circle":["warning"],"alert-octagon":["warning"],"alert-triangle":["warning"],"at-sign":["mention"],"award":["achievement","badge"],"aperture":["camera","photo"],"bell":["alarm","notification"],"bell-off":["alarm","notification","silent"],"bluetooth":["wireless"],"book-open":["read"],"book":["read","dictionary","booklet","magazine"],"bookmark":["read","clip","marker","tag"],"briefcase":["work","bag","baggage","folder"],"clipboard":["copy"],"clock":["time","watch","alarm"],"cloud-drizzle":["weather","shower"],"cloud-lightning":["weather","bolt"],"cloud-rain":["weather"],"cloud-snow":["weather","blizzard"],"cloud":["weather"],"codepen":["logo"],"command":["keyboard","cmd"],"compass":["navigation","safari","travel"],"copy":["clone","duplicate"],"corner-down-left":["arrow"],"corner-down-right":["arrow"],"corner-left-down":["arrow"],"corner-left-up":["arrow"],"corner-right-down":["arrow"],"corner-right-up":["arrow"],"corner-up-left":["arrow"],"corner-up-right":["arrow"],"credit-card":["purchase","payment","cc"],"crop":["photo","image"],"crosshair":["aim","target"],"database":["storage"],"delete":["remove"],"disc":["album","cd","dvd","music"],"dollar-sign":["currency","money","payment"],"droplet":["water"],"edit":["pencil","change"],"edit-2":["pencil","change"],"edit-3":["pencil","change"],"eye":["view","watch"],"eye-off":["view","watch"],"external-link":["outbound"],"facebook":["logo"],"fast-forward":["music"],"film":["movie","video"],"folder-minus":["directory"],"folder-plus":["directory"],"folder":["directory"],"gift":["present","box","birthday","party"],"git-branch":["code","version control"],"git-commit":["code","version control"],"git-merge":["code","version control"],"git-pull-request":["code","version control"],"github":["logo","version control"],"gitlab":["logo","version control"],"global":["world","browser","language","translate"],"hard-drive":["computer","server"],"hash":["hashtag","number","pound"],"headphones":["music","audio"],"heart":["like","love"],"help-circle":["question mark"],"home":["house"],"image":["picture"],"inbox":["email"],"instagram":["logo","camera"],"life-bouy":["help","life ring","support"],"linkedin":["logo"],"lock":["security","password"],"log-in":["sign in","arrow"],"log-out":["sign out","arrow"],"mail":["email"],"map-pin":["location","navigation","travel","marker"],"map":["location","navigation","travel"],"maximize":["fullscreen"],"maximize-2":["fullscreen","arrows"],"menu":["bars","navigation","hamburger"],"message-circle":["comment","chat"],"message-square":["comment","chat"],"mic-off":["record"],"mic":["record"],"minimize":["exit fullscreen"],"minimize-2":["exit fullscreen","arrows"],"monitor":["tv"],"moon":["dark","night"],"more-horizontal":["ellipsis"],"more-vertical":["ellipsis"],"move":["arrows"],"navigation":["location","travel"],"navigation-2":["location","travel"],"octagon":["stop"],"package":["box"],"paperclip":["attachment"],"pause":["music","stop"],"pause-circle":["music","stop"],"play":["music","start"],"play-circle":["music","start"],"plus":["add","new"],"plus-circle":["add","new"],"plus-square":["add","new"],"pocket":["logo","save"],"power":["on","off"],"radio":["signal"],"rewind":["music"],"rss":["feed","subscribe"],"save":["floppy disk"],"send":["message","mail","paper airplane"],"settings":["cog","edit","gear","preferences"],"shield":["security"],"shield-off":["security"],"shopping-bag":["ecommerce","cart","purchase","store"],"shopping-cart":["ecommerce","cart","purchase","store"],"shuffle":["music"],"skip-back":["music"],"skip-forward":["music"],"slash":["ban","no"],"sliders":["settings","controls"],"speaker":["music"],"star":["bookmark","favorite","like"],"sun":["brightness","weather","light"],"sunrise":["weather"],"sunset":["weather"],"tag":["label"],"target":["bullseye"],"terminal":["code","command line"],"thumbs-down":["dislike","bad"],"thumbs-up":["like","good"],"toggle-left":["on","off","switch"],"toggle-right":["on","off","switch"],"trash":["garbage","delete","remove"],"trash-2":["garbage","delete","remove"],"triangle":["delta"],"truck":["delivery","van","shipping"],"twitter":["logo"],"umbrella":["rain","weather"],"video-off":["camera","movie","film"],"video":["camera","movie","film"],"voicemail":["phone"],"volume":["music","sound","mute"],"volume-1":["music","sound"],"volume-2":["music","sound"],"volume-x":["music","sound","mute"],"watch":["clock","time"],"wind":["weather","air"],"x-circle":["cancel","close","delete","remove","times"],"x-square":["cancel","close","delete","remove","times"],"x":["cancel","close","delete","remove","times"],"youtube":["logo","video","play"],"zap-off":["flash","camera","lightning"],"zap":["flash","camera","lightning"]}
-
-/***/ }),
-/* 90 */
+/***/ "./src/icons.js":
+/*!**********************!*\
+  !*** ./src/icons.js ***!
+  \**********************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49383,39 +57544,62 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _icons = __webpack_require__(27);
+var _icon = __webpack_require__(/*! ./icon */ "./src/icon.js");
+
+var _icon2 = _interopRequireDefault(_icon);
+
+var _icons = __webpack_require__(/*! ../dist/icons.json */ "./dist/icons.json");
 
 var _icons2 = _interopRequireDefault(_icons);
 
+var _tags = __webpack_require__(/*! ./tags.json */ "./src/tags.json");
+
+var _tags2 = _interopRequireDefault(_tags);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * Create an SVG string.
- * @deprecated
- * @param {string} name
- * @param {Object} attrs
- * @returns {string}
- */
-function toSvg(name) {
-  var attrs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-  console.warn('feather.toSvg() is deprecated. Please use feather.icons[name].toSvg() instead.');
-
-  if (!name) {
-    throw new Error('The required `key` (icon name) parameter is missing.');
-  }
-
-  if (!_icons2.default[name]) {
-    throw new Error('No icon matching \'' + name + '\'. See the complete list of icons at https://feathericons.com');
-  }
-
-  return _icons2.default[name].toSvg(attrs);
-}
-
-exports.default = toSvg;
+exports.default = Object.keys(_icons2.default).map(function (key) {
+  return new _icon2.default(key, _icons2.default[key], _tags2.default[key]);
+}).reduce(function (object, icon) {
+  object[icon.name] = icon;
+  return object;
+}, {});
 
 /***/ }),
-/* 91 */
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _icons = __webpack_require__(/*! ./icons */ "./src/icons.js");
+
+var _icons2 = _interopRequireDefault(_icons);
+
+var _toSvg = __webpack_require__(/*! ./to-svg */ "./src/to-svg.js");
+
+var _toSvg2 = _interopRequireDefault(_toSvg);
+
+var _replace = __webpack_require__(/*! ./replace */ "./src/replace.js");
+
+var _replace2 = _interopRequireDefault(_replace);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = { icons: _icons2.default, toSvg: _toSvg2.default, replace: _replace2.default };
+
+/***/ }),
+
+/***/ "./src/replace.js":
+/*!************************!*\
+  !*** ./src/replace.js ***!
+  \************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49428,11 +57612,11 @@ Object.defineProperty(exports, "__esModule", {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; /* eslint-env browser */
 
 
-var _dedupe = __webpack_require__(48);
+var _dedupe = __webpack_require__(/*! classnames/dedupe */ "./node_modules/classnames/dedupe.js");
 
 var _dedupe2 = _interopRequireDefault(_dedupe);
 
-var _icons = __webpack_require__(27);
+var _icons = __webpack_require__(/*! ./icons */ "./src/icons.js");
 
 var _icons2 = _interopRequireDefault(_icons);
 
@@ -49491,25 +57675,157 @@ function getAttrs(element) {
 
 exports.default = replace;
 
+/***/ }),
+
+/***/ "./src/tags.json":
+/*!***********************!*\
+  !*** ./src/tags.json ***!
+  \***********************/
+/*! exports provided: activity, airplay, alert-circle, alert-octagon, alert-triangle, at-sign, award, aperture, bell, bell-off, bluetooth, book-open, book, bookmark, briefcase, clipboard, clock, cloud-drizzle, cloud-lightning, cloud-rain, cloud-snow, cloud, codepen, command, compass, copy, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, credit-card, crop, crosshair, database, delete, disc, dollar-sign, droplet, edit, edit-2, edit-3, eye, eye-off, external-link, facebook, fast-forward, film, folder-minus, folder-plus, folder, gift, git-branch, git-commit, git-merge, git-pull-request, github, gitlab, global, hard-drive, hash, headphones, heart, help-circle, home, image, inbox, instagram, life-bouy, linkedin, lock, log-in, log-out, mail, map-pin, map, maximize, maximize-2, menu, message-circle, message-square, mic-off, mic, minimize, minimize-2, monitor, moon, more-horizontal, more-vertical, move, navigation, navigation-2, octagon, package, paperclip, pause, pause-circle, play, play-circle, plus, plus-circle, plus-square, pocket, power, radio, rewind, rss, save, send, settings, shield, shield-off, shopping-bag, shopping-cart, shuffle, skip-back, skip-forward, slash, sliders, speaker, star, sun, sunrise, sunset, tag, target, terminal, thumbs-down, thumbs-up, toggle-left, toggle-right, trash, trash-2, triangle, truck, twitter, umbrella, video-off, video, voicemail, volume, volume-1, volume-2, volume-x, watch, wind, x-circle, x-square, x, youtube, zap-off, zap, default */
+/***/ (function(module) {
+
+module.exports = {"activity":["pulse","health","action","motion"],"airplay":["stream","cast","mirroring"],"alert-circle":["warning"],"alert-octagon":["warning"],"alert-triangle":["warning"],"at-sign":["mention"],"award":["achievement","badge"],"aperture":["camera","photo"],"bell":["alarm","notification"],"bell-off":["alarm","notification","silent"],"bluetooth":["wireless"],"book-open":["read"],"book":["read","dictionary","booklet","magazine"],"bookmark":["read","clip","marker","tag"],"briefcase":["work","bag","baggage","folder"],"clipboard":["copy"],"clock":["time","watch","alarm"],"cloud-drizzle":["weather","shower"],"cloud-lightning":["weather","bolt"],"cloud-rain":["weather"],"cloud-snow":["weather","blizzard"],"cloud":["weather"],"codepen":["logo"],"command":["keyboard","cmd"],"compass":["navigation","safari","travel"],"copy":["clone","duplicate"],"corner-down-left":["arrow"],"corner-down-right":["arrow"],"corner-left-down":["arrow"],"corner-left-up":["arrow"],"corner-right-down":["arrow"],"corner-right-up":["arrow"],"corner-up-left":["arrow"],"corner-up-right":["arrow"],"credit-card":["purchase","payment","cc"],"crop":["photo","image"],"crosshair":["aim","target"],"database":["storage"],"delete":["remove"],"disc":["album","cd","dvd","music"],"dollar-sign":["currency","money","payment"],"droplet":["water"],"edit":["pencil","change"],"edit-2":["pencil","change"],"edit-3":["pencil","change"],"eye":["view","watch"],"eye-off":["view","watch"],"external-link":["outbound"],"facebook":["logo"],"fast-forward":["music"],"film":["movie","video"],"folder-minus":["directory"],"folder-plus":["directory"],"folder":["directory"],"gift":["present","box","birthday","party"],"git-branch":["code","version control"],"git-commit":["code","version control"],"git-merge":["code","version control"],"git-pull-request":["code","version control"],"github":["logo","version control"],"gitlab":["logo","version control"],"global":["world","browser","language","translate"],"hard-drive":["computer","server"],"hash":["hashtag","number","pound"],"headphones":["music","audio"],"heart":["like","love"],"help-circle":["question mark"],"home":["house"],"image":["picture"],"inbox":["email"],"instagram":["logo","camera"],"life-bouy":["help","life ring","support"],"linkedin":["logo"],"lock":["security","password"],"log-in":["sign in","arrow"],"log-out":["sign out","arrow"],"mail":["email"],"map-pin":["location","navigation","travel","marker"],"map":["location","navigation","travel"],"maximize":["fullscreen"],"maximize-2":["fullscreen","arrows"],"menu":["bars","navigation","hamburger"],"message-circle":["comment","chat"],"message-square":["comment","chat"],"mic-off":["record"],"mic":["record"],"minimize":["exit fullscreen"],"minimize-2":["exit fullscreen","arrows"],"monitor":["tv"],"moon":["dark","night"],"more-horizontal":["ellipsis"],"more-vertical":["ellipsis"],"move":["arrows"],"navigation":["location","travel"],"navigation-2":["location","travel"],"octagon":["stop"],"package":["box"],"paperclip":["attachment"],"pause":["music","stop"],"pause-circle":["music","stop"],"play":["music","start"],"play-circle":["music","start"],"plus":["add","new"],"plus-circle":["add","new"],"plus-square":["add","new"],"pocket":["logo","save"],"power":["on","off"],"radio":["signal"],"rewind":["music"],"rss":["feed","subscribe"],"save":["floppy disk"],"send":["message","mail","paper airplane"],"settings":["cog","edit","gear","preferences"],"shield":["security"],"shield-off":["security"],"shopping-bag":["ecommerce","cart","purchase","store"],"shopping-cart":["ecommerce","cart","purchase","store"],"shuffle":["music"],"skip-back":["music"],"skip-forward":["music"],"slash":["ban","no"],"sliders":["settings","controls"],"speaker":["music"],"star":["bookmark","favorite","like"],"sun":["brightness","weather","light"],"sunrise":["weather"],"sunset":["weather"],"tag":["label"],"target":["bullseye"],"terminal":["code","command line"],"thumbs-down":["dislike","bad"],"thumbs-up":["like","good"],"toggle-left":["on","off","switch"],"toggle-right":["on","off","switch"],"trash":["garbage","delete","remove"],"trash-2":["garbage","delete","remove"],"triangle":["delta"],"truck":["delivery","van","shipping"],"twitter":["logo"],"umbrella":["rain","weather"],"video-off":["camera","movie","film"],"video":["camera","movie","film"],"voicemail":["phone"],"volume":["music","sound","mute"],"volume-1":["music","sound"],"volume-2":["music","sound"],"volume-x":["music","sound","mute"],"watch":["clock","time"],"wind":["weather","air"],"x-circle":["cancel","close","delete","remove","times"],"x-square":["cancel","close","delete","remove","times"],"x":["cancel","close","delete","remove","times"],"youtube":["logo","video","play"],"zap-off":["flash","camera","lightning"],"zap":["flash","camera","lightning"]};
+
+/***/ }),
+
+/***/ "./src/to-svg.js":
+/*!***********************!*\
+  !*** ./src/to-svg.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _icons = __webpack_require__(/*! ./icons */ "./src/icons.js");
+
+var _icons2 = _interopRequireDefault(_icons);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Create an SVG string.
+ * @deprecated
+ * @param {string} name
+ * @param {Object} attrs
+ * @returns {string}
+ */
+function toSvg(name) {
+  var attrs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  console.warn('feather.toSvg() is deprecated. Please use feather.icons[name].toSvg() instead.');
+
+  if (!name) {
+    throw new Error('The required `key` (icon name) parameter is missing.');
+  }
+
+  if (!_icons2.default[name]) {
+    throw new Error('No icon matching \'' + name + '\'. See the complete list of icons at https://feathericons.com');
+  }
+
+  return _icons2.default[name].toSvg(attrs);
+}
+
+exports.default = toSvg;
+
+/***/ }),
+
+/***/ 0:
+/*!**************************************************!*\
+  !*** multi core-js/fn/array/from ./src/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! core-js/fn/array/from */"./node_modules/core-js/fn/array/from.js");
+module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather/src/index.js */"./src/index.js");
+
+
 /***/ })
-/******/ ]);
+
+/******/ });
 });
 //# sourceMappingURL=feather.js.map
 
 /***/ }),
 /* 41 */
+/***/ (function(module, exports) {
+
+var nestRE = /^(attrs|props|on|nativeOn|class|style|hook)$/
+
+module.exports = function mergeJSXProps (objs) {
+  return objs.reduce(function (a, b) {
+    var aa, bb, key, nestedKey, temp
+    for (key in b) {
+      aa = a[key]
+      bb = b[key]
+      if (aa && nestRE.test(key)) {
+        // normalize class
+        if (key === 'class') {
+          if (typeof aa === 'string') {
+            temp = aa
+            a[key] = aa = {}
+            aa[temp] = true
+          }
+          if (typeof bb === 'string') {
+            temp = bb
+            b[key] = bb = {}
+            bb[temp] = true
+          }
+        }
+        if (key === 'on' || key === 'nativeOn' || key === 'hook') {
+          // merge functions
+          for (nestedKey in bb) {
+            aa[nestedKey] = mergeFn(aa[nestedKey], bb[nestedKey])
+          }
+        } else if (Array.isArray(aa)) {
+          a[key] = aa.concat(bb)
+        } else if (Array.isArray(bb)) {
+          a[key] = [aa].concat(bb)
+        } else {
+          for (nestedKey in bb) {
+            aa[nestedKey] = bb[nestedKey]
+          }
+        }
+      } else {
+        a[key] = b[key]
+      }
+    }
+    return a
+  }, {})
+}
+
+function mergeFn (a, b) {
+  return function () {
+    a && a.apply(this, arguments)
+    b && b.apply(this, arguments)
+  }
+}
+
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(11)
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(43)
+}
+var normalizeComponent = __webpack_require__(48)
 /* script */
-var __vue_script__ = __webpack_require__(42)
+var __vue_script__ = __webpack_require__(49)
 /* template */
-var __vue_template__ = __webpack_require__(43)
+var __vue_template__ = __webpack_require__(50)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -49522,7 +57838,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/ExampleComponent.vue"
+Component.options.__file = "resources/assets/js/components/Emails.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -49531,9 +57847,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7168fb6a", Component.options)
+    hotAPI.createRecord("data-v-124e8c64", Component.options)
   } else {
-    hotAPI.reload("data-v-7168fb6a", Component.options)
+    hotAPI.reload("data-v-124e8c64", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49544,120 +57860,540 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-});
-
-/***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-12" }, [
-      _c("div", { staticClass: "card card-default" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _vm._v("Example Component")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _vm._v("\n            I'm an example component.\n        ")
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
-  }
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(44);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(46)("fc6a6b94", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124e8c64\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Emails.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124e8c64\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Emails.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
 }
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-var normalizeComponent = __webpack_require__(11)
-/* script */
-var __vue_script__ = __webpack_require__(45)
-/* template */
-var __vue_template__ = __webpack_require__(46)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/VueTest.vue"
+exports = module.exports = __webpack_require__(45)(false);
+// imports
 
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-727de15e", Component.options)
-  } else {
-    hotAPI.reload("data-v-727de15e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
 
-module.exports = Component.exports
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
 
 
 /***/ }),
 /* 45 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+  Modified by Evan You @yyx990803
+*/
+
+var hasDocument = typeof document !== 'undefined'
+
+if (typeof DEBUG !== 'undefined' && DEBUG) {
+  if (!hasDocument) {
+    throw new Error(
+    'vue-style-loader cannot be used in a non-browser environment. ' +
+    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
+  ) }
+}
+
+var listToStyles = __webpack_require__(47)
+
+/*
+type StyleObject = {
+  id: number;
+  parts: Array<StyleObjectPart>
+}
+
+type StyleObjectPart = {
+  css: string;
+  media: string;
+  sourceMap: ?string
+}
+*/
+
+var stylesInDom = {/*
+  [id: number]: {
+    id: number,
+    refs: number,
+    parts: Array<(obj?: StyleObjectPart) => void>
+  }
+*/}
+
+var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
+var singletonElement = null
+var singletonCounter = 0
+var isProduction = false
+var noop = function () {}
+var options = null
+var ssrIdKey = 'data-vue-ssr-id'
+
+// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+// tags it will allow on a page
+var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
+
+module.exports = function (parentId, list, _isProduction, _options) {
+  isProduction = _isProduction
+
+  options = _options || {}
+
+  var styles = listToStyles(parentId, list)
+  addStylesToDom(styles)
+
+  return function update (newList) {
+    var mayRemove = []
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i]
+      var domStyle = stylesInDom[item.id]
+      domStyle.refs--
+      mayRemove.push(domStyle)
+    }
+    if (newList) {
+      styles = listToStyles(parentId, newList)
+      addStylesToDom(styles)
+    } else {
+      styles = []
+    }
+    for (var i = 0; i < mayRemove.length; i++) {
+      var domStyle = mayRemove[i]
+      if (domStyle.refs === 0) {
+        for (var j = 0; j < domStyle.parts.length; j++) {
+          domStyle.parts[j]()
+        }
+        delete stylesInDom[domStyle.id]
+      }
+    }
+  }
+}
+
+function addStylesToDom (styles /* Array<StyleObject> */) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i]
+    var domStyle = stylesInDom[item.id]
+    if (domStyle) {
+      domStyle.refs++
+      for (var j = 0; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j])
+      }
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j]))
+      }
+      if (domStyle.parts.length > item.parts.length) {
+        domStyle.parts.length = item.parts.length
+      }
+    } else {
+      var parts = []
+      for (var j = 0; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j]))
+      }
+      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
+    }
+  }
+}
+
+function createStyleElement () {
+  var styleElement = document.createElement('style')
+  styleElement.type = 'text/css'
+  head.appendChild(styleElement)
+  return styleElement
+}
+
+function addStyle (obj /* StyleObjectPart */) {
+  var update, remove
+  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
+
+  if (styleElement) {
+    if (isProduction) {
+      // has SSR styles and in production mode.
+      // simply do nothing.
+      return noop
+    } else {
+      // has SSR styles but in dev mode.
+      // for some reason Chrome can't handle source map in server-rendered
+      // style tags - source maps in <style> only works if the style tag is
+      // created and inserted dynamically. So we remove the server rendered
+      // styles and inject new ones.
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  if (isOldIE) {
+    // use singleton mode for IE9.
+    var styleIndex = singletonCounter++
+    styleElement = singletonElement || (singletonElement = createStyleElement())
+    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
+    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
+  } else {
+    // use multi-style-tag mode in all other cases
+    styleElement = createStyleElement()
+    update = applyToTag.bind(null, styleElement)
+    remove = function () {
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  update(obj)
+
+  return function updateStyle (newObj /* StyleObjectPart */) {
+    if (newObj) {
+      if (newObj.css === obj.css &&
+          newObj.media === obj.media &&
+          newObj.sourceMap === obj.sourceMap) {
+        return
+      }
+      update(obj = newObj)
+    } else {
+      remove()
+    }
+  }
+}
+
+var replaceText = (function () {
+  var textStore = []
+
+  return function (index, replacement) {
+    textStore[index] = replacement
+    return textStore.filter(Boolean).join('\n')
+  }
+})()
+
+function applyToSingletonTag (styleElement, index, remove, obj) {
+  var css = remove ? '' : obj.css
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = replaceText(index, css)
+  } else {
+    var cssNode = document.createTextNode(css)
+    var childNodes = styleElement.childNodes
+    if (childNodes[index]) styleElement.removeChild(childNodes[index])
+    if (childNodes.length) {
+      styleElement.insertBefore(cssNode, childNodes[index])
+    } else {
+      styleElement.appendChild(cssNode)
+    }
+  }
+}
+
+function applyToTag (styleElement, obj) {
+  var css = obj.css
+  var media = obj.media
+  var sourceMap = obj.sourceMap
+
+  if (media) {
+    styleElement.setAttribute('media', media)
+  }
+  if (options.ssrId) {
+    styleElement.setAttribute(ssrIdKey, obj.id)
+  }
+
+  if (sourceMap) {
+    // https://developer.chrome.com/devtools/docs/javascript-debugging
+    // this makes source maps inside style tags work properly in Chrome
+    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
+    // http://stackoverflow.com/a/26603875
+    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
+  }
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild)
+    }
+    styleElement.appendChild(document.createTextNode(css))
+  }
+}
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports) {
+
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+module.exports = function listToStyles (parentId, list) {
+  var styles = []
+  var newStyles = {}
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i]
+    var id = item[0]
+    var css = item[1]
+    var media = item[2]
+    var sourceMap = item[3]
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    }
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] })
+    } else {
+      newStyles[id].parts.push(part)
+    }
+  }
+  return styles
+}
+
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports) {
+
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file.
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier /* server only */
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = injectStyles
+  }
+
+  if (hook) {
+    var functional = options.functional
+    var existing = functional
+      ? options.render
+      : options.beforeCreate
+
+    if (!functional) {
+      // inject component registration as beforeCreate hook
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    } else {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return existing(h, context)
+      }
+    }
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__ = __webpack_require__(11);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -49671,37 +58407,162 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-        window.axios.get('/api/user').then(function (response) {
-            console.log(response.data);
-        });
+  mounted: function mounted() {
+    this.fetch();
+    feather.replace();
+  },
+  data: function data() {
+    return {
+      contact_emails: []
+    };
+  },
+
+
+  computed: {},
+
+  methods: {
+    fetch: function fetch() {
+      var _this = this;
+
+      axios.get('http://blog.com/api/manage/emails').then(function (_ref) {
+        var data = _ref.data;
+
+        _this.contact_emails = JSON.parse(JSON.stringify(data.data.emails));
+      });
+    },
+    deletemail: function deletemail(email) {
+      var _this2 = this;
+
+      axios.delete('http://blog.com/api/manage/emails/' + email.id).then(function (response) {
+        console.log(response.data);
+      }).catch(function (error) {
+        console.log(error);
+      });
+
+      axios.get('http://blog.com/api/manage/emails').then(function (_ref2) {
+        var data = _ref2.data;
+
+        _this2.contact_emails = JSON.parse(JSON.stringify(data.data.emails));
+      });
     }
+  },
+  components: {
+    PlusIcon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["PlusIcon"], BookOpenIcon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["BookOpenIcon"], Edit3Icon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["Edit3Icon"], Trash2Icon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["Trash2Icon"]
+  }
 });
 
 /***/ }),
-/* 46 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass:
+          "d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom"
+      },
+      [
+        _c("h4", { staticClass: "h4" }, [_vm._v("Emails")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "btn-toolbar mb-2 mb-md-0" }, [
+          _c("div", { staticClass: "btn-group mr-2" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-sm btn-outline-secondary",
+                attrs: { role: "button", href: "@" }
+              },
+              [
+                _c("trash-2-icon", { staticClass: "custom-class" }),
+                _vm._v("Add")
+              ],
+              1
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "table-responsive" }, [
+      _c("table", { staticClass: "table table-striped table-sm" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.contact_emails, function(email) {
+            return _c("tr", [
+              _c("td", [_vm._v(_vm._s(email.id))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(email.title))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(email.email))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(email.created_at))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(email.updated_at))]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-sm btn-outline-secondary",
+                    attrs: { role: "button", href: "#" }
+                  },
+                  [_c("edit-3-icon", { staticClass: "custom-class" })],
+                  1
+                )
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-sm btn-outline-secondary",
+                    on: {
+                      click: function($event) {
+                        _vm.deletemail(email)
+                      }
+                    }
+                  },
+                  [_c("trash-2-icon", { staticClass: "custom-class" })],
+                  1
+                )
+              ])
+            ])
+          })
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-xs-12" }, [
-      _c("div", { staticClass: "card card-default" }, [
-        _c("div", { staticClass: "card-header" }, [_vm._v("Vue Test")]),
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("#ID")]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _vm._v("\n          Testing AJAX\n        ")
-        ])
+        _c("th", [_vm._v("Title")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Email")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Created")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Modified")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Edit")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Delete")])
       ])
     ])
   }
@@ -49711,18 +58572,18 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-727de15e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-124e8c64", module.exports)
   }
 }
 
 /***/ }),
-/* 47 */
+/* 51 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 48 */
+/* 52 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

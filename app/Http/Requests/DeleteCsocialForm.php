@@ -3,13 +3,13 @@
 namespace App\Http\Requests;
 
 use App\User;
-use App\About;
+use App\Csocial;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Http\FormRequest;
 
-class DeleteAboutForm extends FormRequest
+class DeleteCsocialForm extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -18,7 +18,6 @@ class DeleteAboutForm extends FormRequest
      */
     public function authorize()
     {
-        // Authorization is done at routing stage
         return true;
     }
 
@@ -29,28 +28,22 @@ class DeleteAboutForm extends FormRequest
      */
     public function rules()
     {
-        // TODO: User input validation
-        return [
-            'id' => 'required|integer'
-        ];
+        return [ 'id' => 'required|integer' ];
     }
     
     /**
-     * Delete an about record.
+     * Delete a social contact record.
      * 
      * @return void
      */
-    public function delete(About $about){
-        
+    public function delete(Csocial $csocial){
         try{
-            $about->delete();
-            session()->flash( 'message', 'About record has been deleted.' );
+            $csocial->delete();
+            session()->flash( 'message', 'Social contact record has been deleted.' );
         }
         catch(\Exception $e){
-            // TODO: Log
-            session()->flash( 'message', 'About record can not be deleted.' );
+            //TODO: Log
+            session()->flash( 'error', 'Social contact record can not be deleted.' );
         }
-        
     }
-    
 }

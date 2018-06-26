@@ -28,10 +28,15 @@
           @include ('manage.partial.navman')
         </nav>
         <main role="main" id="app" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+          {{-- TODO: Implement better flash message handling  --}}
           @if ($flash = session('message'))
             <div id="flash-message" class="alert alert-success" role="alert">
               {{ $flash }}
             </div>
+          @elseif ($flash = session('error'))
+            <div id="flash-message" class="alert alert-danger" role="alert">
+              {{ $flash }}
+            </div>              
           @endif
           <div class="col-md-12 blog-main">
             @yield('content')
@@ -39,7 +44,7 @@
         </main>
       </div>
     </div>
-    <script src="/js/app.js"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
     
     <script>
       feather.replace()

@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Session\SessionManager;
+use App\Email;
+use App\Http\Resources\EmailResource;
+use App\Http\Controllers\Api\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +16,26 @@ use Illuminate\Session\SessionManager;
 |
 */
 
-Route::middleware('auth:api')->get('/user', 'Api\UserController@index');
+$mapi_route = '/'.config('app.mapi', 'manage');
+
+//Route::middleware('auth:api')->get('/user', 'Api\UserController@index');
+
+// Get Emails list in for about contacts list
+//Route::middleware('auth:api', 'role:admin')
+Route::get($mapi_route.'/emails', 'Api\EmailController@index')
+  ->name('emails.index');
+
+// Delete email
+//Route::middleware('auth:api', 'can:delete,email')
+Route::delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
+  ->name('emails.delete');
+
+Route::get($mapi_route.'/emails/{email}', 'Api\EmailController@view')
+  ->name('emails.view');
+
+// Get a test result
+// Route::middleware('auth:api', 'role:admin')
+Route::get($mapi_route.'/test', 'Api\TestController@index')
+  ->name('test.index');
+
+// Route::get('/emails', 'Api\EmailController@index');

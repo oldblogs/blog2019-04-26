@@ -5,18 +5,20 @@
 @endsection
 
 @section ('content')
-  @can('browse','App\About')
+  @can('browse', 'App\Csocial')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-      <h2 class="h2">Abouts</h2>
+      <h2 class="h2">Socials contacts</h2>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          @can('create','App\About')
-            <a class="btn btn-sm btn-outline-secondary" role="button" href="{{ route('abouts.create') }}">Add</a>
+          @can('create','App\Csocial')
+            <a class="btn btn-sm btn-outline-secondary" role="button" href="{{ route('csocials.create') }}">Add</a>
           @endcan
         </div>
       </div>
     </div>
-
+    
+    <p>Social networks list that can be used in Contacts section.</p>
+    
     <div class="table-responsive">
       <table class="table table-striped table-sm">
         <thead>
@@ -31,8 +33,8 @@
           </tr>
         </thead>
         <tbody>
-          @foreach ($abouts as $about)
-            @include ('manage.partial.aboutrow')
+          @foreach ($csocials as $csocial)
+            @include ('manage.partial.csocialrow')
           @endforeach
         </tbody>
       </table>
@@ -40,4 +42,3 @@
     </div>
   @endcan
 @endsection
-
