@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-
+      <formemail v-on:create:email="fetch" ></formemail>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -24,19 +24,19 @@
           </thead>
 
           <tbody >
-            <tr v-for="email in contact_emails">
-                <td>{{ email.id }}</td>
-                <td>{{ email.title }}</td>
-                <td>{{ email.email }}</td>
-                <td>{{ email.created_at }}</td>
-                <td>{{ email.updated_at }}</td>
-                <td>
-                  <a class="btn btn-sm btn-outline-secondary" role="button" 
-                    href="#" ><edit-3-icon class="custom-class"></edit-3-icon></a>
-                </td>
-                <td>
-                  <button class="btn btn-sm btn-outline-secondary" v-on:click="deletemail(email)" ><trash-2-icon class="custom-class"></trash-2-icon></button>
-                </td>
+            <tr v-for="email in contact_emails" v-bind:key="email.id">
+              <td>{{ email.id }}</td>
+              <td>{{ email.title }}</td>
+              <td>{{ email.email }}</td>
+              <td>{{ email.created_at }}</td>
+              <td>{{ email.updated_at }}</td>
+              <td>
+                <a class="btn btn-sm btn-outline-secondary" role="button" 
+                  href="#" ><edit-3-icon class="custom-class"></edit-3-icon></a>
+              </td>
+              <td>
+                <button class="btn btn-sm btn-outline-secondary" v-on:click="deletemail(email)" ><trash-2-icon class="custom-class"></trash-2-icon></button>
+              </td>
             </tr>
           </tbody>
           
@@ -52,12 +52,14 @@
   export default {
 
     mounted() {
-        this.fetch()
-        feather.replace()
+      self = this 
+      this.fetch()
+      feather.replace()
     },
     
     data(){
       return{
+        self: {},
         contact_emails: [],        
       }
     },
@@ -77,17 +79,15 @@
         
         axios.delete('http://blog.com/api/manage/emails/'+email.id)
           .then(function(response){
-            console.log(response.data)
+            console.log('record deleted')
           })
           .catch(function(error){
-            console.log(error)
+            console.log('error')
+          })
+          .then(function(response){
+              self.fetch()
           })
 
-        axios.get('http://blog.com/api/manage/emails')
-          .then(({data}) => {
-            this.contact_emails = JSON.parse(JSON.stringify( data.data.emails ))
-          })
-        
       },
     },
     components: {
