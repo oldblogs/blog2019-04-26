@@ -30,13 +30,17 @@ Vue.component( 'test2',
 );
 */
 
+
+Vue.component( 'formemail', 
+  require('./components/FormEmail.vue') 
+);
+
 Vue.component( 'emails', 
   require('./components/Emails.vue') 
 );
 
 const app = new Vue({
     el: '#app',
-
 });
 
 

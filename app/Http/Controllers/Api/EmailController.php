@@ -25,20 +25,48 @@ class EmailController extends Controller
       }
     }
 
+    public function view(Email $email){
+      // TODO: User input validation of $email
+      $result =  new EmailCollection( Email::where('id', $email)->get()  );
+      return $result;
+    }
+    
+    public function create(Request $request){
+      // TODO: Input validation 
+      // TODO: Check unique email
+      $validatedData = $request->validate([
+        'title' => 'required|min:3|max:255',
+        'email' => 'required|email|min:3|max:255',
+      ]);
+      
+      try{
+        $email = new Email( request(['title', 'email']) );
+        
+        $email->save();
+
+        return response()->json([
+          'result' => 'OK',
+        ]);
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        return response()->json([
+          'result' => 'Error',
+        ]);
+      }
+    }
+    
     public function delete(Request $request, Email $email){
       try{
         $email->delete();
         response()->json(['success' => 'success'], 200);
       }
       catch(\Exception $e){
-        return false;
+        response()->json(['error' => 'invalid'], 500);
       }
     }
     
-    public function view(Email $email){
-      // TODO: User input validation of $email
-      $result =  new EmailCollection( Email::where('id', $email)->get()  );
-      return $result;
-    }
+
 
 }

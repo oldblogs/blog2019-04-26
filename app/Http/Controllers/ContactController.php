@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class ContactController extends Controller
 {
-    
+
     public function index(){
         $cContent = [];
         return view('manage.page.contacts.index', compact('cContent') );
     }
-   
+
 }

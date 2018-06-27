@@ -25,13 +25,18 @@ $mapi_route = '/'.config('app.mapi', 'manage');
 Route::get($mapi_route.'/emails', 'Api\EmailController@index')
   ->name('emails.index');
 
+Route::get($mapi_route.'/emails/{email}', 'Api\EmailController@view')
+  ->name('emails.view');
+
+Route::post($mapi_route.'/emails', 'Api\EmailController@create')
+  ->name('emails.create');
+  
 // Delete email
 //Route::middleware('auth:api', 'can:delete,email')
 Route::delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
   ->name('emails.delete');
 
-Route::get($mapi_route.'/emails/{email}', 'Api\EmailController@view')
-  ->name('emails.view');
+
 
 // Get a test result
 // Route::middleware('auth:api', 'role:admin')
