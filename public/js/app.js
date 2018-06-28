@@ -22858,7 +22858,7 @@ Vue.component( 'test2',
 );
 */
 
-Vue.component('formemail', __webpack_require__(43));
+Vue.component('form-email', __webpack_require__(43));
 
 Vue.component('emails', __webpack_require__(46));
 
@@ -58026,9 +58026,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       title: "",
       email: "",
       message: "",
-      errors: "",
-      error: "",
-      ahmet: ""
+      errors: ""
+
     };
   },
 
@@ -58310,7 +58309,7 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -58725,7 +58724,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       self: {},
-      contact_emails: []
+      contact_emails: [],
+      showAddForm: false
     };
   },
 
@@ -58751,6 +58751,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }).then(function (response) {
         self.fetch();
       });
+    },
+    addToggle: function addToggle() {
+      this.showAddForm = !this.showAddForm;
     }
   },
   components: {
@@ -58781,13 +58784,13 @@ var render = function() {
           _c("div", { staticClass: "btn-toolbar mb-2 mb-md-0" }, [
             _c("div", { staticClass: "btn-group mr-2" }, [
               _c(
-                "a",
+                "button",
                 {
                   staticClass: "btn btn-sm btn-outline-secondary",
-                  attrs: { role: "button", href: "@" }
+                  on: { click: _vm.addToggle }
                 },
                 [
-                  _c("trash-2-icon", { staticClass: "custom-class" }),
+                  _c("plus-icon", { staticClass: "custom-class" }),
                   _vm._v("Add")
                 ],
                 1
@@ -58797,7 +58800,17 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("formemail", { on: { "create:email": _vm.fetch } }),
+      _c("form-email", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showAddForm,
+            expression: "showAddForm"
+          }
+        ],
+        on: { "create:email": _vm.fetch }
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "table-responsive" }, [
         _c("table", { staticClass: "table table-striped table-sm" }, [
