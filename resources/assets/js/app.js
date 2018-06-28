@@ -31,7 +31,7 @@ Vue.component( 'test2',
 */
 
 
-Vue.component( 'formemail', 
+Vue.component( 'form-email', 
   require('./components/FormEmail.vue') 
 );
 

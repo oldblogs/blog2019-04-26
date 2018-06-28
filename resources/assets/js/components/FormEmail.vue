@@ -56,8 +56,7 @@
         email: "",
         message: "",
         errors: "",
-        error: "",
-        ahmet: "",
+
       }
     },
 

@@ -4,11 +4,11 @@
       <h4 class="h4">Emails</h4>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-            <a class="btn btn-sm btn-outline-secondary" role="button" href="@"><trash-2-icon class="custom-class"></trash-2-icon>Add</a>
+            <button class="btn btn-sm btn-outline-secondary" v-on:click="addToggle"><plus-icon class="custom-class"></plus-icon>Add</button>
         </div>
       </div>
     </div>
-      <formemail v-on:create:email="fetch" ></formemail>
+      <form-email v-show="showAddForm" v-on:create:email="fetch" ></form-email>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -61,6 +61,7 @@
       return{
         self: {},
         contact_emails: [],        
+        showAddForm: false,
       }
     },
 
@@ -89,6 +90,9 @@
           })
 
       },
+      addToggle(){
+        this.showAddForm = !this.showAddForm
+      }
     },
     components: {
       PlusIcon, BookOpenIcon, Edit3Icon, Trash2Icon
