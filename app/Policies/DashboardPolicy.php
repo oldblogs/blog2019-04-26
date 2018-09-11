@@ -19,44 +19,8 @@ class DashboardPolicy
      */
     public function view(User $user)
     {
-        return ( $user->can('view dashboard') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
 
-    // /**
-    //  * Determine whether the user can create dashboards.
-    //  *
-    //  * @param  \App\User  $user
-    //  * @return mixed
-    //  */
-    // public function create(User $user)
-    // {
-    //     // TODO: Proper authorization 
-    //     return true;
-    // }
 
-    // /**
-    //  * Determine whether the user can update the dashboard.
-    //  *
-    //  * @param  \App\User  $user
-    //  * @param  \App\Dashboard  $dashboard
-    //  * @return mixed
-    //  */
-    // public function update(User $user, Dashboard $dashboard)
-    // {
-    //     // TODO: Proper authorization 
-    //     return true;
-    // }
-
-    // /**
-    //  * Determine whether the user can delete the dashboard.
-    //  *
-    //  * @param  \App\User  $user
-    //  * @param  \App\Dashboard  $dashboard
-    //  * @return mixed
-    //  */
-    // public function delete(User $user, Dashboard $dashboard)
-    // {
-    //     // TODO: Proper authorization 
-    //     return true;
-    // }
 }

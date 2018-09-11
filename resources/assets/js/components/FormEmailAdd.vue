@@ -1,9 +1,17 @@
 <template>
   <div>
-    <h4>Add a new email to contact information</h4>
-
     <form v-on:submit.prevent="create_email">
-
+      
+      <div class="form-group">
+        <button v-on:click="hideform" type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>      
+      </div>
+      
+      <div class="form-group">
+        <h4>Add a new email to contact information</h4>
+      </div>
+      
       <div class="form-group">
         <label for="title">Title</label>
         <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for email">
@@ -44,9 +52,11 @@
 <script>
 
   export default {
+    name: "FormEmailAdd",
 
     mounted() {
       self = this
+      this.formenabled = false
     },
     
     data(){
@@ -77,12 +87,20 @@
             this.title = ""
             this.email = "" 
             
+            
           })
           .catch(error => {
             this.message = error.response.data.message
-            this.errors = Object.assign({}, error.response.data.errors);
+            this.errors = JSON.parse(JSON.stringify( error.response.data.errors ))
+            // this.errors = Object.assign({}, error.response.data.errors);
           })
       },
+      hideform(){
+        this.$emit('hide:add:email')
+      }
     },
   }
 </script>
+
+<style>
+</style>

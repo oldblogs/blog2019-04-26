@@ -6,11 +6,12 @@
 /.idea
 /.vscode
 /.vagrant
+*.komodoproject
+/nbproject
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
 .Trash-1000*
-*.komodoproject
-/nbproject
+

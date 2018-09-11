@@ -11,6 +11,23 @@ class PostPolicy
     use HandlesAuthorization;
 
     /**
+     * Determine whether the user can browse the posts.
+     *
+     * @param  \App\User  $user
+     * @return mixed
+     */
+    public function browse(User $user)
+    {
+      // TODO: try , catch
+        if( $user->hasRole('admin') ){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    /**
      * Determine whether the user can view the post.
      *
      * @param  \App\User $user
@@ -19,6 +36,7 @@ class PostPolicy
      */
     public function view(User $user, Post $post)
     {
+      // TODO: try , catch
         // Everyone can view a published Post
         if ($post->published){
             return true;
@@ -29,7 +47,7 @@ class PostPolicy
         }
         else{
             // Must be an admin in this case
-            return ( $user->can('view post') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
     }
 
@@ -41,6 +59,7 @@ class PostPolicy
      */
     public function create(User $user)
     {
+      // TODO: try , catch
         return ( $user->hasRole('admin') ) ? true : false;
     }
 
@@ -53,15 +72,13 @@ class PostPolicy
      */
     public function update(User $user, Post $post)
     {
-        if($user->id === $post->user_id){
-            return true;
-        }
-        elseif($user->can('update post')){
-            return true;
-        }
-        else{
-            return false;
-        }
+      // TODO: try , catch
+      if($user->id === $post->user_id){
+        return true;
+      }
+      else{
+        return ( $user->hasRole('admin') ) ? true : false ;
+      }
     }
 
     /**
@@ -73,30 +90,17 @@ class PostPolicy
      */
     public function delete(User $user, Post $post)
     {
+      // TODO: try , catch
         if($user->id === $post->user_id){
             return true;
         }
-        elseif($user->can('delete post')){
+        elseif($user->hasRole('admin')){
             return true;
         }
         else{
             return false;
         }
     }
-    
-    /**
-     * Determine whether the user can browse the posts.
-     * 
-     * @param  \App\User  $user
-     * @return mixed
-     */
-    public function browse(User $user)
-    {
-        if( $user->can('browse post') ){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+
+
 }

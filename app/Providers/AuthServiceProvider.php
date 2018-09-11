@@ -11,8 +11,10 @@ use App\Contact;
 use App\Policies\ContactPolicy;
 use App\Csocial;
 use App\Policies\CsocialPolicy;
+use App\Email;
+use App\Policies\EmailPolicy;
 
-// use Laravel\Passport\Passport;
+use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -29,6 +31,7 @@ class AuthServiceProvider extends ServiceProvider
         Dashboard::class => DashboardPolicy::class,
         About::class => AboutPolicy::class,
         Csocial::class => CsocialPolicy::class,
+        Email::class => EmailPolicy::class,
     ];
 
     /**
@@ -40,7 +43,12 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        // Passport::routes();
+//        Passport::tokensCan([
+//            'place-orders' => 'Place orders',
+//            'check-status' => 'Check order status',
+//        ]);
+
+        Passport::routes();
 
         // Passport::tokensExpireIn(now()->addDays(15));
 

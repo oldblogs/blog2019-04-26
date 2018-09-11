@@ -18,29 +18,35 @@ use App\Http\Controllers\Api\EmailController;
 
 $mapi_route = '/'.config('app.mapi', 'manage');
 
-//Route::middleware('auth:api')->get('/user', 'Api\UserController@index');
+// TODO: Implement verified mail
 
-// Get Emails list in for about contacts list
-//Route::middleware('auth:api', 'role:admin')
-Route::get($mapi_route.'/emails', 'Api\EmailController@index')
+// browse
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/emails', 'Api\EmailController@index')
   ->name('emails.index');
 
-Route::get($mapi_route.'/emails/{email}', 'Api\EmailController@view')
-  ->name('emails.view');
+// view
+//Route::middleware('auth:api', 'can:view,App\Email')
+//  ->post($mapi_route.'/emails/{email}', 'Api\EmailController@show')
+//  ->name('emails.view');
 
-Route::post($mapi_route.'/emails', 'Api\EmailController@create')
+// update
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/emails/{email}', 'Api\EmailController@update')
+  ->name('emails.update');
+
+// create
+Route::middleware('auth:api', 'role:apiadmin')
+  ->post($mapi_route.'/emails', 'Api\EmailController@create')
   ->name('emails.create');
-  
-// Delete email
-//Route::middleware('auth:api', 'can:delete,email')
-Route::delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
+
+// delete
+Route::middleware('auth:api', 'role:apiadmin')
+  ->delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
   ->name('emails.delete');
 
-
-
 // Get a test result
-// Route::middleware('auth:api', 'role:admin')
-Route::get($mapi_route.'/test', 'Api\TestController@index')
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/test', 'Api\TestController@index')
   ->name('test.index');
 
-// Route::get('/emails', 'Api\EmailController@index');

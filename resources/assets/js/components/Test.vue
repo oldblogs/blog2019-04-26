@@ -24,7 +24,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="email in contact_emails">
+            <tr v-for="email in contact_emails" v-bind:key="email.id">
                 <td>{{ email.id }}</td>
                 <td>{{ email.title }}</td>
                 <td>{{ email.email }}</td>
@@ -32,12 +32,8 @@
                 <td>{{ email.updated_at }}</td>
                 <td><a class="btn btn-sm btn-outline-secondary" role="button" href="#"><book-open-icon class="custom-class"></book-open-icon></a></td>
                 <td>
-                  @can('edit',$email)
                     <a class="btn btn-sm btn-outline-secondary" role="button" 
                     href="#" ><edit-3-icon class="custom-class"></edit-3-icon></a>
-                  @else
-                    <button class="btn btn-sm btn-outline-secondary disabled"><edit-3-icon class="custom-class"></edit-3-icon></button>  
-                  @endcan
                 </td>
             </tr>
           </tbody>

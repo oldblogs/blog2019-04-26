@@ -18,7 +18,7 @@ class AboutPolicy
      */
     public function browse(User $user)
     {
-        return ( $user->can('browse about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
 
     /**
@@ -29,7 +29,7 @@ class AboutPolicy
      */
     public function create(User $user)
     {
-        return ( $user->can('create about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
     
     /**
@@ -40,7 +40,7 @@ class AboutPolicy
      */
     public function store(User $user)
     {
-        return ( $user->can('store about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
     
     /**
@@ -52,7 +52,7 @@ class AboutPolicy
      */
     public function show(User $user, About $about)
     {
-        return ( $user->can('show about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
 
     /**
@@ -64,7 +64,7 @@ class AboutPolicy
      */
     public function edit(User $user, About $about)
     {
-        return ( $user->can('edit about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
     
     /**
@@ -76,7 +76,7 @@ class AboutPolicy
      */
     public function update(User $user, About $about)
     {
-        return ( $user->can('update about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
 
     /**
@@ -88,6 +88,6 @@ class AboutPolicy
      */
     public function delete(User $user, About $about)
     {
-        return ( $user->can('delete about') ) ? true : false;
+        return ( $user->hasRole('admin') ) ? true : false;
     }
 }
