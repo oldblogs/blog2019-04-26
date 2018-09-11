@@ -1,7 +1,7 @@
 @extends ('frontview.base.master')
 
 @section ('title')
-  Test
+  {{ phpinfo() }}
 @endsection
 
 @section ('content')

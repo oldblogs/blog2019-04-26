@@ -19,7 +19,7 @@ class CsocialPolicy
     public function browse(User $user)
     {
         try{
-            return ( $user->can('browse csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -36,7 +36,7 @@ class CsocialPolicy
     public function create(User $user)
     {
         try{
-            return ( $user->can('create csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -53,7 +53,7 @@ class CsocialPolicy
     public function store(User $user)
     {
         try{
-            return ( $user->can('store csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -70,7 +70,7 @@ class CsocialPolicy
     public function show(User $user)
     {
         try{
-            return ( $user->can('show csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -87,7 +87,7 @@ class CsocialPolicy
     public function edit(User $user)
     {
         try{
-            return ( $user->can('edit csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -104,7 +104,7 @@ class CsocialPolicy
     public function update(User $user)
     {
         try{
-            return ( $user->can('update csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message
@@ -121,7 +121,7 @@ class CsocialPolicy
     public function delete(User $user)
     {
         try{
-            return ( $user->can('delete csocial') ) ? true : false;
+            return ( $user->hasRole('admin') ) ? true : false;
         }
         catch(\Exception $e){
             // TODO: Log , change error message

@@ -6,6 +6,9 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmailResource extends JsonResource
 {
+    
+    // TODO: Input validation
+    
     /**
      * Transform the resource into an array.
      *

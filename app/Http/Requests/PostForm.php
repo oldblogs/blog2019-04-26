@@ -36,27 +36,27 @@ class PostForm extends FormRequest
             new Checkbox
         ];
     }
-    
+
     /**
      * Save form values to database
-     * 
+     *
      * @return void
      */
     public function persist(){
 
         $post = new Post( request(['title', 'body']) );
-        
+
         $published = request(['published']);
-        
+
         if ( isset($published) && $published ){
             $post->published = 1;
         }
         else{
             $post->published = 0;
         }
-        
+
         Auth::user()->publish($post);
-        
+
         if ( $post->published ){
             session()->flash(
                 'message', 'Your post has now been published.'
@@ -68,30 +68,30 @@ class PostForm extends FormRequest
             );
         }
     }
-    
+
     /**
      * Update the post.
-     * 
+     *
      * @return void
      */
     public function update(Post $post){
 
-        $post->title = request('title');
-        $post->body = request('body');
-        $published = request('published');
+      $post->title = request('title');
+      $post->body = request('body');
+      $published = request('published');
 
-        if ( isset($published) && $published ){
-            $post->published = 1;
-        }
-        else{
-            $post->published = 0;
-        }
+      if ( isset($published) && $published ){
+          $post->published = 1;
+      }
+      else{
+          $post->published = 0;
+      }
 
-        Auth::user()->update_post( $post );
+      Auth::user()->update_post( $post );
 
-        session()->flash(
-            'message', 'Your post has now been updated'
-        );
+      session()->flash(
+          'message', 'Your post has now been updated'
+      );
     }
-    
+
 }

@@ -11,13 +11,11 @@ class AssignRole extends Command
     /**
      * The name and signature of the console command.
      *
-     * TODO: Remove magic value : web
      * @var string
      */
-    protected $signature = 'permission:assign-role 
-        {role : The name of the role } 
-        {email : The email of the user } 
-        {guard=web : The name of the guard}';
+    protected $signature = 'permission:assign-role
+        {role : The name of the role }
+        {email : The email of the user }';
 
     /**
      * The console command description.
@@ -39,44 +37,38 @@ class AssignRole extends Command
     /**
      * Execute the console command.
      *
-     * @param String
-     * @param String
+     * @param Array
      * @param String
      * @return void
      */
     public function handle()
     {
-        try{
-            $role = $this->argument('role');
-            $email = $this->argument('email');
-            $guard = $this->argument('guard');
+      try{
+        $role = $this->argument('role');
+        $email = $this->argument('email');
 
-            if ( is_null($role) || is_null($email) ) {
-                throw("Error: Not enough information");
-            }
-            else {
-                $this->info('Role  : '.$role);
-                $this->info('User  : '.$email);
-                $this->info('Guard : '.$guard);
-                
-                // If a non existing role is entered an error is thrown.
-                $blogrole = Role::findByName($role);
-
-                $bloguser = User::where('email', $email)->first();
-                if( is_null( $bloguser ) ){
-                    throw("User : ".$bloguser." does not exist.");
-                }
-
-                // TODO: Implementation for guard option
-
-                $bloguser->syncRoles($blogrole);   
-                $this->info('Role succesfully set.');
-            }
+        if ( is_null($role) || is_null($email) ) {
+          throw("Error: Not enough information");
         }
-        catch(Exception $e){
-            $this->error('Error: '.$e->message() );
-            exit;
+        else {
+          $this->info('Role  : '.$role);
+          $this->info('User  : '.$email);
+
+          $blogrole = Role::where('name', $role)->firstOrFail();
+          $bloguser = User::where('email', $email)->firstOrFail();
+          if( $bloguser->hasRole($blogrole) ){
+            $this->info('User already has the '.$blogrole->name.' role.');
+          }
+          else{
+            $bloguser->assignRole($blogrole);
+            $this->info('Role succesfully set.');
+          }
+          exit;
         }
+      }
+      catch(Exception $e){
+        $this->error('Error: '.$e->message() );
+        exit;
+      }
     }
 }
-
