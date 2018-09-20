@@ -20,6 +20,7 @@
         <thead>
           <tr>
             <th>#ID</th>
+            <th>User ID</th>
             <th>Title</th>
             <th>Created</th>
             <th>Modified</th>

@@ -8,8 +8,10 @@ use Carbon\Carbon;
 class About extends Model
 {
     // Define allowed variables
-    protected $fillable= ['title', 'subtitle', 'body', 'photo'];
+    protected $fillable= ['user_id', 'title', 'subtitle', 'body', 'photo'];
     
-    
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 
 }

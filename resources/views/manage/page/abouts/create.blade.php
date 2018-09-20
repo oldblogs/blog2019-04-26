@@ -10,6 +10,12 @@
     <form method="POST" action="{{ route('abouts.store') }}">
       @csrf
 
+      {{-- TODO: Convert text to select element --}}
+      <div class="form-group">
+        <label for="user_id">User Id</label>
+        <input type="text" class="form-control" id="user_id" name="user_id" aria-describedby="User ID">
+      </div>
+
       <div class="form-group">
         <label for="title">Title</label>
         <input type="text" class="form-control" id="title" name="title" aria-describedby="Title of the new about entry.">

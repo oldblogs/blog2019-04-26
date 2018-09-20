@@ -77,7 +77,7 @@ class GithubController extends Controller
             // Did the user added this providers social user id before
             $newsocialid = new Socialid;
             $newsocialid->socialprovider_id =
-            Socialprovider::where('provider','github')->first()->id;
+              Socialprovider::where('provider','github')->first()->id;
             
             $newsocialid->socialid = $socialuser->getId();
             $count=Socialid::where('socialprovider_id', $newsocialid->socialprovider_id)

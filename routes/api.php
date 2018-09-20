@@ -4,6 +4,9 @@ use Illuminate\Http\Request;
 use App\Email;
 use App\Http\Resources\EmailResource;
 use App\Http\Controllers\Api\EmailController;
+use App\Sociallink;
+use App\Http\Resources\SociallinkResource;
+use App\Http\Controllers\Api\SociallinkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,30 +23,47 @@ $mapi_route = '/'.config('app.mapi', 'manage');
 
 // TODO: Implement verified mail
 
-// browse
+// browse mail
 Route::middleware('auth:api', 'role:apiadmin')
   ->get($mapi_route.'/emails', 'Api\EmailController@index')
   ->name('emails.index');
 
-// view
-//Route::middleware('auth:api', 'can:view,App\Email')
-//  ->post($mapi_route.'/emails/{email}', 'Api\EmailController@show')
-//  ->name('emails.view');
-
-// update
+// update mail
 Route::middleware('auth:api', 'role:apiadmin')
   ->patch($mapi_route.'/emails/{email}', 'Api\EmailController@update')
   ->name('emails.update');
 
-// create
+// create mail
 Route::middleware('auth:api', 'role:apiadmin')
   ->post($mapi_route.'/emails', 'Api\EmailController@create')
   ->name('emails.create');
 
-// delete
+// delete mail
 Route::middleware('auth:api', 'role:apiadmin')
   ->delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
   ->name('emails.delete');
+
+
+// browse sociallink
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/sociallinks', 'Api\SociallinkController@index')
+  ->name('sociallinks.index');
+
+// update sociallink
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/sociallinks/{sociallink}', 'Api\SociallinkController@update')
+  ->name('sociallinks.update');
+
+// create sociallink
+Route::middleware('auth:api', 'role:apiadmin')
+  ->post($mapi_route.'/sociallinks', 'Api\SociallinkController@create')
+  ->name('sociallinks.create');
+
+// delete sociallink
+Route::middleware('auth:api', 'role:apiadmin')
+  ->delete($mapi_route.'/sociallinks/{sociallink}', 'Api\SociallinkController@delete')
+  ->name('emails.delete');
+
 
 // Get a test result
 Route::middleware('auth:api', 'role:apiadmin')

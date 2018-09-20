@@ -14,27 +14,24 @@ window.feather = require('feather-icons');
 window.VueFeatherIcon = require('vue-feather-icons');
 
 /*
-Vue.component( 'test',
-  require('./components/Test.vue')
-);
+Vue.component( 'test',  require('./components/Test.vue') );
 
-Vue.component( 'test2',
-  require('./components/Test2.vue')
-);
+Vue.component( 'test2', require('./components/Test2.vue') );
 */
 
+// Contact - Emails
+Vue.component( 'emails'                         , require('./components/Emails.vue') );
+Vue.component( 'form-email-add'                 , require('./components/FormEmailAdd.vue') );
+Vue.component( 'form-email-update'              , require('./components/FormEmailUpdate.vue') );
 
+// Contact - Social Network Links
+Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue') );
+Vue.component( 'form-sociallink-add'            , require('./components/FormSociallinkAdd.vue') );
+Vue.component( 'form-sociallink-update'         , require('./components/FormSociallinkUpdate.vue') );
 
-Vue.component( 'form-email-update' , require('./components/FormEmailUpdate.vue') );
-
-Vue.component( 'form-email-add'    , require('./components/FormEmailAdd.vue') );
-
-Vue.component( 'emails'            , require('./components/Emails.vue') );
-
-Vue.component( 'passport-clients'  , require('./components/passport/Clients.vue') );
-
-Vue.component( 'passport-authorized-clients', require('./components/passport/AuthorizedClients.vue') );
-
+// Laravel Passport
+Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue') );
+Vue.component( 'passport-authorized-clients'    , require('./components/passport/AuthorizedClients.vue') );
 Vue.component( 'passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue') );
 
 /**

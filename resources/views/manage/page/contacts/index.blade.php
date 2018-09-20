@@ -10,5 +10,7 @@
     </div>
 
     <emails></emails>
+
+    <sociallinks></sociallinks>
 @endsection
 
