@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="create_email">
+    <form v-on:submit.prevent="create_sociallink">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -9,12 +9,12 @@
       </div>
       
       <div class="form-group">
-        <h4>Add a new email to contact information</h4>
+        <h4>Add a new social network link to contact information</h4>
       </div>
       
       <div class="form-group">
         <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for email">
+        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for social network link">
       </div>
 
       <div class="form-group">
@@ -24,12 +24,23 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input v-model="email" id="email" class="form-control" aria-describedby="enter an email">
+        <label for="csocial_id">Social network</label>
+        <input v-model="csocial_id" id="csocial_id" class="form-control" aria-describedby="choose your social network">
       </div>
       
       <div class="form-group">
-        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" class="alert alert-danger">
+        <div v-show="errors.csocial_id" v-for="item in errors.csocial_id" v-bind:key="item" class="alert alert-danger">
+          {{ item }}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="link">Social network link</label>
+        <input v-model="link" id="link" class="form-control" aria-describedby="enter your social network link">
+      </div>
+      
+      <div class="form-group">
+        <div v-show="errors.link" v-for="item in errors.link" v-bind:key="item" class="alert alert-danger">
           {{ item }}
         </div>
       </div>
@@ -52,7 +63,7 @@
 <script>
 
   export default {
-    name: "FormEmailAdd",
+    name: "FormSociallinkAdd",
 
     mounted() {
       self = this
@@ -63,7 +74,8 @@
       return{
         self: {},
         title: "",
-        email: "",
+        csocial_id: 0,
+        link: "",
         message: "",
         errors: "",
 
@@ -75,19 +87,20 @@
     },
 
     methods: {
-      create_email(){
-        axios.post('http://blog.com/api/manage/emails', {
+      create_sociallink(){
+        axios.post('http://blog.com/api/manage/sociallinks', {
             title: this.title,
-            email: this.email,
+            csocial_id: this.csocial_id,
+            link: this.link,
           })
           .then(response => {
-            this.$emit('create:email', this.email.id)
+            this.$emit('create:sociallink', this.sociallink.id)
             this.errors = "" 
             this.message = "" 
             this.title = ""
-            this.email = "" 
-            
-            
+            this.csocial_id = 0
+            this.link = "" 
+        
           })
           .catch(error => {
             this.message = error.response.data.message
@@ -95,7 +108,7 @@
           })
       },
       hideform(){
-        this.$emit('hide:add:email')
+        this.$emit('hide:add:sociallink')
       }
     },
   }

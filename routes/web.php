@@ -16,7 +16,7 @@ if ( config('app.form_login') ) {
 } else {
   if( 'form_login' === config('app.default_auth') ){
     // When we disable form_login , we must also change the default_auth in .env
-    // LOG
+    // TODO: LOG error
     abort(500, 'Error: Misconfiguration.');
   } else {
     // default_auth ' s first letter is made uppercase and route is formed

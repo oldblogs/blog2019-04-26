@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use App\Socialprovider;
+use App\Csocial;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,10 +24,37 @@ class DatabaseSeeder extends Seeder
             SocialprovidersSeeder::class,
         ]);
 
+        $this->call([
+            CsocialSeeder::class,
+        ]);
+
         // Sample Records
         factory(App\User::class, 1)->create();
         factory(App\Post::class, 100)->create();
         factory(App\About::class, 5)->create();
+
+    }
+}
+
+class CsocialSeeder extends Seeder
+{
+    /**
+     * Seed the application's csocials table.
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+      $sCsocials = [
+        [ 'order' => 1, 'title' => 'twitter', 'css_class' => 'fa-twitter', 'homepage' => 'https://twitter.com'],
+        [ 'order' => 2, 'title' => 'github', 'css_class' => 'fa-github', 'homepage' => 'https://github.com/'],
+        [ 'order' => 3, 'title' => 'stackoverflow', 'css_class' => 'fa-stack-overflow', 'homepage' => 'https://stackoverflow.com/'],
+      ];
+
+      foreach ( $sCsocials as $sCsocial ){
+        $xCsocial = Csocial::firstOrCreate($sCsocial );
+      }
 
     }
 }

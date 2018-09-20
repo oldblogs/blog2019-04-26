@@ -1,5 +1,6 @@
 <tr>
     <td>{{ $about->id }}</td>
+    <td>{{ $about->user_id }}</td>
     <td>{{ $about->title }}</td>
     <td>{{ $about->created_at->toFormattedDateString() }}</td>
     <td>{{ $about->updated_at->toFormattedDateString() }}</td>

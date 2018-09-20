@@ -12,6 +12,11 @@
       @csrf
 
       <div class="form-group">
+        <label for="user_id">User ID</label>
+        <input type="text" class="form-control" id="user_id" name="user_id" aria-describedby="User ID" value="{{ $about->user_id }}" >
+      </div>
+
+      <div class="form-group">
         <label for="title">Title</label>
         <input type="text" class="form-control" id="title" name="title" aria-describedby="Title of about record" value="{{ $about->title }}" >
       </div>

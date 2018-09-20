@@ -30,6 +30,7 @@ class AboutForm extends FormRequest
     {
         // TODO: Proper input validation
         return [
+            'user_id' => 'required|integer|min:1|max:2000000000',
             'title' => 'required|min:2|max:250',
             'subtitle' => 'required|min:2|max:250',
             'body' => 'required|min:2|max:10000',
@@ -46,7 +47,7 @@ class AboutForm extends FormRequest
 
         try{
             
-            $about = new About( request(['title', 'subtitle', 'body']) );
+            $about = new About( request(['user_id', 'title', 'subtitle', 'body']) );
             
             // TODO: Implement photo
             
@@ -73,6 +74,7 @@ class AboutForm extends FormRequest
         
         try{
             // TODO: Implement photo
+            $about->user_id = request('user_id');
             $about->title = request('title');
             $about->subtitle = request('subtitle');
             $about->body = request('body');

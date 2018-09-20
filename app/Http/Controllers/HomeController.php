@@ -15,7 +15,7 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        // TODO: 
+        // TODO: Lists only one role, make it list all roles.
         // BUG: Social links do not show after migrate refresh
         $bloguser = $request->user()
                         ->where( 'id',Auth::id() )
