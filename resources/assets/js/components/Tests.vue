@@ -1,35 +1,35 @@
 <template>
   <div>
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-      <h4 class="h4">Emails</h4>
+      <h4 class="h4">Test List</h4>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
             <button class="btn btn-sm btn-outline-secondary" v-on:click="showAddForm"><plus-icon class="custom-class"></plus-icon>Add</button>
         </div>
       </div>
     </div>
-      <form-email-add v-show="addformenabled" v-on:create:email="fetch" v-on:hide:add:email="hideAddForm" ></form-email-add>
+      <form-test-add v-show="addformenabled" v-on:create:test="fetch" v-on:hide:add:test="hideAddForm" ></form-test-add>
 
-      <form-email-update
+      <form-test-update
         v-show="updateformenabled"
-        v-bind:smail="selected"
-        v-on:update:email="fetch"
-        v-on:hide:update:email="hideUpdateForm"
-        ></form-email-update>
+        v-bind:stest="selected"
+        v-on:update:test="fetch"
+        v-on:hide:update:test="hideUpdateForm"
+        ></form-test-update>
 
-      <form-email-delete
+      <form-test-delete
         v-show="deleteformenabled"
-        v-bind:smail="selected"
-        v-on:delete:email="fetch"
-        v-on:hide:delete:email="hideDeleteForm"
-        ></form-email-delete>
+        v-bind:stest="selected"
+        v-on:delete:test="fetch"
+        v-on:hide:delete:test="hideDeleteForm"
+        ></form-test-delete>
 
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Email</th>
+              <th>#ID</th>
+              <th>text</th>
               <th>Created</th>
               <th>Modified</th>
               <th>Edit</th>
@@ -37,18 +37,18 @@
             </tr>
           </thead>
 
-          <tbody >
-            <tr v-for="email in contact_emails" v-bind:key="email.id">
-              <td>{{ email.title }}</td>
-              <td>{{ email.email }}</td>
-              <td>{{ email.created_at }}</td>
-              <td>{{ email.updated_at }}</td>
+          <tbody>
+            <tr v-for="test in tests" v-bind:key="test.id">
+              <td>{{ test.id }}</td>
+              <td>{{ test.title }}</td>
+              <td>{{ test.created_at }}</td>
+              <td>{{ test.updated_at }}</td>
 
               <td>
-                <button class="btn btn-sm btn-outline-secondary email-update" v-on:click="showUpdateForm(email)" ><edit-3-icon class="custom-class"></edit-3-icon></button>
+                <button class="btn btn-sm btn-outline-secondary test-update" v-on:click="showUpdateForm(test)" ><edit-3-icon class="custom-class"></edit-3-icon></button>
               </td>
               <td>
-                <button class="btn btn-sm btn-outline-secondary email-delete" v-on:click="showDeleteForm(email)" ><trash-2-icon class="custom-class"></trash-2-icon></button>
+                <button class="btn btn-sm btn-outline-secondary test-delete" v-on:click="showDeleteForm(test)" ><trash-2-icon class="custom-class"></trash-2-icon></button>
               </td>
             </tr>
           </tbody>
@@ -59,14 +59,14 @@
 
 <script>
 
-  import FormEmailAdd from './FormEmailAdd.vue'
-  import FormEmailUpdate from './FormEmailUpdate.vue'
-  import FormEmailDelete from './FormEmailDelete.vue'
+  import FormTestAdd from './FormTestAdd.vue'
+  import FormTestUpdate from './FormTestUpdate.vue'
+  import FormTestDelete from './FormTestDelete.vue'
 
   import { PlusIcon , BookOpenIcon, Edit3Icon, Trash2Icon} from 'vue-feather-icons'
 
   export default {
-    name: "Emails",
+    name: "Tests",
 
     mounted() {
       self = this
@@ -81,7 +81,7 @@
     data(){
       return{
         self: {},
-        contact_emails: {},
+        tests: {},
         addformenabled: false,
         updateformenabled: false,
         deleteformenabled: false,
@@ -92,9 +92,7 @@
           default: () => {
             return {
               id: 0,
-              user_id: 0,
               title: "",
-              email: "",
             }
           },
         },
@@ -107,29 +105,15 @@
 
     methods: {
       fetch() {
-        axios.get('http://blog.com/api/manage/emails')
+        axios.get('http://blog.com/api/manage/tests')
           .then(({data}) => {
-            this.contact_emails = JSON.parse(JSON.stringify( data.data.emails ))
+            this.tests = JSON.parse(JSON.stringify( data.data.tests ))
             this.addformenabled = false
             this.updateformenabled = false
             this.deleteformenabled = false
-            console.log("emails fetched")
           })
       },
       
-      deletemail(email){
-        console.log(email)
-        axios.delete('http://blog.com/api/manage/emails/'+email.id)
-          .then(function(response){
-            console.log(email.email + " deleted")
-            console.log(self.items)
-            // self.contact_emails.splice( self.contact_emails.findIndex(mailx => mailx.id === email.id) , 1)
-          })
-          .catch(function(error){
-            console.log(error)
-          })
-      },
-
       showAddForm(){
         this.addformenabled = true
         this.updateformenabled = false
@@ -140,8 +124,8 @@
         this.addformenabled = false
       },
 
-      showUpdateForm(email){
-        this.selected = JSON.parse(JSON.stringify( email ))
+      showUpdateForm(item){
+        this.selected = JSON.parse(JSON.stringify( item ))
         this.addformenabled = false
         this.updateformenabled = true
         this.deleteformenabled = false
@@ -151,8 +135,8 @@
         this.updateformenabled = false
       },
 
-      showDeleteForm(email){
-        this.selected = JSON.parse(JSON.stringify( email ))
+      showDeleteForm(item){
+        this.selected = JSON.parse(JSON.stringify( item ))
         this.addformenabled = false
         this.updateformenabled = false
         this.deleteformenabled = true
@@ -164,7 +148,7 @@
 
     },
     components: {
-      FormEmailAdd, FormEmailUpdate, FormEmailDelete, PlusIcon, BookOpenIcon, Edit3Icon, Trash2Icon,
+      FormTestAdd, FormTestUpdate, FormTestDelete, PlusIcon, BookOpenIcon, Edit3Icon, Trash2Icon,
     },
   }
 </script>

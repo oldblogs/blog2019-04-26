@@ -23,20 +23,6 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link {{ Request::is('manage/abouts')?'active':'' }}" href="{{ action('AboutController@index_m') }}">
-                  <span data-feather="user"></span>
-                  Abouts
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link {{ Request::is('manage/contacts')?'active':'' }}" href="{{ action('ContactController@index') }}">
-                  <span data-feather="phone"></span>
-                  Contacts
-                </a>
-              </li>
-
-              <li class="nav-item">
                 <a class="nav-link {{ Request::is('manage/csocials')?'active':'' }}" href="{{ action('CsocialController@index') }}">
                   <span data-feather="globe"></span>
                   Social Networks

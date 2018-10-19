@@ -47,7 +47,7 @@ class PasswordResetbyConsole extends Notification
                     ->from($from_mail, $from_name)
                     ->subject('Password Changed')
                     ->greeting('Hi , '.$notifiable->name.' ! ')
-                    ->line('Your password is reset by system administrator via console.')
+                    ->line('Your password is reset by system administrator.')
                     ->line('Kind regards, !');
     }
 

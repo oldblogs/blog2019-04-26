@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="create_email">
+    <form v-on:submit.prevent="create_test">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -9,12 +9,12 @@
       </div>
       
       <div class="form-group">
-        <h4>Add a new email to contact information</h4>
+        <h4>Add a new test record</h4>
       </div>
-
+   
       <div class="form-group">
         <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for email">
+        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for test record">
       </div>
 
       <div class="form-group">
@@ -23,17 +23,6 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input v-model="email" id="email" class="form-control" aria-describedby="enter an email">
-      </div>
-      
-      <div class="form-group">
-        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
-        </div>
-      </div>
-      
       <div class="form-group">
         <button class="btn btn-primary">Save</button>
       </div>
@@ -51,8 +40,10 @@
 
 <script>
 
+  // TODO: Check v-bind:key syntax above
+
   export default {
-    name: "FormEmailAdd",
+    name: "FormTestAdd",
 
     mounted() {
       self = this
@@ -63,7 +54,6 @@
       return{
         self: {},
         title: "",
-        email: "",
         message: "",
         errors: "",
 
@@ -75,17 +65,16 @@
     },
 
     methods: {
-      create_email(){
-        axios.post('http://blog.com/api/manage/emails', {
-             title: this.title,
-            email: this.email,
+      create_test(){
+        axios.post('http://blog.com/api/manage/tests', {
+            title: this.title,
           })
           .then(response => {
-            this.$emit('create:email', this.email)
+            // TODO: check if this works ( read id value below )
+            this.$emit('create:test', this.title)
             this.errors = "" 
             this.message = "" 
             this.title = ""
-            this.email = "" 
             
           })
           .catch(error => {
@@ -94,7 +83,7 @@
           })
       },
       hideform(){
-        this.$emit('hide:add:email')
+        this.$emit('hide:add:test')
       }
     },
   }

@@ -16,6 +16,7 @@ class TrustProxies extends Middleware
 
     /**
      * The headers that should be used to detect proxies.
+     * TODO: Check TrustProxies
      *
      * @var int
      */

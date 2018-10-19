@@ -13,16 +13,17 @@ window.feather = require('feather-icons');
 
 window.VueFeatherIcon = require('vue-feather-icons');
 
-/*
-Vue.component( 'test',  require('./components/Test.vue') );
-
-Vue.component( 'test2', require('./components/Test2.vue') );
-*/
+// Test
+Vue.component( 'tests'                          , require('./components/Tests.vue') );
+Vue.component( 'form-test-add'                  , require('./components/FormTestAdd.vue') );
+Vue.component( 'form-test-update'               , require('./components/FormTestUpdate.vue') );
+Vue.component( 'form-test-delete'               , require('./components/FormTestDelete.vue') );
 
 // Contact - Emails
 Vue.component( 'emails'                         , require('./components/Emails.vue') );
 Vue.component( 'form-email-add'                 , require('./components/FormEmailAdd.vue') );
 Vue.component( 'form-email-update'              , require('./components/FormEmailUpdate.vue') );
+Vue.component( 'form-email-delete'              , require('./components/FormEmailDelete.vue') );
 
 // Contact - Social Network Links
 Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue') );

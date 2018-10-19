@@ -28,6 +28,18 @@ class EmailController extends Controller
       }
     }
 
+    public function index_p(){
+      try{
+        $result = new EmailCollection(Email::self()->get() );
+        return $result;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json(['result' => 'error'], 500);
+      }
+    }
+
     public function show(Email $email){
       try{
         // TODO: User input validation of $email
@@ -51,8 +63,10 @@ class EmailController extends Controller
       ]);
 
       try{
-        $email = new Email( request(['title', 'email']) );
-
+        $email = new Email();
+        $email->user_id = auth()->user()->id;
+        $email->title = $request->title;
+        $email->email = $request->email;
         $email->save();
 
         response()->json(['result' => 'success'], 200);
@@ -73,10 +87,18 @@ class EmailController extends Controller
       ]);
 
       try{
-        $email->title = request('title');
-        $email->email = request('email');
-        $email->save();
-        response()->json(['result' => 'success'], 200);
+        // TODO: does this record belong to the currently logged in user
+        if ( auth()->user()->id != $email->user_id ) {
+          // TODO: Log Error
+          // TODO: Generate more proper response
+          response()->json(['result' => 'error'], 401);
+        }
+        else {
+          $email->title = request('title');
+          $email->email = request('email');
+          $email->save();
+          response()->json(['result' => 'success'], 200);
+        }
       }
       catch(\Exception $e){
         // TODO: Log Error
