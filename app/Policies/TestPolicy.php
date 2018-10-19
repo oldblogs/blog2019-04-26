@@ -3,15 +3,15 @@
 namespace App\Policies;
 
 use App\User;
-use App\Email;
+use App\Test;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class EmailPolicy
+class TestPolicy
 {
     use HandlesAuthorization;
 
     /**
-     * Determine whether the user can browse emails.
+     * Determine whether the user can browse tests.
      *
      * @param  \App\User $user
      * @return mixed

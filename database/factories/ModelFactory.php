@@ -26,7 +26,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
 
     return [
         'user_id' => function () {
-        return App\User::first()->id;
+            return App\User::first()->id;
         },
         'title' => $faker->sentence,
         'body' => $faker->paragraph,

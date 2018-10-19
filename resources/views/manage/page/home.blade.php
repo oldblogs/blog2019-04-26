@@ -32,7 +32,6 @@
       </div>
     </div>
 
-
     <div class="card card-default">
       <div class="card-body">
         <h4 class="h4 pt-2 ">Your linked social logins</h4>
@@ -60,4 +59,20 @@
     @endif
     
   @endif    
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+    <h2 class="h2">About You</h2>
+  </div>
+  <!-- TODO: Implement about -->
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+    <h2 class="h2">Contact information</h2>
+  </div>
+
+  <emails></emails>
+
+  <sociallinks></sociallinks>
+
+  <tests></tests>
+  
 @endsection

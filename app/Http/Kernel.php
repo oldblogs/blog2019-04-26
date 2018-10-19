@@ -38,6 +38,7 @@ class Kernel extends HttpKernel
             \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
         ],
 
+        // TODO: Apply related middleware
         'api' => [
             'throttle:60,1',
             'bindings',

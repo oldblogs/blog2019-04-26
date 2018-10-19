@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="updateitem(smail)">
+    <form v-on:submit.prevent="updateitem(stest)">
 
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -9,14 +9,14 @@
       </div>
 
       <div class="form-group">
-        <h4>Update an existing email </h4>
+        <h4>Update an existing test record </h4>
       </div>
 
-      <input v-model="smail.id" type="text" class="form-control" style="display: none" >
+      <input v-model="stest.id" type="text" class="form-control" style="display: none" >
 
       <div class="form-group">
         <label>Title</label>
-        <input v-model="smail.title" type="text" class="form-control" aria-describedby="enter title for email">
+        <input v-model="stest.title" type="text" class="form-control" aria-describedby="enter title for test record">
       </div>
 
       <div class="form-group">
@@ -26,27 +26,16 @@
       </div>
 
       <div class="form-group">
-        <label>Email</label>
-        <input v-model="smail.email" class="form-control" aria-describedby="enter an email">
-      </div>
-
-      <div class="form-group">
-        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
-        </div>
-      </div>
-
-      <div class="form-group">
         <button class="btn btn-primary">Save</button>
       </div>
 
-      <div class="form-group" v-show="message"   >
+      <div class="form-group" v-show="message">
         <div class="alert alert-danger">
           {{ message }}
         </div>
       </div>
 
-      <p>Email ID: {{ smail.id }}</p>
+      <p>{{ stest.id }}</p>
 
     </form>
 
@@ -55,7 +44,7 @@
 
 <script>
   export default {
-    name: "FormEmailUpdate",
+    name: "FormTestUpdate",
 
     mounted() {
       self = this
@@ -63,7 +52,7 @@
 
     props: {
       // type, required and default are optional, you can reduce it to 'options: Object'
-      smail: {
+      stest: {
         type: Object,
         required: false,
 
@@ -71,7 +60,6 @@
           return {
             id: 0,
             title: "",
-            email: "",
           }
         },
       },
@@ -91,13 +79,12 @@
     },
 
     methods: {
-      updateitem(email){
-        axios.patch('http://blog.com/api/manage/emails/' + email.id, {
-            title: email.title,
-            email: email.email,
+      updateitem(test){
+        axios.patch('http://blog.com/api/manage/tests/' + test.id, {
+            title: test.title,
           })
           .then( (response) => {
-            this.$emit('update:email', email.id)
+            this.$emit('update:test', test.id)
             this.errors = ""
             this.message = ""
 
@@ -108,7 +95,7 @@
           })
       },
       hideform(){
-        this.$emit('hide:update:email')
+        this.$emit('hide:update:test')
       },
     },
   }

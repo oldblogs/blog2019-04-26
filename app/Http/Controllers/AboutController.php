@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Auth;
 class AboutController extends Controller
 {
     
+    public function index(){
+        $abouts = About::all();
+        return view('frontview.page.about', compact('abouts') );
+    }
+
     public function index_m(){
         $abouts = About::all();
         return view('manage.page.abouts.indexm', compact('abouts') );

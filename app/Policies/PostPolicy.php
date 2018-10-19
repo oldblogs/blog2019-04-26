@@ -49,6 +49,7 @@ class PostPolicy
             // Must be an admin in this case
             return ( $user->hasRole('admin') ) ? true : false;
         }
+        return false;
     }
 
     /**

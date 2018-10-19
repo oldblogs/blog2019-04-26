@@ -29,8 +29,6 @@ if ( config('app.form_login') ) {
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 
-
-
 // ------------------------------------------------------------
 // Front view
 // ------------------------------------------------------------
@@ -45,7 +43,7 @@ Route::get('/posts', 'PostController@index');
 Route::get('/posts/{post}', 'PostController@show');
 
 // About page
-Route::get('/about', 'AboutController@show')->name('about');
+Route::get('/about', 'AboutController@index')->name('about');
 
 
 // ------------------------------------------------------------
@@ -175,17 +173,6 @@ Route::middleware('auth:web', 'role:admin')
   ->delete($manage_route.'/abouts/{about}', 'AboutController@delete')
   ->name('abouts.delete');
 
-
-// ------------------------------------------------------------
-// Contacts
-// ------------------------------------------------------------
-
-// Get Contacts list in manage view
-Route::middleware('auth:web', 'role:admin')
-  ->get($manage_route.'/contacts', 'ContactController@index')
-  ->name('contacts.index');
-
-
 // ------------------------------------------------------------
 // Csocials
 // ------------------------------------------------------------
@@ -225,11 +212,3 @@ Route::middleware('auth:web', 'role:admin')
   ->delete($manage_route.'/csocials/{csocial}', 'CsocialController@delete')
   ->name('csocials.delete');
 
-
-// ------------------------------------------------------------
-// Tests - Playground
-// ------------------------------------------------------------
-// Test page
-// TODO: Remove before production
-Route::middleware('auth:web', 'role:admin')->get($manage_route.'/test',
-   'ManageController@test');

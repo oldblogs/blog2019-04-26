@@ -19,8 +19,12 @@ class DashboardPolicy
      */
     public function view(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        try{
+            return ( $user->hasRole('admin') ) ? true : false;
+        }
+        catch(\Exception $e){
+            // TODO: Log , change error message
+            session()->flash( 'message', 'An error occured.' );
+        }
     }
-
-
 }

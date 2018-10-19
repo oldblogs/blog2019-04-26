@@ -49,6 +49,7 @@ class User extends Authenticatable
         $post->delete();
     }
 
+    
     public function socialids(){
         return $this->hasMany(Socialid::class);
     }
@@ -61,4 +62,8 @@ class User extends Authenticatable
         $token->delete();
     }
 
+
+    public function emails(){
+        return $this->hasMany(Email::class);
+    }
 }

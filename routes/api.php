@@ -1,12 +1,18 @@
 <?php
 
 use Illuminate\Http\Request;
+
 use App\Email;
 use App\Http\Resources\EmailResource;
 use App\Http\Controllers\Api\EmailController;
+
 use App\Sociallink;
 use App\Http\Resources\SociallinkResource;
 use App\Http\Controllers\Api\SociallinkController;
+
+use App\Test;
+use App\Http\Resources\TestResource;
+use App\Http\Controllers\Api\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +30,15 @@ $mapi_route = '/'.config('app.mapi', 'manage');
 // TODO: Implement verified mail
 
 // browse mail
+// All emails
+// Route::middleware('auth:api', 'role:apiadmin')
+//   ->get($mapi_route.'/emails', 'Api\EmailController@index')
+//   ->name('emails.index');
+
+// browse mail
+// Emails that belongs to the logged in user
 Route::middleware('auth:api', 'role:apiadmin')
-  ->get($mapi_route.'/emails', 'Api\EmailController@index')
+  ->get($mapi_route.'/emails', 'Api\EmailController@index_p')
   ->name('emails.index');
 
 // update mail
@@ -65,8 +78,26 @@ Route::middleware('auth:api', 'role:apiadmin')
   ->name('emails.delete');
 
 
-// Get a test result
+// Test Records
+
+// browse test records
 Route::middleware('auth:api', 'role:apiadmin')
-  ->get($mapi_route.'/test', 'Api\TestController@index')
-  ->name('test.index');
+  ->get($mapi_route.'/tests', 'Api\TestController@index')
+  ->name('tests.index');
+
+// update test
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/tests/{test}', 'Api\TestController@update')
+  ->name('tests.update');
+
+// create test record
+Route::middleware('auth:api', 'role:apiadmin' )
+  ->post($mapi_route.'/tests', 'Api\TestController@create')
+  ->name('tests.create');
+
+// delete test record
+Route::middleware('auth:api', 'role:apiadmin')
+  ->delete($mapi_route.'/tests/{test}', 'Api\TestController@delete')
+  ->name('tests.delete');
+
 

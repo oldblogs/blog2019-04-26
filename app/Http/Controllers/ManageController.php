@@ -26,7 +26,6 @@ class ManageController extends Controller
     }
     
     public function test(User $user){
-        
         return view('manage.page.test', compact('user') );
     }
 }
