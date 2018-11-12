@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td>{{ sociallink.title }}</td>
-    <td>{{ sociallink.csocial_id }}</td>
+    <td>{{ sociallink.csocial.title }}</td>
     <td>{{ sociallink.link }} </td>
     <td>{{ sociallink.created_at }}</td>
     <td>{{ sociallink.updated_at }}</td>
