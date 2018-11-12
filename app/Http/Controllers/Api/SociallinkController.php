@@ -48,10 +48,19 @@ class SociallinkController extends Controller
     public function show(Sociallink $sociallink){
       try{
         // TODO: User input validation of $sociallink
-        $result = new SociallinkResource( 
-          Sociallink::where('id', $sociallink)->get() );
-        $result['socialnetworks'] = new CsocialCollection( Csocial::all() );
-        return $result;
+        $result = Sociallink::where('id', $sociallink)->self()->with('csocial')->get() ;
+
+        if( 0 === $result->count() ) {
+          abort(403, 'Unauthorized action.');
+        }
+        elseif( 1 === $result->count() ){
+          return $result;
+        }
+        else {
+          abort(403, 'Unauthorized action.');  
+        }
+
+        abort(403, 'Unauthorized action.');
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -84,8 +93,9 @@ class SociallinkController extends Controller
         $sociallink->link = $request->link;
         $sociallink->save();
 
-        // Return the new record
-        return $sociallink;
+        // Return the new record with extra info about social network
+        $result = Sociallink::where('id', $sociallink->id )->with('csocial')->first() ;
+        return $result;
 
       }
       catch(\Exception $e){
