@@ -1,47 +1,55 @@
 <template>
   <div>
-    <form v-on:submit.prevent="create_sociallink">
+    <form v-on:submit.prevent="additem()">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>      
+          <span aria-hidden="true">&times;</span></button>      
       </div>
       
       <div class="form-group">
         <h4>Add a new social network link to contact information</h4>
       </div>
       
+      <input v-model="sociallink.id" type="text" class="form-control" style="display: none" >
+
       <div class="form-group">
-        <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for social network link">
+        <label>Title</label>
+        <input v-model="sociallink.title" type="text" class="form-control" 
+          aria-describedby="enter title for social network link">
       </div>
 
       <div class="form-group">
-        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
 
       <div class="form-group">
-        <label for="csocial_id">Social network</label>
-        <input v-model="csocial_id" id="csocial_id" class="form-control" aria-describedby="choose your social network">
+        <label>Social network</label>
+        <select v-model="sociallink.csocial_id" class="form-control" 
+          aria-describedby="choose your social network">
+          <option v-for="socialnetwork in socialnetworks" 
+            v-bind:key="socialnetwork.id" v-bind:value="socialnetwork.id" >{{ 
+              socialnetwork.title }}</option>
+        </select>
       </div>
-      
+
       <div class="form-group">
-        <div v-show="errors.csocial_id" v-for="item in errors.csocial_id" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.csocial_id" v-for="item in errors.csocial_id" 
+          v-bind:key="item" class="alert alert-danger">{{ item }}
         </div>
       </div>
 
       <div class="form-group">
-        <label for="link">Social network link</label>
-        <input v-model="link" id="link" class="form-control" aria-describedby="enter your social network link">
+        <label>Social network link</label>
+        <input v-model="sociallink.link" class="form-control" 
+          aria-describedby="enter your social network link">
       </div>
       
       <div class="form-group">
-        <div v-show="errors.link" v-for="item in errors.link" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.link" v-for="item in errors.link" v-bind:key="item"
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
       
@@ -66,19 +74,39 @@
     name: "FormSociallinkAdd",
 
     mounted() {
-      self = this
-      this.formenabled = false
+
     },
     
+    props: {
+      sociallink: {
+        type: Object,
+        required: false,
+
+        default: () => {
+          return {
+            id: 0,
+            title: "",
+            csocial_id: 0,
+            link: "",
+            created_at: "00:00",
+            updated_at: "00:00",
+            index: -1,
+          }
+        }
+      },
+
+      socialnetworks: {
+        type: Array,
+        required: false,
+
+        default: [],
+      },
+    },
+
     data(){
       return{
-        self: {},
-        title: "",
-        csocial_id: 0,
-        link: "",
         message: "",
         errors: "",
-
       }
     },
 
@@ -87,19 +115,16 @@
     },
 
     methods: {
-      create_sociallink(){
+      additem(){
         axios.post('http://blog.com/api/manage/sociallinks', {
-            title: this.title,
-            csocial_id: this.csocial_id,
-            link: this.link,
+            title: this.sociallink.title,
+            csocial_id: this.sociallink.csocial_id,
+            link: this.sociallink.link,
           })
           .then(response => {
-            this.$emit('create:sociallink', this.sociallink.id)
+            this.$emit('create:sociallink', JSON.parse( JSON.stringify( response.data) ) )
             this.errors = "" 
             this.message = "" 
-            this.title = ""
-            this.csocial_id = 0
-            this.link = "" 
         
           })
           .catch(error => {

@@ -28,7 +28,6 @@ class CsocialForm extends FormRequest
     public function rules()
     {
         return [
-            'order' => 'required|integer|min:1|max:1024',
             'title' => 'required|min:3|max:250',
             'css_class' => 'required|min:3|max:250',
             'homepage' => 'required|min:3|max:250'
@@ -42,7 +41,7 @@ class CsocialForm extends FormRequest
      */
     public function persist(){
         try{
-            $csocials = new Csocial( request(['order', 'title', 'css_class', 'homepage' ]) );
+            $csocials = new Csocial( request(['title', 'css_class', 'homepage' ]) );
             
             if( $csocials->save() ){
                 session()->flash( 'message', 'Social network saved.' );
@@ -66,7 +65,6 @@ class CsocialForm extends FormRequest
      */
     public function update(Csocial $csocial){
         try{
-            $csocial->order = request('order');
             $csocial->title = request('title');
             $csocial->css_class = request('css_class');
             $csocial->homepage = request('homepage');

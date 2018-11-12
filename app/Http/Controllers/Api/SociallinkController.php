@@ -4,45 +4,89 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Sociallink;
+use App\Csocial;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Resources\SociallinkResource;
 use App\Http\Resources\SociallinkCollection;
+use App\Http\Resources\CsocialResource;
+use App\Http\Resources\CsocialCollection;
 use App\Http\Controllers\Controller;
 
 
 class SociallinkController extends Controller
 {
     public function index(){
-        try{
-          $result = new SociallinkCollection(Sociallink::all());
-          return $result;
-        }
-        catch(\Exception $e){
-          // TODO: Log Error
-          // TODO: Generate more proper response
-          response()->json(['result' => 'error'], 500);
-        }
+      try{
+        $result = [];
+        $result['sociallinks']    = new SociallinkCollection( Sociallink::all() );
+        $result['socialnetworks'] = new CsocialCollection( Csocial::all() );
+        return $result;
       }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json( ['result' => 'error'], 500 );
+      }
+    }
+
+    public function index_p(){
+      try{
+        $result = [];
+        $result['sociallinks']    = new SociallinkCollection( Sociallink::self()->with('csocial')->get() );
+        $result['socialnetworks'] = new CsocialCollection( Csocial::all() );
+        return $result;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json(['result' => 'error'], 500);
+      }
+    }
+
+    public function show(Sociallink $sociallink){
+      try{
+        // TODO: User input validation of $sociallink
+        $result = new SociallinkResource( 
+          Sociallink::where('id', $sociallink)->get() );
+        $result['socialnetworks'] = new CsocialCollection( Csocial::all() );
+        return $result;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json(['result' => 'error'], 500);
+      }
+    }
 
     public function create(Request $request){
       // TODO: Input validation
       // TODO: Check unique sociallink
+      
+      // $validatedData = $request->validate([
+      //   'title' => 'required|string|min:3|max:255',
+      //   'csocial_id' => 'required|integer|min:1',
+      //   'link' => 'required|min:13|max:255',
+      // ]);
+
       $validatedData = $request->validate([
-        'order' => 'required|integer|min:1|max:255',
-        'title' => 'required|min:3|max:255',
-        'csocial_id' => 'required|integer',
-        'link' => 'required|min:13|max:255',
+        'title' => 'required',
+        'csocial_id' => 'required',
+        'link' => 'required',
       ]);
 
       try{
-        $csociallink = new Sociallink( request(['order', 'title', 'csocial_id', 'link']) );
-        // TODO: Add user_id value
+        $sociallink = new Sociallink();
+        $sociallink->user_id = auth()->user()->id;
+        $sociallink->title = $request->title;
+        $sociallink->csocial_id = $request->csocial_id;
+        $sociallink->link = $request->link;
+        $sociallink->save();
 
-        $csociallink->save();
+        // Return the new record
+        return $sociallink;
 
-        response()->json(['result' => 'success'], 200);
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -51,4 +95,56 @@ class SociallinkController extends Controller
       }
 
     }
+
+    public function update(Request $request, Sociallink $sociallink){
+      // TODO: Input validation
+      $validateData = $request->validate([
+        'title' => 'required|string|min:3|max:255',
+        'csocial_id' => 'required|integer|min:1',
+        'link' => 'required|min:5|max:255',
+      ]);
+
+      try{
+        if ( auth()->user()->id != $sociallink->user_id ){
+          // TODO: Generate more proper response
+          response()->json([
+            'result' => 'You do not have the permission to change this record.'
+          ], 401);
+        }
+        else{
+          $sociallink->title = request('title');
+          $sociallink->csocial_id = request('csocial_id');
+          $sociallink->link = request('link');
+          $sociallink->save();
+          
+          // Return updated record
+          return $sociallink;
+        }
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json(['result' => 'error'], 500);
+      }
+    }
+
+    public function delete(Request $request, Sociallink $sociallink){
+      try{
+        if ( auth()->user()->id != $sociallink->user_id ){
+          // TODO: Generate more proper response
+          response()->json(['result' => 
+            'You do not have the permission to delete this record.'], 401);
+        }
+        else{
+          $sociallink->delete();
+          response()->json(['result' => 'success'], 200);
+        }
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        // TODO: Generate more proper response
+        response()->json(['result' => 'error'], 500);
+      }
+    }
 }
+

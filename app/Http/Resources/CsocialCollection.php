@@ -2,10 +2,10 @@
 
 namespace App\Http\Resources;
 
-use App\Http\Resources\EmailResource;
+use App\Http\Resources\CsocialResource;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class EmailCollection extends ResourceCollection
+class CsocialCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -16,17 +16,12 @@ class EmailCollection extends ResourceCollection
     public function toArray($request)
     {
         try{
-            return [
-                'emails' => $this->collection,
-                'links' => [
-                    'self' => 'emails',
-                ],
-            ];
+            return $this->collection;
         }
         catch(\Exception $e){
             // TODO: Log Error
             // TODO: Generate more proper response
-            response()->json( [ 'result' => 'error' ], 500 );
+            response()->json( ['result' => 'error'], 500 );
         }
     }
 }

@@ -10,6 +10,10 @@ use App\Sociallink;
 use App\Http\Resources\SociallinkResource;
 use App\Http\Controllers\Api\SociallinkController;
 
+use App\Csocial;
+use App\Http\Resources\CsocialResource;
+use App\Http\Controllers\Api\CsocialController;
+
 use App\Test;
 use App\Http\Resources\TestResource;
 use App\Http\Controllers\Api\TestController;
@@ -59,7 +63,7 @@ Route::middleware('auth:api', 'role:apiadmin')
 
 // browse sociallink
 Route::middleware('auth:api', 'role:apiadmin')
-  ->get($mapi_route.'/sociallinks', 'Api\SociallinkController@index')
+  ->get($mapi_route.'/sociallinks', 'Api\SociallinkController@index_p')
   ->name('sociallinks.index');
 
 // update sociallink

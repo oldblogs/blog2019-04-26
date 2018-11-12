@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 24);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -165,7 +165,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(56)
+var listToStyles = __webpack_require__(57)
 
 /*
 type StyleObject = {
@@ -490,7 +490,7 @@ module.exports = function normalizeComponent (
 
 
 var bind = __webpack_require__(9);
-var isBuffer = __webpack_require__(31);
+var isBuffer = __webpack_require__(32);
 
 /*global toString:true*/
 
@@ -1091,7 +1091,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZapIcon", function() { return ZapIcon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomInIcon", function() { return ZoomInIcon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomOutIcon", function() { return ZoomOutIcon; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_helper_vue_jsx_merge_props__);
 
 
@@ -9670,7 +9670,7 @@ var ZoomOutIcon = {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(3);
-var normalizeHeaderName = __webpack_require__(33);
+var normalizeHeaderName = __webpack_require__(34);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -22882,12 +22882,12 @@ process.umask = function() { return 0; };
 
 
 var utils = __webpack_require__(3);
-var settle = __webpack_require__(34);
-var buildURL = __webpack_require__(36);
-var parseHeaders = __webpack_require__(37);
-var isURLSameOrigin = __webpack_require__(38);
+var settle = __webpack_require__(35);
+var buildURL = __webpack_require__(37);
+var parseHeaders = __webpack_require__(38);
+var isURLSameOrigin = __webpack_require__(39);
 var createError = __webpack_require__(12);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(39);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(40);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -22984,7 +22984,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(40);
+      var cookies = __webpack_require__(41);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -23068,7 +23068,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(35);
+var enhanceError = __webpack_require__(36);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -23131,13 +23131,13 @@ module.exports = Cancel;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(58)
+  __webpack_require__(59)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(60)
+var __vue_script__ = __webpack_require__(61)
 /* template */
-var __vue_template__ = __webpack_require__(61)
+var __vue_template__ = __webpack_require__(62)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23182,13 +23182,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(62)
+  __webpack_require__(63)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(64)
+var __vue_script__ = __webpack_require__(65)
 /* template */
-var __vue_template__ = __webpack_require__(65)
+var __vue_template__ = __webpack_require__(66)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23233,13 +23233,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(66)
+  __webpack_require__(67)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(68)
+var __vue_script__ = __webpack_require__(69)
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(70)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23284,13 +23284,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(75)
+  __webpack_require__(76)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(77)
+var __vue_script__ = __webpack_require__(78)
 /* template */
-var __vue_template__ = __webpack_require__(78)
+var __vue_template__ = __webpack_require__(79)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23335,13 +23335,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(79)
+  __webpack_require__(80)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(81)
+var __vue_script__ = __webpack_require__(82)
 /* template */
-var __vue_template__ = __webpack_require__(82)
+var __vue_template__ = __webpack_require__(83)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23386,13 +23386,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(83)
+  __webpack_require__(84)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(85)
+var __vue_script__ = __webpack_require__(86)
 /* template */
-var __vue_template__ = __webpack_require__(86)
+var __vue_template__ = __webpack_require__(87)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23437,13 +23437,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(92)
+  __webpack_require__(93)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(94)
+var __vue_script__ = __webpack_require__(95)
 /* template */
-var __vue_template__ = __webpack_require__(95)
+var __vue_template__ = __webpack_require__(96)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23488,13 +23488,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(96)
+  __webpack_require__(97)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(98)
+var __vue_script__ = __webpack_require__(99)
 /* template */
-var __vue_template__ = __webpack_require__(99)
+var __vue_template__ = __webpack_require__(100)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -23536,13 +23536,64 @@ module.exports = Component.exports
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(24);
-__webpack_require__(116);
-module.exports = __webpack_require__(117);
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(101)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(103)
+/* template */
+var __vue_template__ = __webpack_require__(104)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/FormSociallinkDelete.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-648c3be6", Component.options)
+  } else {
+    hotAPI.reload("data-v-648c3be6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
 
 
 /***/ }),
 /* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(25);
+__webpack_require__(126);
+module.exports = __webpack_require__(127);
+
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -23552,35 +23603,37 @@ module.exports = __webpack_require__(117);
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(25);
+__webpack_require__(26);
 
-window.Vue = __webpack_require__(48);
+window.Vue = __webpack_require__(49);
 
-window.feather = __webpack_require__(51);
+window.feather = __webpack_require__(52);
 
 window.VueFeatherIcon = __webpack_require__(5);
 
 // Test
-Vue.component('tests', __webpack_require__(53));
+Vue.component('tests', __webpack_require__(54));
 Vue.component('form-test-add', __webpack_require__(15));
 Vue.component('form-test-update', __webpack_require__(16));
 Vue.component('form-test-delete', __webpack_require__(17));
 
 // Contact - Emails
-Vue.component('emails', __webpack_require__(71));
+Vue.component('emails', __webpack_require__(72));
 Vue.component('form-email-add', __webpack_require__(18));
 Vue.component('form-email-update', __webpack_require__(19));
 Vue.component('form-email-delete', __webpack_require__(20));
 
 // Contact - Social Network Links
-Vue.component('sociallinks', __webpack_require__(88));
+Vue.component('sociallinks', __webpack_require__(89));
 Vue.component('form-sociallink-add', __webpack_require__(21));
 Vue.component('form-sociallink-update', __webpack_require__(22));
+Vue.component('form-sociallink-delete', __webpack_require__(23));
+Vue.component('row-sociallink', __webpack_require__(106));
 
 // Laravel Passport
-Vue.component('passport-clients', __webpack_require__(101));
-Vue.component('passport-authorized-clients', __webpack_require__(106));
-Vue.component('passport-personal-access-tokens', __webpack_require__(111));
+Vue.component('passport-clients', __webpack_require__(111));
+Vue.component('passport-authorized-clients', __webpack_require__(116));
+Vue.component('passport-personal-access-tokens', __webpack_require__(121));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -23593,11 +23646,11 @@ var app = new Vue({
 });
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(26);
+window._ = __webpack_require__(27);
 window.Popper = __webpack_require__(7).default;
 
 /**
@@ -23609,7 +23662,7 @@ window.Popper = __webpack_require__(7).default;
 try {
   window.$ = window.jQuery = __webpack_require__(8);
 
-  __webpack_require__(28);
+  __webpack_require__(29);
 } catch (e) {}
 
 /**
@@ -23618,7 +23671,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(29);
+window.axios = __webpack_require__(30);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // window.axios.defaults.baseURL = 'https://example.com/api';
@@ -23657,7 +23710,7 @@ if (token) {
 // });
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -40767,10 +40820,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(27)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(28)(module)))
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -40798,7 +40851,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -44731,13 +44784,13 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(30);
+module.exports = __webpack_require__(31);
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44745,7 +44798,7 @@ module.exports = __webpack_require__(30);
 
 var utils = __webpack_require__(3);
 var bind = __webpack_require__(9);
-var Axios = __webpack_require__(32);
+var Axios = __webpack_require__(33);
 var defaults = __webpack_require__(6);
 
 /**
@@ -44780,14 +44833,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(14);
-axios.CancelToken = __webpack_require__(46);
+axios.CancelToken = __webpack_require__(47);
 axios.isCancel = __webpack_require__(13);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(47);
+axios.spread = __webpack_require__(48);
 
 module.exports = axios;
 
@@ -44796,7 +44849,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 /*!
@@ -44823,7 +44876,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44831,8 +44884,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(6);
 var utils = __webpack_require__(3);
-var InterceptorManager = __webpack_require__(41);
-var dispatchRequest = __webpack_require__(42);
+var InterceptorManager = __webpack_require__(42);
+var dispatchRequest = __webpack_require__(43);
 
 /**
  * Create a new instance of Axios
@@ -44909,7 +44962,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44928,7 +44981,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44961,7 +45014,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44989,7 +45042,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45062,7 +45115,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45122,7 +45175,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45197,7 +45250,7 @@ module.exports = (
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45240,7 +45293,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45300,7 +45353,7 @@ module.exports = (
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45359,18 +45412,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(3);
-var transformData = __webpack_require__(43);
+var transformData = __webpack_require__(44);
 var isCancel = __webpack_require__(13);
 var defaults = __webpack_require__(6);
-var isAbsoluteURL = __webpack_require__(44);
-var combineURLs = __webpack_require__(45);
+var isAbsoluteURL = __webpack_require__(45);
+var combineURLs = __webpack_require__(46);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -45452,7 +45505,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45479,7 +45532,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45500,7 +45553,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45521,7 +45574,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45585,7 +45638,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45619,7 +45672,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56582,10 +56635,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(49).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(50).setImmediate))
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototype.apply;
@@ -56638,7 +56691,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(50);
+__webpack_require__(51);
 // On some exotic environments, it's not clear which object `setimmeidate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -56652,7 +56705,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -56845,7 +56898,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(10)))
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -58590,7 +58643,7 @@ module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather
 //# sourceMappingURL=feather.js.map
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 var nestRE = /^(attrs|props|on|nativeOn|class|style|hook)$/
@@ -58646,19 +58699,19 @@ function mergeFn (a, b) {
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(54)
+  __webpack_require__(55)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(57)
+var __vue_script__ = __webpack_require__(58)
 /* template */
-var __vue_template__ = __webpack_require__(70)
+var __vue_template__ = __webpack_require__(71)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -58697,13 +58750,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(55);
+var content = __webpack_require__(56);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -58723,7 +58776,7 @@ if(false) {
 }
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -58737,7 +58790,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports) {
 
 /**
@@ -58770,7 +58823,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58933,13 +58986,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(59);
+var content = __webpack_require__(60);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -58959,7 +59012,7 @@ if(false) {
 }
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -58973,7 +59026,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59066,7 +59119,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59205,13 +59258,13 @@ if (false) {
 }
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(63);
+var content = __webpack_require__(64);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -59231,7 +59284,7 @@ if(false) {
 }
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -59245,7 +59298,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59352,7 +59405,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59515,13 +59568,13 @@ if (false) {
 }
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(67);
+var content = __webpack_require__(68);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -59541,7 +59594,7 @@ if(false) {
 }
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -59555,7 +59608,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59667,7 +59720,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59808,7 +59861,7 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59974,19 +60027,19 @@ if (false) {
 }
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(72)
+  __webpack_require__(73)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(74)
+var __vue_script__ = __webpack_require__(75)
 /* template */
-var __vue_template__ = __webpack_require__(87)
+var __vue_template__ = __webpack_require__(88)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60025,13 +60078,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(73);
+var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -60051,7 +60104,7 @@ if(false) {
 }
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -60059,13 +60112,13 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60077,6 +60130,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FormEmailDelete_vue__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FormEmailDelete_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__FormEmailDelete_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_feather_icons__ = __webpack_require__(5);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -60172,7 +60233,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         default: function _default() {
           return {
             id: 0,
-            user_id: 0,
             title: "",
             email: ""
           };
@@ -60195,17 +60255,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this.addformenabled = false;
         _this.updateformenabled = false;
         _this.deleteformenabled = false;
-        console.log("emails fetched");
-      });
-    },
-    deletemail: function deletemail(email) {
-      console.log(email);
-      axios.delete('http://blog.com/api/manage/emails/' + email.id).then(function (response) {
-        console.log(email.email + " deleted");
-        console.log(self.items);
-        // self.contact_emails.splice( self.contact_emails.findIndex(mailx => mailx.id === email.id) , 1)
-      }).catch(function (error) {
-        console.log(error);
       });
     },
     showAddForm: function showAddForm() {
@@ -60241,13 +60290,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(76);
+var content = __webpack_require__(77);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -60267,7 +60316,7 @@ if(false) {
 }
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -60275,17 +60324,18 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -60385,7 +60435,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60466,7 +60516,7 @@ var render = function() {
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
@@ -60573,13 +60623,13 @@ if (false) {
 }
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(80);
+var content = __webpack_require__(81);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -60599,7 +60649,7 @@ if(false) {
 }
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -60613,7 +60663,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60733,7 +60783,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60945,13 +60995,13 @@ if (false) {
 }
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(84);
+var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -60971,7 +61021,7 @@ if(false) {
 }
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -60985,7 +61035,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61100,7 +61150,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -61245,7 +61295,7 @@ if (false) {
 }
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -61417,19 +61467,19 @@ if (false) {
 }
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(89)
+  __webpack_require__(90)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(91)
+var __vue_script__ = __webpack_require__(92)
 /* template */
-var __vue_template__ = __webpack_require__(100)
+var __vue_template__ = __webpack_require__(105)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -61468,13 +61518,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(90);
+var content = __webpack_require__(91);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -61494,7 +61544,7 @@ if(false) {
 }
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -61502,13 +61552,13 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61517,7 +61567,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FormSociallinkAdd_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FormSociallinkAdd_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormSociallinkUpdate_vue__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormSociallinkUpdate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FormSociallinkUpdate_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_feather_icons__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FormSociallinkDelete_vue__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FormSociallinkDelete_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__FormSociallinkDelete_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_feather_icons__ = __webpack_require__(5);
 //
 //
 //
@@ -61573,6 +61625,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -61584,22 +61648,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "Sociallinks",
 
   mounted: function mounted() {
-    self = this;
     this.fetch();
     feather.replace();
   },
-
-
-  props: {
-    anObject: Object
-  },
-
   data: function data() {
     return {
-      self: {},
       contact_sociallinks: [],
+      socialnetworks: [],
       addformenabled: false,
       updateformenabled: false,
+      deleteformenabled: false,
 
       selected: {
         type: Object,
@@ -61607,9 +61665,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         default: function _default() {
           return {
             id: 0,
-            csocial_id: 0,
             title: "",
-            link: ""
+            csocial_id: 0,
+            link: "",
+            created_at: "00:00",
+            updated_at: "00:00",
+            index: -1
           };
         }
       }
@@ -61626,50 +61687,69 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       axios.get('http://blog.com/api/manage/sociallinks').then(function (_ref) {
         var data = _ref.data;
 
-        _this.contact_sociallinks = JSON.parse(JSON.stringify(data.data.sociallinks));
+        _this.contact_sociallinks = JSON.parse(JSON.stringify(data.sociallinks));
+        _this.socialnetworks = JSON.parse(JSON.stringify(data.socialnetworks));
         _this.addformenabled = false;
         _this.updateformenabled = false;
-      });
-    },
-    deletesociallink: function deletesociallink(sociallink) {
-
-      axios.delete('http://blog.com/api/manage/sociallinks/' + sociallink.id).then(function (response) {
-        console.log('record deleted');
-      }).catch(function (error) {
-        console.log('error');
-      }).then(function (response) {
-        self.fetch();
+        _this.deleteformenabled = false;
       });
     },
     showAddForm: function showAddForm() {
       this.addformenabled = true;
       this.updateformenabled = false;
+      this.deleteformenabled = false;
     },
     hideAddForm: function hideAddForm() {
       this.addformenabled = false;
     },
-    showUpdateForm: function showUpdateForm(sociallink) {
+    showUpdateForm: function showUpdateForm(sociallink, index) {
       this.selected = JSON.parse(JSON.stringify(sociallink));
-      this.updateformenabled = true;
+      this.selected.index = index;
       this.addformenabled = false;
+      this.updateformenabled = true;
+      this.deleteformenabled = false;
     },
     hideUpdateForm: function hideUpdateForm() {
       this.updateformenabled = false;
+    },
+    showDeleteForm: function showDeleteForm(sociallink, index) {
+      this.selected = JSON.parse(JSON.stringify(sociallink));
+      this.selected.index = index;
+      this.addformenabled = false;
+      this.updateformenabled = false;
+      this.deleteformenabled = true;
+    },
+    hideDeleteForm: function hideDeleteForm() {
+      this.deleteformenabled = false;
+    },
+    addRow: function addRow(sociallink) {
+      this.contact_sociallinks.push(JSON.parse(JSON.stringify(sociallink)));
+      this.addformenabled = false;
+    },
+    updateRow: function updateRow(sociallink) {
+      this.contact_sociallinks[this.selected.index] = JSON.parse(JSON.stringify(sociallink));
+
+      this.updateformenabled = false;
+    },
+    removeRow: function removeRow() {
+      this.deleteformenabled = false;
+      this.contact_sociallinks.splice(this.selected.index, 1);
     }
   },
+
   components: {
-    FormSociallinkAdd: __WEBPACK_IMPORTED_MODULE_0__FormSociallinkAdd_vue___default.a, FormSociallinkUpdate: __WEBPACK_IMPORTED_MODULE_1__FormSociallinkUpdate_vue___default.a, PlusIcon: __WEBPACK_IMPORTED_MODULE_2_vue_feather_icons__["PlusIcon"], BookOpenIcon: __WEBPACK_IMPORTED_MODULE_2_vue_feather_icons__["BookOpenIcon"], Edit3Icon: __WEBPACK_IMPORTED_MODULE_2_vue_feather_icons__["Edit3Icon"], Trash2Icon: __WEBPACK_IMPORTED_MODULE_2_vue_feather_icons__["Trash2Icon"]
+    FormSociallinkAdd: __WEBPACK_IMPORTED_MODULE_0__FormSociallinkAdd_vue___default.a, FormSociallinkUpdate: __WEBPACK_IMPORTED_MODULE_1__FormSociallinkUpdate_vue___default.a, FormSociallinkDelete: __WEBPACK_IMPORTED_MODULE_2__FormSociallinkDelete_vue___default.a, PlusIcon: __WEBPACK_IMPORTED_MODULE_3_vue_feather_icons__["PlusIcon"]
   }
 });
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(93);
+var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -61689,7 +61769,7 @@ if(false) {
 }
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -61697,17 +61777,25 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -61775,19 +61863,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "FormSociallinkAdd",
 
-  mounted: function mounted() {
-    self = this;
-    this.formenabled = false;
+  mounted: function mounted() {},
+
+
+  props: {
+    sociallink: {
+      type: Object,
+      required: false,
+
+      default: function _default() {
+        return {
+          id: 0,
+          title: "",
+          csocial_id: 0,
+          link: "",
+          index: -1
+        };
+      }
+    },
+
+    socialnetworks: {
+      type: Array,
+      required: false,
+
+      default: []
+    }
   },
+
   data: function data() {
     return {
-      self: {},
-      title: "",
-      csocial_id: 0,
-      link: "",
       message: "",
       errors: ""
-
     };
   },
 
@@ -61795,20 +61901,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   computed: {},
 
   methods: {
-    create_sociallink: function create_sociallink() {
+    additem: function additem() {
       var _this = this;
 
       axios.post('http://blog.com/api/manage/sociallinks', {
-        title: this.title,
-        csocial_id: this.csocial_id,
-        link: this.link
+        title: this.sociallink.title,
+        csocial_id: this.sociallink.csocial_id,
+        link: this.sociallink.link
       }).then(function (response) {
-        _this.$emit('create:sociallink', _this.sociallink.id);
+        _this.$emit('create:sociallink', JSON.parse(JSON.stringify(response.data)));
         _this.errors = "";
         _this.message = "";
-        _this.title = "";
-        _this.csocial_id = 0;
-        _this.link = "";
       }).catch(function (error) {
         _this.message = error.response.data.message;
         _this.errors = JSON.parse(JSON.stringify(error.response.data.errors));
@@ -61821,7 +61924,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -61835,7 +61938,7 @@ var render = function() {
         on: {
           submit: function($event) {
             $event.preventDefault()
-            return _vm.create_sociallink($event)
+            _vm.additem()
           }
         }
       },
@@ -61854,31 +61957,53 @@ var render = function() {
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.sociallink.id,
+              expression: "sociallink.id"
+            }
+          ],
+          staticClass: "form-control",
+          staticStyle: { display: "none" },
+          attrs: { type: "text" },
+          domProps: { value: _vm.sociallink.id },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.sociallink, "id", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "title" } }, [_vm._v("Title")]),
+          _c("label", [_vm._v("Title")]),
           _vm._v(" "),
           _c("input", {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.title,
-                expression: "title"
+                value: _vm.sociallink.title,
+                expression: "sociallink.title"
               }
             ],
             staticClass: "form-control",
             attrs: {
               type: "text",
-              id: "title",
               "aria-describedby": "enter title for social network link"
             },
-            domProps: { value: _vm.title },
+            domProps: { value: _vm.sociallink.title },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.title = $event.target.value
+                _vm.$set(_vm.sociallink, "title", $event.target.value)
               }
             }
           })
@@ -61902,40 +62027,56 @@ var render = function() {
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "csocial_id" } }, [
-            _vm._v("Social network")
-          ]),
+          _c("label", [_vm._v("Social network")]),
           _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.csocial_id,
-                expression: "csocial_id"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "csocial_id",
-              "aria-describedby": "choose your social network"
-            },
-            domProps: { value: _vm.csocial_id },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.sociallink.csocial_id,
+                  expression: "sociallink.csocial_id"
                 }
-                _vm.csocial_id = $event.target.value
+              ],
+              staticClass: "form-control",
+              attrs: { "aria-describedby": "choose your social network" },
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.sociallink,
+                    "csocial_id",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
               }
-            }
-          })
+            },
+            _vm._l(_vm.socialnetworks, function(socialnetwork) {
+              return _c(
+                "option",
+                {
+                  key: socialnetwork.id,
+                  domProps: { value: socialnetwork.id }
+                },
+                [_vm._v(_vm._s(socialnetwork.title))]
+              )
+            })
+          )
         ]),
         _vm._v(" "),
         _c(
@@ -61956,37 +62097,32 @@ var render = function() {
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "link" } }, [
-            _vm._v("Social network link")
-          ]),
+          _c("label", [_vm._v("Social network link")]),
           _vm._v(" "),
           _c("input", {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.link,
-                expression: "link"
+                value: _vm.sociallink.link,
+                expression: "sociallink.link"
               }
             ],
             staticClass: "form-control",
-            attrs: {
-              id: "link",
-              "aria-describedby": "enter your social network link"
-            },
-            domProps: { value: _vm.link },
+            attrs: { "aria-describedby": "enter your social network link" },
+            domProps: { value: _vm.sociallink.link },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.link = $event.target.value
+                _vm.$set(_vm.sociallink, "link", $event.target.value)
               }
             }
           })
@@ -62010,7 +62146,7 @@ var render = function() {
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
@@ -62068,13 +62204,13 @@ if (false) {
 }
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(97);
+var content = __webpack_require__(98);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -62094,7 +62230,7 @@ if(false) {
 }
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -62102,17 +62238,23 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -62183,34 +62325,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "FormSociallinkUpdate",
 
-  mounted: function mounted() {
-    self = this;
-  },
+  mounted: function mounted() {},
 
 
   props: {
-    // type, required and default are optional, you can reduce it to 'options: Object'
-    ssociallink: {
+    sociallink: {
       type: Object,
       required: false,
 
       default: function _default() {
         return {
           id: 0,
-          csocial_id: 0,
           title: "",
-          link: ""
+          csocial_id: 0,
+          link: "",
+          index: -1
         };
       }
+    },
+
+    socialnetworks: {
+      type: Array,
+      required: false,
+
+      default: []
     }
   },
 
   data: function data() {
     return {
-      self: {},
       message: "",
       errors: ""
-
     };
   },
 
@@ -62218,15 +62363,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   computed: {},
 
   methods: {
-    updatesociallink: function updatesociallink(sociallink) {
+    updateitem: function updateitem() {
       var _this = this;
 
-      axios.patch('http://blog.com/api/manage/sociallinks/' + sociallink.id, {
-        csocial_id: sociallink.csocial_id,
-        title: sociallink.title,
-        link: sociallink.link
+      axios.patch('http://blog.com/api/manage/sociallinks/' + this.sociallink.id, {
+        title: this.sociallink.title,
+        csocial_id: this.sociallink.csocial_id,
+        link: this.sociallink.link
       }).then(function (response) {
-        _this.$emit('update:sociallink', sociallink.id);
+        _this.$emit('update:sociallink', JSON.parse(JSON.stringify(response.data)));
         _this.errors = "";
         _this.message = "";
       }).catch(function (error) {
@@ -62241,7 +62386,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -62255,7 +62400,7 @@ var render = function() {
         on: {
           submit: function($event) {
             $event.preventDefault()
-            _vm.updatesociallink(_vm.ssociallink)
+            _vm.updateitem()
           }
         }
       },
@@ -62279,75 +62424,23 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.ssociallink.id,
-              expression: "ssociallink.id"
+              value: _vm.sociallink.id,
+              expression: "sociallink.id"
             }
           ],
           staticClass: "form-control",
           staticStyle: { display: "none" },
           attrs: { type: "text" },
-          domProps: { value: _vm.ssociallink.id },
+          domProps: { value: _vm.sociallink.id },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.ssociallink, "id", $event.target.value)
+              _vm.$set(_vm.sociallink, "id", $event.target.value)
             }
           }
         }),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", [_vm._v("Social Network")]),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.ssociallink.csocial_id,
-                expression: "ssociallink.csocial_id"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              type: "text",
-              "aria-describedby": "choose social network"
-            },
-            domProps: { value: _vm.ssociallink.csocial_id },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.ssociallink, "csocial_id", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "form-group" },
-          _vm._l(_vm.errors.csocial_id, function(item) {
-            return _c(
-              "div",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.csocial_id,
-                    expression: "errors.csocial_id"
-                  }
-                ],
-                key: item,
-                staticClass: "alert alert-danger"
-              },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
-            )
-          })
-        ),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
           _c("label", [_vm._v("Title")]),
@@ -62357,8 +62450,8 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.ssociallink.title,
-                expression: "ssociallink.title"
+                value: _vm.sociallink.title,
+                expression: "sociallink.title"
               }
             ],
             staticClass: "form-control",
@@ -62366,13 +62459,13 @@ var render = function() {
               type: "text",
               "aria-describedby": "enter title for social link"
             },
-            domProps: { value: _vm.ssociallink.title },
+            domProps: { value: _vm.sociallink.title },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.ssociallink, "title", $event.target.value)
+                _vm.$set(_vm.sociallink, "title", $event.target.value)
               }
             }
           })
@@ -62396,7 +62489,82 @@ var render = function() {
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
+            )
+          })
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { attrs: { for: "csocial_id" } }, [
+            _vm._v("Social network")
+          ]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.sociallink.csocial_id,
+                  expression: "sociallink.csocial_id"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                id: "csocial_id",
+                "aria-describedby": "choose your social network"
+              },
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.sociallink,
+                    "csocial_id",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
+              }
+            },
+            _vm._l(_vm.socialnetworks, function(socialnetwork) {
+              return _c(
+                "option",
+                {
+                  key: socialnetwork.id,
+                  domProps: { value: socialnetwork.id }
+                },
+                [_vm._v(_vm._s(socialnetwork.title))]
+              )
+            })
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "form-group" },
+          _vm._l(_vm.errors.csocial_id, function(item) {
+            return _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.errors.csocial_id,
+                    expression: "errors.csocial_id"
+                  }
+                ],
+                key: item,
+                staticClass: "alert alert-danger"
+              },
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
@@ -62409,19 +62577,19 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.ssociallink.link,
-                expression: "ssociallink.link"
+                value: _vm.sociallink.link,
+                expression: "sociallink.link"
               }
             ],
             staticClass: "form-control",
             attrs: { "aria-describedby": "enter a social network link" },
-            domProps: { value: _vm.ssociallink.link },
+            domProps: { value: _vm.sociallink.link },
             on: {
               input: function($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.ssociallink, "link", $event.target.value)
+                _vm.$set(_vm.sociallink, "link", $event.target.value)
               }
             }
           })
@@ -62430,7 +62598,7 @@ var render = function() {
         _c(
           "div",
           { staticClass: "form-group" },
-          _vm._l(_vm.errors.sociallink, function(item) {
+          _vm._l(_vm.errors.link, function(item) {
             return _c(
               "div",
               {
@@ -62438,14 +62606,14 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.errors.sociallink,
-                    expression: "errors.sociallink"
+                    value: _vm.errors.link,
+                    expression: "errors.link"
                   }
                 ],
                 key: item,
                 staticClass: "alert alert-danger"
               },
-              [_vm._v("\n        " + _vm._s(item) + "\n      ")]
+              [_vm._v(_vm._s(item) + "\n      ")]
             )
           })
         ),
@@ -62472,7 +62640,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(_vm.ssociallink.id))])
+        _c("p", [_vm._v(_vm._s(_vm.sociallink.id))])
       ]
     )
   ])
@@ -62505,7 +62673,304 @@ if (false) {
 }
 
 /***/ }),
-/* 100 */
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(102);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("d102383c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-648c3be6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormSociallinkDelete.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-648c3be6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormSociallinkDelete.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 103 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "FormSociallinkDelete",
+
+  mounted: function mounted() {},
+
+
+  props: {
+    sociallink: {
+      type: Object,
+      required: false,
+
+      default: function _default() {
+        return {
+          id: 0,
+          title: "",
+          csocial_id: 0,
+          email: "",
+          index: -1
+        };
+      }
+    }
+  },
+
+  data: function data() {
+    return {
+      message: "",
+      errors: ""
+    };
+  },
+
+
+  computed: {},
+
+  methods: {
+    deleteitem: function deleteitem() {
+      var _this = this;
+
+      axios.delete('http://blog.com/api/manage/sociallinks/' + this.sociallink.id).then(function (response) {
+        _this.$emit('delete:sociallink');
+        _this.errors = "";
+        _this.message = "";
+      }).catch(function (error) {
+        _this.message = error.response.data.message;
+        _this.errors = JSON.parse(JSON.stringify(error.response.data.errors));
+      });
+    },
+    hideform: function hideform() {
+      this.$emit('hide:delete:sociallink');
+    }
+  }
+});
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "form",
+      {
+        on: {
+          submit: function($event) {
+            $event.preventDefault()
+            _vm.deleteitem()
+          }
+        }
+      },
+      [
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "button",
+            {
+              staticClass: "close",
+              attrs: { type: "button", "aria-label": "Close" },
+              on: { click: _vm.hideform }
+            },
+            [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.sociallink.id,
+              expression: "sociallink.id"
+            }
+          ],
+          staticClass: "form-control",
+          staticStyle: { display: "none" },
+          attrs: { type: "text" },
+          domProps: { value: _vm.sociallink.id },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.sociallink, "id", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("div", { staticClass: "table-responsive" }, [
+            _c("table", { staticClass: "table table-striped table-sm" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.sociallink.title))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.sociallink.csocial_id))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.sociallink.link))])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.message,
+                expression: "message"
+              }
+            ],
+            staticClass: "form-group"
+          },
+          [
+            _c("div", { staticClass: "alert alert-danger" }, [
+              _vm._v("\n        " + _vm._s(_vm.message) + "\n      ")
+            ])
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("h4", [
+        _vm._v("The following record will be deleted ! Are you sure ? ")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Title")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("SocialN")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Link")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("button", { staticClass: "btn btn-danger" }, [
+        _vm._v("Yes , Delete !")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-648c3be6", module.exports)
+  }
+}
+
+/***/ }),
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -62529,7 +62994,8 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-sm btn-outline-secondary",
+                  staticClass:
+                    "btn btn-sm btn-outline-secondary sociallink-add",
                   on: { click: _vm.showAddForm }
                 },
                 [
@@ -62552,8 +63018,9 @@ var render = function() {
             expression: "addformenabled"
           }
         ],
+        attrs: { sociallink: _vm.selected, socialnetworks: _vm.socialnetworks },
         on: {
-          "create:sociallink": _vm.fetch,
+          "create:sociallink": _vm.addRow,
           "hide:add:sociallink": _vm.hideAddForm
         }
       }),
@@ -62567,10 +63034,26 @@ var render = function() {
             expression: "updateformenabled"
           }
         ],
+        attrs: { sociallink: _vm.selected, socialnetworks: _vm.socialnetworks },
+        on: {
+          "hide:update:sociallink": _vm.hideUpdateForm,
+          "update:sociallink": _vm.updateRow
+        }
+      }),
+      _vm._v(" "),
+      _c("form-sociallink-delete", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.deleteformenabled,
+            expression: "deleteformenabled"
+          }
+        ],
         attrs: { sociallink: _vm.selected },
         on: {
-          "update:sociallink": _vm.fetch,
-          "hide:update:sociallink": _vm.hideUpdateForm
+          "hide:delete:sociallink": _vm.hideDeleteForm,
+          "delete:sociallink": _vm.removeRow
         }
       }),
       _vm._v(" "),
@@ -62580,54 +63063,20 @@ var render = function() {
           _vm._v(" "),
           _c(
             "tbody",
-            _vm._l(_vm.contact_sociallinks, function(sociallink) {
-              return _c("tr", { key: sociallink.id }, [
-                _c("td", [_vm._v(_vm._s(sociallink.id))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(sociallink.csocial_id))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(sociallink.title))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(sociallink.link))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(sociallink.created_at))]),
-                _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(sociallink.updated_at))]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "btn btn-sm btn-outline-secondary email-update",
-                      on: {
-                        click: function($event) {
-                          _vm.showUpdateForm(sociallink)
-                        }
-                      }
-                    },
-                    [_c("edit-3-icon", { staticClass: "custom-class" })],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "btn btn-sm btn-outline-secondary email-delete",
-                      on: {
-                        click: function($event) {
-                          _vm.deletesociallink(sociallink)
-                        }
-                      }
-                    },
-                    [_c("trash-2-icon", { staticClass: "custom-class" })],
-                    1
-                  )
-                ])
-              ])
+            _vm._l(_vm.contact_sociallinks, function(sociallink, index) {
+              return _c("row-sociallink", {
+                key: sociallink.id,
+                tag: "row-sociallink",
+                attrs: { sociallink: sociallink, index: index },
+                on: {
+                  "show-update-form": function($event) {
+                    _vm.showUpdateForm(sociallink, index)
+                  },
+                  "show-delete-form": function($event) {
+                    _vm.showDeleteForm(sociallink, index)
+                  }
+                }
+              })
             })
           )
         ])
@@ -62643,11 +63092,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", [_vm._v("#ID")]),
+        _c("th", [_vm._v("Title")]),
         _vm._v(" "),
         _c("th", [_vm._v("SocialN")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Title")]),
         _vm._v(" "),
         _c("th", [_vm._v("Link")]),
         _vm._v(" "),
@@ -62672,19 +63119,238 @@ if (false) {
 }
 
 /***/ }),
-/* 101 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(102)
+  __webpack_require__(107)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(104)
+var __vue_script__ = __webpack_require__(109)
 /* template */
-var __vue_template__ = __webpack_require__(105)
+var __vue_template__ = __webpack_require__(110)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/RowSociallink.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4e52f53a", Component.options)
+  } else {
+    hotAPI.reload("data-v-4e52f53a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(108);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("2e7b64a2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4e52f53a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./RowSociallink.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4e52f53a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./RowSociallink.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 109 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__ = __webpack_require__(5);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "RowSociallink",
+
+  mounted: function mounted() {
+    feather.replace();
+  },
+
+
+  props: {
+    sociallink: {
+      type: Object,
+      required: true,
+
+      default: function _default() {
+        return {
+          id: 0,
+          title: "",
+          csocial_id: 0,
+          link: ""
+        };
+      }
+    },
+
+    index: {
+      type: Number,
+      required: true,
+      default: -1
+    }
+  },
+
+  computed: {},
+
+  methods: {},
+
+  components: {
+    BookOpenIcon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["BookOpenIcon"], Edit3Icon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["Edit3Icon"], Trash2Icon: __WEBPACK_IMPORTED_MODULE_0_vue_feather_icons__["Trash2Icon"]
+  }
+
+});
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("tr", [
+    _c("td", [_vm._v(_vm._s(_vm.sociallink.title))]),
+    _vm._v(" "),
+    _c("td", [_vm._v(_vm._s(_vm.sociallink.csocial_id))]),
+    _vm._v(" "),
+    _c("td", [_vm._v(_vm._s(_vm.sociallink.link) + " ")]),
+    _vm._v(" "),
+    _c("td", [_vm._v(_vm._s(_vm.sociallink.created_at))]),
+    _vm._v(" "),
+    _c("td", [_vm._v(_vm._s(_vm.sociallink.updated_at))]),
+    _vm._v(" "),
+    _c("td", [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-sm btn-outline-secondary sociallink-update",
+          on: {
+            click: function($event) {
+              _vm.$emit("show-update-form", _vm.sociallink, _vm.index)
+            }
+          }
+        },
+        [_c("edit-3-icon", { staticClass: "custom-class" })],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("td", [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-sm btn-outline-secondary sociallink-delete",
+          on: {
+            click: function($event) {
+              _vm.$emit("show-delete-form", _vm.sociallink, _vm.index)
+            }
+          }
+        },
+        [_c("trash-2-icon")],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4e52f53a", module.exports)
+  }
+}
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(112)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(114)
+/* template */
+var __vue_template__ = __webpack_require__(115)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -62723,13 +63389,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 102 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(103);
+var content = __webpack_require__(113);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -62749,7 +63415,7 @@ if(false) {
 }
 
 /***/ }),
-/* 103 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -62763,7 +63429,7 @@ exports.push([module.i, "\n.action-link[data-v-5d1d7d82] {\n    cursor: pointer;
 
 
 /***/ }),
-/* 104 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63127,7 +63793,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 105 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -63688,19 +64354,19 @@ if (false) {
 }
 
 /***/ }),
-/* 106 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(107)
+  __webpack_require__(117)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(109)
+var __vue_script__ = __webpack_require__(119)
 /* template */
-var __vue_template__ = __webpack_require__(110)
+var __vue_template__ = __webpack_require__(120)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -63739,13 +64405,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 107 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(108);
+var content = __webpack_require__(118);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -63765,7 +64431,7 @@ if(false) {
 }
 
 /***/ }),
-/* 108 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -63779,7 +64445,7 @@ exports.push([module.i, "\n.action-link[data-v-2ee9fe67] {\n    cursor: pointer;
 
 
 /***/ }),
-/* 109 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63899,7 +64565,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 110 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -64008,19 +64674,19 @@ if (false) {
 }
 
 /***/ }),
-/* 111 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(112)
+  __webpack_require__(122)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
-var __vue_script__ = __webpack_require__(114)
+var __vue_script__ = __webpack_require__(124)
 /* template */
-var __vue_template__ = __webpack_require__(115)
+var __vue_template__ = __webpack_require__(125)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -64059,13 +64725,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 112 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(113);
+var content = __webpack_require__(123);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -64085,7 +64751,7 @@ if(false) {
 }
 
 /***/ }),
-/* 113 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -64099,7 +64765,7 @@ exports.push([module.i, "\n.action-link[data-v-89c53f18] {\n    cursor: pointer;
 
 
 /***/ }),
-/* 114 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64421,7 +65087,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 115 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -64799,13 +65465,13 @@ if (false) {
 }
 
 /***/ }),
-/* 116 */
+/* 126 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 117 */
+/* 127 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

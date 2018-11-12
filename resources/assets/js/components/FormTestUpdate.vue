@@ -83,7 +83,7 @@
         axios.patch('http://blog.com/api/manage/tests/' + test.id, {
             title: test.title,
           })
-          .then( (response) => {
+          .then( response => {
             this.$emit('update:test', test.id)
             this.errors = ""
             this.message = ""

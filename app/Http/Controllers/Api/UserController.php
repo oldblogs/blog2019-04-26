@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function index(){
+        // TODO: Check security , does return values leak info 
         return response()->json( Auth::user() );
     }
 }

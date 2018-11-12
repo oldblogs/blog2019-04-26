@@ -134,6 +134,7 @@ Route::middleware('auth:web', 'role:admin')
   ->delete($manage_route.'/posts/{post}', 'PostController@delete')
   ->name('delete_post');
 
+  
 // ------------------------------------------------------------
 // Abouts
 // ------------------------------------------------------------
@@ -172,6 +173,7 @@ Route::middleware('auth:web', 'role:admin')
 Route::middleware('auth:web', 'role:admin')
   ->delete($manage_route.'/abouts/{about}', 'AboutController@delete')
   ->name('abouts.delete');
+
 
 // ------------------------------------------------------------
 // Csocials

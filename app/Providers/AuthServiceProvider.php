@@ -10,8 +10,8 @@ use App\Policies\DashboardPolicy;
 use App\About;
 use App\Policies\AboutPolicy;
 
-use App\Contact;
-use App\Policies\ContactPolicy;
+use App\Sociallink;
+use App\Policies\SociallinkPolicy;
 
 use App\Csocial;
 use App\Policies\CsocialPolicy;
@@ -39,6 +39,7 @@ class AuthServiceProvider extends ServiceProvider
         Post::class => PostPolicy::class,
         Dashboard::class => DashboardPolicy::class,
         About::class => AboutPolicy::class,
+        Sociallink::class => SociallinkPolicy::class,
         Csocial::class => CsocialPolicy::class,
         Email::class => EmailPolicy::class,
         Test::class => TestPolicy::class,

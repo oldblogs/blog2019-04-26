@@ -62,7 +62,6 @@ class User extends Authenticatable
         $token->delete();
     }
 
-
     public function emails(){
         return $this->hasMany(Email::class);
     }
