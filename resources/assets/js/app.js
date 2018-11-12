@@ -29,6 +29,8 @@ Vue.component( 'form-email-delete'              , require('./components/FormEmai
 Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue') );
 Vue.component( 'form-sociallink-add'            , require('./components/FormSociallinkAdd.vue') );
 Vue.component( 'form-sociallink-update'         , require('./components/FormSociallinkUpdate.vue') );
+Vue.component( 'form-sociallink-delete'         , require('./components/FormSociallinkDelete.vue') );
+Vue.component( 'row-sociallink'                 , require('./components/RowSociallink.vue') );
 
 // Laravel Passport
 Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue') );

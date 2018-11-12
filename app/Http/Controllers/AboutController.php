@@ -14,12 +14,12 @@ class AboutController extends Controller
 {
     
     public function index(){
-        $abouts = About::with('user')->get();
+        $abouts = About::all();
         return view('frontview.page.about', compact('abouts') );
     }
 
     public function index_m(){
-        $abouts = About::all();
+        $abouts = About::with('user')->get();
         return view('manage.page.abouts.indexm', compact('abouts') );
     }
     

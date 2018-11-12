@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Resources\SociallinkResource;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class SociallinkCollection extends ResourceCollection
@@ -14,11 +15,13 @@ class SociallinkCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return [
-            'sociallinks' => $this->collection,
-            'links' => [
-                'self' => 'sociallinks',
-            ],
-        ];
+        try{
+            return parent::toArray($request);
+        }
+        catch(\Exception $e){
+            // TODO: Log Error
+            // TODO: Generate more proper response
+            response()->json( ['result' => 'error'], 500 );
+        }
     }
 }

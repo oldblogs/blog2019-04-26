@@ -11,11 +11,6 @@
       @csrf
 
       <div class="form-group">
-        <label for="order">Order</label>
-        <input type="number" class="form-control" id="order" name="order" aria-describedby="Prority of the social network" value=1>
-      </div>
-
-      <div class="form-group">
         <label for="title">Title</label>
         <input type="text" class="form-control" id="title" name="title" aria-describedby="Title of the social network">
       </div>

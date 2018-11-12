@@ -60,7 +60,7 @@ class PasswordResetbyConsole extends Notification
     public function toArray($notifiable)
     {
         return [
-            //
+            // TODO: Check usage, implement if necassary
         ];
     }
 }

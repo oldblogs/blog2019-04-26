@@ -14,12 +14,13 @@
 
       <div class="form-group">
         <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for email">
+        <input v-model="title" type="text" class="form-control" id="title" 
+          aria-describedby="enter title for email">
       </div>
 
       <div class="form-group">
-        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
 
@@ -77,7 +78,7 @@
     methods: {
       create_email(){
         axios.post('http://blog.com/api/manage/emails', {
-             title: this.title,
+            title: this.title,
             email: this.email,
           })
           .then(response => {

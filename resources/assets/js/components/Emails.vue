@@ -4,11 +4,16 @@
       <h4 class="h4">Emails</h4>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-            <button class="btn btn-sm btn-outline-secondary" v-on:click="showAddForm"><plus-icon class="custom-class"></plus-icon>Add</button>
+          <button class="btn btn-sm btn-outline-secondary" 
+            v-on:click="showAddForm"><plus-icon class="custom-class"></plus-icon>Add</button>
         </div>
       </div>
     </div>
-      <form-email-add v-show="addformenabled" v-on:create:email="fetch" v-on:hide:add:email="hideAddForm" ></form-email-add>
+      <form-email-add 
+        v-show="addformenabled" 
+        v-on:create:email="fetch" 
+        v-on:hide:add:email="hideAddForm" 
+        ></form-email-add>
 
       <form-email-update
         v-show="updateformenabled"
@@ -43,12 +48,15 @@
               <td>{{ email.email }}</td>
               <td>{{ email.created_at }}</td>
               <td>{{ email.updated_at }}</td>
-
               <td>
-                <button class="btn btn-sm btn-outline-secondary email-update" v-on:click="showUpdateForm(email)" ><edit-3-icon class="custom-class"></edit-3-icon></button>
+                <button class="btn btn-sm btn-outline-secondary email-update" 
+                  v-on:click="showUpdateForm(email)" ><edit-3-icon class="custom-class"></edit-3-icon>
+                </button>
               </td>
               <td>
-                <button class="btn btn-sm btn-outline-secondary email-delete" v-on:click="showDeleteForm(email)" ><trash-2-icon class="custom-class"></trash-2-icon></button>
+                <button class="btn btn-sm btn-outline-secondary email-delete" 
+                  v-on:click="showDeleteForm(email)" ><trash-2-icon class="custom-class"></trash-2-icon>
+                </button>
               </td>
             </tr>
           </tbody>
@@ -92,7 +100,6 @@
           default: () => {
             return {
               id: 0,
-              user_id: 0,
               title: "",
               email: "",
             }
@@ -113,23 +120,9 @@
             this.addformenabled = false
             this.updateformenabled = false
             this.deleteformenabled = false
-            console.log("emails fetched")
           })
       },
       
-      deletemail(email){
-        console.log(email)
-        axios.delete('http://blog.com/api/manage/emails/'+email.id)
-          .then(function(response){
-            console.log(email.email + " deleted")
-            console.log(self.items)
-            // self.contact_emails.splice( self.contact_emails.findIndex(mailx => mailx.id === email.id) , 1)
-          })
-          .catch(function(error){
-            console.log(error)
-          })
-      },
-
       showAddForm(){
         this.addformenabled = true
         this.updateformenabled = false

@@ -96,7 +96,7 @@
             title: email.title,
             email: email.email,
           })
-          .then( (response) => {
+          .then( response => {
             this.$emit('update:email', email.id)
             this.errors = ""
             this.message = ""

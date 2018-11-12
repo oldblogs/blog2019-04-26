@@ -16,7 +16,6 @@ class CreateSociallinksTable extends Migration
         Schema::create('sociallinks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->integer('order');
             $table->string('title');
             $table->integer('csocial_id');
             $table->string('link');

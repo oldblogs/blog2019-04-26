@@ -15,8 +15,7 @@ class CreateCsocialsTable extends Migration
     {
         Schema::create('csocials', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('order');
-            $table->string('title');
+            $table->string('title')->unique();
             $table->string('css_class');
             $table->string('homepage');
             $table->timestamps();

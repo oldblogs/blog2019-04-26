@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="deleteitem(smail)">
+    <form v-on:submit.prevent="deleteitem()">
 
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -12,24 +12,24 @@
         <h4>The following record will be deleted ! Are you sure ? </h4>
       </div>
 
-      <input v-model="smail.id" type="text" class="form-control" style="display: none" >
+      <input v-model="sociallink.id" type="text" class="form-control" style="display: none" >
 
       <div class="form-group">
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
               <tr>
-                <th>#ID</th>
                 <th>Title</th>
-                <th>Email</th>
+                <th>SocialN</th>
+                <th>Link</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td>{{ smail.id }}</td>
-                <td>{{ smail.title }}</td>
-                <td>{{ smail.email }}</td>
+                <td>{{ sociallink.title }}</td>
+                <td>{{ sociallink.csocial_id }}</td>
+                <td>{{ sociallink.link }}</td>
               </tr>
             </tbody>
           </table>
@@ -53,15 +53,14 @@
 
 <script>
   export default {
-    name: "FormEmailDelete",
+    name: "FormSociallinkDelete",
 
     mounted() {
-      self = this
+
     },
 
     props: {
-      // type, required and default are optional, you can reduce it to 'options: Object'
-      smail: {
+      sociallink: {
         type: Object,
         required: false,
 
@@ -69,7 +68,9 @@
           return {
             id: 0,
             title: "",
+            csocial_id: 0,
             email: "",
+            index: -1,
           }
         },
       },
@@ -77,10 +78,8 @@
 
     data(){
       return{
-        self: {},
         message: "",
         errors: "",
-
       }
     },
 
@@ -89,13 +88,12 @@
     },
 
     methods: {
-      deleteitem(email){
-        axios.delete('http://blog.com/api/manage/emails/' + email.id)
+      deleteitem(){
+        axios.delete('http://blog.com/api/manage/sociallinks/' + this.sociallink.id)
           .then( response => {
-            this.$emit('delete:email', email.id)
+            this.$emit('delete:sociallink')
             this.errors = ""
             this.message = ""
-
           })
           .catch( (error) => {
             this.message = error.response.data.message
@@ -103,7 +101,7 @@
           })
       },
       hideform(){
-        this.$emit('hide:update:email')
+        this.$emit('hide:delete:sociallink')
       },
     },
   }

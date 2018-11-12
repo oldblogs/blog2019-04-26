@@ -12,11 +12,6 @@
       @csrf
 
       <div class="form-group">
-        <label for="order">Order</label>
-        <input type="text" class="form-control" id="order" name="order" aria-describedby="Order of the social network" value="{{ $csocial->order }}">
-      </div>
-
-      <div class="form-group">
         <label for="title">Title</label>
         <input type="text" class="form-control" id="title" name="title" aria-describedby="Title of the social network" value="{{ $csocial->title }}">
       </div>
