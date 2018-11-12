@@ -34,7 +34,10 @@
             id: 0,
             title: "",
             csocial_id: 0,
+            csocial: {},
             link: "",
+            created_at: "00:00",
+            updated_at: "00:00",
           }
         },
       }, 
