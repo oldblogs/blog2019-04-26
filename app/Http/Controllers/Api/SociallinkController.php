@@ -127,8 +127,10 @@ class SociallinkController extends Controller
           $sociallink->link = request('link');
           $sociallink->save();
           
-          // Return updated record
-          return $sociallink;
+         
+          // Return the updated record with extra info about social network
+          $result = Sociallink::where('id', $sociallink->id )->with('csocial')->first() ;
+          return $result;
         }
       }
       catch(\Exception $e){
