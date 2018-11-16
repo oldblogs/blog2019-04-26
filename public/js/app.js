@@ -61552,7 +61552,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -61695,6 +61695,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     showAddForm: function showAddForm() {
+      // this.selected = {}
       this.addformenabled = true;
       this.updateformenabled = false;
       this.deleteformenabled = false;
@@ -61722,18 +61723,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     hideDeleteForm: function hideDeleteForm() {
       this.deleteformenabled = false;
     },
-    addRow: function addRow(sociallink) {
+    resetSelected: function resetSelected() {
+      var _this2 = this;
+
+      return new Promise(function (resolve, reject) {
+        _this2.selected = {};
+        resolve();
+      });
+    },
+    addItem: function addItem(sociallink) {
       this.contact_sociallinks.push(JSON.parse(JSON.stringify(sociallink)));
       this.addformenabled = false;
+      this.selected = {};
     },
     updateRow: function updateRow(sociallink) {
-      this.contact_sociallinks[this.selected.index] = JSON.parse(JSON.stringify(sociallink));
+      var _this3 = this;
 
       this.updateformenabled = false;
+      return new Promise(function (resolve, reject) {
+        _this3.contact_sociallinks.splice(_this3.selected.index, 1, JSON.parse(JSON.stringify(sociallink)));
+        resolve();
+      });
+    },
+    updateItem: function updateItem(sociallink) {
+      this.updateRow(sociallink).then(this.resetSelected());
     },
     removeRow: function removeRow() {
+      var _this4 = this;
+
       this.deleteformenabled = false;
-      this.contact_sociallinks.splice(this.selected.index, 1);
+      return new Promise(function (resolve, reject) {
+        _this4.contact_sociallinks.splice(_this4.selected.index, 1);
+        resolve();
+      });
+    },
+    deleteItem: function deleteItem() {
+      this.removeRow().then(this.resetSelected());
     }
   },
 
@@ -63024,7 +63049,7 @@ var render = function() {
         ],
         attrs: { sociallink: _vm.selected, socialnetworks: _vm.socialnetworks },
         on: {
-          "create:sociallink": _vm.addRow,
+          "create:sociallink": _vm.addItem,
           "hide:add:sociallink": _vm.hideAddForm
         }
       }),
@@ -63041,7 +63066,7 @@ var render = function() {
         attrs: { sociallink: _vm.selected, socialnetworks: _vm.socialnetworks },
         on: {
           "hide:update:sociallink": _vm.hideUpdateForm,
-          "update:sociallink": _vm.updateRow
+          "update:sociallink": _vm.updateItem
         }
       }),
       _vm._v(" "),
@@ -63057,7 +63082,7 @@ var render = function() {
         attrs: { sociallink: _vm.selected },
         on: {
           "hide:delete:sociallink": _vm.hideDeleteForm,
-          "delete:sociallink": _vm.removeRow
+          "delete:sociallink": _vm.deleteItem
         }
       }),
       _vm._v(" "),

@@ -14,7 +14,7 @@
       v-show="addformenabled" 
       v-bind:sociallink="selected"
       v-bind:socialnetworks="socialnetworks"
-      v-on:create:sociallink="addRow" 
+      v-on:create:sociallink="addItem" 
       v-on:hide:add:sociallink="hideAddForm" 
       ></form-sociallink-add>
 
@@ -23,14 +23,14 @@
       v-bind:sociallink="selected"
       v-bind:socialnetworks="socialnetworks"
       v-on:hide:update:sociallink="hideUpdateForm"
-      v-on:update:sociallink="updateRow"
+      v-on:update:sociallink="updateItem"
       ></form-sociallink-update>
 
     <form-sociallink-delete
       v-show="deleteformenabled"
       v-bind:sociallink="selected"
       v-on:hide:delete:sociallink="hideDeleteForm"
-      v-on:delete:sociallink="removeRow"
+      v-on:delete:sociallink="deleteItem"
       ></form-sociallink-delete>
 
     <div class="table-responsive">
@@ -123,6 +123,7 @@
       },
 
       showAddForm(){
+        // this.selected = {}
         this.addformenabled = true
         this.updateformenabled = false
         this.deleteformenabled = false
@@ -156,21 +157,42 @@
         this.deleteformenabled = false
       },
 
-      addRow(sociallink){
+      resetSelected(){
+        return new Promise((resolve, reject) => {
+          this.selected = {}
+          resolve()
+        })
+      },
+
+      addItem(sociallink){
         this.contact_sociallinks.push( JSON.parse( JSON.stringify(sociallink) ) )
         this.addformenabled = false
+        this.selected = {}
       },
 
       updateRow(sociallink){
-        this.contact_sociallinks[this.selected.index] = 
-          JSON.parse( JSON.stringify(sociallink) )
-
         this.updateformenabled = false
+        return new Promise((resolve, reject) => {
+          this.contact_sociallinks.splice( this.selected.index, 1, 
+            JSON.parse( JSON.stringify(sociallink) ) )
+          resolve()
+        })
+      },
+
+      updateItem(sociallink){
+        this.updateRow(sociallink).then( this.resetSelected() )
       },
 
       removeRow(){
         this.deleteformenabled = false
-        this.contact_sociallinks.splice(this.selected.index, 1)
+        return new Promise((resolve, reject) => {
+          this.contact_sociallinks.splice(this.selected.index, 1)
+          resolve()
+        })
+      },
+
+      deleteItem(){
+        this.removeRow().then( this.resetSelected() )
       },
 
     },
