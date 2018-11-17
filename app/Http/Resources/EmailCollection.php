@@ -16,12 +16,7 @@ class EmailCollection extends ResourceCollection
     public function toArray($request)
     {
         try{
-            return [
-                'emails' => $this->collection,
-                'links' => [
-                    'self' => 'emails',
-                ],
-            ];
+            return parent::toArray($request);
         }
         catch(\Exception $e){
             // TODO: Log Error

@@ -42,7 +42,16 @@ class EmailController extends Controller
     try{
       // TODO: User input validation 
       $result =  new EmailResource( Email::where('id', $email)->get() );
-      return $result;
+      
+      if( 0 === $result->count() ) {
+        abort(403, 'Unauthorized action.');
+      }
+      elseif( 1 === $result->count() ){
+        return $result;
+      }
+
+      // TODO: Log, must not come to this point
+      abort(500, 'Unauthorized action.');  
     }
     catch(\Exception $e){
       // TODO: Log Error
@@ -66,7 +75,8 @@ class EmailController extends Controller
       $email->email = $request->email;
       $email->save();
 
-      response()->json(['result' => 'success'], 200);
+      $result = Email::where('id', $email->id )->first();
+      return $result;
     }
     catch(\Exception $e){
       // TODO: Log Error
@@ -80,7 +90,7 @@ class EmailController extends Controller
     // TODO: Check unique email by user
     $validateData = $request->validate([
       'title' => 'required|min:3|max:255',
-      'email' => 'required|email|min:3|max:255',
+      'email' => 'required|email|min:6|max:255',
     ]);
 
     try{
@@ -88,13 +98,18 @@ class EmailController extends Controller
       if ( auth()->user()->id != $email->user_id ) {
         // TODO: Log Error
         // TODO: Generate more proper response
-        response()->json(['result' => 'error'], 401);
+        response()->json([
+          'result' => 'You do not have the permission to change this record.'
+        ], 401);
       }
       else {
         $email->title = request('title');
         $email->email = request('email');
         $email->save();
-        response()->json(['result' => 'success'], 200);
+
+        // response()->json(['result' => 'success'], 200);
+        $result = Email::where('id', $email->id )->first();
+        return $result;
       }
     }
     catch(\Exception $e){

@@ -4,29 +4,30 @@
       <h4 class="h4">Emails</h4>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-          <button class="btn btn-sm btn-outline-secondary" 
+          <button class="btn btn-sm btn-outline-secondary email-add" 
             v-on:click="showAddForm"><plus-icon class="custom-class"></plus-icon>Add</button>
         </div>
       </div>
     </div>
       <form-email-add 
         v-show="addformenabled" 
-        v-on:create:email="fetch" 
+        v-bind:email="selected"
         v-on:hide:add:email="hideAddForm" 
+        v-on:create:email="addItem" 
         ></form-email-add>
 
       <form-email-update
         v-show="updateformenabled"
-        v-bind:smail="selected"
-        v-on:update:email="fetch"
+        v-bind:email="selected"
         v-on:hide:update:email="hideUpdateForm"
+        v-on:update:email="updateItem"
         ></form-email-update>
 
       <form-email-delete
         v-show="deleteformenabled"
-        v-bind:smail="selected"
-        v-on:delete:email="fetch"
+        v-bind:email="selected"
         v-on:hide:delete:email="hideDeleteForm"
+        v-on:delete:email="deleteItem"
         ></form-email-delete>
 
       <div class="table-responsive">
@@ -43,23 +44,17 @@
           </thead>
 
           <tbody >
-            <tr v-for="email in contact_emails" v-bind:key="email.id">
-              <td>{{ email.title }}</td>
-              <td>{{ email.email }}</td>
-              <td>{{ email.created_at }}</td>
-              <td>{{ email.updated_at }}</td>
-              <td>
-                <button class="btn btn-sm btn-outline-secondary email-update" 
-                  v-on:click="showUpdateForm(email)" ><edit-3-icon class="custom-class"></edit-3-icon>
-                </button>
-              </td>
-              <td>
-                <button class="btn btn-sm btn-outline-secondary email-delete" 
-                  v-on:click="showDeleteForm(email)" ><trash-2-icon class="custom-class"></trash-2-icon>
-                </button>
-              </td>
-            </tr>
+            <row-email
+              is="row-email"
+              v-for="(email, index) in contact_emails"
+              v-bind:email="email"
+              v-bind:index="index"
+              v-bind:key="email.id"
+              v-on:show-update-form="showUpdateForm(email, index)"
+              v-on:show-delete-form="showDeleteForm(email, index)"
+            ></row-email>
           </tbody>
+
         </table>
       </div>
   </div>
@@ -71,25 +66,19 @@
   import FormEmailUpdate from './FormEmailUpdate.vue'
   import FormEmailDelete from './FormEmailDelete.vue'
 
-  import { PlusIcon , BookOpenIcon, Edit3Icon, Trash2Icon} from 'vue-feather-icons'
+  import { PlusIcon } from 'vue-feather-icons'
 
   export default {
     name: "Emails",
 
     mounted() {
-      self = this
       this.fetch()
       feather.replace()
     },
 
-    props: {
-      anObject: Object
-    },
-
     data(){
       return{
-        self: {},
-        contact_emails: {},
+        contact_emails: [],
         addformenabled: false,
         updateformenabled: false,
         deleteformenabled: false,
@@ -102,6 +91,9 @@
               id: 0,
               title: "",
               email: "",
+              created_at: "00:00",
+              updated_at: "00:00",
+              index: -1,
             }
           },
         },
@@ -115,8 +107,8 @@
     methods: {
       fetch() {
         axios.get('http://blog.com/api/manage/emails')
-          .then(({data}) => {
-            this.contact_emails = JSON.parse(JSON.stringify( data.data.emails ))
+          .then((response) => {
+            this.contact_emails = JSON.parse(JSON.stringify( response.data.data ))
             this.addformenabled = false
             this.updateformenabled = false
             this.deleteformenabled = false
@@ -124,6 +116,7 @@
       },
       
       showAddForm(){
+        // this.selected = {}
         this.addformenabled = true
         this.updateformenabled = false
         this.deleteformenabled = false
@@ -133,8 +126,9 @@
         this.addformenabled = false
       },
 
-      showUpdateForm(email){
+      showUpdateForm(email, index){
         this.selected = JSON.parse(JSON.stringify( email ))
+        this.selected.index = index
         this.addformenabled = false
         this.updateformenabled = true
         this.deleteformenabled = false
@@ -144,8 +138,9 @@
         this.updateformenabled = false
       },
 
-      showDeleteForm(email){
+      showDeleteForm(email, index){
         this.selected = JSON.parse(JSON.stringify( email ))
+        this.selected.index = index
         this.addformenabled = false
         this.updateformenabled = false
         this.deleteformenabled = true
@@ -155,9 +150,47 @@
         this.deleteformenabled = false
       },
 
+      resetSelected(){
+        return new Promise((resolve, reject) => {
+          this.selected = {}
+          resolve()
+        })
+      },
+
+      addItem(email){
+        this.contact_emails.push( JSON.parse( JSON.stringify(email) ) )
+        this.addformenabled = false 
+        this.selected = {}
+      },
+
+      updateRow(email){
+        this.updateformenabled = false
+        return new Promise((resolve, reject) => {
+          this.contact_emails.splice( this.selected.index, 1,
+            JSON.parse( JSON.stringify(email) ) )
+          resolve() 
+        })
+      },
+
+      updateItem(email){
+        this.updateRow(email).then( this.resetSelected() )
+      },
+
+      removeRow(){
+        this.deleteformenabled = false 
+        return new Promise((resolve, reject) => {
+          this.contact_emails.splice(this.selected.index, 1)
+          resolve()
+        })
+      },
+
+      deleteItem(){
+        this.removeRow().then( this.resetSelected() )
+      },
+
     },
     components: {
-      FormEmailAdd, FormEmailUpdate, FormEmailDelete, PlusIcon, BookOpenIcon, Edit3Icon, Trash2Icon,
+      FormEmailAdd, FormEmailUpdate, FormEmailDelete, PlusIcon,
     },
   }
 </script>

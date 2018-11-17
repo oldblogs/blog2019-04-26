@@ -24,6 +24,7 @@ Vue.component( 'emails'                         , require('./components/Emails.v
 Vue.component( 'form-email-add'                 , require('./components/FormEmailAdd.vue') );
 Vue.component( 'form-email-update'              , require('./components/FormEmailUpdate.vue') );
 Vue.component( 'form-email-delete'              , require('./components/FormEmailDelete.vue') );
+Vue.component( 'row-email'                      , require('./components/RowEmail.vue') );
 
 // Contact - Social Network Links
 Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue') );

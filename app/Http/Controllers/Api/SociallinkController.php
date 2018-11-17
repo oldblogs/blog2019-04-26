@@ -56,11 +56,9 @@ class SociallinkController extends Controller
         elseif( 1 === $result->count() ){
           return $result;
         }
-        else {
-          abort(403, 'Unauthorized action.');  
-        }
 
-        abort(403, 'Unauthorized action.');
+        // TODO: Log, must not come to this point
+        abort(500, 'Unauthorized action.');  
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -126,7 +124,6 @@ class SociallinkController extends Controller
           $sociallink->csocial_id = request('csocial_id');
           $sociallink->link = request('link');
           $sociallink->save();
-          
          
           // Return the updated record with extra info about social network
           $result = Sociallink::where('id', $sociallink->id )->with('csocial')->first() ;

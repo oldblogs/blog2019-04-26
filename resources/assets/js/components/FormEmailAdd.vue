@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="create_email">
+    <form v-on:submit.prevent="addItem()">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -13,8 +13,8 @@
       </div>
 
       <div class="form-group">
-        <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" 
+        <label>Title</label>
+        <input v-model="email.title" type="text" class="form-control"
           aria-describedby="enter title for email">
       </div>
 
@@ -25,13 +25,13 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input v-model="email" id="email" class="form-control" aria-describedby="enter an email">
+        <label>Email</label>
+        <input v-model="email.email" class="form-control" aria-describedby="enter an email">
       </div>
       
       <div class="form-group">
-        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
       
@@ -56,18 +56,34 @@
     name: "FormEmailAdd",
 
     mounted() {
-      self = this
-      this.formenabled = false
+
     },
     
+    props: {
+      email: {
+        type: Object,
+        required: false,
+
+        default: () => {
+          return {
+            id: 0,
+            title: "",
+            email: "",
+            created_at: "00:00",
+            updated_at: "00:00",
+            index: -1,
+
+          }
+        }
+      },
+
+
+    },
+
     data(){
       return{
-        self: {},
-        title: "",
-        email: "",
         message: "",
         errors: "",
-
       }
     },
 
@@ -76,17 +92,15 @@
     },
 
     methods: {
-      create_email(){
+      addItem(){
         axios.post('http://blog.com/api/manage/emails', {
-            title: this.title,
-            email: this.email,
+            title: this.email.title,
+            email: this.email.email,
           })
           .then(response => {
-            this.$emit('create:email', this.email)
+            this.$emit('create:email', JSON.parse( JSON.stringify(response.data) ) )
             this.errors = "" 
             this.message = "" 
-            this.title = ""
-            this.email = "" 
             
           })
           .catch(error => {

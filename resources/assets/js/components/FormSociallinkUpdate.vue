@@ -57,7 +57,7 @@
         <button class="btn btn-primary">Save</button>
       </div>
 
-      <div class="form-group" v-show="message"   >
+      <div class="form-group" v-show="message">
         <div class="alert alert-danger">
           {{ message }}
         </div>
@@ -117,6 +117,7 @@
 
     methods: {
       updateitem(){
+        // TODO: change manage text with related config variable
         axios.patch('http://blog.com/api/manage/sociallinks/' + this.sociallink.id, {
             title: this.sociallink.title,
             csocial_id: this.sociallink.csocial_id,

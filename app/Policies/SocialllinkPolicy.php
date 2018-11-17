@@ -16,7 +16,7 @@ class SocialllinkPolicy
      * @param \App\User $user 
      * @return mixed
      */
-    public function browse(){
+    public function browse(User $user){
       try{
         return ( $user->hasRole('admin') ) ? true : false ;
       }

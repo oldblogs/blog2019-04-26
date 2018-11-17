@@ -69,7 +69,7 @@
             id: 0,
             title: "",
             csocial_id: 0,
-            email: "",
+            link: "",
             index: -1,
           }
         },
