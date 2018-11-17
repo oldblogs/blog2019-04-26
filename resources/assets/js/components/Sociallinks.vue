@@ -14,8 +14,8 @@
       v-show="addformenabled" 
       v-bind:sociallink="selected"
       v-bind:socialnetworks="socialnetworks"
-      v-on:create:sociallink="addItem" 
       v-on:hide:add:sociallink="hideAddForm" 
+      v-on:create:sociallink="addItem" 
       ></form-sociallink-add>
 
     <form-sociallink-update
@@ -55,8 +55,8 @@
             v-bind:index="index"
             v-bind:key="sociallink.id"
             v-on:show-update-form="showUpdateForm(sociallink, index)"
-            v-on:show-delete-form="showDeleteForm(sociallink, index)">
-          </row-sociallink>
+            v-on:show-delete-form="showDeleteForm(sociallink, index)"
+          ></row-sociallink>
         </tbody>
  
       </table>
@@ -123,7 +123,7 @@
       },
 
       showAddForm(){
-        // this.selected = {}
+        this.selected = {}
         this.addformenabled = true
         this.updateformenabled = false
         this.deleteformenabled = false

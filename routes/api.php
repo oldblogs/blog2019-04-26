@@ -31,31 +31,31 @@ use App\Http\Controllers\Api\TestController;
 
 $mapi_route = '/'.config('app.mapi', 'manage');
 
-// TODO: Implement verified mail
+// TODO: Implement verified email
 
-// browse mail
+// browse email
 // All emails
 // Route::middleware('auth:api', 'role:apiadmin')
 //   ->get($mapi_route.'/emails', 'Api\EmailController@index')
 //   ->name('emails.index');
 
-// browse mail
+// browse email
 // Emails that belongs to the logged in user
 Route::middleware('auth:api', 'role:apiadmin')
   ->get($mapi_route.'/emails', 'Api\EmailController@index_p')
   ->name('emails.index');
 
-// update mail
+// update email
 Route::middleware('auth:api', 'role:apiadmin')
   ->patch($mapi_route.'/emails/{email}', 'Api\EmailController@update')
   ->name('emails.update');
 
-// create mail
+// create email
 Route::middleware('auth:api', 'role:apiadmin')
   ->post($mapi_route.'/emails', 'Api\EmailController@create')
   ->name('emails.create');
 
-// delete mail
+// delete email
 Route::middleware('auth:api', 'role:apiadmin')
   ->delete($mapi_route.'/emails/{email}', 'Api\EmailController@delete')
   ->name('emails.delete');

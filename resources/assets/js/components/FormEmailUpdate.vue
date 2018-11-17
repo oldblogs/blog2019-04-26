@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="updateitem(smail)">
+    <form v-on:submit.prevent="updateitem()">
 
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -12,27 +12,28 @@
         <h4>Update an existing email </h4>
       </div>
 
-      <input v-model="smail.id" type="text" class="form-control" style="display: none" >
+      <input v-model="email.id" type="text" class="form-control" style="display: none" >
 
       <div class="form-group">
         <label>Title</label>
-        <input v-model="smail.title" type="text" class="form-control" aria-describedby="enter title for email">
+        <input v-model="email.title" type="text" class="form-control" 
+          aria-describedby="enter title for email">
       </div>
 
       <div class="form-group">
-        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
 
       <div class="form-group">
         <label>Email</label>
-        <input v-model="smail.email" class="form-control" aria-describedby="enter an email">
+        <input v-model="email.email" class="form-control" aria-describedby="enter an email">
       </div>
 
       <div class="form-group">
-        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.email" v-for="item in errors.email" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
 
@@ -40,13 +41,13 @@
         <button class="btn btn-primary">Save</button>
       </div>
 
-      <div class="form-group" v-show="message"   >
+      <div class="form-group" v-show="message">
         <div class="alert alert-danger">
           {{ message }}
         </div>
       </div>
 
-      <p>Email ID: {{ smail.id }}</p>
+      <p>Email ID: {{ email.id }}</p>
 
     </form>
 
@@ -58,12 +59,11 @@
     name: "FormEmailUpdate",
 
     mounted() {
-      self = this
+
     },
 
     props: {
-      // type, required and default are optional, you can reduce it to 'options: Object'
-      smail: {
+      email: {
         type: Object,
         required: false,
 
@@ -72,6 +72,9 @@
             id: 0,
             title: "",
             email: "",
+            created_at: "00:00",
+            updated_at: "00:00",
+            index: -1,
           }
         },
       },
@@ -79,7 +82,6 @@
 
     data(){
       return{
-        self: {},
         message: "",
         errors: "",
 
@@ -91,13 +93,14 @@
     },
 
     methods: {
-      updateitem(email){
-        axios.patch('http://blog.com/api/manage/emails/' + email.id, {
-            title: email.title,
-            email: email.email,
+      updateitem(){
+        // TODO: change manage text with related config variable
+        axios.patch('http://blog.com/api/manage/emails/' + this.email.id, {
+            title: this.email.title,
+            email: this.email.email,
           })
           .then( response => {
-            this.$emit('update:email', email.id)
+            this.$emit('update:email', JSON.parse( JSON.stringify( response.data ) ) )
             this.errors = ""
             this.message = ""
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="additem()">
+    <form v-on:submit.prevent="addItem()">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -11,8 +11,6 @@
         <h4>Add a new social network link to contact information</h4>
       </div>
       
-      <input v-model="sociallink.id" type="text" class="form-control" style="display: none" >
-
       <div class="form-group">
         <label>Title</label>
         <input v-model="sociallink.title" type="text" class="form-control" 
@@ -115,14 +113,14 @@
     },
 
     methods: {
-      additem(){
+      addItem(){
         axios.post('http://blog.com/api/manage/sociallinks', {
             title: this.sociallink.title,
             csocial_id: this.sociallink.csocial_id,
             link: this.sociallink.link,
           })
           .then(response => {
-            this.$emit('create:sociallink', JSON.parse( JSON.stringify( response.data) ) )
+            this.$emit('create:sociallink', JSON.parse( JSON.stringify(response.data) ) )
             this.errors = "" 
             this.message = "" 
         

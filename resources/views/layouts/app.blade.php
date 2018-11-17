@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-{{-- TODO: Delete this file --}}
 <html lang="{{ app()->getLocale() }}">
+{{-- Check template usage, change if necessary --}}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
