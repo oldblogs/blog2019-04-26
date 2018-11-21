@@ -117,13 +117,12 @@
 
     methods: {
       updateitem(){
-        // TODO: change manage text with related config variable
         axios.patch('http://blog.com/api/manage/sociallinks/' + this.sociallink.id, {
             title: this.sociallink.title,
             csocial_id: this.sociallink.csocial_id,
             link: this.sociallink.link,
           })
-          .then( response => {
+          .then( (response) => {
             this.$emit('update:sociallink', JSON.parse( JSON.stringify( response.data) ) )
             this.errors = ""
             this.message = ""

@@ -14,6 +14,13 @@ class SociallinkResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        try{
+            return parent::toArray($request);
+        }
+        catch(\Exception $e){
+            // TODO: Log Error
+            // TODO: Generate more proper response
+            response()->json( ['result' => 'error'], 500 );
+        }
     }
 }

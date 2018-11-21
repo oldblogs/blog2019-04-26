@@ -119,13 +119,12 @@
             csocial_id: this.sociallink.csocial_id,
             link: this.sociallink.link,
           })
-          .then(response => {
+          .then( (response) => {
             this.$emit('create:sociallink', JSON.parse( JSON.stringify(response.data) ) )
             this.errors = "" 
             this.message = "" 
-        
           })
-          .catch(error => {
+          .catch( (error) => {
             this.message = error.response.data.message
             this.errors = JSON.parse(JSON.stringify( error.response.data.errors ))
           })
