@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="updateitem(stest)">
+    <form v-on:submit.prevent="updateItem">
 
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -12,16 +12,17 @@
         <h4>Update an existing test record </h4>
       </div>
 
-      <input v-model="stest.id" type="text" class="form-control" style="display: none" >
+      <input v-model="test.id" type="text" class="form-control" style="display: none" >
 
       <div class="form-group">
         <label>Title</label>
-        <input v-model="stest.title" type="text" class="form-control" aria-describedby="enter title for test record">
+        <input v-model="test.title" type="text" class="form-control" 
+          aria-describedby="enter title for test record">
       </div>
 
       <div class="form-group">
-        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" class="alert alert-danger">
-          {{ item }}
+        <div v-show="errors.title" v-for="item in errors.title" v-bind:key="item" 
+          class="alert alert-danger">{{ item }}
         </div>
       </div>
 
@@ -35,7 +36,7 @@
         </div>
       </div>
 
-      <p>{{ stest.id }}</p>
+      <p>{{ test.id }}</p>
 
     </form>
 
@@ -47,12 +48,11 @@
     name: "FormTestUpdate",
 
     mounted() {
-      self = this
+      
     },
 
     props: {
-      // type, required and default are optional, you can reduce it to 'options: Object'
-      stest: {
+      test: {
         type: Object,
         required: false,
 
@@ -60,6 +60,9 @@
           return {
             id: 0,
             title: "",
+            created_at: "00:00",
+            created_at: "00:00",
+            index: -1,
           }
         },
       },
@@ -67,10 +70,8 @@
 
     data(){
       return{
-        self: {},
         message: "",
         errors: "",
-
       }
     },
 
@@ -79,12 +80,12 @@
     },
 
     methods: {
-      updateitem(test){
-        axios.patch('http://blog.com/api/manage/tests/' + test.id, {
-            title: test.title,
+      updateItem(){
+        axios.patch('http://blog.com/api/manage/tests/' + this.test.id, {
+            title: this.test.title,
           })
-          .then( response => {
-            this.$emit('update:test', test.id)
+          .then( (response) => {
+            this.$emit('update:test', JSON.parse( JSON.stringify( response.data ) ) )
             this.errors = ""
             this.message = ""
 
@@ -94,6 +95,7 @@
             this.errors = JSON.parse(JSON.stringify( error.response.data.errors ))
           })
       },
+      
       hideform(){
         this.$emit('hide:update:test')
       },

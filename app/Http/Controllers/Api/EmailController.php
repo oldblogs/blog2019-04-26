@@ -44,7 +44,7 @@ class EmailController extends Controller
       $result =  new EmailResource( Email::where('id', $email)->get() );
       
       if( 0 === $result->count() ) {
-        abort(403, 'Unauthorized action.');
+        abort(403, 'Not found.');
       }
       elseif( 1 === $result->count() ){
         return $result;

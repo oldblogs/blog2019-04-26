@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="deleteitem(stest)">
+    <form v-on:submit.prevent="deleteItem">
 
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -12,22 +12,20 @@
         <h4>The following record will be deleted ! Are you sure ? </h4>
       </div>
 
-      <input v-model="stest.id" type="text" class="form-control" style="display: none" >
+      <input v-model="test.id" type="text" class="form-control" style="display: none" >
 
       <div class="form-group">
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
               <tr>
-                <th>#ID</th>
                 <th>Title</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td>{{ stest.id }}</td>
-                <td>{{ stest.title }}</td>
+                <td>{{ test.title }}</td>
               </tr>
             </tbody>
           </table>
@@ -54,12 +52,11 @@
     name: "FormTestDelete",
 
     mounted() {
-      self = this
+
     },
 
     props: {
-      // type, required and default are optional, you can reduce it to 'options: Object'
-      stest: {
+      test: {
         type: Object,
         required: false,
 
@@ -67,6 +64,7 @@
           return {
             id: 0,
             title: "",
+            index: -1,
           }
         },
       },
@@ -74,10 +72,8 @@
 
     data(){
       return{
-        self: {},
         message: "",
         errors: "",
-
       }
     },
 
@@ -86,10 +82,10 @@
     },
 
     methods: {
-      deleteitem(test){
-        axios.delete('http://blog.com/api/manage/tests/' + test.id)
+      deleteItem(){
+        axios.delete('http://blog.com/api/manage/tests/' + this.test.id)
           .then( (response) => {
-            this.$emit('delete:test', test.id)
+            this.$emit('delete:test')
             this.errors = ""
             this.message = ""
 

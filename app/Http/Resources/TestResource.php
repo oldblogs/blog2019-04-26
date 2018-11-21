@@ -6,9 +6,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class TestResource extends JsonResource
 {
-    
-    // TODO: Input validation
-    
     /**
      * Transform the resource into an array.
      *
@@ -17,6 +14,13 @@ class TestResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        try{
+            return parent::toArray($request);
+        }
+        catch(\Exception $e){
+            // TODO: Log Error
+            // TODO: Generate more proper response
+            response()->json( ['result' => 'error'], 500 );
+        }
     }
 }

@@ -18,6 +18,7 @@ Vue.component( 'tests'                          , require('./components/Tests.vu
 Vue.component( 'form-test-add'                  , require('./components/FormTestAdd.vue') );
 Vue.component( 'form-test-update'               , require('./components/FormTestUpdate.vue') );
 Vue.component( 'form-test-delete'               , require('./components/FormTestDelete.vue') );
+Vue.component( 'row-test'                       , require('./components/RowTest.vue') );
 
 // Contact - Emails
 Vue.component( 'emails'                         , require('./components/Emails.vue') );

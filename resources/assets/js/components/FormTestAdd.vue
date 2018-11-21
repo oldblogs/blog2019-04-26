@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-on:submit.prevent="create_test">
+    <form v-on:submit.prevent="addItem">
       
       <div class="form-group">
         <button v-on:click="hideform" type="button" class="close" aria-label="Close">
@@ -13,8 +13,9 @@
       </div>
    
       <div class="form-group">
-        <label for="title">Title</label>
-        <input v-model="title" type="text" class="form-control" id="title" aria-describedby="enter title for test record">
+        <label>Title</label>
+        <input v-model="test.title" type="text" class="form-control" 
+          aria-describedby="enter title for test record">
       </div>
 
       <div class="form-group">
@@ -46,17 +47,30 @@
     name: "FormTestAdd",
 
     mounted() {
-      self = this
-      this.formenabled = false
+
+    },
+
+    props: {
+      test: {
+        type: Object,
+        required: false,
+      
+        default: () => {
+          return {
+            id: 0,
+            title: "",
+            created_at: "00:00",
+            updated_at: "00:00",
+            index: -1,
+          }
+        }
+      },
     },
     
     data(){
       return{
-        self: {},
-        title: "",
         message: "",
         errors: "",
-
       }
     },
 
@@ -65,19 +79,17 @@
     },
 
     methods: {
-      create_test(){
+      addItem(){
         axios.post('http://blog.com/api/manage/tests', {
-            title: this.title,
+            title: this.test.title,
           })
-          .then(response => {
+          .then( (response) => {
             // TODO: check if this works ( read id value below )
-            this.$emit('create:test', this.title)
+            this.$emit('create:test', JSON.parse(JSON.stringify(response.data) ) )
             this.errors = "" 
             this.message = "" 
-            this.title = ""
-            
           })
-          .catch(error => {
+          .catch( (error) => {
             this.message = error.response.data.message
             this.errors = JSON.parse(JSON.stringify( error.response.data.errors ))
           })

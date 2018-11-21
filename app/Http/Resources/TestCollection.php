@@ -15,11 +15,13 @@ class TestCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return [
-            'tests' => $this->collection,
-            'links' => [
-                'self' => 'tests',
-            ],
-        ];
+        try{
+            return parent::toArray($request);
+        }
+        catch(\Exception $e){
+            // TODO: Log Error
+            // TODO: Generate more proper response
+            response()->json( ['result' => 'error'], 500 );
+        }
     }
 }

@@ -18,7 +18,8 @@ class TestController extends Controller
 
     public function index(){
       try{
-        $result = new TestCollection(Test::all());
+        $result = [];
+        $result['tests'] = new TestCollection(Test::all());
         return $result;
       }
       catch(\Exception $e){
@@ -31,8 +32,17 @@ class TestController extends Controller
     public function show(Test $test){
       try{
         // TODO: User input validation of $test
-        $result =  new TestCollection( Test::where('id', $test)->get()  );
-        return $result;
+        $result =  Test::where('id', $test)->get();
+      
+        if( 0 === $result->count() ) {
+          abort(403, 'Not found.');
+        }
+        elseif( 1 === $result->count() ){
+          return $result;
+        }
+
+        // TODO: Log, must not come to this point
+        abort(500, 'Unauthorized action.');  
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -48,11 +58,12 @@ class TestController extends Controller
       ]);
 
       try{
-        $test = new Test( request(['title', ]) );
-
+        $test = new Test();
+        $test->title = $request->title;
         $test->save();
 
-        response()->json(['result' => 'success'], 200);
+        $result = Test::where('id', $test->id)->first();
+        return $result;
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -63,16 +74,16 @@ class TestController extends Controller
 
     public function update(Request $request, Test $test){
       // TODO: Input validation
-      // TODO: Check unique email
       $validateData = $request->validate([
         'title' => 'required|min:3',
       ]);
 
       try{
-        // TODO: Check is it the same record
         $test->title = request('title');
         $test->save();
-        response()->json(['result' => 'success'], 200);
+
+        $result =  Test::where('id', $test->id )->first();
+        return $result;
       }
       catch(\Exception $e){
         // TODO: Log Error
