@@ -6,20 +6,24 @@
 if ( config('app.form_login') ) {
   Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
   Route::post('login', 'Auth\LoginController@login');
-
-  // TODO: Check fuctionality
+  
+  // Password reset request is made with terminal artisan command :
+  // php artisan user:reset-password-by-mail john@example.com
+  // So, following two lines are commented out
+  // Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+  // Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+  
   // Password Reset Routes...
-  Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-  Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
   Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
   Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 } else {
   if( 'form_login' === config('app.default_auth') ){
     // When we disable form_login , we must also change the default_auth in .env
-    // TODO: LOG error
+    // TODO: Log error
     abort(500, 'Error: Misconfiguration.');
   } else {
     // default_auth ' s first letter is made uppercase and route is formed
+    // TODO: check for strings starting with letter i
     $routetg = 'Auth\\'                . ucfirst( config('app.default_auth') ) .
                'Controller@redirectTo' . ucfirst( config('app.default_auth') );
     Route::get('login', $routetg)->name('login');

@@ -64307,7 +64307,7 @@ var render = function() {
               _c(
                 "tbody",
                 _vm._l(_vm.clients, function(client) {
-                  return _c("tr", [
+                  return _c("tr", { key: client.id }, [
                     _c("td", { staticStyle: { "vertical-align": "middle" } }, [
                       _vm._v(
                         "\n                            " +
@@ -64395,7 +64395,7 @@ var render = function() {
                     _c(
                       "ul",
                       _vm._l(_vm.createForm.errors, function(error) {
-                        return _c("li", [
+                        return _c("li", { key: error.id }, [
                           _vm._v(
                             "\n                                " +
                               _vm._s(error) +
@@ -64566,7 +64566,7 @@ var render = function() {
                     _c(
                       "ul",
                       _vm._l(_vm.editForm.errors, function(error) {
-                        return _c("li", [
+                        return _c("li", { key: error.id }, [
                           _vm._v(
                             "\n                                " +
                               _vm._s(error) +
