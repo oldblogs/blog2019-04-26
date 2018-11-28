@@ -31,7 +31,7 @@ class AboutController extends Controller
     public function store(AboutForm $form)
     {
         $form->persist();
-        
+        // TODO: Check HTTP status Code
         return redirect()->route('abouts.index.m');
     }
     
@@ -48,14 +48,14 @@ class AboutController extends Controller
     public function update(AboutForm $form,About $about)
     {
         $form->update($about);
-
+        // TODO: Check HTTP status Code
         return redirect()->route('abouts.index.m');
     }
     
     public function delete(DeleteAboutForm $form, About $about)
     {
         $form->delete($about);
-        
+        // TODO: Check HTTP status Code
         return redirect()->route('abouts.index.m');
     }
     

@@ -70,9 +70,9 @@ class Socialid extends Model
       //
       // This gets values from database (socialids table ) but the blog 
       // must be properly set to use social logins:
-      // 1 . User must be already registered via artisan command . 
+      // 1 . User must be already registered via artisan user:add command . 
       // 2 . User must be enabled and attached to admin role (for version 0.2.0) 
-      // 3 . Emails must match with users table and social login. 
+      // 3 . Emails must match in users table and social login. Emails must be verified.
       // 4 . Related social login provider must be configured properly (Provider side client creation)
       // 5 . You must have your client ID and password entered in .env file
       // 6 . /config/services.php must be configured

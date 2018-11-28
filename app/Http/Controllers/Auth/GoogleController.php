@@ -27,6 +27,7 @@ class GoogleController extends Controller
      */
     public function redirectToGoogle()
     {
+      // TODO: Check HTTP status Code
       return Socialite::driver('google')->redirect();
     }
 

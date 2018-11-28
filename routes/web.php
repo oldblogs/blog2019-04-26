@@ -16,6 +16,11 @@ if ( config('app.form_login') ) {
   // Password Reset Routes...
   Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
   Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
+  // E-mail verification routes
+  Route::get('email/verify',      'Auth\VerificationController@show')->name('verification.notice');
+  Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
+  Route::get('email/resend',      'Auth\VerificationController@resend')->name('verification.resend');     
 } else {
   if( 'form_login' === config('app.default_auth') ){
     // When we disable form_login , we must also change the default_auth in .env
@@ -87,7 +92,7 @@ if( null !== config('services.github.client_id')  ) {
 }
 
 // User Home Page Web
-Route::middleware('auth:web')->get('/home',
+Route::middleware('auth:web', 'verified')->get('/home',
   'HomeController@index')->name('home');
 
 // Blog Management Page
