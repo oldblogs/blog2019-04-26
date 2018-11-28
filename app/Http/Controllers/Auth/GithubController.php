@@ -27,6 +27,7 @@ class GithubController extends Controller
      */
     public function redirectToGithub()
     {
+      // TODO: Check HTTP status Code
       return Socialite::driver('github')->redirect();
     }
     
@@ -52,6 +53,7 @@ class GithubController extends Controller
             
             if( !isset($email) ){
               // TODO: Log error: Improper Oauth request.
+              // TODO: Switch to a more proper response
               session()->flash( 'message', 'E-mail information is required.');
               return redirect()->route('mainpage');
             }
@@ -62,10 +64,12 @@ class GithubController extends Controller
             
             // TODO: Optimize strings
             
-            $messageUserRegClosed = 'Sorry ! Social account registrations are '.
-            'for site management purposes only.'.
-            'No user registration is allowed at the moment.'.
-            'Your are not a registered administrator of this site.';
+            $messageUserRegClosed = 
+            'Thank you for your attention ! '.
+            'We are sorry , we can not accept your user registration request. '.
+            'Social account registrations are for site management purposes only. '.
+            'No user registration is allowed at the moment. '.
+            'You are not a registered administrator of this site.';
             
             if(!isset($bloguser)){
               session()->flash( 'message', $messageUserRegClosed);
@@ -126,7 +130,7 @@ class GithubController extends Controller
               // TODO: Log info: User is authenticated
               session()->flash( 'message', 'You are successfully logged in.' );
             }
-          
+            
             return redirect()->route('home');
             
         } catch (Exception $e) {
