@@ -10,6 +10,7 @@ if ( config('app.form_login') ) {
   
   // Blog admin makes password reset request with terminal artisan command :
   // php artisan user:reset-password <user email>
+  // An email is sent to the user with a link.
     
   // Password Reset Routes...
   Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
