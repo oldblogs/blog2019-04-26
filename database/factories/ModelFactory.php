@@ -17,7 +17,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: $password = bcrypt($faker->bothify('***###******###******###*****')),
         'enabled' => false,
     ];
 });
@@ -43,5 +43,3 @@ $factory->define(App\About::class, function (Faker\Generator $faker) {
         'photo' => asset('img/profile.png')
     ];
 });
-
-

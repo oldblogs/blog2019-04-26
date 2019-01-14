@@ -1,21 +1,19 @@
 <?php
 
-// TODO: Implement verified mail
+Route::get('register/{code}/{email}', 'Auth\RegisterController@showRegistrationForm')->name('getregister');
+Route::post('register/{code}/{email}', 'Auth\RegisterController@register')->name('postregister');
 
 // Authentication Routes...
 if ( config('app.form_login') ) {
   Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
   Route::post('login', 'Auth\LoginController@login');
   
-  // Password reset request is made with terminal artisan command :
-  // php artisan user:reset-password-by-mail john@example.com
-  // So, following two lines are commented out
-  // Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-  // Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
-  
+  // Blog admin makes password reset request with terminal artisan command :
+  // php artisan user:reset-password <user email>
+    
   // Password Reset Routes...
   Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-  Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+  Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.reset.process');
 
   // E-mail verification routes
   Route::get('email/verify',      'Auth\VerificationController@show')->name('verification.notice');

@@ -25,7 +25,8 @@
             </tr>
             <tr>
               <th scope="row">Role : </th>
-              <td>@role('admin') admin @else @role('member') member @endrole @endrole</td>
+              {{-- TODO: Fix following row. List roles --}}
+              <td>@role('admin') admin, @endrole @role('apiadmin') apiadmin, @endrole @role('member') member @endrole </td>
             </tr>
           </tbody>
         </table>

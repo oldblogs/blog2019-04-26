@@ -226,6 +226,7 @@ return [
          * Package Service Providers...
          */
         Spatie\Permission\PermissionServiceProvider::class,
+        Clarkeash\Doorman\Providers\DoormanServiceProvider::class,
          
         /*
          * Application Service Providers...
@@ -242,10 +243,10 @@ return [
     |--------------------------------------------------------------------------
     | Class Aliases
     |--------------------------------------------------------------------------
-    |register
-    | This array of class aregisterliases will be registered when this application
-    | is started. However, registerfeel free to register as many as you wish as
-    | the aliases are "lazyregister" loaded so they don't hinder performance.
+    |
+    | This array of class aliases will be registered when this application
+    | is started. However, feel free to register as many as you wish as
+    | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
 
@@ -285,6 +286,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Doorman' => Clarkeash\Doorman\Facades\Doorman::class,
         
     ],
 
