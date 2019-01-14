@@ -10,9 +10,10 @@
 /.vagrant
 *.komodoproject
 /nbproject
+/.Trash-1000*
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.Trash-1000*
+
 

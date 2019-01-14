@@ -36,7 +36,7 @@ class Checkbox implements Rule
             }
         }
         else{
-            //Not checked
+            // TODO: Check . attribute does not used.
             return true;
         }
     }
