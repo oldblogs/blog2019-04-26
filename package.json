@@ -11,21 +11,21 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.1.3",
+        "bootstrap": "^4.2.1",
         "cross-env": "^5.2.0",
-        "imagemin": "^6.0.0",
+        "imagemin": "^6.1.0",
         "jquery": "^3.2",
-        "laravel-mix": "^4.0.4",
+        "laravel-mix": "^4.0.13",
         "lodash": "^4.17.11",
         "popper.js": "^1.14.6",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.15.2",
+        "sass": "^1.16.0",
         "sass-loader": "^7.1.0",
-        "vue": "^2.5.21",
-        "vue-template-compiler": "^2.5.21"
+        "vue": "^2.5.22",
+        "vue-template-compiler": "^2.5.22"
     },
     "dependencies": {
-        "feather-icons": "^4.9.0",
+        "feather-icons": "^4.10.0",
         "vue-feather-icons": "^4.7.1"
     }
 }
