@@ -39,7 +39,8 @@
         <h6 class="h6  pb-2 border-bottom">Click to review permissions</h6>
         @foreach ($bloguser->socialids as $social)
           @if ($social->socialprovider->review)
-            <a type="button" class = "btn btn-default" href="{{ $social->socialprovider->review }}">{{ $social->socialprovider->provider }}</a>
+            <a type="button" class = "btn btn-default" 
+              href="{{ $social->socialprovider->review }}">{{ $social->socialprovider->provider }}</a>
           @else
             <a type="button" class="btn btn-default disabled">{{ $social->socialprovider->provider }}</a>
           @endif
