@@ -14,30 +14,30 @@ window.feather = require('feather-icons');
 window.VueFeatherIcon = require('vue-feather-icons');
 
 // Test
-Vue.component( 'tests'                          , require('./components/Tests.vue') );
-Vue.component( 'form-test-add'                  , require('./components/FormTestAdd.vue') );
-Vue.component( 'form-test-update'               , require('./components/FormTestUpdate.vue') );
-Vue.component( 'form-test-delete'               , require('./components/FormTestDelete.vue') );
-Vue.component( 'row-test'                       , require('./components/RowTest.vue') );
+Vue.component( 'tests'                          , require('./components/Tests.vue').default );
+Vue.component( 'form-test-add'                  , require('./components/FormTestAdd.vue').default );
+Vue.component( 'form-test-update'               , require('./components/FormTestUpdate.vue').default );
+Vue.component( 'form-test-delete'               , require('./components/FormTestDelete.vue').default );
+Vue.component( 'row-test'                       , require('./components/RowTest.vue').default );
 
 // Contact - Emails
-Vue.component( 'emails'                         , require('./components/Emails.vue') );
-Vue.component( 'form-email-add'                 , require('./components/FormEmailAdd.vue') );
-Vue.component( 'form-email-update'              , require('./components/FormEmailUpdate.vue') );
-Vue.component( 'form-email-delete'              , require('./components/FormEmailDelete.vue') );
-Vue.component( 'row-email'                      , require('./components/RowEmail.vue') );
+Vue.component( 'emails'                         , require('./components/Emails.vue').default );
+Vue.component( 'form-email-add'                 , require('./components/FormEmailAdd.vue').default );
+Vue.component( 'form-email-update'              , require('./components/FormEmailUpdate.vue').default );
+Vue.component( 'form-email-delete'              , require('./components/FormEmailDelete.vue').default );
+Vue.component( 'row-email'                      , require('./components/RowEmail.vue').default );
 
 // Contact - Social Network Links
-Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue') );
-Vue.component( 'form-sociallink-add'            , require('./components/FormSociallinkAdd.vue') );
-Vue.component( 'form-sociallink-update'         , require('./components/FormSociallinkUpdate.vue') );
-Vue.component( 'form-sociallink-delete'         , require('./components/FormSociallinkDelete.vue') );
-Vue.component( 'row-sociallink'                 , require('./components/RowSociallink.vue') );
+Vue.component( 'sociallinks'                    , require('./components/Sociallinks.vue').default );
+Vue.component( 'form-sociallink-add'            , require('./components/FormSociallinkAdd.vue').default );
+Vue.component( 'form-sociallink-update'         , require('./components/FormSociallinkUpdate.vue').default );
+Vue.component( 'form-sociallink-delete'         , require('./components/FormSociallinkDelete.vue').default );
+Vue.component( 'row-sociallink'                 , require('./components/RowSociallink.vue').default );
 
 // Laravel Passport
-Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue') );
-Vue.component( 'passport-authorized-clients'    , require('./components/passport/AuthorizedClients.vue') );
-Vue.component( 'passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue') );
+Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue').default );
+Vue.component( 'passport-authorized-clients'    , require('./components/passport/AuthorizedClients.vue').default );
+Vue.component( 'passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default );
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
