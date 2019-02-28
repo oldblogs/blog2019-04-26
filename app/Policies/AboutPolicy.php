@@ -18,7 +18,7 @@ class AboutPolicy
      */
     public function browse(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
 
     /**
@@ -29,7 +29,7 @@ class AboutPolicy
      */
     public function create(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
     
     /**
@@ -40,54 +40,50 @@ class AboutPolicy
      */
     public function store(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
     
     /**
      * Determine whether the user can view the about record.
      *
      * @param  \App\User  $user
-     * @param  \App\About  $about
      * @return mixed
      */
-    public function show(User $user, About $about)
+    public function view(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
 
     /**
      * Determine whether the user can update the about.
      *
      * @param  \App\User  $user
-     * @param  \App\About  $about
-     * @return mixed
+      * @return mixed
      */
-    public function edit(User $user, About $about)
+    public function edit(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
     
     /**
      * Determine whether the user can update the about.
      *
      * @param  \App\User  $user
-     * @param  \App\About  $about
      * @return mixed
      */
-    public function update(User $user, About $about)
+    public function update(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
 
     /**
      * Determine whether the user can delete the about.
      *
      * @param  \App\User  $user
-     * @param  \App\About  $about
      * @return mixed
      */
-    public function delete(User $user, About $about)
+    public function delete(User $user)
     {
-        return ( $user->hasRole('admin') ) ? true : false;
+        return ( $user->hasRole('apiadmin') ) ? true : false;
     }
 }

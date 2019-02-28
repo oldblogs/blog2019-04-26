@@ -49,7 +49,6 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         $post->delete();
     }
-
     
     public function socialids(){
         return $this->hasMany(Socialid::class);
@@ -65,5 +64,9 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function emails(){
         return $this->hasMany(Email::class);
+    }
+
+    public function about(){
+        return $this->hasOne(About::class);
     }
 }

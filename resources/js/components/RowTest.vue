@@ -28,7 +28,7 @@
         type: Object,
         required: true,
 
-        default: () => {
+        default: function(){
           return {
             id: 0,
             title: "",

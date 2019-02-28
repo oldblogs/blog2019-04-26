@@ -13,6 +13,9 @@ window.feather = require('feather-icons');
 
 window.VueFeatherIcon = require('vue-feather-icons');
 
+// About
+Vue.component( 'about'                          , require('./components/About.vue').default );
+
 // Test
 Vue.component( 'tests'                          , require('./components/Tests.vue').default );
 Vue.component( 'form-test-add'                  , require('./components/FormTestAdd.vue').default );
