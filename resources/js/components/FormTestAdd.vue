@@ -55,7 +55,7 @@
         type: Object,
         required: false,
       
-        default: () => {
+        default: function(){
           return {
             id: 0,
             title: "",

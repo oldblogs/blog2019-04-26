@@ -34,32 +34,6 @@ if ( config('app.form_login') ) {
   }
 }
 
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-
-
-// ------------------------------------------------------------
-// Front view
-// ------------------------------------------------------------
-
-// Main page
-Route::get('/', 'PostController@index')->name('mainpage');
-
-// List Posts
-Route::get('/posts', 'PostController@index');
-
-// Get a single Post
-Route::get('/posts/{post}', 'PostController@show');
-
-// About page
-Route::get('/about', 'AboutController@index')->name('about');
-
-
-// ------------------------------------------------------------
-// Manage View
-// ------------------------------------------------------------
-
-$manage_route = '/'.config('app.management', 'manage');
-
 // ------------------------------------------------------------
 // Social Logins
 // ------------------------------------------------------------
@@ -89,6 +63,34 @@ if( null !== config('services.github.client_id')  ) {
   Route::get( config('services.github.token_exchange_endpoint') ,
     'Auth\GithubController@handleGithubCallback');
 }
+
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+
+// ------------------------------------------------------------
+// Front view - Pages that non administrator visitors see
+// ------------------------------------------------------------
+
+// Main page
+Route::get('/', 'PostController@index')->name('mainpage');
+
+// List Posts
+Route::get('/posts', 'PostController@index');
+
+// Get a single Post
+Route::get('/posts/{post}', 'PostController@show');
+
+// About page
+Route::get('/about', 'AboutController@index')->name('about');
+
+
+// ------------------------------------------------------------
+// Manage View - Pages that registered users see.
+//   Every registered users can see /home page.
+//   Authorization needed for certain pages.
+// ------------------------------------------------------------
+
+$manage_route = '/'.config('app.management', 'manage');
 
 // User Home Page Web
 Route::middleware('auth:web', 'verified')->get('/home',
@@ -148,6 +150,10 @@ Route::middleware('auth:web', 'role:admin')
 // ------------------------------------------------------------
 
 // Get Abouts list in manage view
+/*
+
+// Converting web to api
+
 Route::middleware('auth:web', 'role:admin')
   ->get($manage_route.'/abouts', 'AboutController@index_m')
   ->name('abouts.index.m');
@@ -181,6 +187,7 @@ Route::middleware('auth:web', 'role:admin')
 Route::middleware('auth:web', 'role:admin')
   ->delete($manage_route.'/abouts/{about}', 'AboutController@delete')
   ->name('abouts.delete');
+*/
 
 
 // ------------------------------------------------------------

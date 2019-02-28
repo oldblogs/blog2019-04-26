@@ -33,6 +33,8 @@
       </div>
     </div>
 
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
+
     <div class="card card-default">
       <div class="card-body">
         <h4 class="h4 pt-2 ">Your linked social logins</h4>
@@ -46,7 +48,10 @@
           @endif
         @endforeach
       </div>
-    </div>    
+    </div>
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
+
     @if ($availableps)
     <div class="card card-default">
       <div class="card-body">
@@ -62,10 +67,15 @@
     
   @endif    
 
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
+
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-    <h2 class="h2">About You - These information will be shown on About page</h2>
+    <h2 class="h2">About You</h2>
   </div>
-  <!-- TODO: Implement about -->
+
+  <about></about>
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
 
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
     <h2 class="h2">Contact information</h2>
@@ -73,7 +83,11 @@
 
   <emails></emails>
 
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
+
   <sociallinks></sociallinks>
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
 
   <tests></tests>
   

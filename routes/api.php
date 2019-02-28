@@ -18,6 +18,10 @@ use App\Test;
 use App\Http\Resources\TestResource;
 use App\Http\Controllers\Api\TestController;
 
+use App\About;
+use App\Http\Resources\AboutResource;
+use App\Http\Controllers\Api\AboutController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -103,5 +107,21 @@ Route::middleware('auth:api', 'role:apiadmin' )
 Route::middleware('auth:api', 'role:apiadmin')
   ->delete($mapi_route.'/tests/{test}', 'Api\TestController@delete')
   ->name('tests.delete');
+
+
+// About Records
+
+// no browse, create, delete route
+
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/about', 'Api\AboutController@view')
+  ->name('about.view');
+
+// update about
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/about/{about}', 'Api\AboutController@update')
+  ->name('about.update');
+
+
 
 

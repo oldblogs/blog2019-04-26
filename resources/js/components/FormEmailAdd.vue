@@ -59,12 +59,13 @@
 
     },
     
+    // TODO: Check property & data naming collitions
     props: {
       email: {
         type: Object,
         required: false,
 
-        default: () => {
+        default: function(){
           return {
             id: 0,
             title: "",

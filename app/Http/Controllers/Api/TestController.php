@@ -30,6 +30,7 @@ class TestController extends Controller
     }
 
     public function show(Test $test){
+      // TODO: User input validation
       try{
         // TODO: User input validation of $test
         $result =  Test::where('id', $test)->get();
@@ -94,6 +95,7 @@ class TestController extends Controller
     }
 
     public function delete(Request $request, Test $test){
+      // TODO: check user input validation
       try{
         $test->delete();
         response()->json(['result' => 'success'], 200);
