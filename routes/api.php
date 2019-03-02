@@ -83,7 +83,7 @@ Route::middleware('auth:api', 'role:apiadmin')
 // delete sociallink
 Route::middleware('auth:api', 'role:apiadmin')
   ->delete($mapi_route.'/sociallinks/{sociallink}', 'Api\SociallinkController@delete')
-  ->name('emails.delete');
+  ->name('sociallinks.delete');
 
 
 // Test Records
@@ -121,6 +121,11 @@ Route::middleware('auth:api', 'role:apiadmin')
 Route::middleware('auth:api', 'role:apiadmin')
   ->patch($mapi_route.'/about/{about}', 'Api\AboutController@update')
   ->name('about.update');
+
+// delete profile photo
+Route::middleware('auth:api', 'role:apiadmin')
+  ->delete($mapi_route.'/aboutphoto/{about}', 'Api\AboutController@deletephoto')
+  ->name('about.photodelete');
 
 
 
