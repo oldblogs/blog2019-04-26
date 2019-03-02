@@ -41,10 +41,12 @@
         <div class="form-group">
             <label>Photo</label>
             <div>
-              <img v-bind:src="photopath" v-bind:key="photopath" class="img-thumbnail" style="max-height: 6rem;" alt="Profile photo" title="" />
+              <img v-if="about.photo" v-bind:src="photopath" v-bind:key="photopath" class="img-thumbnail" style="max-height: 6rem;" alt="Profile photo" title="" />
+              <button class="btn btn-sm btn-outline-secondary" 
+                v-if="about.photo" v-on:click="deletephoto" ><trash-2-icon class="custom-class"></trash-2-icon></button>
               <input type="file" id="file" ref="file" class="form-control-file" aria-describedby="choose a photo file" v-on:change="handleFileUpload"/>
-              <label><small>Image will change after you press "Save" button</small></label>
             </div>
+            
         </div>
 
         <div class="form-group">
@@ -63,12 +65,11 @@
             </div>
         </div>
 
-        <p>{{ about.id }}</p>
-
      </div>
 </template>
 
 <script>
+  import { Trash2Icon  } from 'vue-feather-icons'
 
   export default {
     name: "About",
@@ -99,7 +100,7 @@
           type: Object,
           required: false,
           default: function(){
-            files: [] 
+            return null
           },
         },
         message: "",
@@ -109,7 +110,13 @@
 
     computed: {
       photopath: function() {
-        return 'storage/' + this.about.photo;
+        if((typeof this.about.photo !== 'undefined') || this.about.photo !== ''  ){
+          return 'storage/' + this.about.photo;
+        }
+        else{
+          return '';
+        }
+        
       }
     },
 
@@ -139,7 +146,7 @@
           formData.append('photofile', this.photofile)
         }
         
-
+        // TODO: resolve static url problem.
         axios.post('http://blog.com/api/manage/about/' + this.about.id, 
           formData,
           {
@@ -170,9 +177,26 @@
         this.photofile = this.$refs.file.files[0];
       },
 
+      deletephoto(){
+        // TODO: resolve static url problem.
+        axios.delete('http://blog.com/api/manage/aboutphoto/' + this.about.id)
+          .then( response => {
+            this.about.photo = ''
+            this.photofile = '' 
+            this.errors = ''
+            this.message = 'Photo deleted.'
+
+          })
+          .catch( (error) => {
+            this.message = error.response.data.message
+            this.errors = JSON.parse(JSON.stringify( error.response.data.errors ))
+          })
+      },
+
     },
 
     components: {
+      Trash2Icon,
     },
   }
 </script>

@@ -1824,6 +1824,7 @@ function mergeFn (a, b) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_feather_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-feather-icons */ "./node_modules/vue-feather-icons/dist/vue-feather-icons.es.js");
 //
 //
 //
@@ -1894,6 +1895,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About",
   mounted: function mounted() {
@@ -1921,7 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
         type: Object,
         required: false,
         default: function _default() {
-          files: [];
+          return null;
         }
       },
       message: "",
@@ -1930,10 +1932,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     photopath: function photopath() {
-      return 'storage/' + this.about.photo;
+      if (typeof this.about.photo !== 'undefined' || this.about.photo !== '') {
+        return 'storage/' + this.about.photo;
+      } else {
+        return '';
+      }
     }
   },
   methods: {
+    // Implement timeout for messages prompts.
     fetch: function fetch() {
       var _this = this;
 
@@ -1957,7 +1964,8 @@ __webpack_require__.r(__webpack_exports__);
 
       if (null !== this.photofile) {
         formData.append('photofile', this.photofile);
-      }
+      } // TODO: resolve static url problem.
+
 
       axios.post('http://blog.com/api/manage/about/' + this.about.id, formData, {
         headers: {
@@ -1980,9 +1988,25 @@ __webpack_require__.r(__webpack_exports__);
     },
     handleFileUpload: function handleFileUpload() {
       this.photofile = this.$refs.file.files[0];
+    },
+    deletephoto: function deletephoto() {
+      var _this3 = this;
+
+      // TODO: resolve static url problem.
+      axios.delete('http://blog.com/api/manage/aboutphoto/' + this.about.id).then(function (response) {
+        _this3.about.photo = '';
+        _this3.photofile = '';
+        _this3.errors = '';
+        _this3.message = 'Photo deleted.';
+      }).catch(function (error) {
+        _this3.message = error.response.data.message;
+        _this3.errors = JSON.parse(JSON.stringify(error.response.data.errors));
+      });
     }
   },
-  components: {}
+  components: {
+    Trash2Icon: vue_feather_icons__WEBPACK_IMPORTED_MODULE_0__["Trash2Icon"]
+  }
 });
 
 /***/ }),
@@ -52487,13 +52511,27 @@ var render = function() {
     _c("div", { staticClass: "form-group" }, [
       _c("label", [_vm._v("Photo")]),
       _vm._v(" "),
-      _c("div", [
-        _c("img", {
-          key: _vm.photopath,
-          staticClass: "img-thumbnail",
-          staticStyle: { "max-height": "6rem" },
-          attrs: { src: _vm.photopath, alt: "Profile photo", title: "" }
-        }),
+      _c("div", { staticClass: "align-items-start" }, [
+        _vm.about.photo
+          ? _c("img", {
+              key: _vm.photopath,
+              staticClass: "img-thumbnail",
+              staticStyle: { "max-height": "6rem" },
+              attrs: { src: _vm.photopath, alt: "Profile photo", title: "" }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.about.photo
+          ? _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-outline-secondary",
+                on: { click: _vm.deletephoto }
+              },
+              [_c("trash-2-icon", { staticClass: "custom-class" })],
+              1
+            )
+          : _vm._e(),
         _vm._v(" "),
         _c("input", {
           ref: "file",
@@ -52504,9 +52542,7 @@ var render = function() {
             "aria-describedby": "choose a photo file"
           },
           on: { change: _vm.handleFileUpload }
-        }),
-        _vm._v(" "),
-        _vm._m(0)
+        })
       ])
     ]),
     _vm._v(" "),
@@ -52560,21 +52596,10 @@ var render = function() {
           _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
         ])
       ]
-    ),
-    _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(_vm.about.id))])
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _c("small", [_vm._v('Image will change after you press "Save" button')])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

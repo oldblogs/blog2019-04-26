@@ -47,6 +47,7 @@ class AboutController extends Controller {
   }
 
   public function update(Request $request, About $about){
+    // Validate uploaded file
     $validateData = $request->validate([
       'title' => 'string',
       'subtitle' => 'string',
@@ -93,6 +94,27 @@ class AboutController extends Controller {
       // TODO: Log Error
       // TODO: Generate more proper response
       return false;
+    }
+  }
+
+  public function deletephoto(Request $request, About $about){
+    try{
+      if ( auth()->user()->id !== $about->user_id ){
+        // TODO: Generate more proper response
+        response()->json(['result' => 
+          'You do not have the permission to delete this file.'], 401);
+      }
+      else{
+        Storage::disk('public')->delete( $about->photo );
+        $about->photo = null;
+        $about->save();
+        response()->json(['result' => 'success'], 200);
+      }
+    }
+    catch(\Exception $e){
+      // TODO: Log Error
+      // TODO: Generate more proper response
+      response()->json(['result' => 'error'], 500);
     }
   }
 }
