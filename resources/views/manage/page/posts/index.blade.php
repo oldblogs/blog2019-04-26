@@ -25,6 +25,7 @@
             <th>Title</th>
             <th>Created</th>
             <th>Modified</th>
+            <th>Published</th>
             <th>Read</th>
             <th>Edit</th>
             <th>Delete</th>
