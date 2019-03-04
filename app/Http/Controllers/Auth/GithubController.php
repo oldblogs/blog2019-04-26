@@ -68,7 +68,7 @@ class GithubController extends Controller
             'Thank you for your attention ! '.
             'We are sorry , we can not accept your user registration request. '.
             'Social account registrations are for site management purposes only. '.
-            'No user registration is allowed at the moment. '.
+            'No non-administrative user registration is allowed at the moment. '.
             'You are not a registered administrator of this site.';
             
             if(!isset($bloguser)){

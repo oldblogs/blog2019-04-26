@@ -78,7 +78,7 @@ class Socialid extends Model
       // 6 . /config/services.php must be configured
       // 7 . /routes/web.php must be configured
       // 8 . A Controller for the social provider must be created.
-      // 9 . Provider must be defined in socialproviders table
+      // 9 . Provider must be defined in socialproviders table, and enabled there.
       // If all above is done then we can use the social logins
       
       $availableSP = 
@@ -108,6 +108,7 @@ class Socialid extends Model
         return $availableSP;
       }
 
+      // where no Social Provider is configured or all of them are used.
       return null;
     }
     

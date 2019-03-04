@@ -55,12 +55,10 @@
     @if ($availableps)
     <div class="card card-default">
       <div class="card-body">
-        <h5 class="card-title">Add a social login to your account</h5>
-        
+        <h4 class="card-title">Add a social login to your account</h4>
           @foreach ( $availableps as $provider )
             <a type="button" class="btn btn-default" href="{{ $provider['auth_endpoint'] }}">{{ $provider['provider'] }}</a>
           @endforeach
-        
       </div>
     </div>
     @endif
