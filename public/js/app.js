@@ -52511,7 +52511,7 @@ var render = function() {
     _c("div", { staticClass: "form-group" }, [
       _c("label", [_vm._v("Photo")]),
       _vm._v(" "),
-      _c("div", { staticClass: "align-items-start" }, [
+      _c("div", [
         _vm.about.photo
           ? _c("img", {
               key: _vm.photopath,
