@@ -71,6 +71,7 @@
                 </table>
             </div>
         </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
 
         <!-- Create Client Modal -->
         <div class="modal fade" id="modal-create-client" tabindex="-1" role="dialog">
@@ -90,7 +91,7 @@
                             <p class="mb-0"><strong>Whoops!</strong> Something went wrong!</p>
                             <br>
                             <ul>
-                                <li v-for="error in createForm.errors" v-bind:key="error.id">
+                                <li v-for="error in createForm.errors">
                                     {{ error }}
                                 </li>
                             </ul>
@@ -158,7 +159,7 @@
                             <p class="mb-0"><strong>Whoops!</strong> Something went wrong!</p>
                             <br>
                             <ul>
-                                <li v-for="error in editForm.errors" v-bind:key="error.id">
+                                <li v-for="error in editForm.errors" >
                                     {{ error }}
                                 </li>
                             </ul>
@@ -207,6 +208,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 

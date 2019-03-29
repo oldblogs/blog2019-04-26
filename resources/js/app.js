@@ -13,6 +13,14 @@ window.feather = require('feather-icons');
 
 window.VueFeatherIcon = require('vue-feather-icons');
 
+// Laravel Vue Pagination 
+Vue.component( 'pagination'                     , require( 'laravel-vue-pagination') );
+
+// Laravel Passport
+Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue').default );
+Vue.component( 'passport-authorized-clients'    , require('./components/passport/AuthorizedClients.vue').default );
+Vue.component( 'passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default );
+
 // About
 Vue.component( 'about'                          , require('./components/About.vue').default );
 
@@ -37,10 +45,13 @@ Vue.component( 'form-sociallink-update'         , require('./components/FormSoci
 Vue.component( 'form-sociallink-delete'         , require('./components/FormSociallinkDelete.vue').default );
 Vue.component( 'row-sociallink'                 , require('./components/RowSociallink.vue').default );
 
-// Laravel Passport
-Vue.component( 'passport-clients'               , require('./components/passport/Clients.vue').default );
-Vue.component( 'passport-authorized-clients'    , require('./components/passport/AuthorizedClients.vue').default );
-Vue.component( 'passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default );
+// Posts
+Vue.component( 'posts'                          , require('./components/Posts.vue').default );
+Vue.component( 'form-post-view'                 , require('./components/FormPostView.vue').default );
+Vue.component( 'form-post-add'                  , require('./components/FormPostAdd.vue').default );
+Vue.component( 'form-post-update'               , require('./components/FormPostUpdate.vue').default );
+Vue.component( 'form-post-delete'               , require('./components/FormPostDelete.vue').default );
+Vue.component( 'row-post'                       , require('./components/RowPost.vue').default );
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

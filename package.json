@@ -15,17 +15,18 @@
         "cross-env": "^5.2.0",
         "imagemin": "^6.1.0",
         "jquery": "^3.2",
-        "laravel-mix": "^4.0.14",
+        "laravel-mix": "^4.0.15",
         "lodash": "^4.17.11",
         "popper.js": "^1.14.7",
         "resolve-url-loader": "^2.3.2",
-        "sass": "^1.17.2",
+        "sass": "^1.17.3",
         "sass-loader": "^7.1.0",
-        "vue": "^2.6.7",
-        "vue-template-compiler": "^2.6.7"
+        "vue": "^2.6.10",
+        "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "feather-icons": "^4.17.0",
+        "laravel-vue-pagination": "^2.3.0",
         "vue-feather-icons": "^4.10.0"
     }
 }

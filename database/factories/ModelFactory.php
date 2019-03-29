@@ -37,6 +37,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
 $factory->define(App\About::class, function (Faker\Generator $faker) {
 
     return [
+        'user_id' => App\User::first()->id,
         'title' => $faker->name,
         'subtitle' => $faker->name,
         'body' => $faker->paragraph,

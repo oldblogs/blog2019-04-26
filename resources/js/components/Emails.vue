@@ -9,54 +9,55 @@
         </div>
       </div>
     </div>
-      <form-email-add 
-        v-show="addformenabled" 
-        v-bind:email="selected"
-        v-on:hide:add:email="hideAddForm" 
-        v-on:create:email="addItem" 
-        ></form-email-add>
+    <form-email-add 
+      v-show="addformenabled" 
+      v-bind:email="selected"
+      v-on:hide:add:email="hideAddForm" 
+      v-on:create:email="addItem" 
+      ></form-email-add>
 
-      <form-email-update
-        v-show="updateformenabled"
-        v-bind:email="selected"
-        v-on:hide:update:email="hideUpdateForm"
-        v-on:update:email="updateItem"
-        ></form-email-update>
+    <form-email-update
+      v-show="updateformenabled"
+      v-bind:email="selected"
+      v-on:hide:update:email="hideUpdateForm"
+      v-on:update:email="updateItem"
+      ></form-email-update>
 
-      <form-email-delete
-        v-show="deleteformenabled"
-        v-bind:email="selected"
-        v-on:hide:delete:email="hideDeleteForm"
-        v-on:delete:email="deleteItem"
-        ></form-email-delete>
+    <form-email-delete
+      v-show="deleteformenabled"
+      v-bind:email="selected"
+      v-on:hide:delete:email="hideDeleteForm"
+      v-on:delete:email="deleteItem"
+      ></form-email-delete>
 
-      <div class="table-responsive">
-        <table class="table table-striped table-sm">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Email</th>
-              <th>Created</th>
-              <th>Modified</th>
-              <th>Edit</th>
-              <th>Delete</th>
-            </tr>
-          </thead>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Email</th>
+            <th>Created</th>
+            <th>Modified</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
 
-          <tbody >
-            <row-email
-              is="row-email"
-              v-for="(email, index) in contact_emails"
-              v-bind:email="email"
-              v-bind:index="index"
-              v-bind:key="email.id"
-              v-on:show-update-form="showUpdateForm(email, index)"
-              v-on:show-delete-form="showDeleteForm(email, index)"
-            ></row-email>
-          </tbody>
+        <tbody >
+          <row-email
+            is="row-email"
+            v-for="(email, index) in contact_emails"
+            v-bind:email="email"
+            v-bind:index="index"
+            v-bind:key="email.id"
+            v-on:show-update-form="showUpdateForm(email, index)"
+            v-on:show-delete-form="showDeleteForm(email, index)"
+          ></row-email>
+        </tbody>
 
-        </table>
-      </div>
+      </table>
+    </div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
   </div>
 </template>
 

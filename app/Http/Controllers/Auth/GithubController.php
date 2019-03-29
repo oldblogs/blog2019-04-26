@@ -19,7 +19,8 @@ class GithubController extends Controller
     use AuthenticatesUsers;
     
     // TODO: Do not authenticate user on a failure
-    
+    // TODO: Implement an artisan console command to enable github social provider record.
+
     /**
      * Redirect to the provider
      *

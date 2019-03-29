@@ -3,6 +3,11 @@
 Route::get('register/{code}/{email}', 'Auth\RegisterController@showRegistrationForm')->name('getregister');
 Route::post('register/{code}/{email}', 'Auth\RegisterController@register')->name('postregister');
 
+// E-mail verification routes
+Route::get('email/verify',      'Auth\VerificationController@show')->name('verification.notice');
+Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
+Route::get('email/resend',      'Auth\VerificationController@resend')->name('verification.resend');     
+
 // Authentication Routes...
 if ( config('app.form_login') ) {
   Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
@@ -16,10 +21,6 @@ if ( config('app.form_login') ) {
   Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
   Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.reset.process');
 
-  // E-mail verification routes
-  Route::get('email/verify',      'Auth\VerificationController@show')->name('verification.notice');
-  Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
-  Route::get('email/resend',      'Auth\VerificationController@resend')->name('verification.resend');     
 } else {
   if( 'form_login' === config('app.default_auth') ){
     // When we disable form_login , we must also change the default_auth in .env
@@ -37,7 +38,7 @@ if ( config('app.form_login') ) {
 // ------------------------------------------------------------
 // Social Logins
 // ------------------------------------------------------------
-// https://laravel.com/docs/5.6/socialite
+// https://laravel.com/docs/5.7/socialite
 
 
 // Google Sign In
@@ -104,10 +105,6 @@ Route::middleware('auth:web', 'role:admin')
 // ------------------------------------------------------------
 // Posts
 // ------------------------------------------------------------
-
-// TODO: Modify implementation as in
-// https://laravel.com/docs/5.6/controllers
-// Actions Handled By Resource Controller
 
 // Get New Post Form
 Route::middleware('auth:web', 'role:admin')

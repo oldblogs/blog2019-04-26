@@ -28,11 +28,6 @@ class DatabaseSeeder extends Seeder
             CsocialSeeder::class,
         ]);
 
-        // Sample Records
-        factory(App\User::class, 1)->create();
-        factory(App\Post::class, 100)->create();
-        factory(App\About::class, 5)->create();
-
     }
 }
 
@@ -47,9 +42,11 @@ class CsocialSeeder extends Seeder
     {
 
       $sCsocials = [
-        [ 'order' => 1, 'title' => 'twitter', 'css_class' => 'fa-twitter', 'homepage' => 'https://twitter.com'],
-        [ 'order' => 2, 'title' => 'github', 'css_class' => 'fa-github', 'homepage' => 'https://github.com/'],
-        [ 'order' => 3, 'title' => 'stackoverflow', 'css_class' => 'fa-stack-overflow', 'homepage' => 'https://stackoverflow.com/'],
+        [ 'title' => 'github', 'css_class' => 'fa-github', 'homepage' => 'https://github.com/'],
+        [ 'title' => 'stackoverflow', 'css_class' => 'fa-stack-overflow', 'homepage' => 'https://stackoverflow.com/'],
+        [ 'title' => 'twitter', 'css_class' => 'fa-twitter', 'homepage' => 'https://twitter.com/'],
+        [ 'title' => 'google', 'css_class' => 'fa-fa-google', 'homepage' => 'https://www.google.com/'],
+
       ];
 
       foreach ( $sCsocials as $sCsocial ){
@@ -69,7 +66,7 @@ class SocialprovidersSeeder extends Seeder
     public function run()
     {
       // Supported providers by Laravel Socialite
-      // but these might not be configured in config files
+      // but these should be configured in config files before use
       // TODO: fill in absent review links
 
       $sProviders = [

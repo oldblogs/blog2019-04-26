@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AboutController extends Controller
 {
-    
+    // TODO: Delete remenants of classic form based implementation of About Model
     public function index(){
         $abouts = About::all();
         return view('frontview.page.about', compact('abouts') );

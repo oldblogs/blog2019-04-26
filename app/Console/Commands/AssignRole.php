@@ -56,6 +56,7 @@ class AssignRole extends Command
 
           $blogrole = Role::where('name', $role)->firstOrFail();
           $bloguser = User::where('email', $email)->firstOrFail();
+          
           if( $bloguser->hasRole($blogrole) ){
             $this->info('User already has the '.$blogrole->name.' role.');
           }

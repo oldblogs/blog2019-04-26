@@ -36,7 +36,7 @@
                         </thead>
 
                         <tbody>
-                            <tr v-for="token in tokens">
+                            <tr v-for="token in tokens" v-bind:key="token.id">
                                 <!-- Client Name -->
                                 <td style="vertical-align: middle;">
                                     {{ token.name }}
@@ -54,6 +54,7 @@
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
 
         <!-- Create Token Modal -->
         <div class="modal fade" id="modal-create-token" tabindex="-1" role="dialog">
@@ -95,7 +96,7 @@
                                 <label class="col-md-4 col-form-label">Scopes</label>
 
                                 <div class="col-md-6">
-                                    <div v-for="scope in scopes">
+                                    <div v-for="scope in scopes" v-bind:key="scope.id">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox"
@@ -141,7 +142,7 @@
                             You may now use this token to make API requests.
                         </p>
 
-                        <textarea class="form-control" rows="10">{{ accessToken }}</textarea>
+                        <textarea class="form-control" rows="10" v-model="accessToken"></textarea>
                     </div>
 
                     <!-- Modal Actions -->
