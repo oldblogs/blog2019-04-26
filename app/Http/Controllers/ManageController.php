@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Post;
-use App\User;
 use App\Repositories\PostsRepository;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
@@ -16,15 +14,18 @@ class ManageController extends Controller
         $this->middleware('auth');
     }
     
+    // TODO: Delete after conversion
     public function postslist(PostsRepository $postsrepo){
         $posts = $postsrepo->paginated();
         return view('manage.page.posts.index', compact('posts') );
     }
-
+    
+    // TODO: Delete after conversion
     public function viewpost(Post $post){
         return view('manage.page.posts.show', compact('post') );
     }
     
+    // TODO: Delete before production
     public function test(User $user){
         return view('manage.page.test', compact('user') );
     }

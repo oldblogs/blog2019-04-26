@@ -2,6 +2,10 @@
     <div>
         <input v-model="about.id" type="text" class="form-control" style="display: none" >
 
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h2 class="h2">About You</h2>
+        </div>
+
         <div class="form-group">
             <label>Title</label>
             <input v-model="about.title" type="text" class="form-control" 
@@ -64,6 +68,8 @@
               {{ message }}
             </div>
         </div>
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3"></div>
 
      </div>
 </template>

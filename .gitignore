@@ -2,7 +2,7 @@
 /bootstrap/cache/config.php
 /storage/*.key
 /node_modules
-/public/*
+/public
 /vendor
 /.idea
 /.vscode
@@ -14,5 +14,5 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-
-
+.editorconfig
+cclear*

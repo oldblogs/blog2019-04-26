@@ -128,5 +128,26 @@ Route::middleware('auth:api', 'role:apiadmin')
   ->name('about.photodelete');
 
 
+// Post Records
+
+// browse post records
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/posts/{page?}', 'Api\PostController@index')
+  ->name('posts.index');
+
+// update test
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/posts/{post}', 'Api\PostController@update')
+  ->name('posts.update');
+
+// create test record
+Route::middleware('auth:api', 'role:apiadmin' )
+  ->post($mapi_route.'/posts', 'Api\PostController@create')
+  ->name('posts.create');
+
+// delete test record
+Route::middleware('auth:api', 'role:apiadmin')
+  ->delete($mapi_route.'/posts/{post}', 'Api\PostController@delete')
+  ->name('posts.delete');
 
 
