@@ -2877,7 +2877,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "FormTestUpdate",
+  name: "FormPostpdate",
   mounted: function mounted() {},
   props: {
     post: {
@@ -3810,7 +3810,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       records: {
-        data: {},
+        data: [],
         links: {
           type: Object,
           required: false,
@@ -3966,7 +3966,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.updateformenabled = false;
       return new Promise(function (resolve, reject) {
-        _this3.records.splice(_this3.selected.index, 1, JSON.parse(JSON.stringify(record))); // TODO: Check promise implementation . use of resolve
+        _this3.records.data.splice(_this3.selected.index, 1, JSON.parse(JSON.stringify(record))); // TODO: Check promise implementation . use of resolve
 
 
         resolve();
@@ -3980,7 +3980,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.deleteformenabled = false;
       return new Promise(function (resolve, reject) {
-        _this4.records.splice(_this4.selected.index, 1); // TODO: Check promise implementation . use of resolve
+        _this4.records.data.splice(_this4.selected.index, 1); // TODO: Check promise implementation . use of resolve
 
 
         resolve();
