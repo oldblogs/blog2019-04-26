@@ -73,7 +73,7 @@
 
 <script>
   export default {
-    name: "FormTestUpdate",
+    name: "FormPostpdate",
 
     mounted() {
       

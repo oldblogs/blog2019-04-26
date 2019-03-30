@@ -99,7 +99,7 @@
     data(){
       return{
         records: {
-          data: {},
+          data: [],
 
           links: {
             type: Object,
@@ -273,7 +273,7 @@
       updateRow(record){
         this.updateformenabled = false
         return new Promise((resolve, reject) => {
-          this.records.splice( this.selected.index, 1,
+          this.records.data.splice( this.selected.index, 1,
             JSON.parse( JSON.stringify(record) ) )
           // TODO: Check promise implementation . use of resolve
           resolve()
@@ -287,7 +287,7 @@
       removeRow(){
         this.deleteformenabled = false 
         return new Promise((resolve, reject) => {
-          this.records.splice(this.selected.index, 1)
+          this.records.data.splice(this.selected.index, 1)
           // TODO: Check promise implementation . use of resolve
           resolve()
         })
