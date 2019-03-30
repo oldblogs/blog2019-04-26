@@ -264,10 +264,22 @@
         this.selected = {}
       },
 
+      addRow(record){
+        try {
+          this.addformenabled = false 
+          return new Promise( (resolve, reject) => {
+            this.records.data.push( JSON.parse( JSON.stringify(record) ) )
+            // TODO: Check promise implementation . use of resolve
+            resolve()
+          })
+        }
+        catch(err) {
+          reject(err)
+        }
+      },
+
       addRecord(record){
-        this.records.push( JSON.parse( JSON.stringify(record) ) )
-        this.addformenabled = false 
-        this.selected = {}
+        this.addRow(record).then( this.resetSelected() )
       },
 
       updateRow(record){

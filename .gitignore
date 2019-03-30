@@ -2,7 +2,9 @@
 /bootstrap/cache/config.php
 /storage/*.key
 /node_modules
-/public
+/public/css
+/public/img
+/public/js
 /vendor
 /.idea
 /.vscode

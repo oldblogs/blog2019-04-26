@@ -3956,17 +3956,30 @@ __webpack_require__.r(__webpack_exports__);
       this.viewformenabled = false;
       this.selected = {};
     },
+    addRow: function addRow(record) {
+      var _this3 = this;
+
+      try {
+        this.addformenabled = false;
+        return new Promise(function (resolve, reject) {
+          _this3.records.data.push(JSON.parse(JSON.stringify(record))); // TODO: Check promise implementation . use of resolve
+
+
+          resolve();
+        });
+      } catch (err) {
+        reject(err);
+      }
+    },
     addRecord: function addRecord(record) {
-      this.records.push(JSON.parse(JSON.stringify(record)));
-      this.addformenabled = false;
-      this.selected = {};
+      this.addRow(record).then(this.resetSelected());
     },
     updateRow: function updateRow(record) {
-      var _this3 = this;
+      var _this4 = this;
 
       this.updateformenabled = false;
       return new Promise(function (resolve, reject) {
-        _this3.records.data.splice(_this3.selected.index, 1, JSON.parse(JSON.stringify(record))); // TODO: Check promise implementation . use of resolve
+        _this4.records.data.splice(_this4.selected.index, 1, JSON.parse(JSON.stringify(record))); // TODO: Check promise implementation . use of resolve
 
 
         resolve();
@@ -3976,11 +3989,11 @@ __webpack_require__.r(__webpack_exports__);
       this.updateRow(record).then(this.resetSelected());
     },
     removeRow: function removeRow() {
-      var _this4 = this;
+      var _this5 = this;
 
       this.deleteformenabled = false;
       return new Promise(function (resolve, reject) {
-        _this4.records.data.splice(_this4.selected.index, 1); // TODO: Check promise implementation . use of resolve
+        _this5.records.data.splice(_this5.selected.index, 1); // TODO: Check promise implementation . use of resolve
 
 
         resolve();
