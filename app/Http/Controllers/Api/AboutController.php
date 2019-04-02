@@ -16,9 +16,8 @@ class AboutController extends Controller {
     
   public function view(){
     try{
-      // TODO: Show max file size limit
+      // TODO: Show max file size limit 
       // TODO: User input validation of $about
-      // $about = new About();
       $aboutAry = About::where( 'user_id', auth()->user()->id )->get();
 
       if ( 0 === $aboutAry->count() ){
@@ -48,6 +47,8 @@ class AboutController extends Controller {
   }
 
   public function update(Request $request, About $about){
+    // upload_max_filesize  php.ini settings is important
+    // Default value is 2M. You can not upload files bigger than this value.
     // Validate uploaded file
     $validateData = $request->validate([
       'title' => 'string',
