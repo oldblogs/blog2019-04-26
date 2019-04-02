@@ -16,6 +16,7 @@ class AboutController extends Controller {
     
   public function view(){
     try{
+      // TODO: Show max file size limit
       // TODO: User input validation of $about
       // $about = new About();
       $aboutAry = About::where( 'user_id', auth()->user()->id )->get();
