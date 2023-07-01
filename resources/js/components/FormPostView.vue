@@ -42,11 +42,11 @@
           return {
             id: 0,
             user_id: 0,
-            title: "",
-            body: "",
+            title: '',
+            body: '',
             published: false,
-            created_at: "00:00",
-            updated_at: "00:00",
+            created_at: '00:00',
+            updated_at: '00:00',
             index: -1,
           }
         },
@@ -55,8 +55,8 @@
 
     data(){
       return{
-        message: "",
-        errors: "",
+        message: '',
+        errors: '',
       }
     },
 

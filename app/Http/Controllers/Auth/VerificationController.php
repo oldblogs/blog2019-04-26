@@ -18,6 +18,11 @@ class VerificationController extends Controller
     
     use VerifiesEmails;
 
+    // TODO: Send a mail to blog administrators after verification of a new user.
+    // TODO: Properly implement user enabled property
+    // TODO: Fully implement enabled variable checks for users.
+    
+
     /**
      * Where to redirect users after verification.
      *

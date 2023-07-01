@@ -14,7 +14,7 @@
 
     @include ('manage.partial.sociallogins')
     
-  @endif    
+  @endif
 
   <about></about>
 
