@@ -37,6 +37,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        // TODO: Check logout as a guest
         $this->middleware('guest')->except('logout');
     }
     

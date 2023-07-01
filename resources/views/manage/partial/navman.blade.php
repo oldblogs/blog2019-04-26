@@ -7,7 +7,7 @@
                   Home
                 </a>
               </li>
-
+              
               <li class="nav-item">
                 <a class="nav-link {{ Request::is('manage')?'active':'' }}" href="{{ action('DashboardController@index') }}">
                   <span data-feather="grid"></span>

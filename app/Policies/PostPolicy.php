@@ -18,13 +18,13 @@ class PostPolicy
      */
     public function browse(User $user)
     {
-      // TODO: try , catch
-        if( $user->hasRole('admin') ){
-            return true;
-        }
-        else{
-            return false;
-        }
+      try{
+        return ( $user->hasRole('admin') ) ? true : false ;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        return false;
+      }
     }
 
     /**
@@ -36,20 +36,25 @@ class PostPolicy
      */
     public function view(User $user, Post $post)
     {
-      // TODO: try , catch
+      try{
         // Everyone can view a published Post
         if ($post->published){
-            return true;
+          return true;
         }
         elseif ($user->id === $post->user_id){
-            // Writer of an unpublished post would read the post.
-            return  true;
+          // Writer of an unpublished post would read the post.
+          return  true;
         }
         else{
-            // Must be an admin in this case
-            return ( $user->hasRole('admin') ) ? true : false;
+          // Must be an admin in this case
+          return ( $user->hasRole('admin') ) ? true : false;
         }
         return false;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        return false;
+      }
     }
 
     /**
@@ -60,8 +65,13 @@ class PostPolicy
      */
     public function create(User $user)
     {
-      // TODO: try , catch
+      try{
         return ( $user->hasRole('admin') ) ? true : false;
+      }
+      catch(\Exception $e){
+        // TODO: Log Error
+        return false;
+      }
     }
 
     /**
@@ -73,12 +83,17 @@ class PostPolicy
      */
     public function update(User $user, Post $post)
     {
-      // TODO: try , catch
-      if($user->id === $post->user_id){
-        return true;
+      try{  
+        if($user->id === $post->user_id){
+          return true;
+        }
+        else{
+          return ( $user->hasRole('admin') ) ? true : false ;
+        }
       }
-      else{
-        return ( $user->hasRole('admin') ) ? true : false ;
+      catch(\Exception $e){
+        // TODO: Log Error
+        return false;
       }
     }
 
@@ -91,17 +106,21 @@ class PostPolicy
      */
     public function delete(User $user, Post $post)
     {
-      // TODO: try , catch
+      try{
         if($user->id === $post->user_id){
-            return true;
+          return true;
         }
         elseif($user->hasRole('admin')){
-            return true;
+          return true;
         }
         else{
-            return false;
+          return false;
         }
+      }
+      catch(\Exception $e){
+        // TODO: Log error
+        return false;
+      }
     }
-
 
 }

@@ -13,11 +13,9 @@ use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
-    // TODO: better return values
-
     public function index(Request $request){
       // TODO: User input validation 
-      $validatedData = $request->validate([
+      $isValidated = $request->validate([
         'page' => 'integer',
       ]);
 
@@ -55,8 +53,9 @@ class PostController extends Controller
           return $result;
         }
 
-        // TODO: Log, must not come to this point
-        abort(500, 'Unauthorized action.');  
+        // TODO: Log Unexpected state
+        // TODO: Proper error message
+        response()->json(['result' => 'error'], 500);
       }
       catch(\Exception $e){
         // TODO: Log Error
@@ -68,7 +67,7 @@ class PostController extends Controller
 
     public function create(Request $request){
       // TODO: User input validation 
-      $validatedData = $request->validate([
+      $isValidated = $request->validate([
         'title' => 'required|min:3',
         'body' => 'required|min:3',
 
@@ -95,7 +94,7 @@ class PostController extends Controller
 
     public function update(Request $request, Post $post){
       // TODO: Input validation
-      $validateData = $request->validate([
+      $isValidated = $request->validate([
         'title' => 'required|min:3',
         'body' => 'required|min:3',
       ]);
@@ -104,6 +103,8 @@ class PostController extends Controller
         $post->title = request('title');
         $post->body = $request->body;
         $post->published = $request->published;
+
+
         $post->save();
 
         $result =  Post::where('id', $post->id )->first();

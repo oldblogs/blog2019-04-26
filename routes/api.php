@@ -22,6 +22,23 @@ use App\About;
 use App\Http\Resources\AboutResource;
 use App\Http\Controllers\Api\AboutController;
 
+use App\Post;
+use App\Http\Resources\PostResource;
+use App\Http\Controllers\Api\PostController;
+
+use App\Medium;
+use App\Http\Resources\MediumResource;
+use App\Http\Controllers\Api\MediumController;
+
+use App\MediumType;
+use App\Http\Resources\MediumTypeResource;
+use App\Http\Controllers\Api\MediumTypeController;
+
+use App\License;
+use App\Http\Resources\LicenseResource;
+// use App\Http\Controllers\Api\LicenseController;
+
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -135,19 +152,51 @@ Route::middleware('auth:api', 'role:apiadmin')
   ->get($mapi_route.'/posts/{page?}', 'Api\PostController@index')
   ->name('posts.index');
 
-// update test
+// update post
 Route::middleware('auth:api', 'role:apiadmin')
   ->patch($mapi_route.'/posts/{post}', 'Api\PostController@update')
   ->name('posts.update');
 
-// create test record
+// create post
 Route::middleware('auth:api', 'role:apiadmin' )
   ->post($mapi_route.'/posts', 'Api\PostController@create')
   ->name('posts.create');
 
-// delete test record
+// delete post
 Route::middleware('auth:api', 'role:apiadmin')
   ->delete($mapi_route.'/posts/{post}', 'Api\PostController@delete')
   ->name('posts.delete');
 
 
+// Medium Records
+
+// Browse medium records
+// Route::middleware('auth:api', 'role:apiadmin')
+//   ->get($mapi_route.'/media/{page?}', 'Api\MediumController@index')
+//   ->name('media.index');
+
+Route::middleware('auth:api')
+  ->get($mapi_route.'/media/{page?}', 'Api\MediumController@index')
+  ->name('media.index');
+
+
+
+// Update
+Route::middleware('auth:api', 'role:apiadmin')
+  ->patch($mapi_route.'/media/{medium}', 'Api\MediumController@update')
+  ->name('media.update');
+
+// // Create
+// Route::middleware('auth:api', 'role:apiadmin')
+//   ->post($mapi_route.'/media', 'Api\MediumController@create')
+//   ->name('media.create');
+
+// Delete
+// Route::middleware('auth:api', 'role:apiadmin')
+//   ->delete($mapi_route.'/media/{medium}', 'Api\MediumController@delete')
+//   ->name('media.delete');
+
+// View
+Route::middleware('auth:api', 'role:apiadmin')
+  ->get($mapi_route.'/media/{id}', 'Api\MediumController@view')
+  ->name('media.view');

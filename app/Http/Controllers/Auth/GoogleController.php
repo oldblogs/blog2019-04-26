@@ -19,6 +19,8 @@ class GoogleController extends Controller
     use AuthenticatesUsers;
 
     // TODO: Do not authenticate user on a failure
+
+    // TODO: Implement a different message for account verified but waiting permission assignment
     
     /**
      * Redirect to the provider

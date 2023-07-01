@@ -94,7 +94,7 @@
   import { PlusIcon } from 'vue-feather-icons'
 
   export default {
-    name: "Posts",
+    name: 'Posts',
 
     data(){
       return{
@@ -159,7 +159,7 @@
           laravelResourceData: {},
           limit: 2,
           showDisabled: false,
-          size: "default",
+          size: 'default',
           align: 'left',
 
         },
@@ -175,7 +175,7 @@
     methods: {
       fetch(page) {
         if (!page) {
-            page = 1;
+            page = 1
         }
         
         // TODO: Fix target string
@@ -197,8 +197,8 @@
               prev_page_url:  response.data.links.prev,
               to: response.data.meta.to,
               total: response.data.meta.total
-            };
-        })
+            }
+          })
       },
       
       showViewForm(record, index){
@@ -319,7 +319,7 @@
       limit (newVal) {
         this.vuepagination.limit = parseInt(newVal);
         if(this.vuepagination.limit < 0){
-          this.vuepagination.limit = 0;
+          this.vuepagination.limit = 0
         }
       }
     },

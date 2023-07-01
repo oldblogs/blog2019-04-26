@@ -108,7 +108,7 @@
           default: function(){
             return null
           },
-        },
+        }, 
         message: "",
         errors: "",
       }

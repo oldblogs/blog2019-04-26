@@ -53,6 +53,15 @@ Vue.component( 'form-post-update'               , require('./components/FormPost
 Vue.component( 'form-post-delete'               , require('./components/FormPostDelete.vue').default );
 Vue.component( 'row-post'                       , require('./components/RowPost.vue').default );
 
+// Media
+Vue.component( 'media'                          , require('./components/Media.vue').default );
+Vue.component( 'form-medium-view'               , require('./components/FormMediumView.vue').default );
+// Vue.component( 'form-medium-add'                , require('./components/FormMediumAdd.vue').default );
+Vue.component( 'form-medium-update'             , require('./components/FormMediumUpdate.vue').default );
+// Vue.component( 'form-medium-delete'             , require('./components/FormMediumDelete.vue').default );
+Vue.component( 'row-medium'                     , require('./components/RowMedium.vue').default );
+Vue.component( 'medium-display'                 , require('./components/MediumDisplay.vue').default ); 
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
