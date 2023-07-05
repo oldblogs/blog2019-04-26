@@ -6,6 +6,10 @@
   @foreach ($abouts as $about)
     @include ('frontview.partial.aboutrow')
   @endforeach
+  <ul>
+    <p>Social Media Icons</p>
+    <li><i class="fa-solid fa-twitter"></i>&nbsp;</li>
+  </ul>
 @endsection
 
 
