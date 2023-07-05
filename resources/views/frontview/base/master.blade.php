@@ -46,6 +46,6 @@
     </script>
     
     @yield('otherjs')
-     
+
   </body>
 </html>

@@ -80,7 +80,18 @@ return [
     */
     
     'posts_per_page' => env('APP_POSTS_PER_PAGE', 10),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Limit of posts listed in homepage
+    |--------------------------------------------------------------------------
+    |
+    | You can change maximum post listing limit for homepage with this setting.
+    |
+    */
     
+    'posts_in_homepage' => env('APP_POSTS_IN_HOMEPAGE', 3),
+
     /*
     |--------------------------------------------------------------------------
     | Maximum Page Link Buttons
