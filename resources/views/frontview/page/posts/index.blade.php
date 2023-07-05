@@ -20,7 +20,4 @@
     @include ('frontview.partial.post')
   @endforeach
 
-  {{ $posts->links() }}
-  
-
 @endsection

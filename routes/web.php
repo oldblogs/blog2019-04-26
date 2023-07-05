@@ -73,7 +73,7 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 // ------------------------------------------------------------
 
 // Main page
-Route::get('/', 'PostController@index')->name('mainpage');
+Route::get('/', 'PostController@homepage')->name('mainpage');
 
 // List Posts
 Route::get('/posts', 'PostController@index');
@@ -83,7 +83,6 @@ Route::get('/posts/{post}', 'PostController@show');
 
 // About page
 Route::get('/about', 'AboutController@index')->name('about');
-
 
 // ------------------------------------------------------------
 // Manage View - Pages that registered users see.

@@ -4,7 +4,6 @@
     <h3 class="mb-0">
       <a class="text-dark" href="/posts/{{ $post->id }}">{{ $post->title }}</a>
     </h3>
-    <strong class="d-inline-block mb-2 text-success">Design</strong>
     <div class="mb-1 text-muted">{{ $post->created_at->toFormattedDateString() }}</div>
       {{--
         // From Carbon document
@@ -15,7 +14,7 @@
         $dt->toDayDateTimeString    // Thu, Dec 25, 1975 2:15 PM
         $dt->format('l jS \\of F Y h:i:s A');  // Thursday, 25th of December 1975 02:15:16 PM
       --}}
-    <p class="card-text mb-auto">{{ $post->body }}</p>
+    <p class="card-text mb-auto">{{ substr($post->body,0,400) }}</p>
     
     <a href="/posts/{{ $post->id }}">Continue reading</a>
   </div>

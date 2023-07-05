@@ -33,6 +33,13 @@ class PostController extends Controller
         return view('frontview.page.posts.index', compact('posts') );
     }
 
+    public function homepage(PostsRepository $postsrepo)
+    {
+        $posts = $postsrepo->homepage();
+
+        return view('frontview.page.posts.index', compact('posts') );
+    }
+
     public function show(Post $post)
     {
         return view('frontview.page.posts.show', compact('post') );

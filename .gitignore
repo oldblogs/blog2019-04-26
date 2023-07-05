@@ -1,5 +1,6 @@
 .env
 /bootstrap/cache/config.php
+/storage/*
 /storage/*.key
 /node_modules
 /public/css
