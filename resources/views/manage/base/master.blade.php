@@ -14,6 +14,10 @@
 
     <title>@yield('title')</title>
 
+    <link href="/css/fontawesome.css" rel="stylesheet">
+    <link href="/css/brands.css" rel="stylesheet">
+    <link href="/css/solid.css" rel="stylesheet">
+
     <link href="/css/dashboard.css" rel="stylesheet">
     
   </head>
