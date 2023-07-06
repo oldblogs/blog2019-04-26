@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
 {{--  Based on Bootstrap Dashboard example 
         https://getbootstrap.com/docs/4.0/examples/dashboard
 --}}
-<html lang="{{ app()->getLocale() }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
           @elseif ($flash = session('error'))
             <div id="flash-message" class="alert alert-danger" role="alert">
               {{ $flash }}
-            </div>              
+            </div>
           @endif
           <div class="col-md-12 blog-main">
             @yield('content')

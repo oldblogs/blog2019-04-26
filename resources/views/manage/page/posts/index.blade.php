@@ -10,9 +10,7 @@
       <h2 class="h2">Posts</h2>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-
-            <a class="btn btn-sm btn-outline-secondary" role="button" href="{{ route('get_post_create_form') }}">Add</a>
-
+          <a class="btn btn-sm btn-outline-secondary" role="button" href="{{ route('get_post_create_form') }}">Add</a>
         </div>
       </div>
     </div>

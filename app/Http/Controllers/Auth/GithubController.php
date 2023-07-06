@@ -132,7 +132,7 @@ class GithubController extends Controller
               session()->flash( 'message', 'You are successfully logged in.' );
             }
             
-            return redirect()->route('home');
+            return redirect()->route('profile');
             
         } catch (Exception $e) {
             if (config('app.env')==='local'){
