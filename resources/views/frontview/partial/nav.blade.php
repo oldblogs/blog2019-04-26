@@ -9,7 +9,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
           <a class="nav-link text-muted" href="#">
-            <span data-feather="search"></span>
+          <i class="fa-solid fa-magnifying-glass"></i>
           </a>
         </div>
       </div>

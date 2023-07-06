@@ -11,7 +11,7 @@ use App\Socialprovider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-class HomeController extends Controller
+class ProfileController extends Controller
 {
     public function index(Request $request)
     {
@@ -24,6 +24,6 @@ class HomeController extends Controller
         // Available social providers
         $availableps = Socialid::availableProviders();
         
-        return view('manage.page.home', compact('bloguser', 'availableps') );
+        return view('manage.page.profile', compact('bloguser', 'availableps') );
     }
 }

@@ -86,15 +86,15 @@ Route::get('/about', 'AboutController@index')->name('about');
 
 // ------------------------------------------------------------
 // Manage View - Pages that registered users see.
-//   Every registered users can see /home page.
+//   Every registered users can see /profile page.
 //   Authorization needed for certain pages.
 // ------------------------------------------------------------
 
 $manage_route = '/'.config('app.management', 'manage');
 
-// User Home Page Web
-Route::middleware('auth:web', 'verified')->get('/home',
-  'HomeController@index')->name('home');
+// User Profile Page Web
+Route::middleware('auth:web', 'verified')->get('/profile',
+  'ProfileController@index')->name('profile');
 
 // Blog Management Page
 Route::middleware('auth:web', 'role:admin')

@@ -7,7 +7,7 @@
 @section ('content')
   @if ($bloguser)
     <div class="d-flex justify-content-between flex-wrap align-items-center  mb-3 border-bottom">
-      <h1 class="h2">User Home Page</h1>
+      <h1 class="h2">User Profile Page</h1>
     </div>
     
     @include ('manage.partial.userinfo')
