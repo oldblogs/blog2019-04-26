@@ -8,7 +8,6 @@
                   <i class="fa-solid fa-bars"></i>&nbsp;Manage</a>
               </li>
 
-
               <li class="nav-item">
                 <a class="nav-link {{ Request::is('profile')?'active':'' }}" 
                   href="{{ action('ProfileController@index') }}">
