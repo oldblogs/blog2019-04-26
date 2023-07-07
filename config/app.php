@@ -83,14 +83,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Limit of posts listed in homepage
+    | Limit of posts listed in mainpage
     |--------------------------------------------------------------------------
     |
-    | You can change maximum post listing limit for homepage with this setting.
+    | You can change maximum post listing limit for mainpage with this setting.
     |
     */
     
-    'posts_in_homepage' => env('APP_POSTS_IN_HOMEPAGE', 3),
+    'posts_in_mainpage' => env('APP_POSTS_IN_MAINPAGE', 3),
 
     /*
     |--------------------------------------------------------------------------

@@ -73,7 +73,7 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 // ------------------------------------------------------------
 
 // Main page
-Route::get('/', 'PostController@homepage')->name('mainpage');
+Route::get('/', 'PostController@mainpage')->name('mainpage');
 
 // List Posts
 Route::get('/posts', 'PostController@index');

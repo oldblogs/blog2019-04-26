@@ -33,9 +33,9 @@ class PostsRepository
     return $posts = Post::latest()->paginate($ppp);
   }
 
-  public function homepage()
+  public function mainpage()
   {
-    $ppp = (int)config('app.posts_in_homepage', 3);
+    $ppp = (int)config('app.posts_in_mainpage', 3);
 
     return $posts = Post::latest()->limit($ppp)->get();
   }
