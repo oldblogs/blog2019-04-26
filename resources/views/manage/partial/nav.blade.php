@@ -1,4 +1,4 @@
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{ action('PostController@index') }}">{{ config('app.name') }}</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{ action('DashboardController@index') }}">{{ config('app.name') }}</a>
 
       <ul class="navbar-nav px-3">
         {{-- Authentication Links --}}
