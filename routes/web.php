@@ -102,45 +102,6 @@ Route::middleware('auth:web', 'role:admin')
   ->name('dashboard');
 
 // ------------------------------------------------------------
-// Posts
-// ------------------------------------------------------------
-
-// Get New Post Form
-Route::middleware('auth:web', 'role:admin')
-  ->get($manage_route.'/posts/create', 'PostController@create')
-  ->name('get_post_create_form');
-
-// Create a new post with given form data
-Route::middleware('auth:web', 'role:admin')
-  ->post($manage_route.'/posts', 'PostController@store')
-  ->name('save_new_post');
-
-// Get Posts list in manage view
-Route::middleware('auth:web', 'role:admin')
-  ->get($manage_route.'/posts', 'ManageController@postslist')
-  ->name('manage_posts_list');
-
-// View post in manage view
-Route::middleware('auth:web', 'role:admin')
-  ->get($manage_route.'/posts/{post}', 'ManageController@viewpost')
-  ->name('manage_view_post');
-
-// Get Post Edit Form for selected post
-Route::middleware('auth:web', 'role:admin')
-  ->get($manage_route.'/posts/{post}/edit', 'PostController@edit')
-  ->name('get_post_edit_form');
-
-// Update post
-Route::middleware('auth:web', 'role:admin')
-  ->patch($manage_route.'/posts/{post}', 'PostController@update')
-  ->name('update_post');
-
-// Delete post
-Route::middleware('auth:web', 'role:admin')
-  ->delete($manage_route.'/posts/{post}', 'PostController@delete')
-  ->name('delete_post');
-
-// ------------------------------------------------------------
 // Csocials
 // ------------------------------------------------------------
 

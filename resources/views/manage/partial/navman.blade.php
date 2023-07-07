@@ -15,12 +15,6 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link {{ Request::is('manage/posts')?'active':'' }}" 
-                  href="{{ action('ManageController@postslist') }}">
-                  <i class="fa-solid fa-newspaper"></i>&nbsp;Posts</a>
-              </li>
-
-              <li class="nav-item">
                 <a class="nav-link {{ Request::is('manage/csocials')?'active':'' }}" 
                   href="{{ action('CsocialController@index') }}">
                   <i class="fa-regular fa-share-nodes"></i>&nbsp;Social Networks</a>
