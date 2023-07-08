@@ -66,7 +66,7 @@ class AboutController extends Controller {
 
       // TODO: Check uploaded file
       if ( null !== $request->file('photofile') )  {
-        $about->photo  = $request->file('photofile')->store('images', 'public');
+        $about->photo  = $request->file('photofile')->store('img', 'public');
       }
       $about->save();
 

@@ -13,7 +13,7 @@
 
         <input v-model="medium.id" type="text" class="form-control" style="display: none">
         <div class="card" style="width: 18rem;">
-          <img v-if="medium.file" :src="'storage/images/'+medium.file" :key="medium.file" class="card-img-top" style="max-height: 6rem;" alt="Profile photo" title="" />
+          <img v-if="medium.file" :src="'storage/img/'+medium.file" :key="medium.file" class="card-img-top" style="max-height: 6rem;" alt="Profile photo" title="" />
           <img v-if="medium.external_url" :src="medium.external_url" :key="medium.external_url" class="card-img-top" style="max-height: 6rem;" alt="Profile photo" title="" />
           <div class="card-body">
             <p class="card-text">{{ medium.description }}
