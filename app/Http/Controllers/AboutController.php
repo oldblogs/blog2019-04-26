@@ -17,47 +17,5 @@ class AboutController extends Controller
         $abouts = About::with('user')->get();
         return view('frontview.page.about', compact('abouts') );
     }
-
-    public function index_m(){
-        $abouts = About::with('user')->get();
-        return view('manage.page.abouts.indexm', compact('abouts') );
-    }
-    
-    public function create()
-    {
-        return view('manage.page.abouts.create');
-    }
-    
-    public function store(AboutForm $form)
-    {
-        $form->persist();
-        // TODO: Check HTTP status Code
-        return redirect()->route('abouts.index.m');
-    }
-    
-    public function show(About $about)
-    {
-        return view('manage.page.abouts.show', compact('about') );
-    }
-    
-    public function edit(About $about)
-    {
-        return view('manage.page.abouts.edit', compact('about') );
-    }
-    
-    public function update(AboutForm $form,About $about)
-    {
-        $form->update($about);
-        // TODO: Check HTTP status Code
-        return redirect()->route('abouts.index.m');
-    }
-    
-    public function delete(DeleteAboutForm $form, About $about)
-    {
-        $form->delete($about);
-        // TODO: Check HTTP status Code
-        return redirect()->route('abouts.index.m');
-    }
-    
     
 }

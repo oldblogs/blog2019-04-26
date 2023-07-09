@@ -13,7 +13,7 @@
       </ul>
       <ul class="list-group list-group-flush">
         @foreach ($about->user->sociallinks as $sociallink)
-          <li class="list-group-item"><i class="fa-brands fa-xl {{ $sociallink->csocial->css_class }}"></i>&nbsp;&nbsp;{{ $sociallink->link }}</li>
+          <a href="{{ $sociallink->link }}" class="list-group-item"><i class="fa-brands fa-xl {{ $sociallink->csocial->css_class }}"></i>&nbsp;&nbsp;{{ $sociallink->link }}</a>
         @endforeach
       </ul>
     </div>
