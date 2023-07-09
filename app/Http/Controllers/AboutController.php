@@ -14,7 +14,7 @@ class AboutController extends Controller
 {
     // TODO: Delete remenants of classic form based implementation of About Model
     public function index(){
-        $abouts = About::all();
+        $abouts = About::with('user')->get();
         return view('frontview.page.about', compact('abouts') );
     }
 
