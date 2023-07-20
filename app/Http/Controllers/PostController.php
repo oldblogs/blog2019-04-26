@@ -25,7 +25,7 @@ class PostController extends Controller
     {
         $posts = $postsrepo->mainpage();
 
-        return view('frontview.page.posts.index', compact('posts') );
+        return view('frontview.page.mainpage', compact('posts') );
     }
 
     public function show(Post $post)
