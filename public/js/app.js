@@ -4540,6 +4540,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 // TODO: Check vue component event names
 
 
@@ -4607,7 +4610,7 @@ __webpack_require__.r(__webpack_exports__);
         limit: 2,
         showDisabled: false,
         size: 'default',
-        align: 'left'
+        align: 'center'
       }
     };
   },
@@ -59025,7 +59028,7 @@ var render = function() {
                 staticClass: "card-img-top",
                 staticStyle: { "max-height": "6rem" },
                 attrs: {
-                  src: "storage/images/" + _vm.medium.file,
+                  src: "storage/img/" + _vm.medium.file,
                   alt: "",
                   title: ""
                 }
@@ -59182,23 +59185,28 @@ var render = function() {
             1
           ),
           _vm._v(" "),
-          _c(
-            "tfoot",
-            [
-              _c("pagination", {
-                staticClass: "mb-0",
-                attrs: {
-                  data: _vm.records,
-                  limit: _vm.vuepagination.limit,
-                  "show-disabled": _vm.vuepagination.showDisabled,
-                  size: _vm.vuepagination.size,
-                  align: _vm.vuepagination.align
-                },
-                on: { "pagination-change-page": _vm.fetch }
-              })
-            ],
-            1
-          )
+          _c("tfoot", [
+            _c("tr", [
+              _c(
+                "th",
+                { attrs: { colspan: "9" } },
+                [
+                  _c("pagination", {
+                    staticClass: "mb-0",
+                    attrs: {
+                      data: _vm.records,
+                      limit: _vm.vuepagination.limit,
+                      "show-disabled": _vm.vuepagination.showDisabled,
+                      size: _vm.vuepagination.size,
+                      align: _vm.vuepagination.align
+                    },
+                    on: { "pagination-change-page": _vm.fetch }
+                  })
+                ],
+                1
+              )
+            ])
+          ])
         ])
       ])
     ],
@@ -59212,23 +59220,23 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", [_vm._v("#ID")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("#ID")]),
         _vm._v(" "),
-        _c("th", [_vm._v("User ID")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("User ID")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Title")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Title")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Published")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Published")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Created")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Created")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Modified")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Modified")]),
         _vm._v(" "),
-        _c("th", [_vm._v("View")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("View")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Edit")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Edit")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Delete")])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete")])
       ])
     ])
   }
