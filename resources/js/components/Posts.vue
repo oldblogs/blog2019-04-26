@@ -67,16 +67,19 @@
           ></row-post>
         </tbody>
         <tfoot>
-          <pagination
-            class="mb-0"
-            :data="records"
-            @pagination-change-page="fetch"
-            :limit="vuepagination.limit"
-            :show-disabled="vuepagination.showDisabled"
-            :size="vuepagination.size"
-            :align="vuepagination.align" 
-          ></pagination>
-          
+          <tr>
+            <th colspan="9">
+              <pagination
+                class="mb-0"
+                :data="records"
+                @pagination-change-page="fetch"
+                :limit="vuepagination.limit"
+                :show-disabled="vuepagination.showDisabled"
+                :size="vuepagination.size"
+                :align="vuepagination.align" 
+              ></pagination>
+            </th>
+          </tr>
         </tfoot>
       </table>
     </div>
@@ -160,8 +163,7 @@
           limit: 2,
           showDisabled: false,
           size: 'default',
-          align: 'left',
-
+          align: 'center',
         },
 
       }
