@@ -30,9 +30,10 @@ class GenerateSitemap extends Command
     public function handle()
     {
         try{
-            echo (public_path('sitemap.xml'));
+
             SitemapGenerator::create(config('app.url'))
                 ->writeToFile(public_path('sitemap.xml'));
+            
         }
         catch(Exception $e){
             $this->error('Error : '.$e->message() );
