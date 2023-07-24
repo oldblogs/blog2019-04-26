@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="input-group">
+      <div class="form-group">
         <label>Content</label>
         <div class="mavonEditor">
           <no-ssr>
@@ -38,7 +38,6 @@
           </no-ssr>
         </div>
       </div>
-
 
       <div class="form-group">
         <div v-show="errors.body" v-for="item in errors.body" v-bind:key="item" 
@@ -77,7 +76,7 @@
 
 <script>
   export default {
-    name: "FormPostpdate",
+    name: "FormPostUpdate",
 
     mounted() {
       
