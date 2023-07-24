@@ -4,7 +4,7 @@
       <img class="card-img-top img-thumbnail mb-3" style="max-height: 6rem; max-width: 6rem;" src="{{ asset('storage/'.$about->photo) }}" alt="Photo of user" height="60" width="60"> 
       <h3 class="card-title">{{ $about->title }}</h3>
       <h4 class="card-subtitle mb-2 text-muted">{{ $about->subtitle }}</h4>
-      <p class="card-text">{{ $about->body }}</p>
+      <p class="card-text">{!! $about->body !!}</p>
       <h5 class="card-title">Contact information:</h5>
       <ul class="list-group list-group-flush">
         @foreach ($about->user->emails as $email)

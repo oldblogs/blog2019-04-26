@@ -11,7 +11,6 @@ use App\Http\Requests\DeleteForm;
 use Illuminate\Support\Facades\Auth;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 
-
 class PostController extends Controller
 {
 

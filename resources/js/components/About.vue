@@ -31,9 +31,12 @@
         </div>
 
         <div class="form-group">
-            <label>Body</label>
-            <input v-model="about.body" type="text" class="form-control"
-              aria-describedby="enter information about you">
+            <label>Content</label>
+            <div class="mavonEditor">
+              <no-ssr>
+                <mavon-editor :toolbars="markdownOption" v-model="about.body" aria-label="write your post here"></mavon-editor>
+              </no-ssr>
+            </div>
         </div>
 
         <div class="form-group">
@@ -108,6 +111,9 @@
           default: function(){
             return null
           },
+        },
+        markdownOption: {
+          bold: true,
         }, 
         message: "",
         errors: "",
@@ -207,5 +213,9 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .mavonEditor {
+    width: 100%;
+    height: 100%;
+  }
 </style>
