@@ -31,8 +31,12 @@
       </div>
 
       <div class="input-group">
-        <label>Body</label>
-        <textarea v-model="post.body" class="form-control" aria-label="write your post here"></textarea>
+        <label>Content</label>
+        <div class="mavonEditor">
+          <no-ssr>
+            <mavon-editor :toolbars="markdownOption" v-model="post.body" aria-label="write your post here"></mavon-editor>
+          </no-ssr>
+        </div>
       </div>
 
 
@@ -101,9 +105,12 @@
 
     data(){
       return{
+        markdownOption: {
+          bold: true,
+        },
         message: "",
-        errors: "",
-      }
+        errors: ""
+      };
     },
 
     computed: {
@@ -137,5 +144,9 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .mavonEditor {
+    width: 100%;
+    height: 100%;
+  }
 </style>

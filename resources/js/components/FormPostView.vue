@@ -18,7 +18,11 @@
         <h2 class="blog-post-title">{{ post.title }}</h2>
         <p class="blog-post-meta">{{ post.created_at }}</p>
 
-        {{ post.body }}
+        <div class="mavonEditor">
+          <no-ssr>
+            <mavon-editor defaultOpen="preview" v-model="post.body" :toolbarsFlag="false" :subfield="false"></mavon-editor>
+          </no-ssr>
+        </div>
       </div>
 
       <pre>Post ID: {{ post.id }} </pre>
@@ -55,8 +59,11 @@
 
     data(){
       return{
-        message: '',
-        errors: '',
+        markdownOption: {
+          bold: true,
+        },
+        message: "",
+        errors: ""
       }
     },
 
@@ -72,5 +79,9 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .mavonEditor {
+    width: 100%;
+    height: 100%;
+  }
 </style>

@@ -28,6 +28,7 @@
         "@fortawesome/fontawesome-free": "^6.4.0",
         "feather-icons": "^4.17.0",
         "laravel-vue-pagination": "^2.3.0",
+        "mavon-editor": "^2.10.4",
         "vue-feather-icons": "^4.10.0"
     }
 }
