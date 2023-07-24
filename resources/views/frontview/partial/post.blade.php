@@ -15,7 +15,9 @@
         $dt->toDayDateTimeString    // Thu, Dec 25, 1975 2:15 PM
         $dt->format('l jS \\of F Y h:i:s A');  // Thursday, 25th of December 1975 02:15:16 PM
       --}}
-    <p class="card-text mb-auto">{{ substr($post->body,0,200) }} ...</p>
+
+      {!! substr($post->body,0,200) !!}
+
     @include ('frontview.partial.postauthor')
     <a href="/posts/{{ $post->id }}">Continue reading</a>
   </div>

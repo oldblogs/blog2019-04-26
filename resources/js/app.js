@@ -13,6 +13,8 @@ window.feather = require('feather-icons');
 
 window.VueFeatherIcon = require('vue-feather-icons');
 
+window.mavonEditor = require('mavon-editor');
+
 // Laravel Vue Pagination 
 Vue.component( 'pagination'                     , require( 'laravel-vue-pagination') );
 
@@ -61,6 +63,8 @@ Vue.component( 'form-medium-update'             , require('./components/FormMedi
 // Vue.component( 'form-medium-delete'             , require('./components/FormMediumDelete.vue').default );
 Vue.component( 'row-medium'                     , require('./components/RowMedium.vue').default );
 Vue.component( 'medium-display'                 , require('./components/MediumDisplay.vue').default ); 
+
+Vue.use(mavonEditor)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

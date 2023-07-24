@@ -6,7 +6,11 @@
 @import "variables";
 
 // Bootstrap
+// TODO: Check
 @import '~bootstrap/scss/bootstrap';
+
+// Markdown editor
+@import '~mavon-editor/dist/css/index.css';
 
 .navbar-laravel {
   background-color: #fff;
