@@ -83,7 +83,7 @@
 
     methods: {
       deleteItem(){
-        axios.delete('http://blog.com/api/manage/tests/' + this.test.id)
+        axios.delete(this.$appurl + '/api/manage/tests/' + this.test.id)
           .then( (response) => {
             this.$emit('delete:test')
             this.errors = ""

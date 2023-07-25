@@ -201,7 +201,7 @@
         }
       
         // TODO: Fix target string
-        axios.get('http://blog.com/api/manage/media/' + page)
+        axios.get(this.$appurl + '/api/manage/media/' + page)
           .then( (response) => {
             
             this.records = JSON.parse(JSON.stringify( response.data.media))

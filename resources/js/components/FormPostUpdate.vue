@@ -118,8 +118,7 @@
 
     methods: {
       updateItem(){
-        // Fix static target
-        axios.patch('http://blog.com/api/manage/posts/' + this.post.id, {
+        axios.patch(this.$appurl + '/api/manage/posts/' + this.post.id, {
             title: this.post.title, 
             body: this.post.body, 
             published: Boolean(this.post.published), 

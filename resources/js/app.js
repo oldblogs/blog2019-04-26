@@ -15,6 +15,8 @@ window.VueFeatherIcon = require('vue-feather-icons');
 
 window.mavonEditor = require('mavon-editor');
 
+Vue.prototype.$appurl = 'http://blog.com';
+
 // Laravel Vue Pagination 
 Vue.component( 'pagination'                     , require( 'laravel-vue-pagination') );
 

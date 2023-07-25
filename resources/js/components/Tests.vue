@@ -108,7 +108,7 @@
     methods: {
       fetch() {
         // TODO: Fix target string
-        axios.get('http://blog.com/api/manage/tests')
+        axios.get(this.$appurl + '/api/manage/tests')
           .then( (response) => {
             this.records = JSON.parse(JSON.stringify( response.data.tests ))
             this.addformenabled = false

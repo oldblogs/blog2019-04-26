@@ -1956,8 +1956,7 @@ __webpack_require__.r(__webpack_exports__);
     fetch: function fetch() {
       var _this = this;
 
-      // TODO: resolve static url problem.
-      axios.get('http://blog.com/api/manage/about').then(function (response) {
+      axios.get(this.$appurl + '/api/manage/about').then(function (response) {
         _this.about = JSON.parse(JSON.stringify(response.data));
       }).catch(function (error) {
         // TODO: Do not show sensitive info.
@@ -1976,10 +1975,9 @@ __webpack_require__.r(__webpack_exports__);
 
       if (null !== this.photofile) {
         formData.append('photofile', this.photofile);
-      } // TODO: resolve static url problem.
+      }
 
-
-      axios.post('http://blog.com/api/manage/about/' + this.about.id, formData, {
+      axios.post(this.$appurl + '/api/manage/about/' + this.about.id, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -2004,8 +2002,7 @@ __webpack_require__.r(__webpack_exports__);
     deletephoto: function deletephoto() {
       var _this3 = this;
 
-      // TODO: resolve static url problem.
-      axios.delete('http://blog.com/api/manage/aboutphoto/' + this.about.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/aboutphoto/' + this.about.id).then(function (response) {
         _this3.about.photo = '';
         _this3.photofile = '';
         _this3.errors = '';
@@ -2136,7 +2133,7 @@ __webpack_require__.r(__webpack_exports__);
     fetch: function fetch() {
       var _this = this;
 
-      axios.get('http://blog.com/api/manage/emails').then(function (response) {
+      axios.get(this.$appurl + '/api/manage/emails').then(function (response) {
         _this.contact_emails = JSON.parse(JSON.stringify(response.data.data));
         _this.addformenabled = false;
         _this.updateformenabled = false;
@@ -2314,7 +2311,7 @@ __webpack_require__.r(__webpack_exports__);
     addItem: function addItem() {
       var _this = this;
 
-      axios.post('http://blog.com/api/manage/emails', {
+      axios.post(this.$appurl + '/api/manage/emails', {
         title: this.email.title,
         email: this.email.email
       }).then(function (response) {
@@ -2423,7 +2420,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteitem: function deleteitem() {
       var _this = this;
 
-      axios.delete('http://blog.com/api/manage/emails/' + this.email.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/emails/' + this.email.id).then(function (response) {
         _this.$emit('delete:email');
 
         _this.errors = "";
@@ -2537,7 +2534,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       // TODO: change manage text with related config variable
-      axios.patch('http://blog.com/api/manage/emails/' + this.email.id, {
+      axios.patch(this.$appurl + '/api/manage/emails/' + this.email.id, {
         title: this.email.title,
         email: this.email.email
       }).then(function (response) {
@@ -2717,8 +2714,7 @@ __webpack_require__.r(__webpack_exports__);
     fetch: function fetch() {
       var _this = this;
 
-      // TODO: resolve static url problem.
-      axios.get('http://blog.com/api/manage/media/' + media.id).then(function (response) {
+      axios.get(this.$appurl + '/api/manage/media/' + media.id).then(function (response) {
         _this.about = JSON.parse(JSON.stringify(response.data));
       }).catch(function (error) {
         // TODO: Do not show sensitive info.
@@ -2737,10 +2733,9 @@ __webpack_require__.r(__webpack_exports__);
 
       if (null !== this.photofile) {
         formData.append('photofile', this.photofile);
-      } // TODO: resolve static url problem.
+      }
 
-
-      axios.post('http://blog.com/api/manage/about/' + this.about.id, formData, {
+      axios.post(this.$appurl + '/api/manage/about/' + this.about.id, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -2765,8 +2760,7 @@ __webpack_require__.r(__webpack_exports__);
     deletephoto: function deletephoto() {
       var _this3 = this;
 
-      // TODO: resolve static url problem.
-      axios.delete('http://blog.com/api/manage/aboutphoto/' + this.about.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/aboutphoto/' + this.about.id).then(function (response) {
         _this3.about.photo = '';
         _this3.photofile = '';
         _this3.errors = '';
@@ -3009,7 +3003,7 @@ __webpack_require__.r(__webpack_exports__);
     addItem: function addItem() {
       var _this = this;
 
-      axios.post('http://blog.com/api/manage/posts', {
+      axios.post(this.$appurl + '/api/manage/posts', {
         title: this.post.title,
         body: this.post.body,
         published: this.post.published
@@ -3128,7 +3122,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteItem: function deleteItem() {
       var _this = this;
 
-      axios.delete('http://blog.com/api/manage/posts/' + this.post.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/posts/' + this.post.id).then(function (response) {
         _this.$emit('delete:post');
 
         _this.errors = "";
@@ -3266,8 +3260,7 @@ __webpack_require__.r(__webpack_exports__);
     updateItem: function updateItem() {
       var _this = this;
 
-      // Fix static target
-      axios.patch('http://blog.com/api/manage/posts/' + this.post.id, {
+      axios.patch(this.$appurl + '/api/manage/posts/' + this.post.id, {
         title: this.post.title,
         body: this.post.body,
         published: Boolean(this.post.published)
@@ -3483,7 +3476,7 @@ __webpack_require__.r(__webpack_exports__);
     addItem: function addItem() {
       var _this = this;
 
-      axios.post('http://blog.com/api/manage/sociallinks', {
+      axios.post(this.$appurl + '/api/manage/sociallinks', {
         title: this.sociallink.title,
         csocial_id: this.sociallink.csocial_id,
         link: this.sociallink.link
@@ -3596,7 +3589,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteitem: function deleteitem() {
       var _this = this;
 
-      axios.delete('http://blog.com/api/manage/sociallinks/' + this.sociallink.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/sociallinks/' + this.sociallink.id).then(function (response) {
         _this.$emit('delete:sociallink');
 
         _this.errors = "";
@@ -3731,7 +3724,7 @@ __webpack_require__.r(__webpack_exports__);
     updateitem: function updateitem() {
       var _this = this;
 
-      axios.patch('http://blog.com/api/manage/sociallinks/' + this.sociallink.id, {
+      axios.patch(this.$appurl + '/api/manage/sociallinks/' + this.sociallink.id, {
         title: this.sociallink.title,
         csocial_id: this.sociallink.csocial_id,
         link: this.sociallink.link
@@ -3833,7 +3826,7 @@ __webpack_require__.r(__webpack_exports__);
     addItem: function addItem() {
       var _this = this;
 
-      axios.post('http://blog.com/api/manage/tests', {
+      axios.post(this.$appurl + '/api/manage/tests', {
         title: this.test.title
       }).then(function (response) {
         // TODO: check if this works ( read id value below )
@@ -3939,7 +3932,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteItem: function deleteItem() {
       var _this = this;
 
-      axios.delete('http://blog.com/api/manage/tests/' + this.test.id).then(function (response) {
+      axios.delete(this.$appurl + '/api/manage/tests/' + this.test.id).then(function (response) {
         _this.$emit('delete:test');
 
         _this.errors = "";
@@ -4042,7 +4035,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     updateItem: function updateItem() {
       var _this = this;
 
-      axios.patch('http://blog.com/api/manage/tests/' + this.test.id, {
+      axios.patch(this.$appurl + '/api/manage/tests/' + this.test.id, {
         title: this.test.title
       }).then(function (response) {
         _this.$emit('update:test', JSON.parse(JSON.stringify(response.data)));
@@ -4260,7 +4253,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       } // TODO: Fix target string
 
 
-      axios.get('http://blog.com/api/manage/media/' + page).then(function (response) {
+      axios.get(this.$appurl + '/api/manage/media/' + page).then(function (response) {
         _this.records = JSON.parse(JSON.stringify(response.data.media));
         _this.mediumtypes = JSON.parse(JSON.stringify(response.data.mediumtypes));
         _this.licences = JSON.parse(JSON.stringify(response.data.licences));
@@ -4653,7 +4646,7 @@ __webpack_require__.r(__webpack_exports__);
       } // TODO: Fix target string
 
 
-      axios.get('http://blog.com/api/manage/posts/' + page).then(function (response) {
+      axios.get(this.$appurl + '/api/manage/posts/' + page).then(function (response) {
         _this.records = JSON.parse(JSON.stringify(response.data));
         _this.viewformenabled = false;
         _this.addformenabled = false;
@@ -5278,7 +5271,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       // TODO: Fix target string
-      axios.get('http://blog.com/api/manage/sociallinks').then(function (_ref) {
+      axios.get(this.$appurl + '/api/manage/sociallinks').then(function (_ref) {
         var data = _ref.data;
         _this.contact_sociallinks = JSON.parse(JSON.stringify(data.sociallinks));
         _this.socialnetworks = JSON.parse(JSON.stringify(data.socialnetworks));
@@ -5480,7 +5473,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       // TODO: Fix target string
-      axios.get('http://blog.com/api/manage/tests').then(function (response) {
+      axios.get(this.$appurl + '/api/manage/tests').then(function (response) {
         _this.records = JSON.parse(JSON.stringify(response.data.tests));
         _this.addformenabled = false;
         _this.updateformenabled = false;
@@ -73474,7 +73467,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 window.feather = __webpack_require__(/*! feather-icons */ "./node_modules/feather-icons/dist/feather.js");
 window.VueFeatherIcon = __webpack_require__(/*! vue-feather-icons */ "./node_modules/vue-feather-icons/dist/vue-feather-icons.es.js");
-window.mavonEditor = __webpack_require__(/*! mavon-editor */ "./node_modules/mavon-editor/dist/mavon-editor.js"); // Laravel Vue Pagination 
+window.mavonEditor = __webpack_require__(/*! mavon-editor */ "./node_modules/mavon-editor/dist/mavon-editor.js");
+Vue.prototype.$appurl = 'http://blog.com'; // Laravel Vue Pagination 
 
 Vue.component('pagination', __webpack_require__(/*! laravel-vue-pagination */ "./node_modules/laravel-vue-pagination/dist/laravel-vue-pagination.common.js")); // Laravel Passport
 

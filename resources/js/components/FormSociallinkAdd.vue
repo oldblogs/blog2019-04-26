@@ -114,7 +114,7 @@
 
     methods: {
       addItem(){
-        axios.post('http://blog.com/api/manage/sociallinks', {
+        axios.post(this.$appurl + '/api/manage/sociallinks', {
             title: this.sociallink.title,
             csocial_id: this.sociallink.csocial_id,
             link: this.sociallink.link,
