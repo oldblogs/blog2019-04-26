@@ -19,9 +19,7 @@
         <p class="blog-post-meta">{{ post.created_at }}</p>
 
         <div class="mavonEditor">
-          <no-ssr>
-            <mavon-editor defaultOpen="preview" v-model="post.body" :toolbarsFlag="false" :subfield="false"></mavon-editor>
-          </no-ssr>
+          <mavon-editor defaultOpen="preview" v-model="post.body" :toolbarsFlag="false" :subfield="false"></mavon-editor>
         </div>
       </div>
 
