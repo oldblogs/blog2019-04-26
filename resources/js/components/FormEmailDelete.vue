@@ -87,12 +87,11 @@
 
     methods: {
       deleteitem(){
-        axios.delete('http://blog.com/api/manage/emails/' + this.email.id)
+        axios.delete(this.$appurl + '/api/manage/emails/' + this.email.id)
           .then( response => {
             this.$emit('delete:email')
             this.errors = ""
             this.message = ""
-
           })
           .catch( (error) => {
             this.message = error.response.data.message

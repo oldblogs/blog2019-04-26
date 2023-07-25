@@ -135,8 +135,7 @@
     methods: {
       // Implement timeout for messages prompts.
       fetch() {
-        // TODO: resolve static url problem.
-        axios.get('http://blog.com/api/manage/about')
+        axios.get(this.$appurl + '/api/manage/about')
           .then( (response) => {
             this.about = JSON.parse(JSON.stringify( response.data ))
           })
@@ -158,8 +157,7 @@
           formData.append('photofile', this.photofile)
         }
         
-        // TODO: resolve static url problem.
-        axios.post('http://blog.com/api/manage/about/' + this.about.id, 
+        axios.post(this.$appurl + '/api/manage/about/' + this.about.id, 
           formData,
           {
             headers: {
@@ -190,8 +188,7 @@
       },
 
       deletephoto(){
-        // TODO: resolve static url problem.
-        axios.delete('http://blog.com/api/manage/aboutphoto/' + this.about.id)
+        axios.delete(this.$appurl + '/api/manage/aboutphoto/' + this.about.id)
           .then( response => {
             this.about.photo = ''
             this.photofile = '' 

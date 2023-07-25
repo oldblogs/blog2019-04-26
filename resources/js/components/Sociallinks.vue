@@ -114,7 +114,7 @@
     methods: {
       fetch() {
         // TODO: Fix target string
-        axios.get('http://blog.com/api/manage/sociallinks')
+        axios.get(this.$appurl + '/api/manage/sociallinks')
           .then(({data}) => {
             this.contact_sociallinks = JSON.parse(JSON.stringify( data.sociallinks ))
             this.socialnetworks = JSON.parse(JSON.stringify( data.socialnetworks ))

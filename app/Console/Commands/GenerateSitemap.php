@@ -30,10 +30,9 @@ class GenerateSitemap extends Command
     public function handle()
     {
         try{
-
             SitemapGenerator::create(config('app.url'))
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
                 ->writeToFile(public_path('sitemap.xml'));
-            
         }
         catch(Exception $e){
             $this->error('Error : '.$e->message() );

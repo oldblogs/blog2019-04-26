@@ -181,7 +181,7 @@
         }
         
         // TODO: Fix target string
-        axios.get('http://blog.com/api/manage/posts/' + page)
+        axios.get(this.$appurl + '/api/manage/posts/' + page)
           .then( (response) => {
             this.records = JSON.parse(JSON.stringify( response.data ))
             this.viewformenabled = false

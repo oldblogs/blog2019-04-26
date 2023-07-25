@@ -95,7 +95,7 @@
     methods: {
       updateitem(){
         // TODO: change manage text with related config variable
-        axios.patch('http://blog.com/api/manage/emails/' + this.email.id, {
+        axios.patch(this.$appurl + '/api/manage/emails/' + this.email.id, {
             title: this.email.title,
             email: this.email.email,
           })

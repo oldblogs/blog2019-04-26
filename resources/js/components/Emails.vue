@@ -107,7 +107,7 @@
 
     methods: {
       fetch() {
-        axios.get('http://blog.com/api/manage/emails')
+        axios.get(this.$appurl + '/api/manage/emails')
           .then((response) => {
             this.contact_emails = JSON.parse(JSON.stringify( response.data.data ))
             this.addformenabled = false
