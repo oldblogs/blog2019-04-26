@@ -27,9 +27,7 @@
       <div class="input-group">
         <label>Content</label>
         <div class="mavonEditor">
-          <no-ssr>
-            <mavon-editor :toolbars="markdownOption" v-model="post.body" aria-label="write your post here"></mavon-editor>
-          </no-ssr>
+          <mavon-editor :toolbars="markdownOption" v-model="post.body" aria-label="write your post here"></mavon-editor>
         </div>
       </div>
 
