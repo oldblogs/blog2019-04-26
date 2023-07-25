@@ -1,6 +1,6 @@
 
 
-<div class="card flex-md-row mb-4 box-shadow h-md-250">
+<div class="card flex-md-row mb-4 box-shadow">
   <div class="card-body d-flex flex-column align-items-start">
     <h3 class="mb-0">
       <a class="text-dark" href="/posts/{{ $post->id }}">{{ $post->title }}</a>
@@ -16,7 +16,7 @@
         $dt->format('l jS \\of F Y h:i:s A');  // Thursday, 25th of December 1975 02:15:16 PM
       --}}
 
-      {!! substr($post->body,0,200) !!}
+    <p class="overflow-hidden">{!! substr($post->body,0,200) !!}</p>
 
     @include ('frontview.partial.postauthor')
     <a href="/posts/{{ $post->id }}">Continue reading</a>
