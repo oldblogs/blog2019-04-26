@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
-use App\Http\Requests\PostForm;
 
 class ManageController extends Controller
 {
