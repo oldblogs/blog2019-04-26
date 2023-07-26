@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\About;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
-use App\Http\Requests\AboutForm;
-use App\Http\Requests\DeleteAboutForm;
 use Illuminate\Support\Facades\Auth;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 
