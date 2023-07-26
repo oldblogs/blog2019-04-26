@@ -7,7 +7,6 @@ use App\Post;
 use App\Repositories\PostsRepository;
 use Carbon\Carbon;
 use Illuminate\Session\SessionManager;
-use App\Http\Requests\DeleteForm;
 use Illuminate\Support\Facades\Auth;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 
