@@ -1,8 +1,5 @@
 .env
-/bootstrap/cache/config.php
-/bootstrap/cache/packages.php
-/bootstrap/cache/routes.php
-/bootstrap/cache/services.php
+/bootstrap/cache/*
 /storage/*
 /storage/*.key
 /node_modules
