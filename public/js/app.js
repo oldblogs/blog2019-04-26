@@ -1902,8 +1902,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About",
@@ -2966,8 +2964,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "FormPostAdd",
   mounted: function mounted() {},
@@ -3223,8 +3219,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "FormPostUpdate",
   mounted: function mounted() {},
@@ -3291,8 +3285,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -55777,25 +55769,19 @@ var render = function() {
         "div",
         { staticClass: "mavonEditor" },
         [
-          _c(
-            "no-ssr",
-            [
-              _c("mavon-editor", {
-                attrs: {
-                  toolbars: _vm.markdownOption,
-                  "aria-label": "write your post here"
-                },
-                model: {
-                  value: _vm.about.body,
-                  callback: function($$v) {
-                    _vm.$set(_vm.about, "body", $$v)
-                  },
-                  expression: "about.body"
-                }
-              })
-            ],
-            1
-          )
+          _c("mavon-editor", {
+            attrs: {
+              toolbars: _vm.markdownOption,
+              "aria-label": "write your post here"
+            },
+            model: {
+              value: _vm.about.body,
+              callback: function($$v) {
+                _vm.$set(_vm.about, "body", $$v)
+              },
+              expression: "about.body"
+            }
+          })
         ],
         1
       )
@@ -57315,25 +57301,19 @@ var render = function() {
             "div",
             { staticClass: "mavonEditor" },
             [
-              _c(
-                "no-ssr",
-                [
-                  _c("mavon-editor", {
-                    attrs: {
-                      toolbars: _vm.markdownOption,
-                      "aria-label": "write your post here"
-                    },
-                    model: {
-                      value: _vm.post.body,
-                      callback: function($$v) {
-                        _vm.$set(_vm.post, "body", $$v)
-                      },
-                      expression: "post.body"
-                    }
-                  })
-                ],
-                1
-              )
+              _c("mavon-editor", {
+                attrs: {
+                  toolbars: _vm.markdownOption,
+                  "aria-label": "write your post here"
+                },
+                model: {
+                  value: _vm.post.body,
+                  callback: function($$v) {
+                    _vm.$set(_vm.post, "body", $$v)
+                  },
+                  expression: "post.body"
+                }
+              })
             ],
             1
           )
@@ -57774,25 +57754,19 @@ var render = function() {
             "div",
             { staticClass: "mavonEditor" },
             [
-              _c(
-                "no-ssr",
-                [
-                  _c("mavon-editor", {
-                    attrs: {
-                      toolbars: _vm.markdownOption,
-                      "aria-label": "write your post here"
-                    },
-                    model: {
-                      value: _vm.post.body,
-                      callback: function($$v) {
-                        _vm.$set(_vm.post, "body", $$v)
-                      },
-                      expression: "post.body"
-                    }
-                  })
-                ],
-                1
-              )
+              _c("mavon-editor", {
+                attrs: {
+                  toolbars: _vm.markdownOption,
+                  "aria-label": "write your post here"
+                },
+                model: {
+                  value: _vm.post.body,
+                  callback: function($$v) {
+                    _vm.$set(_vm.post, "body", $$v)
+                  },
+                  expression: "post.body"
+                }
+              })
             ],
             1
           )
@@ -58007,26 +57981,20 @@ var render = function() {
         "div",
         { staticClass: "mavonEditor" },
         [
-          _c(
-            "no-ssr",
-            [
-              _c("mavon-editor", {
-                attrs: {
-                  defaultOpen: "preview",
-                  toolbarsFlag: false,
-                  subfield: false
-                },
-                model: {
-                  value: _vm.post.body,
-                  callback: function($$v) {
-                    _vm.$set(_vm.post, "body", $$v)
-                  },
-                  expression: "post.body"
-                }
-              })
-            ],
-            1
-          )
+          _c("mavon-editor", {
+            attrs: {
+              defaultOpen: "preview",
+              toolbarsFlag: false,
+              subfield: false
+            },
+            model: {
+              value: _vm.post.body,
+              callback: function($$v) {
+                _vm.$set(_vm.post, "body", $$v)
+              },
+              expression: "post.body"
+            }
+          })
         ],
         1
       )
