@@ -4,12 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use Carbon\Carbon;
-use Illuminate\Session\SessionManager;
-use App\Socialid;
-use App\Socialprovider;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
+use App\Socialprovider;
+use App\Socialid;
 
 class ProfileController extends Controller
 {
