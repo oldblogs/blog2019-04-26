@@ -30,7 +30,7 @@ use App\MediumType;
 use App\Policies\MediumTypePolicy;
 
 use App\License;
-// use App\Policies\LicensePolicy;
+use App\Policies\LicensePolicy;
 
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
