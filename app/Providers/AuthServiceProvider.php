@@ -54,7 +54,7 @@ class AuthServiceProvider extends ServiceProvider
       Test::class => TestPolicy::class,
       Medium::class => MediumPolicy::class,
       MediumType::class => MediumTypePolicy::class,
-      // License::class => LicensePolicy::class,
+      License::class => LicensePolicy::class,
     ];
 
     /**
