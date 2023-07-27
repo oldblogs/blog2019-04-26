@@ -94,7 +94,7 @@
 
     methods: {
       deleteItem(){
-        axios.delete(this.$appurl + '/api/manage/posts/' + this.post.id)
+        axios.delete(this.$appurl + 'posts/' + this.post.id)
           .then( (response) => {
             this.$emit('delete:post')
             this.errors = ""

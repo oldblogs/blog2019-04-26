@@ -152,7 +152,7 @@
     methods: {
       // Implement timeout for messages prompts.
       fetch() {
-        axios.get(this.$appurl + '/api/manage/media/' + media.id)
+        axios.get(this.$appurl + 'media/' + media.id)
           .then( (response) => {
             this.about = JSON.parse(JSON.stringify( response.data ))
           })
@@ -174,7 +174,7 @@
           formData.append('photofile', this.photofile)
         }
         
-        axios.post(this.$appurl + '/api/manage/about/' + this.about.id, 
+        axios.post(this.$appurl + 'about/' + this.about.id, 
           formData,
           {
             headers: {
@@ -205,7 +205,7 @@
       },
 
       deletephoto(){
-        axios.delete(this.$appurl + '/api/manage/aboutphoto/' + this.about.id)
+        axios.delete(this.$appurl + 'aboutphoto/' + this.about.id)
           .then( response => {
             this.about.photo = ''
             this.photofile = '' 

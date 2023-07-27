@@ -81,7 +81,7 @@
 
     methods: {
       updateItem(){
-        axios.patch(this.$appurl + '/api/manage/tests/' + this.test.id, {
+        axios.patch(this.$appurl + 'tests/' + this.test.id, {
             title: this.test.title,
           })
           .then( (response) => {

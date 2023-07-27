@@ -15,7 +15,10 @@ window.VueFeatherIcon = require('vue-feather-icons');
 
 window.mavonEditor = require('mavon-editor');
 
-Vue.prototype.$appurl = 'http://blog.com';
+
+Vue.prototype.$apiprefix = 'api';
+Vue.prototype.$apimanage = 'manage';
+Vue.prototype.$appurl = 'http://blog.com/'+ this.$apiprefix + '/' + this.$apimanage + '/';
 
 // Laravel Vue Pagination 
 Vue.component( 'pagination'                     , require( 'laravel-vue-pagination') );

@@ -89,7 +89,7 @@
 
     methods: {
       deleteitem(){
-        axios.delete(this.$appurl + '/api/manage/sociallinks/' + this.sociallink.id)
+        axios.delete(this.$appurl + 'sociallinks/' + this.sociallink.id)
           .then( (response) => {
             this.$emit('delete:sociallink')
             this.errors = ""
