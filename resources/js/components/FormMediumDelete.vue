@@ -7,9 +7,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
 
-        <dir class="form-group">
+        <div class="form-group">
           <h4>The following record will be deleted ! Are you sure ? </h4>
-        </dir>
+        </div>
 
         <input v-model="medium.id" type="text" class="form-control" style="display: none">
         <div class="card" style="width: 18rem;">
