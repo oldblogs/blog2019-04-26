@@ -82,7 +82,7 @@
 
       methods: {
         deleteItem(){
-          axios.delete(this.$appurl + '/api/manage/media/' + this.medium.id)
+          axios.delete(this.$appurl + 'media/' + this.medium.id)
             .then( (response) => {
               this.$emit('delete:media')
               this.errors = "" 

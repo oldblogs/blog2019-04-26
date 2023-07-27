@@ -94,7 +94,7 @@
 
     methods: {
       addItem(){
-        axios.post(this.$appurl + '/api/manage/emails', {
+        axios.post(this.$appurl + 'emails', {
             title: this.email.title,
             email: this.email.email,
           })

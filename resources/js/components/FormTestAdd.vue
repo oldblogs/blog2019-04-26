@@ -80,7 +80,7 @@
 
     methods: {
       addItem(){
-        axios.post(this.$appurl + '/api/manage/tests', {
+        axios.post(this.$appurl + 'tests', {
             title: this.test.title,
           })
           .then( (response) => {

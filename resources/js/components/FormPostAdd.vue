@@ -108,7 +108,7 @@
 
     methods: {
       addItem(){
-        axios.post(this.$appurl + '/api/manage/posts', {
+        axios.post(this.$appurl + 'posts', {
             title: this.post.title, 
             body: this.post.body, 
             published: this.post.published, 
