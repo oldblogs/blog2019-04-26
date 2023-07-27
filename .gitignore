@@ -16,8 +16,7 @@
 /.Trash-1000
 Homestead.json
 Homestead.yaml
-npm-debug.log
-yarn-error.log
+*.log
 .editorconfig
 cclear*
 .gitattributes
