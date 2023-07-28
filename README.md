@@ -20,7 +20,7 @@ sudo apt install p7zip-full p7zip-rar
 Installation steps of requirements will be documented later.
 
 ---
-# Installation of the blog app on local development virtual machine
+## Installation of the blog app on local development virtual machine
 
 Description for computers:
   - VM: This is the virtual machine that runs the blog application.
@@ -66,7 +66,69 @@ php artisan key:generate
 Check .env file APP_KEY value, it must equal to the new key generated. 
 Note: Keep your attention on whitespaces in .env file. White space between characters causes problems.
 
+### Apache httpd virtual host setting
+On VM
+
+```bash
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/stage1.conf
+sudo nano /etc/apache2/sites-available/stage1.conf
+```
+file: /etc/apache2/sites-available/stage1.conf
+```apache
+<VirtualHost *:80>
+        ServerAdmin webmaster@stage1.com
+        ServerName stage1.com
+        ServerAlias www.stage1.com
+        DocumentRoot /var/www/stage1.com/public
+
+        <Directory /var/www/stage1.com/public>
+          Options -Indexes +FollowSymLinks -MultiViews
+          AllowOverride All
+          Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+```
+
+```bash
+sudo a2ensite stage1.conf
+sudo service apache2 reload
+```
+
+### Define site in /etc/hosts file in Dev PC
+
+```bash
+sudo nano /etc/hosts
+```
+Add the following row to the file:
+```bash
+<IP address of youe VM> stage1.com
+```
+Enter your VM's IP address without angle brackets. Save&Exit.
+
+Test
+
+```bash
+ping stage1.com
+```
+
+
+
+
+
 
 References:
 ---
+#### How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 18.04
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
 
+#### Computer code sign & symbol names exercise part 1 :wink:
+http://www.blairenglish.com/exercises/technology_web/exercises/computer_code_symbols_signs_names_1/computer_code_symbols_signs_names_1.html
+
+#### Complete list of github markdown emoji markup 
+https://gist.github.com/rxaviers/7360908
