@@ -1,4 +1,4 @@
-blog2019-04-26 is a blog application made with Laravel, and Vue . It is in early development stage, so may not be suitable for production use. You can follow the step below, and test it in your local computer.
+blog2019-04-26 is a blog application made with Laravel, and Vue . It is in early development stage, so may not be suitable for production use. You can follow the steps below, and test it in your local computer.
 
 ### Requirements:
 - A computer that can run VirtualBox or Qemu&libvirt
@@ -10,7 +10,7 @@ blog2019-04-26 is a blog application made with Laravel, and Vue . It is in early
 - Git
 - Ability to send e-mail
 
-Set file permissions.
+**Install unzip, 7zip .**
 
 ```bash
 sudo apt update
@@ -36,6 +36,8 @@ mkdir stage1.com
 cd /var/www/stage1.com
 git clone git@github.com:oldblogs/blog2019-04-26.git ./
 ```
+
+Set file permissions.
 
 ### Composer on VM
 - Install composer.
