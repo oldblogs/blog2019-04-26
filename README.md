@@ -7,6 +7,8 @@ blog2019-04-26 is a blog application made with Laravel, and Vue . It is in early
   - Apache
   - MySQL
   - PHP 7.1.3
+  - Node, npm
+- Email  
 - Git
 - Ability to send e-mail
 
@@ -117,15 +119,71 @@ Test
 ping stage1.com
 ```
 
+### Create a database on VM
+
+```bash
+$ mysql -u root -p
+mysql> CREATE DATABASE stage1db CHARACTER SET utf8;
+exit
+```
+
+### Create a database user on VM
+
+```bash
+$ mysql -u root -p
+CREATE USER userstage1@localhost IDENTIFIED BY 'password';
+exit
+```
+Of course, enter your own 'password'.
 
 
+### Grant privileges to the user
+```bash
+$ mysql -u root -p
+GRANT ALL PRIVILEGES ON stage1db.* TO 'userstage1'@'localhost';
+exit
+```
+
+### npm update
+
+```bash
+cd /var/www/stage1.com
+npm update
+npm run dev
+```
+
+### Clear Laravel caches
+
+```bash
+cd /var/www/stage1.com
+php artisan migrate:install --database=mysql
+```
+
+### Migrate database
+
+Edit /var/www/stage1.com/.env file, change the following values.
+```ini
+APP_NAME=Stage1
+APP_URL=http://stage1.com
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=stage1db
+DB_USERNAME=userstage1
+DB_PASSWORD=your_password
+```
 
 
 
 References:
 ---
+
 #### How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 18.04
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
+#### Installing Node.js with Apt Using a NodeSource PPA
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
 
 #### Computer code sign & symbol names exercise part 1 :wink:
 http://www.blairenglish.com/exercises/technology_web/exercises/computer_code_symbols_signs_names_1/computer_code_symbols_signs_names_1.html
