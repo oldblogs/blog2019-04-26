@@ -239,7 +239,6 @@ class DatabaseSeeder extends Seeder
         LicenseSeeder::class,
         MediumSeeder::class,
       ]);
-
     }
 }
 
