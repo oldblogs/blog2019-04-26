@@ -25,7 +25,7 @@ class SampleSeeder extends Seeder
           'title' => $user->name,
         ]);
       });
-    // factory(App\Post::class, 30)->create();
+    factory(App\Post::class, 30)->create();
   }
 
 }
