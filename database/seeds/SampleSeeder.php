@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class SampleSeeder extends Seeder
 {
+
   /**
    * Seed the application's database.
    *
@@ -19,9 +20,12 @@ class SampleSeeder extends Seeder
     factory(App\User::class, 3)
       ->create()
       ->each(function ($user) {
-        $user->about()->save(factory(App\About::class)->make());
+        factory(App\About::class, 1)->create([
+          'user_id' => $user->id,
+          'title' => $user->name,
+        ]);
       });
-    factory(App\Post::class, 30)->create();
+    // factory(App\Post::class, 30)->create();
   }
-}
 
+}
