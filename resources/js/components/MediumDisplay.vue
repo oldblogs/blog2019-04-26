@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="medium.medium_type.mtype === 'image'">
-      <img v-if="medium.file" :src="'storage/img/'+medium.file" :key="medium.file" class="card-img-top" style="max-height: 6rem;" alt="" title="" />
+      <img v-if="medium.file" :src="'storage/'+medium.file" :key="medium.file" class="card-img-top" style="max-height: 6rem;" alt="" title="" />
       <img v-if="medium.external_url" :src="medium.external_url" :key="medium.external_url" class="card-img-top" style="max-height: 6rem;" alt="" title="" />
     </div>
   </div>
