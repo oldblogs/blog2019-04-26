@@ -10,25 +10,25 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.18",
-        "bootstrap": "^4.3.1",
-        "cross-env": "^5.2.0",
+        "axios": "^0.18.1",
+        "bootstrap": "^4.6.2",
+        "cross-env": "^5.2.1",
         "imagemin": "^6.1.0",
-        "jquery": "^3.2",
-        "laravel-mix": "^4.0.15",
-        "lodash": "^4.17.11",
-        "popper.js": "^1.14.7",
+        "jquery": "^3.7.0",
+        "laravel-mix": "^4.1.4",
+        "lodash": "^4.17.21",
+        "popper.js": "^1.16.1",
         "resolve-url-loader": "^2.3.2",
         "sass": "^1.17.3",
-        "sass-loader": "^7.1.0",
-        "vue": "^2.6.10",
-        "vue-template-compiler": "^2.6.10"
+        "sass-loader": "^7.3.1",
+        "vue": "^2.7.14",
+        "vue-template-compiler": "^2.7.14"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.4.0",
-        "feather-icons": "^4.17.0",
-        "laravel-vue-pagination": "^2.3.0",
+        "feather-icons": "^4.29.0",
+        "laravel-vue-pagination": "^2.3.1",
         "mavon-editor": "^2.10.4",
-        "vue-feather-icons": "^4.10.0"
+        "vue-feather-icons": "^4.22.0"
     }
 }
