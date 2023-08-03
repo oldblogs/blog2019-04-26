@@ -20,7 +20,7 @@ You can create blog posts with this application.
     - Social media links.
   - Login options
     - Form based login
-    - Login Social Media accounts (OAuth)
+    - Login with Social Media accounts (OAuth)
       - Google, Github ...
 
 ## Usage
@@ -33,7 +33,7 @@ You can create blog posts with this application.
 
 ## Screenshots
 
-- Mainpage
+- [Mainpage](docs/images/mainpage.jpg)
 - Posts
 - About
 - Manage
