@@ -5,6 +5,7 @@ cd /var/www/<domain_name>
 php artisan invitation:send <email_of_the_receiver>
 # Successfully send one invitation.
 ```
+![send_invitation](images/registration_01_send_invitation.jpg)
 
 ### 2. User opens the e-mail, clicks to the register link
 As we are testing this in a local environment, using mailtrap makes it easier.
