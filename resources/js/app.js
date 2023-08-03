@@ -18,7 +18,7 @@ window.mavonEditor = require('mavon-editor');
 
 Vue.prototype.$apiprefix = 'api';
 Vue.prototype.$apimanage = 'manage';
-Vue.prototype.$appurl = 'http://stage1.com'+ Vue.prototype.$apiprefix + '/' + Vue.prototype.$apimanage + '/';
+Vue.prototype.$appurl = 'http://blog.com/'+ Vue.prototype.$apiprefix + '/' + Vue.prototype.$apimanage + '/';
 
 // Laravel Vue Pagination 
 Vue.component( 'pagination'                     , require( 'laravel-vue-pagination') );

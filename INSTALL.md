@@ -143,6 +143,8 @@ exit
 Edit /var/www/'<domain_name>'/.env file, change the following values.
 ```ini
 APP_NAME=Blog
+APP_ENV=development
+APP_DEBUG=true
 APP_URL=http://'<domain_name>'
 
 DB_CONNECTION=mysql
@@ -163,29 +165,14 @@ This creates the migrations table.
 Execute the migrations:
 ```bash
 php artisan migrate
-
-**************************************
-*     Application In Production!     *
-**************************************
-
- Do you really wish to run this command? (yes/no) [no]:
-yes
-
 ```
-This will execute scripts in database/migrations directory, which are listed in migrations table.
+This will execute scripts listed in migrations table, stored in database/migrations directory.
 
 ### Seed the database with initial records
 ```bash
 cd /var/www/<domain_name>
 php artisan db:seed 
 
-**************************************
-*     Application In Production!     *
-**************************************
-
- Do you really wish to run this command? (yes/no) [no]:
- > 
-yes
 Seeding: RolesAndPermissionsSeeder
 Seeding: SocialprovidersSeeder
 Seeding: CsocialSeeder
@@ -210,6 +197,9 @@ MAIL_PORT=2525
 MAIL_USERNAME=mailtrap_user_name
 MAIL_PASSWORD=mailtrap_password
 MAIL_ENCRYPTION=tls
+
+MAIL_FROM_ADDRESS="info@<domain_name>"
+MAIL_FROM_NAME="Blog"
 ```
 
 There must be no whitespaces between characters.

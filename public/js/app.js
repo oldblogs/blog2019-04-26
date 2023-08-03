@@ -2244,7 +2244,7 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     mediumpath: function mediumpath() {
       if (typeof this.file !== 'undefined' || this.file !== '') {
-        return this.file;
+        return 'storage/' + this.file;
       } else {
         return '';
       }
@@ -6983,7 +6983,7 @@ var render = function render() {
       "max-height": "6rem"
     },
     attrs: {
-      src: _vm.medium.file,
+      src: "storage/" + _vm.medium.file,
       alt: "",
       title: ""
     }
@@ -70131,7 +70131,7 @@ window.VueFeatherIcon = __webpack_require__(/*! vue-feather-icons */ "./node_mod
 window.mavonEditor = __webpack_require__(/*! mavon-editor */ "./node_modules/mavon-editor/dist/mavon-editor.js");
 Vue.prototype.$apiprefix = 'api';
 Vue.prototype.$apimanage = 'manage';
-Vue.prototype.$appurl = 'http://stage1.com' + Vue.prototype.$apiprefix + '/' + Vue.prototype.$apimanage + '/';
+Vue.prototype.$appurl = 'http://blog.com/' + Vue.prototype.$apiprefix + '/' + Vue.prototype.$apimanage + '/';
 
 // Laravel Vue Pagination 
 Vue.component('pagination', __webpack_require__(/*! laravel-vue-pagination */ "./node_modules/laravel-vue-pagination/dist/laravel-vue-pagination.common.js"));
@@ -70224,8 +70224,8 @@ try {
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = 'http://stage1.com/api/manage';
-window.axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+// window.axios.defaults.baseURL = 'https://example.com/api';
+// window.axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
@@ -72485,9 +72485,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/stage1.com/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /var/www/stage1.com/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /var/www/stage1.com/resources/sass/dashboard.scss */"./resources/sass/dashboard.scss");
+__webpack_require__(/*! /var/www/blog.com/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /var/www/blog.com/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /var/www/blog.com/resources/sass/dashboard.scss */"./resources/sass/dashboard.scss");
 
 
 /***/ })
