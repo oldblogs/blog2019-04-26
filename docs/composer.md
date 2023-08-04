@@ -1,3 +1,5 @@
+[Back](../INSTALL.md)
+
 ## Composer
 - PHP must be already installed before.
 

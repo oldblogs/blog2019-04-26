@@ -1,3 +1,5 @@
+[Back](INSTALL.md)
+
 ## Set a remote directory on Dev PC that connects to VM
 ```bash
 cd ~/projects
@@ -41,7 +43,7 @@ cd ~/projects/blog2019-04-26
 ./connect.sh
 ```
 
-Now /var/www/blog2019-04-26 directory is mounted to /home/<dev_user>/projects/blog2019-04-26/remote
+Now /var/www/<domain_name> directory is mounted to /home/<dev_user>/projects/blog2019-04-26/remote
 
 To unmount the directory, Execute on Dev PC:
 ```bash

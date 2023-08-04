@@ -31,7 +31,7 @@
     - TODO: Set up ssh daemon.
     - TODO: sshfs
   - TODO: Laravel 5.7 requirements
-    - TODO: Apache, MySQL, PHP 7.1.3, Email, Git, unzip, p7zip-full, p7zip-rar, etc ...
+    - TODO: Apache, MySQL, PHP 7.1.3, Email, Git, unzip, p7zip-full, p7zip-rar, etc
     - [Composer](docs/composer.md)
       - PHP must be installed before this one.
     - [Node, npm](docs/node.md)
@@ -62,6 +62,7 @@ cd ~/projects/blog2019-04-26
 cd ~/projects/blog2019-04-26/remote
 git clone git@github.com:oldblogs/blog2019-04-26.git ./
 ```
+
 ### [Set file permissions](docs/file_permissions.md)
 - Click title to read the details.
 
@@ -113,8 +114,6 @@ npm install
 npm run dev
 ```
 
-This installes npm packages, and compiles Javascript and CCS files.
-
 ### Create a database
 
 ```bash
@@ -130,7 +129,6 @@ $ mysql -u root -p
 CREATE USER bloguser@localhost IDENTIFIED BY 'password';
 exit
 ```
-Of course, enter your own 'password'.
 
 ### Grant privileges to the user
 ```bash
@@ -186,8 +184,9 @@ Database seeding completed successfully.
 ### Email Settings
 
 Create [mailtrap](https://mailtrap.io/) account and enter your mailtrap information into .env file.
-(Mailtrap -> Email Testing -> Inboxes -> MyInbox -> SMTP Settings -> Show Credentials )
-Integrations: Select Laravel 7+
+
+- Mailtrap -> Email Testing -> Inboxes -> MyInbox -> SMTP Settings -> Show Credentials
+  - Integrations: Select Laravel 7+
 
 .env file
 ```bash
@@ -196,7 +195,6 @@ MAIL_HOST=sandbox.smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_USERNAME=mailtrap_user_name
 MAIL_PASSWORD=mailtrap_password
-MAIL_ENCRYPTION=tls
 
 MAIL_FROM_ADDRESS="info@<domain_name>"
 MAIL_FROM_NAME="Blog"
@@ -216,8 +214,6 @@ php artisan view:cache
 ```bash
 sudo service apache2 restart
 ```
-
-
 
 References:
 ---
