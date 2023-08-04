@@ -1,3 +1,5 @@
+[Back](INSTALL.md)
+
 ## Set file permissions.
 
 ```bash
