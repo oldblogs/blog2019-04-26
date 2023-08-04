@@ -219,19 +219,28 @@ References:
 ---
 
 #### How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 18.04
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+  - https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
 
 #### Installing Node.js with Apt Using a NodeSource PPA
-https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+  - https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+
+
+#### Laravel documentation
+  - https://laravel.com/docs/5.7/installation
+
 
 #### Read about domain names
-https://en.wikipedia.org/wiki/Domain_name
+  - https://en.wikipedia.org/wiki/Domain_name
+
 
 #### Git
-https://git-scm.com/docs/git-clone
+  - https://git-scm.com/docs/git-clone
+
 
 #### Computer code sign & symbol names exercise part 1 :wink:
-http://www.blairenglish.com/exercises/technology_web/exercises/computer_code_symbols_signs_names_1/computer_code_symbols_signs_names_1.html
+  - http://www.blairenglish.com/exercises/technology_web/exercises/computer_code_symbols_signs_names_1/computer_code_symbols_signs_names_1.html
+
 
 #### Complete list of github markdown emoji markup 
-https://gist.github.com/rxaviers/7360908
+  - https://gist.github.com/rxaviers/7360908

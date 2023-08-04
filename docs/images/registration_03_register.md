@@ -1,3 +1,3 @@
-[Back](../create_user.md)
+## [Back](../create_user.md)
 
 ![register](registration_03_register.jpg)

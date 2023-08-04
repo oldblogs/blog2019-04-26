@@ -1,3 +1,7 @@
+## [Back](../README.md)
+
+## Insert sample data
+
 ```bash
 cd /var/www/<domain_name>
 php artisan db:seed --class=SampleSeeder

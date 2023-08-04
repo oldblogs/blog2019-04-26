@@ -1,4 +1,4 @@
-[Back](INSTALL.md)
+## [Back](../INSTALL.md)
 
 ## Apache httpd virtual host setting
 

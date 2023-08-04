@@ -1,3 +1,7 @@
+## [Back](../README.md)
+
+## Create a user
+
 ### 1. Site administrator sends an invitation:
 - ssh to server
 ```bash
@@ -35,7 +39,6 @@ Server recieves the form data, and sends a verification e-mail the user's e-mail
 
 ### 6. Redirect user
 - Server accepts verification, redirects user to profile page.
-- User is redirected to the user profile page.
 - At this stage user is registered to the blog. 
   - Site administrator must add the user to roles to make it functional.
 
