@@ -1,4 +1,4 @@
-[Back](INSTALL.md)
+## [Back](../INSTALL.md)
 
 ## Set a remote directory on Dev PC that connects to VM
 ```bash

@@ -1,6 +1,10 @@
+## [Back](../README.md)
 
+## Add user to a role
 
-```bash
+`<e-mail>` must belong to a already registered user.
+
+```text
 cd /var/www/<domain_name>
 php artisan permission:assign-role admin <e-mail>
 
