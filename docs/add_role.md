@@ -1,8 +1,8 @@
 ## [Back](../README.md)
 
-## Add user to a role
+## Add a user to a role
 
-`<e-mail>` must belong to a already registered user.
+`<e-mail>` must belong to an already registered user.
 
 ```text
 cd /var/www/<domain_name>
@@ -13,7 +13,7 @@ User  : <e-mail>
 Role succesfully set.
 ```
 
-```bash
+```text
 php artisan permission:assign-role apiadmin <e-mail>
 Role  : apiadmin
 User  : <e-mail>
