@@ -33,12 +33,13 @@ You can create blog posts with this application.
 
 ## Screenshots
 
-- [Mainpage](docs/images/mainpage.jpg)
-- Posts
-- About
+- [Mainpage](docs/images/mainpage.md)
+- [Posts](docs/images/posts.md)
+- [About](docs/images/about.md)
 - Manage
-  - Posts
-  - About
+  - Manage Posts
+  - Profile
+  - Social Networks
   - Login
     - Form based
     - OAuth Google
