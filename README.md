@@ -37,11 +37,12 @@ You can create blog posts with this application.
 - [Posts](docs/images/posts.md)
 - [About](docs/images/about.md)
 - Manage
-  - Manage Posts
-  - Profile
-  - Social Networks
+    - [Posts](docs/images/manage_posts.md)
+      - [New](docs/images/manage_posts_new.md), [Update](docs/images/manage_posts_update.md), [Delete](docs/images/manage_posts_delete.md)
+  - [Profile](docs/images/manage_profile.md)
+  - [Social Networks](docs/images/manage_social_networks.md)
   - Login
-    - Form based
-    - OAuth Google
+    - [Form based](docs/images/form_login.md)
+    - [Google Signin](docs/images/google_signin.md)
     
 
