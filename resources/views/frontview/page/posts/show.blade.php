@@ -11,7 +11,7 @@
     <p class="blog-post-meta">{{ $post->created_at->toFormattedDateString() }}</p>
 
     {!! $post->body !!}
-    <img style="max-height: 6rem; max-width: 6rem;" src="{{ asset('storage/'.$about->photo) }}" alt="Photo of user">
+    <img style="max-height: 6rem; max-width: 6rem;" src="{{ asset('storage/'.$post->user->about->photo) }}" alt="Photo of user">
   </div>
 
 @endsection
