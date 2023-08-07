@@ -14,7 +14,7 @@ You can create blog posts with this application.
   - TODO: Can not add photos at his time. In progress.
   - TODO: Can not add videos at this time. In progress.
   - You can enter information about yourself.
-    - Can add a add a photo.
+    - Can add a photo.
     - You can enter paragraphs about yourself.
     - Emails.
     - Social media links.
