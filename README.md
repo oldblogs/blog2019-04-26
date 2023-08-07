@@ -35,11 +35,11 @@ You can create blog posts with this application.
 
 - [Mainpage](docs/images/mainpage.md)
 - [Posts](docs/images/posts.md)
-  - Read Post
+  - [Read Post](docs/images/post_view.md)
 - [About](docs/images/about.md)
 - Manage
     - [Posts](docs/images/manage_posts.md)
-      - [New](docs/images/manage_posts_new.md), View, [Update](docs/images/manage_posts_update.md), [Delete](docs/images/manage_posts_delete.md)
+      - [New](docs/images/manage_posts_new.md), [View](docs/images/manage_posts_view.md), [Update](docs/images/manage_posts_update.md), [Delete](docs/images/manage_posts_delete.md)
   - [Profile](docs/images/manage_profile.md)
   - [Social Networks](docs/images/manage_social_networks.md)
   - Login
