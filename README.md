@@ -35,10 +35,11 @@ You can create blog posts with this application.
 
 - [Mainpage](docs/images/mainpage.md)
 - [Posts](docs/images/posts.md)
+  - Read Post
 - [About](docs/images/about.md)
 - Manage
     - [Posts](docs/images/manage_posts.md)
-      - [New](docs/images/manage_posts_new.md), [Update](docs/images/manage_posts_update.md), [Delete](docs/images/manage_posts_delete.md)
+      - [New](docs/images/manage_posts_new.md), View, [Update](docs/images/manage_posts_update.md), [Delete](docs/images/manage_posts_delete.md)
   - [Profile](docs/images/manage_profile.md)
   - [Social Networks](docs/images/manage_social_networks.md)
   - Login
@@ -61,4 +62,19 @@ Copyright 2023 Recep GÜÇLÜER
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-   
+
+## About sample texts & photos in screenshots
+Sample text is created with ChatGPT: [https://chat.openai.com/](https://chat.openai.com/)
+
+Any text, photo used in these screenshots are for demonstration purposes only. There is no relation to people or companies in the real world.
+
+Stock photos downloaded, and used with little modifications from [pexels.com](pexels.com) . Thanks to pexels.com, and all the creators sharing their content with the community.
+
+| Photo | Creator | From Creator |
+| ----- | ------- | ------------ |
+| [pexels-anna-shvets-3727508.jpg](https://www.pexels.com/photo/woman-in-white-dress-shirt-wearing-eyeglasses-3727508/) | [Anna Shvets](https://www.pexels.com/@shvetsa/) | Your donations inspire me to create |
+| [pexels-mikhail-nilov-8871884.jpg](https://www.pexels.com/photo/woman-in-black-dress-shirt-hand-on-her-pocket-8871884/) | [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov/) | DONATE PLEASE ! Your donations inspire us to create!  |
+| [pexels-vazhnik-7562313.jpg](https://www.pexels.com/photo/man-wearing-eyeglasses-on-white-background-7562313/) | [VAZHNIK](https://www.pexels.com/@vazhnik/) | Thanks for your donations! |
+| [pexels-chris-f-7989569.jpg](https://www.pexels.com/photo/man-in-green-cap-sitting-near-concrete-wall-7989569/) | [Chris F](https://www.pexels.com/@chris-f-38966/) | Designer & Photographer for Magnum Press |
+
+These texts, and photos are not in the source code, or in the resources of this project. They are used in the sample blog application only. Results are the screenhots.
