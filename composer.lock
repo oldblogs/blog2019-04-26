@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82747d75eab997e6d1b831eae052f64d",
+    "content-hash": "b1f93cd2503b213903a35c48334bfc23",
     "packages": [
         {
             "name": "clarkeash/doorman",
