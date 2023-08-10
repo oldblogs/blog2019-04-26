@@ -4,9 +4,24 @@
     "description": "Blog application made with Laravel Framework.",
     "keywords": [
         "blog",
-        "laravel"
+        "laravel",
+        "vue"
     ],
-    "license": "MIT",
+    "homepage": "https://github.com/oldblogs/blog2019-04-26",
+    "readme": "README.md",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Recep GÜÇLÜER",
+            "email": "rgucluer@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/oldblogs/blog2019-04-26/issues",
+        "source": "https://github.com/oldblogs/blog2019-04-26",
+        "docs": "https://github.com/oldblogs/blog2019-04-26/README.md"
+    },
     "require": {
         "php": "^7.1.3",
         "clarkeash/doorman": "2.1.1",
