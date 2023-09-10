@@ -52,6 +52,10 @@ You can create blog posts with this application.
 Copyright 2023 Recep GÜÇLÜER <rgucluer@gmail.com> .
 blog2019-04-26 is [MIT licensed](LICENSE) .
 
+## Licenses
+
+[licenses.md](licenses.md) contains the name, version and commit sha, description, homepage, and license information for every php dependency in this project.
+
 ## About sample texts & photos in screenshots
 Sample text is created with ChatGPT: [https://chat.openai.com/](https://chat.openai.com/)
 
